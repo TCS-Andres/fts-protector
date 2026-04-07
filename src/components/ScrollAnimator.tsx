@@ -4,6 +4,14 @@ import { useEffect } from "react";
 
 export default function ScrollAnimator() {
   useEffect(() => {
+    // Always start at top of page on fresh load
+    if (window.location.hash) {
+      history.replaceState(null, "", window.location.pathname);
+    }
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
