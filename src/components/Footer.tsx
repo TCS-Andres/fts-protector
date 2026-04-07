@@ -8,7 +8,7 @@ export default function Footer() {
             <img
               src="/logo.png"
               alt="Franck The Solution"
-              className="h-[35px] w-auto"
+              className="h-[60px] w-auto"
             />
             <span className="text-white text-sm font-heading uppercase tracking-wider">
               Franck The Solution

@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 h-[70px] flex items-center justify-between px-6 lg:px-12 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 h-[90px] flex items-center justify-between px-6 lg:px-12 transition-all duration-300 ${
           scrolled ? "nav-scrolled" : "bg-transparent"
         }`}
       >
@@ -32,7 +32,7 @@ export default function Navbar() {
           <img
             src="/logo.png"
             alt="Franck The Solution"
-            className="h-[45px] w-auto"
+            className="h-[70px] w-auto"
           />
         </a>
 
