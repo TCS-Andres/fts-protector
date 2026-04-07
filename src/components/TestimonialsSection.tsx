@@ -1,9 +1,11 @@
 "use client";
 
+{/* All 3 slots use the same video for now. To swap in future videos,
+    just change the src path for slots 2 and 3. */}
 const testimonialVideos = [
-  { src: "/videos/testimonial_1.mp4", label: "Testimonial" },
-  { src: "/videos/testimonial_2.mp4", label: "Testimonial" },
-  { src: "/videos/testimonial_3.mp4", label: "Testimonial" },
+  { src: "/videos/testimonial_1.mp4" },
+  { src: "/videos/testimonial_1.mp4" },
+  { src: "/videos/testimonial_1.mp4" },
 ];
 
 export default function TestimonialsSection() {
@@ -29,13 +31,11 @@ export default function TestimonialsSection() {
             >
               <video
                 controls
-                preload="metadata"
                 playsInline
+                preload="metadata"
                 className="w-full aspect-[9/16] object-cover bg-black"
-              >
-                <source src={video.src} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+                src={`${video.src}#t=0.1`}
+              />
             </div>
           ))}
         </div>

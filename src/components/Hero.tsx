@@ -57,7 +57,7 @@ export default function Hero() {
             <img
               src="/logo.png"
               alt="Franck The Solution"
-              className="w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] lg:w-[400px] lg:h-[400px] xl:w-[460px] xl:h-[460px] object-contain drop-shadow-[0_0_40px_rgba(196,30,30,0.3)]"
+              className="w-[140px] h-[140px] sm:w-[160px] sm:h-[160px] lg:w-[400px] lg:h-[400px] xl:w-[460px] xl:h-[460px] object-contain drop-shadow-[0_0_40px_rgba(196,30,30,0.3)]"
             />
           </div>
         </div>
