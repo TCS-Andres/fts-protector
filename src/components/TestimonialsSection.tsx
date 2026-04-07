@@ -1,22 +1,9 @@
-const testimonials = [
-  {
-    quote:
-      "I've been in real estate for 12 years and never had any physical safety training. This workshop changed everything. I feel prepared for the first time.",
-    name: "Placeholder",
-    role: "Real Estate Agent",
-  },
-  {
-    quote:
-      "Franck doesn't teach theory. He teaches what actually works. My wife and I both attended and we use what we learned every day.",
-    name: "Placeholder",
-    role: "Workshop Attendee",
-  },
-  {
-    quote:
-      "The most practical, no-nonsense training I've ever done. Three hours and I walked out a different person.",
-    name: "Placeholder",
-    role: "Workshop Attendee",
-  },
+"use client";
+
+const testimonialVideos = [
+  { src: "/videos/testimonial_1.mp4", label: "Testimonial" },
+  { src: "/videos/testimonial_2.mp4", label: "Testimonial" },
+  { src: "/videos/testimonial_3.mp4", label: "Testimonial" },
 ];
 
 export default function TestimonialsSection() {
@@ -35,38 +22,20 @@ export default function TestimonialsSection() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 stagger-children">
-          {testimonials.map((t, i) => (
+          {testimonialVideos.map((video, i) => (
             <div
               key={i}
-              className="animate-on-scroll bg-bg-card p-8 rounded-lg border-t-2 border-accent-red hover:translate-y-[-4px] hover:shadow-xl transition-all duration-300"
+              className="animate-on-scroll bg-bg-card rounded-lg border-t-2 border-accent-red overflow-hidden hover:translate-y-[-4px] hover:shadow-xl transition-all duration-300"
             >
-              {/* Quote icon */}
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                className="text-accent-red mb-6"
+              <video
+                controls
+                preload="metadata"
+                playsInline
+                className="w-full aspect-[9/16] object-cover bg-black"
               >
-                <path
-                  d="M3 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"
-                  fill="currentColor"
-                />
-              </svg>
-
-              <p className="text-text-secondary text-base leading-relaxed mb-6 italic font-body">
-                &ldquo;{t.quote}&rdquo;
-              </p>
-              <div>
-                <p className="text-white text-sm font-bold font-body">
-                  — {t.name}
-                </p>
-                <p className="text-text-muted text-xs font-body">{t.role}</p>
-              </div>
+                <source src={video.src} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           ))}
         </div>
