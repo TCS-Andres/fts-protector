@@ -62,14 +62,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Logo badge — mobile only (below text, centered) */}
-        <div className="hero-animate hero-animate-1 md:hidden mt-8 flex justify-center">
-          <img
-            src="/logo.png"
-            alt="Franck The Solution"
-            className="w-[240px] h-[240px] object-contain drop-shadow-[0_0_40px_rgba(196,30,30,0.3)]"
-          />
-        </div>
       </div>
 
       {/* Scroll indicator */}

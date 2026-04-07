@@ -1,59 +1,55 @@
 export default function Footer() {
   return (
     <footer className="bg-bg-primary border-t border-accent-red">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-12">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-          {/* Logo */}
-          <div className="flex items-center gap-3">
-            <img
-              src="/logo.png"
-              alt="Franck The Solution"
-              className="h-[60px] w-auto"
-            />
-            <span className="text-white text-sm font-heading uppercase tracking-wider">
-              Franck The Solution
-            </span>
-          </div>
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+        {/* Large stacked logo */}
+        <div className="flex flex-col items-center mb-12">
+          <img
+            src="/logo.png"
+            alt="Franck The Solution"
+            className="w-[200px] h-[200px] lg:w-[160px] lg:h-[160px] object-contain drop-shadow-[0_0_30px_rgba(196,30,30,0.2)]"
+          />
+          <span className="mt-4 text-white text-lg font-heading uppercase tracking-[4px]">
+            Franck The Solution
+          </span>
+        </div>
 
-          {/* Links */}
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
-            <a
-              href="https://eprotectionvip.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-text-secondary hover:text-white transition-colors font-body"
-            >
-              eprotectionvip.com
-            </a>
-            <a
-              href="https://www.skool.com/defensivetactics/about?ref=5872d5e010f741d2a991a3878f95b264"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-text-secondary hover:text-white transition-colors font-body"
-            >
-              Online Training (Skool)
-            </a>
-            <a
-              href="https://instagram.com/FranckTheSolution"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-text-secondary hover:text-white transition-colors font-body"
-            >
-              @FranckTheSolution
-            </a>
-          </div>
-
-          {/* Contact */}
+        {/* Links */}
+        <div className="flex flex-wrap items-center justify-center gap-6 text-sm mb-8">
+          <a
+            href="https://eprotectionvip.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-text-secondary hover:text-white transition-colors font-body"
+          >
+            eprotectionvip.com
+          </a>
+          <a
+            href="https://www.skool.com/defensivetactics/about?ref=5872d5e010f741d2a991a3878f95b264"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-text-secondary hover:text-white transition-colors font-body"
+          >
+            Online Training (Skool)
+          </a>
+          <a
+            href="https://instagram.com/FranckTheSolution"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-text-secondary hover:text-white transition-colors font-body"
+          >
+            @FranckTheSolution
+          </a>
           <a
             href="mailto:franck@eprotectionvip.com"
-            className="text-text-secondary text-sm hover:text-white transition-colors font-body"
+            className="text-text-secondary hover:text-white transition-colors font-body"
           >
             franck@eprotectionvip.com
           </a>
         </div>
 
         {/* Social icons */}
-        <div className="flex items-center justify-center gap-6 mt-8">
+        <div className="flex items-center justify-center gap-6 mb-8">
           {[
             { label: "Instagram", href: "https://instagram.com/FranckTheSolution", path: "M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z" },
             { label: "TikTok", href: "#", path: "M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.7a8.16 8.16 0 0 0 4.76 1.52V6.77a4.83 4.83 0 0 1-1-.08z" },
@@ -77,7 +73,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="text-center mt-8 pt-6 border-t border-white/5">
+        <div className="text-center pt-6 border-t border-white/5">
           <p className="text-text-muted text-xs font-body">
             &copy; 2026 Franck The Solution — TactOpsUSA LLC. All rights
             reserved. Lic# A 1900001 – B 1900003
