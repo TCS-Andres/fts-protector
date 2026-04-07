@@ -59,11 +59,11 @@ export default function WorkshopSection() {
         </div>
 
         {/* Workshop banner image */}
-        <div className="animate-on-scroll mb-16 rounded-lg overflow-hidden aspect-[16/7]">
+        <div className="animate-on-scroll mb-16 max-w-3xl mx-auto rounded-lg overflow-hidden">
           <img
             src="/images/08_seminar_stage_speaking.png"
             alt="Franck presenting at a security seminar"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-auto rounded-lg"
           />
         </div>
 

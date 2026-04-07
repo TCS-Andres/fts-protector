@@ -1,12 +1,15 @@
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden noise-bg">
-      {/* Background placeholder */}
+      {/* Background image */}
       <div className="absolute inset-0 bg-bg-primary">
+        <img
+          src="/images/01_vip_escort_red_carpet.png"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover object-[center_20%] opacity-40"
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-        {/* Placeholder for hero image — replace src with actual image */}
-        <div className="absolute inset-0 bg-[url('/images/01_vip_escort_red_carpet.png')] bg-cover bg-top bg-fixed opacity-40" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-32 lg:py-0 w-full">
