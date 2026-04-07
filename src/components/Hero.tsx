@@ -13,9 +13,9 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-32 lg:py-0 w-full">
-        <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-16">
+        <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
           {/* Text content */}
-          <div className="lg:flex-1 text-center lg:text-left">
+          <div className="md:flex-1 text-center md:text-left">
             <p className="hero-animate hero-animate-1 text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-6 font-body">
               Franck The Solution Presents
             </p>
@@ -52,14 +52,23 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Logo badge */}
-          <div className="hero-animate hero-animate-1 lg:flex-shrink-0">
+          {/* Logo badge — tablet & desktop only (side by side) */}
+          <div className="hero-animate hero-animate-1 hidden md:block md:flex-shrink-0">
             <img
               src="/logo.png"
               alt="Franck The Solution"
-              className="w-[140px] h-[140px] sm:w-[160px] sm:h-[160px] lg:w-[400px] lg:h-[400px] xl:w-[460px] xl:h-[460px] object-contain drop-shadow-[0_0_40px_rgba(196,30,30,0.3)]"
+              className="md:w-[320px] md:h-[320px] lg:w-[480px] lg:h-[480px] xl:w-[540px] xl:h-[540px] object-contain drop-shadow-[0_0_40px_rgba(196,30,30,0.3)]"
             />
           </div>
+        </div>
+
+        {/* Logo badge — mobile only (below text, centered) */}
+        <div className="hero-animate hero-animate-1 md:hidden mt-8 flex justify-center">
+          <img
+            src="/logo.png"
+            alt="Franck The Solution"
+            className="w-[240px] h-[240px] object-contain drop-shadow-[0_0_40px_rgba(196,30,30,0.3)]"
+          />
         </div>
       </div>
 

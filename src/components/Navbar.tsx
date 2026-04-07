@@ -32,7 +32,7 @@ export default function Navbar() {
           <img
             src="/logo.png"
             alt="Franck The Solution"
-            className="h-[70px] w-auto"
+            className="h-[90px] lg:h-[70px] w-auto"
           />
         </a>
 
