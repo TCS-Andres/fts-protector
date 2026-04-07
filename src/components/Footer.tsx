@@ -26,12 +26,12 @@ export default function Footer() {
               eprotectionvip.com
             </a>
             <a
-              href="https://floridadefensivetraining.com"
+              href="https://www.skool.com/defensivetactics/about?ref=5872d5e010f741d2a991a3878f95b264"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-secondary hover:text-white transition-colors font-body"
             >
-              floridadefensivetraining.com
+              Online Training (Skool)
             </a>
             <a
               href="https://instagram.com/FranckTheSolution"

@@ -41,7 +41,7 @@ export default function Hero() {
               </a>
               <p className="mt-4">
                 <a
-                  href="https://floridadefensivetraining.com"
+                  href="https://www.skool.com/defensivetactics/about?ref=5872d5e010f741d2a991a3878f95b264"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-text-secondary text-sm hover:underline transition-colors hover:text-white font-body"
