@@ -10,14 +10,15 @@ export default function AudienceSection() {
 
         <div className="grid lg:grid-cols-2 gap-8 stagger-children">
           {/* Real Estate Card */}
-          <div className="animate-on-scroll bg-bg-card p-10 rounded-lg border border-white/5 hover:translate-y-[-4px] hover:shadow-xl transition-all duration-300">
-            <div className="mb-6">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="text-accent-red">
-                <rect x="4" y="10" width="32" height="26" rx="2" stroke="currentColor" strokeWidth="2" fill="none" />
-                <path d="M4 18h32M16 10V4h8v6" stroke="currentColor" strokeWidth="2" />
-                <circle cx="20" cy="26" r="4" stroke="currentColor" strokeWidth="2" fill="none" />
-              </svg>
+          <div className="animate-on-scroll bg-bg-card rounded-lg border border-white/5 overflow-hidden hover:translate-y-[-4px] hover:shadow-xl transition-all duration-300">
+            <div className="aspect-[16/9] overflow-hidden">
+              <img
+                src="/images/11_school_safety_presentation.png"
+                alt="Safety presentation for professionals"
+                className="w-full h-full object-cover"
+              />
             </div>
+            <div className="p-10">
             <h3 className="font-heading text-2xl lg:text-3xl font-bold uppercase mb-4 text-white">
               For Realtors & Agents
             </h3>
@@ -40,16 +41,19 @@ export default function AudienceSection() {
             >
               Book for your brokerage &rarr;
             </a>
+            </div>
           </div>
 
           {/* Civilians Card */}
-          <div className="animate-on-scroll bg-bg-card p-10 rounded-lg border border-white/5 hover:translate-y-[-4px] hover:shadow-xl transition-all duration-300">
-            <div className="mb-6">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="text-accent-red">
-                <path d="M20 4C12 4 6 12 6 18c0 10 14 18 14 18s14-8 14-18C34 12 28 4 20 4z" stroke="currentColor" strokeWidth="2" fill="none" />
-                <path d="M15 20l3 3 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
+          <div className="animate-on-scroll bg-bg-card rounded-lg border border-white/5 overflow-hidden hover:translate-y-[-4px] hover:shadow-xl transition-all duration-300">
+            <div className="aspect-[16/9] overflow-hidden">
+              <img
+                src="/images/17_walking_downtown_miami.png"
+                alt="Walking through downtown Miami"
+                className="w-full h-full object-cover"
+              />
             </div>
+            <div className="p-10">
             <h3 className="font-heading text-2xl lg:text-3xl font-bold uppercase mb-4 text-white">
               For Everyday Protectors
             </h3>
@@ -70,6 +74,7 @@ export default function AudienceSection() {
             >
               Reserve your spot &rarr;
             </a>
+            </div>
           </div>
         </div>
       </div>

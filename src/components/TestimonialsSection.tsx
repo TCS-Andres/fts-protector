@@ -21,7 +21,12 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section id="testimonials" className="bg-bg-primary py-20 lg:py-28 relative noise-bg">
+    <section id="testimonials" className="bg-bg-primary py-20 lg:py-28 relative noise-bg overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-[url('/images/02_suv_motorcade_arrival.png')] bg-cover bg-center opacity-10" />
+        <div className="absolute inset-0 bg-black/80" />
+      </div>
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">

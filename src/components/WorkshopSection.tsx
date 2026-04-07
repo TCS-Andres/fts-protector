@@ -58,6 +58,15 @@ export default function WorkshopSection() {
           </p>
         </div>
 
+        {/* Workshop banner image */}
+        <div className="animate-on-scroll mb-16 rounded-lg overflow-hidden aspect-[21/9]">
+          <img
+            src="/images/08_seminar_stage_speaking.png"
+            alt="Franck presenting at a security seminar"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
         {/* Cards grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20 stagger-children">
           {workshopCards.map((card) => (

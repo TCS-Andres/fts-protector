@@ -5,12 +5,12 @@ export default function ProblemSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Real Estate Column */}
           <div className="animate-on-scroll">
-            <div className="mb-6">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" className="text-accent-red">
-                <path d="M24 4L4 20h6v20h28V20h6L24 4z" stroke="currentColor" strokeWidth="2" fill="none" />
-                <path d="M20 44V32h8v12" stroke="currentColor" strokeWidth="2" />
-                <circle cx="32" cy="26" r="2" fill="currentColor" />
-              </svg>
+            <div className="aspect-[16/9] rounded-lg overflow-hidden mb-8">
+              <img
+                src="/images/03_hotel_lobby_advance.png"
+                alt="Hotel lobby security advance"
+                className="w-full h-full object-cover"
+              />
             </div>
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase mb-6 text-white">
               Your Showing Could Be Your Last
@@ -27,11 +27,12 @@ export default function ProblemSection() {
 
           {/* Civilians Column */}
           <div className="animate-on-scroll">
-            <div className="mb-6">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" className="text-accent-red">
-                <path d="M24 4C14 4 8 14 8 22c0 12 16 22 16 22s16-10 16-22C40 14 34 4 24 4z" stroke="currentColor" strokeWidth="2" fill="none" />
-                <path d="M24 14v10M19 19h10" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-              </svg>
+            <div className="aspect-[16/9] rounded-lg overflow-hidden mb-8">
+              <img
+                src="/images/19_emergency_extraction.png"
+                alt="Emergency extraction scenario"
+                className="w-full h-full object-cover"
+              />
             </div>
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase mb-6 text-white">
               You Protect Someone Every Day

@@ -1,6 +1,11 @@
 export default function OnlineTrainingSection() {
   return (
-    <section className="bg-bg-secondary py-16 lg:py-20 relative noise-bg">
+    <section className="bg-bg-secondary py-16 lg:py-20 relative noise-bg overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-[url('/images/04_nightclub_vip_section.png')] bg-cover bg-center opacity-15" />
+        <div className="absolute inset-0 bg-black/75" />
+      </div>
       <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-12 text-center animate-on-scroll">
         <h3 className="font-heading text-2xl lg:text-3xl font-bold uppercase text-white mb-4">
           Can&apos;t Make It in Person?

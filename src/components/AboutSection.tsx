@@ -19,16 +19,10 @@ export default function AboutSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               {/* Replace with actual portrait */}
               <img
-                src="/franck-portrait.jpg"
+                src="/images/16_professional_headshot_studio.png"
                 alt="Franck Pala — Executive Protection Specialist"
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).style.display = "none";
-                }}
               />
-              <div className="absolute inset-0 flex items-center justify-center text-text-muted text-sm uppercase tracking-wider">
-                <span className="bg-bg-card/80 px-4 py-2 rounded">Portrait Photo</span>
-              </div>
             </div>
           </div>
 
