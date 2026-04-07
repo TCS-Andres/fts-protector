@@ -34,7 +34,7 @@ export default function RegistrationSection() {
     <section id="register" className="relative py-20 lg:py-28 overflow-hidden">
       {/* Background with overlay */}
       <div className="absolute inset-0 bg-bg-primary">
-        <div className="absolute inset-0 bg-[url('/images/10_corporate_hr_training.png')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/images/10_corporate_hr_training.png')] bg-cover bg-top opacity-20" />
         <div className="absolute inset-0 bg-black/85" />
       </div>
 

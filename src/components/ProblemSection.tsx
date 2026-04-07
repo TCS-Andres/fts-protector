@@ -5,11 +5,11 @@ export default function ProblemSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Real Estate Column */}
           <div className="animate-on-scroll">
-            <div className="aspect-[16/9] rounded-lg overflow-hidden mb-8">
+            <div className="aspect-[4/3] rounded-lg overflow-hidden mb-8">
               <img
                 src="/images/03_hotel_lobby_advance.png"
                 alt="Hotel lobby security advance"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase mb-6 text-white">
@@ -27,11 +27,11 @@ export default function ProblemSection() {
 
           {/* Civilians Column */}
           <div className="animate-on-scroll">
-            <div className="aspect-[16/9] rounded-lg overflow-hidden mb-8">
+            <div className="aspect-[4/3] rounded-lg overflow-hidden mb-8">
               <img
                 src="/images/19_emergency_extraction.png"
                 alt="Emergency extraction scenario"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase mb-6 text-white">

@@ -21,7 +21,7 @@ export default function AboutSection() {
               <img
                 src="/images/16_professional_headshot_studio.png"
                 alt="Franck Pala — Executive Protection Specialist"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
           </div>

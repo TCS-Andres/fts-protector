@@ -3,7 +3,7 @@ export default function OnlineTrainingSection() {
     <section className="bg-bg-secondary py-16 lg:py-20 relative noise-bg overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('/images/04_nightclub_vip_section.png')] bg-cover bg-center opacity-15" />
+        <div className="absolute inset-0 bg-[url('/images/04_nightclub_vip_section.png')] bg-cover bg-top opacity-15" />
         <div className="absolute inset-0 bg-black/75" />
       </div>
       <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-12 text-center animate-on-scroll">

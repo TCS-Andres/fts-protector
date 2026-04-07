@@ -11,11 +11,11 @@ export default function AudienceSection() {
         <div className="grid lg:grid-cols-2 gap-8 stagger-children">
           {/* Real Estate Card */}
           <div className="animate-on-scroll bg-bg-card rounded-lg border border-white/5 overflow-hidden hover:translate-y-[-4px] hover:shadow-xl transition-all duration-300">
-            <div className="aspect-[16/9] overflow-hidden">
+            <div className="aspect-[3/2] overflow-hidden">
               <img
                 src="/images/11_school_safety_presentation.png"
                 alt="Safety presentation for professionals"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
             <div className="p-10">
@@ -46,11 +46,11 @@ export default function AudienceSection() {
 
           {/* Civilians Card */}
           <div className="animate-on-scroll bg-bg-card rounded-lg border border-white/5 overflow-hidden hover:translate-y-[-4px] hover:shadow-xl transition-all duration-300">
-            <div className="aspect-[16/9] overflow-hidden">
+            <div className="aspect-[3/2] overflow-hidden">
               <img
                 src="/images/17_walking_downtown_miami.png"
                 alt="Walking through downtown Miami"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
             <div className="p-10">
