@@ -1,7 +1,7 @@
 "use client";
 
 const credentials = [
-  "French Special Forces",
+  "Special Units Instructor Contractor",
   "Professional Boxer",
   "25+ Years Active",
   "Licensed Security",
@@ -37,7 +37,7 @@ export default function AboutSection() {
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed mb-8 font-body">
               Franck Pala is not a YouTube self-defense instructor. He is a
               working executive protection specialist with over 25 years of
-              operational experience spanning French Special Forces training,
+              operational experience spanning Special Units Instructor Contractor training,
               professional boxing, international protection details, fugitive
               recovery, and law enforcement instruction. He has protected
               executives, trained government agencies, and operated across
