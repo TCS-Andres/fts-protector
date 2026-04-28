@@ -15,22 +15,22 @@ export default function RegistrationSection() {
             ⚡ Limited-Time Early Bird
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-4">
-            Lock In $97 Before May 5
+            Lock In $97 Before May 5
           </h2>
           <p className="text-accent-gold text-sm uppercase tracking-[3px] font-bold font-body mb-6">
-            🔒 Only 16 spots available
+            🔒 Only 16 spots available
           </p>
           <p className="text-text-secondary text-lg mb-12 font-body">
             One workshop. Two hours. The skills you need to actually protect
             the people you love.
             <br />
-            <span className="text-white font-bold">Save $100 when you register before May 5.</span>
+            <span className="text-white font-bold">Save $100 when you register before May 5.</span>
           </p>
         </div>
 
         <div className="animate-on-scroll bg-bg-card/80 backdrop-blur p-8 pt-14 lg:p-12 lg:pt-12 rounded-lg border-2 border-accent-red shadow-[0_0_60px_rgba(196,30,30,0.3)] relative overflow-hidden">
           <div className="absolute top-0 right-0 bg-accent-red text-white text-xs font-bold uppercase tracking-[2px] px-4 py-2 font-body">
-            Ends May 5
+            Ends May 5
           </div>
 
           <div className="flex items-baseline justify-center gap-4 mb-3">
@@ -42,7 +42,7 @@ export default function RegistrationSection() {
             </span>
           </div>
           <p className="text-accent-gold text-base uppercase tracking-[2px] font-bold mb-6 font-body">
-            Save $100 — Today Only Through May 5
+            Save $100 — Today Only Through May 5
           </p>
 
           <div className="mb-8">
@@ -56,7 +56,7 @@ export default function RegistrationSection() {
             <li className="flex items-start gap-3 text-text-secondary font-body">
               <span className="text-accent-red flex-shrink-0 mt-1">✓</span>
               <span>
-                <span className="text-white font-bold">Saturday, May 9, 2026</span> · 9:00 AM – 11:00 AM (2 hours)
+                <span className="text-white font-bold">Saturday, May 9, 2026</span> · 9:00 AM – 11:00 AM (2 hours)
               </span>
             </li>
             <li className="flex items-start gap-3 text-text-secondary font-body">
@@ -79,7 +79,7 @@ export default function RegistrationSection() {
             {[
               "Hands-on personal protection training",
               "Materials, follow-up resources & certificate of completion",
-              "Only 16 spots available — first come, first served",
+              "Only 16 spots available — first come, first served",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3 text-text-secondary font-body">
                 <span className="text-accent-red flex-shrink-0 mt-1">✓</span>
@@ -108,7 +108,7 @@ export default function RegistrationSection() {
           </p>
 
           <p className="text-text-secondary text-sm mt-6 font-body border-t border-white/10 pt-6">
-            After May 5, the price returns to <span className="text-white font-bold">$197 per person</span>.
+            After May 5, the price returns to <span className="text-white font-bold">$197 per person</span>.
           </p>
         </div>
 

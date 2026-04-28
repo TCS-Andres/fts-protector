@@ -96,7 +96,7 @@ export default function Navbar() {
             onClick={() => setMobileOpen(false)}
             className="mt-4 px-10 py-4 bg-accent-red text-white text-lg font-bold uppercase tracking-[2px] rounded hover:bg-accent-red-dark transition-all duration-300"
           >
-            $97 Early Bird — Until May 5
+            $97 Early Bird — Until May 5
           </a>
         </div>
       )}
