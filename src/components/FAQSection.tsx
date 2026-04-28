@@ -29,9 +29,14 @@ const faqs = [
       "Absolutely. Couples and groups are encouraged. Group rates available for teams of 15+.",
   },
   {
-    question: "Our brokerage already has a safety policy.",
+    question: "I've never trained for anything like this before.",
     answer:
-      "That's great — and most safety policies are solid on paper. But when was the last time your agents physically practiced what to do when they're alone in an empty house and the client blocks the doorway? This workshop turns policy into muscle memory.",
+      "Good — most attendees haven't. This workshop assumes you have zero background. The whole point is that everyday people, regardless of age, gender, or fitness, can become genuinely capable protectors in a short amount of time. You'll leave knowing things you didn't know you didn't know.",
+  },
+  {
+    question: "Why should I bring my spouse or my kids' parent?",
+    answer:
+      "Because protection is a team. The people closest to you should be on the same page about how you move through threats together — who reacts first, where to go, how to communicate. Couples and families train together so they don't end up working against each other when seconds matter. Group rates available for 15+.",
   },
 ];
 

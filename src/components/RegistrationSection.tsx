@@ -16,9 +16,10 @@ export default function RegistrationSection() {
             Lock In $97 Before May 5
           </h2>
           <p className="text-text-secondary text-lg mb-12 font-body">
-            One workshop. Two hours. Skills that last a lifetime.
+            One workshop. Two hours. The skills you need to actually protect
+            the people you love.
             <br />
-            <span className="text-white font-bold">Save $100 when you register today.</span>
+            <span className="text-white font-bold">Save $100 when you register before May 5.</span>
           </p>
         </div>
 

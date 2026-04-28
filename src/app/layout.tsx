@@ -20,7 +20,8 @@ export const metadata: Metadata = {
   keywords: [
     "self defense workshop",
     "personal safety training",
-    "real estate agent safety",
+    "family protection",
+    "everyone is a protector",
     "executive protection",
     "Franck Pala",
     "FrancktheSolution",

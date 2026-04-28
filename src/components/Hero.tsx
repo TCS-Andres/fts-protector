@@ -32,10 +32,11 @@ export default function Hero() {
             </h1>
 
             <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-10 max-w-2xl font-body">
-              A 2-hour hands-on personal safety workshop built on 25 years of
-              real-world executive protection experience. No martial arts
-              background needed. No fitness requirements. Just real skills that
-              could save your life.
+              Your wife, your husband, your kids, your parents — someone in
+              your life is counting on you to keep them safe. A 2-hour
+              hands-on workshop built on 25 years of real-world executive
+              protection. No martial arts background. No fitness
+              requirements. Just the skills that turn instinct into action.
             </p>
 
             <div className="hero-animate hero-animate-3">

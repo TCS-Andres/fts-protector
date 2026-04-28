@@ -20,14 +20,14 @@ const workshopCards = [
       "Tested, biomechanically sound techniques for defending yourself when everything else fails. Works for any fitness level.",
   },
   {
-    title: "Real Estate Scenario Training",
+    title: "Everyday Scenario Training",
     description:
-      "Specific drills for open houses, solo showings, lockbox appointments, and vacant properties.",
+      "Drills for the moments that actually happen — parking lots, gas stations, hotel hallways, ride-shares, and crowded public spaces.",
   },
   {
     title: "Family Protection Mindset",
     description:
-      "How to protect your family in public, while traveling, and in everyday situations.",
+      "How to position, react, and lead the people you love through threats — at home, in transit, on vacation, and in everyday outings.",
   },
 ];
 
