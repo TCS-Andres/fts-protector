@@ -31,10 +31,24 @@ const workshopCards = [
   },
 ];
 
-const logistics = [
+import { videos } from "@/lib/videos";
+
+type LogisticsItem = {
+  icon: string;
+  label: string;
+  value: string;
+  href?: string;
+};
+
+const logistics: LogisticsItem[] = [
+  { icon: "📅", label: "Date", value: "Saturday, May 9, 2026" },
   { icon: "⏱", label: "Duration", value: "3 Hours (9:00 AM – 12:00 PM)" },
-  { icon: "📅", label: "Day", value: "Saturday Morning" },
-  { icon: "📍", label: "Location", value: "South Florida (Miami / Broward — venue confirmed upon registration)" },
+  {
+    icon: "📍",
+    label: "Location",
+    value: "KO Zone — South Florida",
+    href: "https://maps.app.goo.gl/bH4ikCfB4YRGFELp6",
+  },
   { icon: "💰", label: "Regular Price", value: "$197 per person (after May 5)" },
   { icon: "📦", label: "Includes", value: "Hands-on training, materials, follow-up resources, and certificate of completion" },
   { icon: "💪", label: "Fitness Level", value: "No requirements — scaled to every participant" },
@@ -69,7 +83,7 @@ export default function WorkshopSection() {
               preload="metadata"
               poster="/images/08_seminar_stage_speaking.png"
               className="w-full h-auto bg-black"
-              src="/videos/pitch.mp4#t=0.1"
+              src={`${videos.pitch}#t=0.1`}
             />
           </div>
         </div>
@@ -147,7 +161,20 @@ export default function WorkshopSection() {
                   <span className="text-text-muted text-xs uppercase tracking-[2px] font-body">
                     {item.label}
                   </span>
-                  <p className="text-white text-base font-body">{item.value}</p>
+                  {item.href ? (
+                    <p className="text-white text-base font-body">
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline decoration-accent-red/60 underline-offset-4 hover:text-accent-red transition-colors"
+                      >
+                        {item.value}
+                      </a>
+                    </p>
+                  ) : (
+                    <p className="text-white text-base font-body">{item.value}</p>
+                  )}
                 </div>
               </div>
             ))}

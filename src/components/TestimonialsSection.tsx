@@ -1,11 +1,13 @@
 "use client";
 
+import { videos } from "@/lib/videos";
+
 const testimonialVideos = [
-  { src: "/videos/testimonial_1.mp4" },
-  { src: "/videos/testimonial_2.mp4" },
-  { src: "/videos/testimonial_3.mp4" },
-  { src: "/videos/testimonial_4.mp4" },
-  { src: "/videos/testimonial_5.mp4" },
+  { src: videos.testimonial1 },
+  { src: videos.testimonial2 },
+  { src: videos.testimonial3 },
+  { src: videos.testimonial4 },
+  { src: videos.testimonial5 },
 ];
 
 export default function TestimonialsSection() {

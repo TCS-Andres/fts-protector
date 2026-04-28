@@ -12,12 +12,12 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-32 lg:py-0 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-40 pb-20 lg:pt-32 lg:pb-12 w-full">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
           {/* Text content */}
           <div className="md:flex-1 text-center md:text-left">
             <p className="hero-animate hero-animate-1 text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-6 font-body">
-              Franck The Solution Presents
+              FrancktheSolution Presents
             </p>
 
             <div className="hero-animate hero-animate-1 inline-flex items-center gap-2 mb-6 px-4 py-2 bg-accent-red/15 border border-accent-red/40 rounded-full">
@@ -51,6 +51,19 @@ export default function Hero() {
                 <span className="line-through text-text-muted/70">$197</span>{" "}
                 <span className="text-accent-gold font-bold">$97</span> until May 5
               </p>
+              <p className="text-white text-sm mt-4 font-body">
+                <span className="text-accent-gold font-bold">📅 Saturday, May 9, 2026</span> · 9 AM – 12 PM
+                <br />
+                📍{" "}
+                <a
+                  href="https://maps.app.goo.gl/bH4ikCfB4YRGFELp6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-accent-red/60 underline-offset-4 hover:text-accent-red transition-colors"
+                >
+                  KO Zone — South Florida
+                </a>
+              </p>
               <p className="mt-4">
                 <a
                   href="https://www.skool.com/defensivetactics/about?ref=5872d5e010f741d2a991a3878f95b264"
@@ -67,8 +80,8 @@ export default function Hero() {
           {/* Logo badge — tablet & desktop only (side by side) */}
           <div className="hero-animate hero-animate-1 hidden md:block md:flex-shrink-0">
             <img
-              src="/logo.png"
-              alt="Franck The Solution"
+              src="/logo.svg"
+              alt="FrancktheSolution"
               className="md:w-[320px] md:h-[320px] lg:w-[480px] lg:h-[480px] xl:w-[540px] xl:h-[540px] object-contain drop-shadow-[0_0_40px_rgba(196,30,30,0.3)]"
             />
           </div>

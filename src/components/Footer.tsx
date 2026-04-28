@@ -5,12 +5,12 @@ export default function Footer() {
         {/* Large stacked logo */}
         <div className="flex flex-col items-center mb-12">
           <img
-            src="/logo.png"
-            alt="Franck The Solution"
+            src="/logo.svg"
+            alt="FrancktheSolution"
             className="w-[200px] h-[200px] lg:w-[160px] lg:h-[160px] object-contain drop-shadow-[0_0_30px_rgba(196,30,30,0.2)]"
           />
           <span className="mt-4 text-white text-lg font-heading uppercase tracking-[4px]">
-            Franck The Solution
+            FrancktheSolution
           </span>
         </div>
 
@@ -75,7 +75,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="text-center pt-6 border-t border-white/5">
           <p className="text-text-muted text-xs font-body">
-            &copy; 2026 Franck The Solution — TactOpsUSA LLC. All rights
+            &copy; 2026 FrancktheSolution — TactOpsUSA LLC. All rights
             reserved. Lic# A 1900001 – B 1900003
           </p>
         </div>

@@ -40,10 +40,29 @@ export default function RegistrationSection() {
           </p>
 
           <ul className="text-left max-w-md mx-auto mb-8 space-y-3">
+            <li className="flex items-start gap-3 text-text-secondary font-body">
+              <span className="text-accent-red flex-shrink-0 mt-1">✓</span>
+              <span>
+                <span className="text-white font-bold">Saturday, May 9, 2026</span> · 9:00 AM – 12:00 PM (3 hours)
+              </span>
+            </li>
+            <li className="flex items-start gap-3 text-text-secondary font-body">
+              <span className="text-accent-red flex-shrink-0 mt-1">📍</span>
+              <span>
+                Held at{" "}
+                <a
+                  href="https://maps.app.goo.gl/bH4ikCfB4YRGFELp6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white font-bold underline decoration-accent-red/60 underline-offset-4 hover:text-accent-red transition-colors"
+                >
+                  KO Zone
+                </a>{" "}
+                — South Florida (view on map)
+              </span>
+            </li>
             {[
-              "3 hours of hands-on personal protection training",
-              "Saturday morning, 9:00 AM – 12:00 PM",
-              "South Florida (Miami / Broward) — venue confirmed upon registration",
+              "Hands-on personal protection training",
               "Materials, follow-up resources & certificate of completion",
               "Limited to 15 attendees per workshop",
             ].map((item) => (

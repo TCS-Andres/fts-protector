@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Everyone Is a Protector | Franck The Solution",
+  title: "Everyone Is a Protector | FrancktheSolution",
   description:
     "A 3-hour hands-on personal safety workshop by Franck Pala. 25+ years of executive protection experience. Train like an elite. No martial arts background needed.",
   keywords: [
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     "real estate agent safety",
     "executive protection",
     "Franck Pala",
-    "Franck The Solution",
+    "FrancktheSolution",
     "South Florida self defense",
   ],
   openGraph: {
-    title: "Everyone Is a Protector | Franck The Solution",
+    title: "Everyone Is a Protector | FrancktheSolution",
     description:
       "A 3-hour hands-on personal safety workshop built on 25 years of real-world executive protection experience.",
     type: "website",
