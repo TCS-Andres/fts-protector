@@ -13,10 +13,16 @@ const inter = Inter({
   variable: "--font-body",
 });
 
+const SITE_TITLE = "Everyone Is a Protector — Self-Defense Workshops";
+const SITE_DESCRIPTION =
+  "Everyone is a protector. Whether it's your spouse, your kids, or your parents — someone in your life is counting on you. Join FrancktheSolution's 2-hour hands-on self-defense workshop in Miami, built on 25 years of real-world executive protection experience. May 9, 2026 at KO Zone Miami. $97 early bird through May 5.";
+const SITE_OG_IMAGE_ALT =
+  "Franck Pala protecting a client on the red carpet — FrancktheSolution self-defense workshops";
+
 export const metadata: Metadata = {
-  title: "Everyone Is a Protector | FrancktheSolution",
-  description:
-    "A 2-hour hands-on personal safety workshop by Franck Pala. 25+ years of executive protection experience. Train like an elite. No martial arts background needed.",
+  metadataBase: new URL("https://fts-protector.vercel.app"),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
   keywords: [
     "self defense workshop",
     "personal safety training",
@@ -25,13 +31,34 @@ export const metadata: Metadata = {
     "executive protection",
     "Franck Pala",
     "FrancktheSolution",
+    "Miami self defense",
     "South Florida self defense",
   ],
   openGraph: {
-    title: "Everyone Is a Protector | FrancktheSolution",
-    description:
-      "A 2-hour hands-on personal safety workshop built on 25 years of real-world executive protection experience.",
     type: "website",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    siteName: "FrancktheSolution",
+    locale: "en_US",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: SITE_OG_IMAGE_ALT,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: [
+      {
+        url: "/twitter-image.png",
+        alt: SITE_OG_IMAGE_ALT,
+      },
+    ],
   },
 };
 
