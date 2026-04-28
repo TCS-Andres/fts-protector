@@ -20,9 +20,12 @@ export default function Hero() {
               FrancktheSolution Presents
             </p>
 
-            <div className="hero-animate hero-animate-1 inline-flex items-center gap-2 mb-6 px-4 py-2 bg-accent-red/15 border border-accent-red/40 rounded-full">
-              <span className="text-accent-red text-xs uppercase tracking-[2px] font-bold font-body">
+            <div className="hero-animate hero-animate-1 flex flex-wrap items-center justify-center md:justify-start gap-2 mb-6">
+              <span className="inline-flex items-center px-4 py-2 bg-accent-red/15 border border-accent-red/40 rounded-full text-accent-red text-xs uppercase tracking-[2px] font-bold font-body">
                 ⚡ Early Bird $97 — Reg $197 — Ends May 5
+              </span>
+              <span className="inline-flex items-center px-4 py-2 bg-accent-gold/15 border border-accent-gold/40 rounded-full text-accent-gold text-xs uppercase tracking-[2px] font-bold font-body">
+                🔒 Only 16 Spots Available
               </span>
             </div>
 
