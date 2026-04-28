@@ -58,13 +58,21 @@ export default function WorkshopSection() {
           </p>
         </div>
 
-        {/* Workshop banner image */}
-        <div className="animate-on-scroll mb-16 max-w-3xl mx-auto rounded-lg overflow-hidden">
-          <img
-            src="/images/08_seminar_stage_speaking.png"
-            alt="Franck presenting at a security seminar"
-            className="w-full h-auto rounded-lg"
-          />
+        {/* Featured pitch video */}
+        <div className="animate-on-scroll mb-16 max-w-3xl mx-auto">
+          <p className="text-accent-gold text-xs uppercase tracking-[3px] font-bold mb-4 font-body text-center">
+            A Message From Franck
+          </p>
+          <div className="rounded-lg overflow-hidden border-t-2 border-accent-red shadow-2xl">
+            <video
+              controls
+              playsInline
+              preload="metadata"
+              poster="/images/08_seminar_stage_speaking.png"
+              className="w-full h-auto bg-black"
+              src="/videos/pitch.mp4#t=0.1"
+            />
+          </div>
         </div>
 
         {/* Cards grid */}

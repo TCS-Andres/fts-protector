@@ -1,11 +1,11 @@
 "use client";
 
-{/* All 3 slots use the same video for now. To swap in future videos,
-    just change the src path for slots 2 and 3. */}
 const testimonialVideos = [
   { src: "/videos/testimonial_1.mp4" },
-  { src: "/videos/testimonial_1.mp4" },
-  { src: "/videos/testimonial_1.mp4" },
+  { src: "/videos/testimonial_2.mp4" },
+  { src: "/videos/testimonial_3.mp4" },
+  { src: "/videos/testimonial_4.mp4" },
+  { src: "/videos/testimonial_5.mp4" },
 ];
 
 export default function TestimonialsSection() {
@@ -23,7 +23,7 @@ export default function TestimonialsSection() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 stagger-children">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 stagger-children">
           {testimonialVideos.map((video, i) => (
             <div
               key={i}
