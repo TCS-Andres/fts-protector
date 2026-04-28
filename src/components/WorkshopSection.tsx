@@ -31,12 +31,14 @@ const workshopCards = [
   },
 ];
 
+import CountdownTimer from "./CountdownTimer";
 import { videos } from "@/lib/videos";
 
 type LogisticsItem = {
   icon: string;
   label: string;
   value: string;
+  subValue?: string;
   href?: string;
 };
 
@@ -46,7 +48,8 @@ const logistics: LogisticsItem[] = [
   {
     icon: "📍",
     label: "Location",
-    value: "KO Zone — South Florida",
+    value: "KO Zone — Miami",
+    subValue: "301 NW 54th Street, Miami, FL 33127",
     href: "https://maps.app.goo.gl/bH4ikCfB4YRGFELp6",
   },
   { icon: "💰", label: "Regular Price", value: "$197 per person (after May 5)" },
@@ -151,7 +154,7 @@ export default function WorkshopSection() {
           <div className="absolute top-0 right-0 bg-accent-red text-white text-xs font-bold uppercase tracking-[2px] px-4 py-2 font-body">
             Limited Time
           </div>
-          <div className="p-8 lg:p-10 text-center">
+          <div className="p-8 pt-14 lg:p-10 lg:pt-12 text-center">
             <p className="text-accent-gold text-xs uppercase tracking-[3px] font-bold mb-3 font-body">
               ⚡ Early Bird Pricing — Ends May 5
             </p>
@@ -169,11 +172,17 @@ export default function WorkshopSection() {
             <p className="text-text-secondary text-sm font-body mb-6">
               After May 5, the price returns to <span className="text-white font-bold">$197 per person</span>.
             </p>
+            <div className="mb-6">
+              <p className="text-text-muted text-xs uppercase tracking-[2px] mb-3 font-body">
+                Offer ends in
+              </p>
+              <CountdownTimer variant="card" />
+            </div>
             <a
               href="https://buy.stripe.com/4gM28taUN8oB3mE56457W03"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-10 py-4 bg-accent-red text-white text-base font-bold uppercase tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_30px_rgba(196,30,30,0.6)] hover:scale-[1.03] transition-all duration-300"
+              className="inline-block px-6 sm:px-10 py-4 bg-accent-red text-white text-sm sm:text-base font-bold uppercase tracking-[2px] sm:tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_30px_rgba(196,30,30,0.6)] hover:scale-[1.03] transition-all duration-300"
             >
               Lock In $97 Now
             </a>
@@ -200,16 +209,23 @@ export default function WorkshopSection() {
                     {item.label}
                   </span>
                   {item.href ? (
-                    <p className="text-white text-base font-body">
-                      <a
-                        href={item.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline decoration-accent-red/60 underline-offset-4 hover:text-accent-red transition-colors"
-                      >
-                        {item.value}
-                      </a>
-                    </p>
+                    <>
+                      <p className="text-white text-base font-body">
+                        <a
+                          href={item.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline decoration-accent-red/60 underline-offset-4 hover:text-accent-red transition-colors"
+                        >
+                          {item.value}
+                        </a>
+                      </p>
+                      {item.subValue && (
+                        <p className="text-text-secondary text-sm font-body mt-1">
+                          {item.subValue}
+                        </p>
+                      )}
+                    </>
                   ) : (
                     <p className="text-white text-base font-body">{item.value}</p>
                   )}
