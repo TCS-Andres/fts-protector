@@ -30,7 +30,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-3">
           <img
-            src="/logo.svg"
+            src="/logo.png"
             alt="FrancktheSolution"
             className="h-[90px] lg:h-[70px] w-auto"
           />

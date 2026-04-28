@@ -80,7 +80,7 @@ export default function Hero() {
           {/* Logo badge — tablet & desktop only (side by side) */}
           <div className="hero-animate hero-animate-1 hidden md:block md:flex-shrink-0">
             <img
-              src="/logo.svg"
+              src="/logo.png"
               alt="FrancktheSolution"
               className="md:w-[320px] md:h-[320px] lg:w-[480px] lg:h-[480px] xl:w-[540px] xl:h-[540px] object-contain drop-shadow-[0_0_40px_rgba(196,30,30,0.3)]"
             />

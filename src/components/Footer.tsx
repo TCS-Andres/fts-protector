@@ -5,7 +5,7 @@ export default function Footer() {
         {/* Large stacked logo */}
         <div className="flex flex-col items-center mb-12">
           <img
-            src="/logo.svg"
+            src="/logo.png"
             alt="FrancktheSolution"
             className="w-[200px] h-[200px] lg:w-[160px] lg:h-[160px] object-contain drop-shadow-[0_0_30px_rgba(196,30,30,0.2)]"
           />
