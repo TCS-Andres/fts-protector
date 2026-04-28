@@ -21,6 +21,8 @@ const logistics: LogisticsItem[] = [
   { icon: "💰", label: "Regular Price", value: "$197 per person (after May 5)" },
   { icon: "📦", label: "Includes", value: "Hands-on training, materials, follow-up resources, and certificate of completion" },
   { icon: "💪", label: "Fitness Level", value: "No requirements — scaled to every participant" },
+  { icon: "👕", label: "What to Wear", value: "Comfortable, closed-toe sneakers, jeans, and a belt" },
+  { icon: "🪑", label: "Capacity", value: "Only 16 spots — first come, first served" },
 ];
 
 export default function WorkshopDetailsSection() {
@@ -34,6 +36,9 @@ export default function WorkshopDetailsSection() {
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase mb-4 text-white">
             Lock In $97 Before May 5
           </h2>
+          <p className="text-accent-gold text-sm uppercase tracking-[3px] font-bold font-body">
+            🔒 Only 16 spots available — first come, first served
+          </p>
         </div>
 
         {/* Early-bird pricing banner */}
@@ -130,7 +135,7 @@ export default function WorkshopDetailsSection() {
             rel="noopener noreferrer"
             className="inline-block px-10 py-4 bg-accent-red text-white text-base font-bold uppercase tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_20px_rgba(196,30,30,0.4)] hover:scale-[1.03] transition-all duration-300"
           >
-            Claim $97 Early Bird — Limited to 15 Spots
+            Claim $97 Early Bird — Only 16 Spots
           </a>
           <p className="text-text-muted text-sm mt-4 font-body">
             Price returns to $197 after May 5. Group rates available for teams of 15+.

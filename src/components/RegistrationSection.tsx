@@ -17,6 +17,9 @@ export default function RegistrationSection() {
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-4">
             Lock In $97 Before May 5
           </h2>
+          <p className="text-accent-gold text-sm uppercase tracking-[3px] font-bold font-body mb-6">
+            🔒 Only 16 spots available
+          </p>
           <p className="text-text-secondary text-lg mb-12 font-body">
             One workshop. Two hours. The skills you need to actually protect
             the people you love.
@@ -76,13 +79,20 @@ export default function RegistrationSection() {
             {[
               "Hands-on personal protection training",
               "Materials, follow-up resources & certificate of completion",
-              "Limited to 15 attendees per workshop",
+              "Only 16 spots available — first come, first served",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3 text-text-secondary font-body">
                 <span className="text-accent-red flex-shrink-0 mt-1">✓</span>
                 <span>{item}</span>
               </li>
             ))}
+            <li className="flex items-start gap-3 text-text-secondary font-body">
+              <span className="text-accent-red flex-shrink-0 mt-1">👕</span>
+              <span>
+                <span className="text-white font-bold">What to wear:</span>{" "}
+                comfortable, closed-toe sneakers, jeans, and a belt
+              </span>
+            </li>
           </ul>
 
           <a

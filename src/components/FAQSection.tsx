@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "What should I wear?",
     answer:
-      "Athletic clothes and closed-toe shoes. Water will be provided. No equipment needed.",
+      "Come in comfortable, closed-toe sneakers, jeans, and a belt — that's the uniform for this workshop. Water will be provided. No equipment needed.",
   },
   {
     question: "Can I bring a friend?",
