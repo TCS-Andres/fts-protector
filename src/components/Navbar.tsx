@@ -31,7 +31,7 @@ export default function Navbar() {
         <a href="#" className="flex items-center gap-3">
           <img
             src="/logo.png"
-            alt="Franck The Solution"
+            alt="FrancktheSolution"
             className="h-[90px] lg:h-[70px] w-auto"
           />
         </a>
@@ -48,10 +48,12 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#register"
+            href="https://buy.stripe.com/4gM28taUN8oB3mE56457W03"
+            target="_blank"
+            rel="noopener noreferrer"
             className="ml-4 px-6 py-2.5 bg-accent-red text-white text-sm font-bold uppercase tracking-[2px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_20px_rgba(196,30,30,0.4)] transition-all duration-300 hover:scale-[1.03]"
           >
-            Secure Your Spot
+            $97 Early Bird
           </a>
         </div>
 
@@ -88,11 +90,13 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#register"
+            href="https://buy.stripe.com/4gM28taUN8oB3mE56457W03"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setMobileOpen(false)}
             className="mt-4 px-10 py-4 bg-accent-red text-white text-lg font-bold uppercase tracking-[2px] rounded hover:bg-accent-red-dark transition-all duration-300"
           >
-            Secure Your Spot
+            $97 Early Bird — Until May 5
           </a>
         </div>
       )}
