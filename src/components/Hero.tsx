@@ -20,6 +20,12 @@ export default function Hero() {
               Franck The Solution Presents
             </p>
 
+            <div className="hero-animate hero-animate-1 inline-flex items-center gap-2 mb-6 px-4 py-2 bg-accent-red/15 border border-accent-red/40 rounded-full">
+              <span className="text-accent-red text-xs uppercase tracking-[2px] font-bold font-body">
+                ⚡ Early Bird $97 — Reg $197 — Ends May 5
+              </span>
+            </div>
+
             <h1 className="hero-animate hero-animate-2 font-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold uppercase leading-[0.95] mb-6 text-white">
               Everyone Is
               <br />a Protector
@@ -34,11 +40,17 @@ export default function Hero() {
 
             <div className="hero-animate hero-animate-3">
               <a
-                href="#register"
+                href="https://buy.stripe.com/4gM28taUN8oB3mE56457W03"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block px-10 py-4 bg-accent-red text-white text-base font-bold uppercase tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_20px_rgba(196,30,30,0.4)] hover:scale-[1.03] transition-all duration-300 min-h-[50px]"
               >
-                Secure Your Spot
+                Claim $97 Early Bird
               </a>
+              <p className="text-text-muted text-xs uppercase tracking-[2px] mt-3 font-body">
+                <span className="line-through text-text-muted/70">$197</span>{" "}
+                <span className="text-accent-gold font-bold">$97</span> until May 5
+              </p>
               <p className="mt-4">
                 <a
                   href="https://www.skool.com/defensivetactics/about?ref=5872d5e010f741d2a991a3878f95b264"

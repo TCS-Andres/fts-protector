@@ -1,35 +1,4 @@
-"use client";
-
-import { useState } from "react";
-
 export default function RegistrationSection() {
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const form = e.currentTarget;
-    const data = new FormData(form);
-
-    // Build mailto link as temporary solution
-    const name = data.get("name");
-    const email = data.get("email");
-    const phone = data.get("phone");
-    const type = data.get("type");
-
-    const subject = encodeURIComponent(
-      `Workshop Registration — ${name}`
-    );
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nType: ${type}\n\nPlease confirm my spot in the next "Everyone Is a Protector" workshop.`
-    );
-
-    window.open(
-      `mailto:franck@eprotectionvip.com?subject=${subject}&body=${body}`,
-      "_blank"
-    );
-    setSubmitted(true);
-  };
-
   return (
     <section id="register" className="relative py-20 lg:py-28 overflow-hidden">
       {/* Background with overlay */}
@@ -38,99 +7,80 @@ export default function RegistrationSection() {
         <div className="absolute inset-0 bg-black/85" />
       </div>
 
-      <div className="relative z-10 max-w-2xl mx-auto px-6 lg:px-12 text-center">
+      <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-12 text-center">
         <div className="animate-on-scroll">
+          <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+            ⚡ Limited-Time Early Bird
+          </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-4">
-            Your Safety Is Not Negotiable
+            Lock In $97 Before May 5
           </h2>
           <p className="text-text-secondary text-lg mb-12 font-body">
-            One workshop. Three hours. Skills that last a lifetime. Secure your
-            spot in the next training session before it fills up.
+            One workshop. Three hours. Skills that last a lifetime.
+            <br />
+            <span className="text-white font-bold">Save $100 when you register today.</span>
           </p>
         </div>
 
-        {submitted ? (
-          <div className="animate-on-scroll bg-bg-card/80 backdrop-blur p-10 rounded-lg border border-accent-red/20">
-            <h3 className="font-heading text-2xl font-bold uppercase text-white mb-4">
-              Thank You
-            </h3>
-            <p className="text-text-secondary font-body">
-              Your email client should open with a pre-filled registration
-              message. If it didn&apos;t, email{" "}
-              <a
-                href="mailto:franck@eprotectionvip.com"
-                className="text-accent-red hover:underline"
-              >
-                franck@eprotectionvip.com
-              </a>{" "}
-              directly to confirm your spot.
-            </p>
+        <div className="animate-on-scroll bg-bg-card/80 backdrop-blur p-8 lg:p-12 rounded-lg border-2 border-accent-red shadow-[0_0_60px_rgba(196,30,30,0.3)] relative overflow-hidden">
+          <div className="absolute top-0 right-0 bg-accent-red text-white text-xs font-bold uppercase tracking-[2px] px-4 py-2 font-body">
+            Ends May 5
           </div>
-        ) : (
-          <form
-            onSubmit={handleSubmit}
-            className="animate-on-scroll bg-bg-card/60 backdrop-blur p-8 lg:p-10 rounded-lg border border-white/5 space-y-5"
+
+          <div className="flex items-baseline justify-center gap-4 mb-3">
+            <span className="text-text-muted text-3xl lg:text-5xl line-through font-heading font-bold">
+              $197
+            </span>
+            <span className="font-heading text-7xl lg:text-8xl font-bold text-white">
+              $97
+            </span>
+          </div>
+          <p className="text-accent-gold text-base uppercase tracking-[2px] font-bold mb-6 font-body">
+            Save $100 — Today Only Through May 5
+          </p>
+
+          <ul className="text-left max-w-md mx-auto mb-8 space-y-3">
+            {[
+              "3 hours of hands-on personal protection training",
+              "Saturday morning, 9:00 AM – 12:00 PM",
+              "South Florida (Miami / Broward) — venue confirmed upon registration",
+              "Materials, follow-up resources & certificate of completion",
+              "Limited to 15 attendees per workshop",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-3 text-text-secondary font-body">
+                <span className="text-accent-red flex-shrink-0 mt-1">✓</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <a
+            href="https://buy.stripe.com/4gM28taUN8oB3mE56457W03"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block w-full sm:w-auto px-12 py-5 bg-accent-red text-white text-lg font-bold uppercase tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_40px_rgba(196,30,30,0.6)] hover:scale-[1.03] transition-all duration-300"
           >
-            <input
-              type="text"
-              name="name"
-              placeholder="Full Name"
-              required
-              className="w-full px-5 py-4 bg-bg-primary/80 border border-white/10 rounded text-white placeholder:text-text-muted focus:outline-none focus:border-accent-red/50 transition-colors font-body"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              required
-              className="w-full px-5 py-4 bg-bg-primary/80 border border-white/10 rounded text-white placeholder:text-text-muted focus:outline-none focus:border-accent-red/50 transition-colors font-body"
-            />
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
-              className="w-full px-5 py-4 bg-bg-primary/80 border border-white/10 rounded text-white placeholder:text-text-muted focus:outline-none focus:border-accent-red/50 transition-colors font-body"
-            />
-            <select
-              name="type"
-              required
-              defaultValue=""
-              className="w-full px-5 py-4 bg-bg-primary/80 border border-white/10 rounded text-white focus:outline-none focus:border-accent-red/50 transition-colors font-body appearance-none"
-            >
-              <option value="" disabled className="text-text-muted">
-                I am a...
-              </option>
-              <option value="Real Estate Professional">
-                Real Estate Professional
-              </option>
-              <option value="Concerned Civilian">Concerned Civilian</option>
-              <option value="Parent / Family">Parent / Family</option>
-              <option value="HR / Corporate">HR / Corporate</option>
-              <option value="Other">Other</option>
-            </select>
+            Claim My $97 Spot Now
+          </a>
+          <p className="text-text-muted text-xs uppercase tracking-[2px] mt-4 font-body">
+            Secure checkout via Stripe
+          </p>
 
-            <button
-              type="submit"
-              className="w-full py-4 bg-accent-red text-white text-base font-bold uppercase tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_20px_rgba(196,30,30,0.4)] hover:scale-[1.03] transition-all duration-300 min-h-[54px] cursor-pointer"
-            >
-              Secure Your Spot
-            </button>
+          <p className="text-text-secondary text-sm mt-6 font-body border-t border-white/10 pt-6">
+            After May 5, the price returns to <span className="text-white font-bold">$197 per person</span>.
+          </p>
+        </div>
 
-            <p className="text-text-muted text-sm font-body">
-              $300 per person | Saturday mornings | South Florida
-            </p>
-            <p className="text-text-muted text-xs font-body">
-              Group rates available for teams of 15+. Contact{" "}
-              <a
-                href="mailto:franck@eprotectionvip.com"
-                className="text-accent-red hover:underline"
-              >
-                franck@eprotectionvip.com
-              </a>{" "}
-              for details.
-            </p>
-          </form>
-        )}
+        <p className="text-text-muted text-xs font-body mt-8">
+          Group rates available for teams of 15+. Contact{" "}
+          <a
+            href="mailto:franck@eprotectionvip.com"
+            className="text-accent-red hover:underline"
+          >
+            franck@eprotectionvip.com
+          </a>{" "}
+          for details.
+        </p>
       </div>
     </section>
   );

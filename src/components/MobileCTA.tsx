@@ -22,10 +22,12 @@ export default function MobileCTA() {
     <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 mobile-cta-enter">
       <div className="bg-accent-red px-4 py-3 flex items-center gap-2">
         <a
-          href="#register"
+          href="https://buy.stripe.com/4gM28taUN8oB3mE56457W03"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex-1 text-center text-white font-bold uppercase tracking-[2px] text-sm py-2"
         >
-          Secure Your Spot
+          $97 Early Bird — Until May 5
         </a>
         <button
           onClick={() => setDismissed(true)}

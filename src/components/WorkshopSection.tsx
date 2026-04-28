@@ -35,10 +35,9 @@ const logistics = [
   { icon: "⏱", label: "Duration", value: "3 Hours (9:00 AM – 12:00 PM)" },
   { icon: "📅", label: "Day", value: "Saturday Morning" },
   { icon: "📍", label: "Location", value: "South Florida (Miami / Broward — venue confirmed upon registration)" },
-  { icon: "💰", label: "Investment", value: "$300 per person" },
+  { icon: "💰", label: "Regular Price", value: "$197 per person (after May 5)" },
   { icon: "📦", label: "Includes", value: "Hands-on training, materials, follow-up resources, and certificate of completion" },
   { icon: "💪", label: "Fitness Level", value: "No requirements — scaled to every participant" },
-  { icon: "🎯", label: "Early-Bird", value: "$250 for the first 5 registrations" },
 ];
 
 export default function WorkshopSection() {
@@ -95,6 +94,43 @@ export default function WorkshopSection() {
         {/* Red divider */}
         <div className="h-[1px] bg-accent-red/30 mb-16 red-line" />
 
+        {/* Early-bird pricing banner */}
+        <div className="animate-on-scroll max-w-3xl mx-auto mb-16 relative overflow-hidden rounded-lg border-2 border-accent-red bg-gradient-to-br from-accent-red/20 via-bg-card to-bg-card shadow-[0_0_40px_rgba(196,30,30,0.25)]">
+          <div className="absolute top-0 right-0 bg-accent-red text-white text-xs font-bold uppercase tracking-[2px] px-4 py-2 font-body">
+            Limited Time
+          </div>
+          <div className="p-8 lg:p-10 text-center">
+            <p className="text-accent-gold text-xs uppercase tracking-[3px] font-bold mb-3 font-body">
+              ⚡ Early Bird Pricing — Ends May 5
+            </p>
+            <div className="flex items-baseline justify-center gap-4 mb-2">
+              <span className="text-text-muted text-3xl lg:text-4xl line-through font-heading font-bold">
+                $197
+              </span>
+              <span className="font-heading text-6xl lg:text-7xl font-bold text-white">
+                $97
+              </span>
+            </div>
+            <p className="text-white text-base font-body mb-2">
+              Save <span className="text-accent-gold font-bold">$100</span> when you register before May 5
+            </p>
+            <p className="text-text-secondary text-sm font-body mb-6">
+              After May 5, the price returns to <span className="text-white font-bold">$197 per person</span>.
+            </p>
+            <a
+              href="https://buy.stripe.com/4gM28taUN8oB3mE56457W03"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-10 py-4 bg-accent-red text-white text-base font-bold uppercase tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_30px_rgba(196,30,30,0.6)] hover:scale-[1.03] transition-all duration-300"
+            >
+              Lock In $97 Now
+            </a>
+            <p className="text-text-muted text-xs uppercase tracking-[2px] mt-4 font-body">
+              Secure checkout via Stripe
+            </p>
+          </div>
+        </div>
+
         {/* Logistics */}
         <div className="max-w-3xl mx-auto animate-on-scroll">
           <h3 className="font-heading text-2xl font-bold uppercase mb-8 text-white text-center">
@@ -121,13 +157,15 @@ export default function WorkshopSection() {
         {/* CTA */}
         <div className="text-center mt-16 animate-on-scroll">
           <a
-            href="#register"
+            href="https://buy.stripe.com/4gM28taUN8oB3mE56457W03"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-10 py-4 bg-accent-red text-white text-base font-bold uppercase tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_20px_rgba(196,30,30,0.4)] hover:scale-[1.03] transition-all duration-300"
           >
-            Secure Your Spot — Limited to 15 Attendees
+            Claim $97 Early Bird — Limited to 15 Spots
           </a>
           <p className="text-text-muted text-sm mt-4 font-body">
-            Group rates available for teams of 15+. Contact us to discuss.
+            Price returns to $197 after May 5. Group rates available for teams of 15+.
           </p>
         </div>
       </div>

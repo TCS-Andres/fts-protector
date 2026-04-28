@@ -4,9 +4,9 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "$300 is a lot for a class.",
+    question: "Is the price really $97?",
     answer:
-      "This isn't a class — it's 3 hours of hands-on personal protection training with a professional who has guarded executives, trained law enforcement, and served in Special Forces. Most people spend $300 on a weekend without thinking about it. This is $300 for skills that could protect you and your family for the rest of your life.",
+      "Yes — but only until May 5. The early-bird rate is $97 per person, and after that the price returns to $197. This isn't a class — it's 3 hours of hands-on personal protection training with a professional who has guarded executives, trained law enforcement, and served in Special Forces. Most people spend more than this on a weekend without thinking about it. Lock in $97 before May 5.",
   },
   {
     question: "I'm not athletic / I'm out of shape.",

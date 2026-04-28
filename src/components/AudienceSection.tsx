@@ -36,10 +36,12 @@ export default function AudienceSection() {
               people something.
             </p>
             <a
-              href="#register"
+              href="https://buy.stripe.com/4gM28taUN8oB3mE56457W03"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-accent-red text-sm uppercase tracking-[2px] font-bold hover:text-white transition-colors font-body"
             >
-              Book for your brokerage &rarr;
+              Book for your brokerage — $97 early bird &rarr;
             </a>
             </div>
           </div>
@@ -69,10 +71,12 @@ export default function AudienceSection() {
               65 have completed this training. You will leave with real skills.
             </p>
             <a
-              href="#register"
+              href="https://buy.stripe.com/4gM28taUN8oB3mE56457W03"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-accent-red text-sm uppercase tracking-[2px] font-bold hover:text-white transition-colors font-body"
             >
-              Reserve your spot &rarr;
+              Reserve your spot — $97 early bird &rarr;
             </a>
             </div>
           </div>
