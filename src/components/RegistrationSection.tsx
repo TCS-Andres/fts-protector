@@ -16,7 +16,7 @@ export default function RegistrationSection() {
             Lock In $97 Before May 5
           </h2>
           <p className="text-text-secondary text-lg mb-12 font-body">
-            One workshop. Three hours. Skills that last a lifetime.
+            One workshop. Two hours. Skills that last a lifetime.
             <br />
             <span className="text-white font-bold">Save $100 when you register today.</span>
           </p>
@@ -43,7 +43,7 @@ export default function RegistrationSection() {
             <li className="flex items-start gap-3 text-text-secondary font-body">
               <span className="text-accent-red flex-shrink-0 mt-1">✓</span>
               <span>
-                <span className="text-white font-bold">Saturday, May 9, 2026</span> · 9:00 AM – 12:00 PM (3 hours)
+                <span className="text-white font-bold">Saturday, May 9, 2026</span> · 9:00 AM – 11:00 AM (2 hours)
               </span>
             </li>
             <li className="flex items-start gap-3 text-text-secondary font-body">

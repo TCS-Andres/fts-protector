@@ -42,7 +42,7 @@ type LogisticsItem = {
 
 const logistics: LogisticsItem[] = [
   { icon: "📅", label: "Date", value: "Saturday, May 9, 2026" },
-  { icon: "⏱", label: "Duration", value: "3 Hours (9:00 AM – 12:00 PM)" },
+  { icon: "⏱", label: "Duration", value: "2 Hours (9:00 AM – 11:00 AM)" },
   {
     icon: "📍",
     label: "Location",
@@ -63,7 +63,7 @@ export default function WorkshopSection() {
             The Workshop
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase mb-4 text-white">
-            3 Hours That Could Change Your Life
+            2 Hours That Could Change Your Life
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
             A hands-on, physical training experience — not a lecture, not a
@@ -71,20 +71,58 @@ export default function WorkshopSection() {
           </p>
         </div>
 
-        {/* Featured pitch video */}
-        <div className="animate-on-scroll mb-16 max-w-3xl mx-auto">
-          <p className="text-accent-gold text-xs uppercase tracking-[3px] font-bold mb-4 font-body text-center">
+        {/* Featured pitch video — single column on mobile, 2-column on desktop */}
+        <div className="animate-on-scroll mb-16 max-w-5xl mx-auto">
+          <p className="text-accent-gold text-xs uppercase tracking-[3px] font-bold mb-6 font-body text-center lg:text-left">
             A Message From Franck
           </p>
-          <div className="rounded-lg overflow-hidden border-t-2 border-accent-red shadow-2xl">
-            <video
-              controls
-              playsInline
-              preload="metadata"
-              poster="/images/08_seminar_stage_speaking.png"
-              className="w-full h-auto bg-black"
-              src={`${videos.pitch}#t=0.1`}
-            />
+          <div className="grid lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-8 lg:gap-12 items-center">
+            {/* Video — 9:16 vertical, constrained width on desktop */}
+            <div className="mx-auto w-full max-w-xs lg:max-w-none rounded-lg overflow-hidden border-t-2 border-accent-red shadow-2xl">
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                poster="/images/08_seminar_stage_speaking.png"
+                className="w-full aspect-[9/16] object-cover bg-black"
+                src={`${videos.pitch}#t=0.1`}
+              />
+            </div>
+
+            {/* Value points */}
+            <div>
+              <h3 className="font-heading text-2xl lg:text-3xl font-bold uppercase text-white mb-6 leading-tight">
+                Why This Workshop Is Different
+              </h3>
+              <ul className="space-y-4">
+                {[
+                  {
+                    title: "25 years on the front line",
+                    body: "Built on real-world executive protection experience — not theory, not YouTube clips.",
+                  },
+                  {
+                    title: "Hands-on, not a lecture",
+                    body: "You'll physically practice every technique. No PowerPoints. No sitting still.",
+                  },
+                  {
+                    title: "No fitness or martial arts required",
+                    body: "Tested, biomechanically sound techniques scaled to every body type and age.",
+                  },
+                  {
+                    title: "Skills you can use the next day",
+                    body: "Situational awareness, de-escalation, boundary setting, and self-defense fundamentals — all in 2 hours.",
+                  },
+                ].map((point) => (
+                  <li key={point.title} className="flex items-start gap-3">
+                    <span className="text-accent-red text-lg flex-shrink-0 leading-tight mt-1">▸</span>
+                    <div>
+                      <p className="text-white font-bold font-body">{point.title}</p>
+                      <p className="text-text-secondary text-sm font-body leading-relaxed">{point.body}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 
