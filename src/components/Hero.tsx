@@ -26,10 +26,13 @@ export default function Hero() {
               </span>
             </div>
 
-            <h1 className="hero-animate hero-animate-2 font-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold uppercase leading-[0.95] mb-6 text-white">
+            <h1 className="hero-animate hero-animate-2 font-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold uppercase leading-[0.95] mb-3 text-white">
               Everyone Is
               <br />a Protector
             </h1>
+            <p className="hero-animate hero-animate-2 text-white/90 text-base sm:text-lg lg:text-xl uppercase tracking-[3px] font-bold mb-6 font-body">
+              Self-Defense Workshops
+            </p>
 
             <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-10 max-w-2xl font-body">
               Your wife, your husband, your kids, your parents — someone in
@@ -62,7 +65,7 @@ export default function Hero() {
                   rel="noopener noreferrer"
                   className="underline decoration-accent-red/60 underline-offset-4 hover:text-accent-red transition-colors"
                 >
-                  KO Zone — South Florida
+                  KO Zone — Miami
                 </a>
               </p>
               <p className="mt-4">

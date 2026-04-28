@@ -39,6 +39,8 @@ export default function Home() {
         <OnlineTrainingSection />
       </main>
       <Footer />
+      {/* Spacer so the always-visible mobile sticky CTA doesn't cover footer content */}
+      <div className="h-20 lg:hidden" aria-hidden />
       <MobileCTA />
     </>
   );

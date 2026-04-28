@@ -1,3 +1,5 @@
+import CountdownTimer from "./CountdownTimer";
+
 export default function RegistrationSection() {
   return (
     <section id="register" className="relative py-20 lg:py-28 overflow-hidden">
@@ -23,7 +25,7 @@ export default function RegistrationSection() {
           </p>
         </div>
 
-        <div className="animate-on-scroll bg-bg-card/80 backdrop-blur p-8 lg:p-12 rounded-lg border-2 border-accent-red shadow-[0_0_60px_rgba(196,30,30,0.3)] relative overflow-hidden">
+        <div className="animate-on-scroll bg-bg-card/80 backdrop-blur p-8 pt-14 lg:p-12 lg:pt-12 rounded-lg border-2 border-accent-red shadow-[0_0_60px_rgba(196,30,30,0.3)] relative overflow-hidden">
           <div className="absolute top-0 right-0 bg-accent-red text-white text-xs font-bold uppercase tracking-[2px] px-4 py-2 font-body">
             Ends May 5
           </div>
@@ -39,6 +41,13 @@ export default function RegistrationSection() {
           <p className="text-accent-gold text-base uppercase tracking-[2px] font-bold mb-6 font-body">
             Save $100 — Today Only Through May 5
           </p>
+
+          <div className="mb-8">
+            <p className="text-text-muted text-xs uppercase tracking-[2px] mb-3 font-body">
+              Offer ends in
+            </p>
+            <CountdownTimer variant="card" />
+          </div>
 
           <ul className="text-left max-w-md mx-auto mb-8 space-y-3">
             <li className="flex items-start gap-3 text-text-secondary font-body">
@@ -57,9 +66,11 @@ export default function RegistrationSection() {
                   rel="noopener noreferrer"
                   className="text-white font-bold underline decoration-accent-red/60 underline-offset-4 hover:text-accent-red transition-colors"
                 >
-                  KO Zone
-                </a>{" "}
-                — South Florida (view on map)
+                  KO Zone — Miami
+                </a>
+                <span className="block text-xs text-text-muted mt-0.5">
+                  301 NW 54th Street, Miami, FL 33127
+                </span>
               </span>
             </li>
             {[
@@ -78,7 +89,7 @@ export default function RegistrationSection() {
             href="https://buy.stripe.com/4gM28taUN8oB3mE56457W03"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block w-full sm:w-auto px-12 py-5 bg-accent-red text-white text-lg font-bold uppercase tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_40px_rgba(196,30,30,0.6)] hover:scale-[1.03] transition-all duration-300"
+            className="inline-block w-full sm:w-auto px-6 sm:px-12 py-5 bg-accent-red text-white text-base sm:text-lg font-bold uppercase tracking-[2px] sm:tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_40px_rgba(196,30,30,0.6)] hover:scale-[1.03] transition-all duration-300"
           >
             Claim My $97 Spot Now
           </a>
