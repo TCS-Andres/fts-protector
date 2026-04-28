@@ -41,7 +41,7 @@ const stats = [
   { value: 25, suffix: "+", label: "Years of Protection Experience" },
   { value: 20, suffix: "K+", label: "Instagram Followers" },
   { value: 500, suffix: "+", label: "Professionals Trained" },
-  { value: 3, suffix: "", label: "Hour Hands-On Workshop" },
+  { value: 2, suffix: "", label: "Hour Hands-On Workshop" },
 ];
 
 export default function TrustBar() {

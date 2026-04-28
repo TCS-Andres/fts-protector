@@ -32,10 +32,11 @@ export default function Hero() {
             </h1>
 
             <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-10 max-w-2xl font-body">
-              A 3-hour hands-on personal safety workshop built on 25 years of
-              real-world executive protection experience. No martial arts
-              background needed. No fitness requirements. Just real skills that
-              could save your life.
+              Your wife, your husband, your kids, your parents — someone in
+              your life is counting on you to keep them safe. A 2-hour
+              hands-on workshop built on 25 years of real-world executive
+              protection. No martial arts background. No fitness
+              requirements. Just the skills that turn instinct into action.
             </p>
 
             <div className="hero-animate hero-animate-3">
@@ -52,7 +53,7 @@ export default function Hero() {
                 <span className="text-accent-gold font-bold">$97</span> until May 5
               </p>
               <p className="text-white text-sm mt-4 font-body">
-                <span className="text-accent-gold font-bold">📅 Saturday, May 9, 2026</span> · 9 AM – 12 PM
+                <span className="text-accent-gold font-bold">📅 Saturday, May 9, 2026</span> · 9 AM – 11 AM
                 <br />
                 📍{" "}
                 <a
