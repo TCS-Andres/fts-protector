@@ -5,6 +5,7 @@ import ProblemSection from "@/components/ProblemSection";
 import RedDivider from "@/components/RedDivider";
 import AboutSection from "@/components/AboutSection";
 import WorkshopSection from "@/components/WorkshopSection";
+import WorkshopDetailsSection from "@/components/WorkshopDetailsSection";
 import AudienceSection from "@/components/AudienceSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
@@ -23,15 +24,17 @@ export default function Home() {
         <Hero />
         <TrustBar />
         <RedDivider />
-        <ProblemSection />
+        <WorkshopSection />
         <RedDivider />
         <AboutSection />
         <RedDivider />
-        <WorkshopSection />
+        <WorkshopDetailsSection />
         <RedDivider />
         <AudienceSection />
         <RedDivider />
         <TestimonialsSection />
+        <RedDivider />
+        <ProblemSection />
         <RedDivider />
         <FAQSection />
         <RedDivider />

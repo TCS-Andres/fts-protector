@@ -60,7 +60,7 @@ export default function Hero() {
                 <br />
                 📍{" "}
                 <a
-                  href="https://maps.app.goo.gl/bH4ikCfB4YRGFELp6"
+                  href="https://maps.app.goo.gl/H6nH8Lnvpn6tE1M66"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline decoration-accent-red/60 underline-offset-4 hover:text-accent-red transition-colors"
