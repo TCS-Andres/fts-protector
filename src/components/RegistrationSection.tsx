@@ -15,7 +15,7 @@ export default function RegistrationSection() {
             ⚡ Limited-Time Early Bird
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-4">
-            Lock In $97 Before May 5
+            Lock In $147 Before May 31
           </h2>
           <p className="text-accent-gold text-sm uppercase tracking-[3px] font-bold font-body mb-6">
             🔒 Only 16 spots available
@@ -24,13 +24,13 @@ export default function RegistrationSection() {
             One workshop. Two hours. The skills you need to actually protect
             the people you love.
             <br />
-            <span className="text-white font-bold">Save $100 when you register before May 5.</span>
+            <span className="text-white font-bold">Save $50 when you register before May 31.</span>
           </p>
         </div>
 
         <div className="animate-on-scroll bg-bg-card/80 backdrop-blur p-8 pt-14 lg:p-12 lg:pt-12 rounded-lg border-2 border-accent-red shadow-[0_0_60px_rgba(196,30,30,0.3)] relative overflow-hidden">
           <div className="absolute top-0 right-0 bg-accent-red text-white text-xs font-bold uppercase tracking-[2px] px-4 py-2 font-body">
-            Ends May 5
+            Ends May 31
           </div>
 
           <div className="flex items-baseline justify-center gap-4 mb-3">
@@ -38,11 +38,11 @@ export default function RegistrationSection() {
               $197
             </span>
             <span className="font-heading text-7xl lg:text-8xl font-bold text-white">
-              $97
+              $147
             </span>
           </div>
           <p className="text-accent-gold text-base uppercase tracking-[2px] font-bold mb-6 font-body">
-            Save $100 — Today Only Through May 5
+            Save $50, Today Only Through May 31
           </p>
 
           <div className="mb-8">
@@ -56,7 +56,7 @@ export default function RegistrationSection() {
             <li className="flex items-start gap-3 text-text-secondary font-body">
               <span className="text-accent-red flex-shrink-0 mt-1">✓</span>
               <span>
-                <span className="text-white font-bold">Saturday, May 9, 2026</span> · 9:00 AM – 11:00 AM (2 hours)
+                <span className="text-white font-bold">Saturday, June 6, 2026</span> · 9:00 AM – 11:00 AM (2 hours)
               </span>
             </li>
             <li className="flex items-start gap-3 text-text-secondary font-body">
@@ -69,7 +69,7 @@ export default function RegistrationSection() {
                   rel="noopener noreferrer"
                   className="text-white font-bold underline decoration-accent-red/60 underline-offset-4 hover:text-accent-red transition-colors"
                 >
-                  KO Zone — Miami
+                  KO Zone, Miami
                 </a>
                 <span className="block text-xs text-text-muted mt-0.5">
                   301 NW 54th Street, Miami, FL 33127
@@ -78,8 +78,9 @@ export default function RegistrationSection() {
             </li>
             {[
               "Hands-on personal protection training",
+              "Bring your partner or family to train alongside you",
               "Materials, follow-up resources & certificate of completion",
-              "Only 16 spots available — first come, first served",
+              "Only 16 spots available, first come, first served",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3 text-text-secondary font-body">
                 <span className="text-accent-red flex-shrink-0 mt-1">✓</span>
@@ -96,19 +97,19 @@ export default function RegistrationSection() {
           </ul>
 
           <a
-            href="https://buy.stripe.com/4gM28taUN8oB3mE56457W03"
+            href="https://buy.stripe.com/9B65kF3sl0W96yQ1TS57W04"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block w-full sm:w-auto px-6 sm:px-12 py-5 bg-accent-red text-white text-base sm:text-lg font-bold uppercase tracking-[2px] sm:tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_40px_rgba(196,30,30,0.6)] hover:scale-[1.03] transition-all duration-300"
           >
-            Claim My $97 Spot Now
+            Claim My $147 Spot Now
           </a>
           <p className="text-text-muted text-xs uppercase tracking-[2px] mt-4 font-body">
             Secure checkout via Stripe
           </p>
 
           <p className="text-text-secondary text-sm mt-6 font-body border-t border-white/10 pt-6">
-            After May 5, the price returns to <span className="text-white font-bold">$197 per person</span>.
+            After May 31, the price returns to <span className="text-white font-bold">$197 per person</span>.
           </p>
         </div>
 

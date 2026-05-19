@@ -9,20 +9,20 @@ type LogisticsItem = {
 };
 
 const logistics: LogisticsItem[] = [
-  { icon: "📅", label: "Date", value: "Saturday, May 9, 2026" },
+  { icon: "📅", label: "Date", value: "Saturday, June 6, 2026" },
   { icon: "⏱", label: "Duration", value: "2 Hours (9:00 AM – 11:00 AM)" },
   {
     icon: "📍",
     label: "Location",
-    value: "KO Zone — Miami",
+    value: "KO Zone, Miami",
     subValue: "301 NW 54th Street, Miami, FL 33127",
     href: "https://maps.app.goo.gl/H6nH8Lnvpn6tE1M66",
   },
-  { icon: "💰", label: "Regular Price", value: "$197 per person (after May 5)" },
+  { icon: "💰", label: "Regular Price", value: "$197 per person (after May 31)" },
   { icon: "📦", label: "Includes", value: "Hands-on training, materials, follow-up resources, and certificate of completion" },
-  { icon: "💪", label: "Fitness Level", value: "No requirements — scaled to every participant" },
+  { icon: "💪", label: "Fitness Level", value: "No requirements, scaled to every participant" },
   { icon: "👕", label: "What to Wear", value: "Comfortable, closed-toe sneakers, jeans, and a belt" },
-  { icon: "🪑", label: "Capacity", value: "Only 16 spots — first come, first served" },
+  { icon: "🪑", label: "Capacity", value: "Only 16 spots, first come, first served" },
 ];
 
 export default function WorkshopDetailsSection() {
@@ -34,10 +34,10 @@ export default function WorkshopDetailsSection() {
             Pricing & Details
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase mb-4 text-white">
-            Lock In $97 Before May 5
+            Lock In $147 Before May 31
           </h2>
           <p className="text-accent-gold text-sm uppercase tracking-[3px] font-bold font-body">
-            🔒 Only 16 spots available — first come, first served
+            🔒 Only 16 spots available, first come, first served
           </p>
         </div>
 
@@ -48,21 +48,21 @@ export default function WorkshopDetailsSection() {
           </div>
           <div className="p-8 pt-14 lg:p-10 lg:pt-12 text-center">
             <p className="text-accent-gold text-xs uppercase tracking-[3px] font-bold mb-3 font-body">
-              ⚡ Early Bird Pricing — Ends May 5
+              ⚡ Early Bird Pricing, Ends May 31
             </p>
             <div className="flex items-baseline justify-center gap-4 mb-2">
               <span className="text-text-muted text-3xl lg:text-4xl line-through font-heading font-bold">
                 $197
               </span>
               <span className="font-heading text-6xl lg:text-7xl font-bold text-white">
-                $97
+                $147
               </span>
             </div>
             <p className="text-white text-base font-body mb-2">
-              Save <span className="text-accent-gold font-bold">$100</span> when you register before May 5
+              Save <span className="text-accent-gold font-bold">$50</span> when you register before May 31
             </p>
             <p className="text-text-secondary text-sm font-body mb-6">
-              After May 5, the price returns to <span className="text-white font-bold">$197 per person</span>.
+              After May 31, the price returns to <span className="text-white font-bold">$197 per person</span>.
             </p>
             <div className="mb-6">
               <p className="text-text-muted text-xs uppercase tracking-[2px] mb-3 font-body">
@@ -71,12 +71,12 @@ export default function WorkshopDetailsSection() {
               <CountdownTimer variant="card" />
             </div>
             <a
-              href="https://buy.stripe.com/4gM28taUN8oB3mE56457W03"
+              href="https://buy.stripe.com/9B65kF3sl0W96yQ1TS57W04"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-6 sm:px-10 py-4 bg-accent-red text-white text-sm sm:text-base font-bold uppercase tracking-[2px] sm:tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_30px_rgba(196,30,30,0.6)] hover:scale-[1.03] transition-all duration-300"
             >
-              Lock In $97 Now
+              Lock In $147 Now
             </a>
             <p className="text-text-muted text-xs uppercase tracking-[2px] mt-4 font-body">
               Secure checkout via Stripe
@@ -130,15 +130,15 @@ export default function WorkshopDetailsSection() {
         {/* CTA */}
         <div className="text-center mt-16 animate-on-scroll">
           <a
-            href="https://buy.stripe.com/4gM28taUN8oB3mE56457W03"
+            href="https://buy.stripe.com/9B65kF3sl0W96yQ1TS57W04"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-10 py-4 bg-accent-red text-white text-base font-bold uppercase tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_20px_rgba(196,30,30,0.4)] hover:scale-[1.03] transition-all duration-300"
           >
-            Claim $97 Early Bird — Only 16 Spots
+            Claim $147 Early Bird, Only 16 Spots
           </a>
           <p className="text-text-muted text-sm mt-4 font-body">
-            Price returns to $197 after May 5. Group rates available for teams of 15+.
+            Price returns to $197 after May 31. Group rates available for teams of 15+.
           </p>
         </div>
       </div>

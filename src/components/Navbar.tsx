@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
+  { label: "Workshop", href: "#workshop" },
   { label: "About", href: "#about" },
-  { label: "Workshop Details", href: "#workshop" },
-  { label: "Who It's For", href: "#audience" },
   { label: "Testimonials", href: "#testimonials" },
+  { label: "Boot Camp", href: "#bootcamp" },
   { label: "FAQ", href: "#faq" },
 ];
 
@@ -48,12 +48,12 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="https://buy.stripe.com/4gM28taUN8oB3mE56457W03"
+            href="https://buy.stripe.com/9B65kF3sl0W96yQ1TS57W04"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-4 px-6 py-2.5 bg-accent-red text-white text-sm font-bold uppercase tracking-[2px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_20px_rgba(196,30,30,0.4)] transition-all duration-300 hover:scale-[1.03]"
           >
-            $97 Early Bird
+            $147 Early Bird
           </a>
         </div>
 
@@ -90,13 +90,13 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="https://buy.stripe.com/4gM28taUN8oB3mE56457W03"
+            href="https://buy.stripe.com/9B65kF3sl0W96yQ1TS57W04"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMobileOpen(false)}
             className="mt-4 px-10 py-4 bg-accent-red text-white text-lg font-bold uppercase tracking-[2px] rounded hover:bg-accent-red-dark transition-all duration-300"
           >
-            $97 Early Bird — Until May 5
+            $147 Early Bird, Until May 31
           </a>
         </div>
       )}

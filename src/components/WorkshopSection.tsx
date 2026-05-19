@@ -24,12 +24,12 @@ const workshopCards = [
   {
     title: "Everyday Scenario Training",
     description:
-      "Drills for the moments that actually happen — parking lots, gas stations, hotel hallways, ride-shares, and crowded public spaces.",
+      "Drills for the moments that actually happen, parking lots, gas stations, hotel hallways, ride-shares, and crowded public spaces.",
   },
   {
     title: "Family Protection Mindset",
     description:
-      "How to position, react, and lead the people you love through threats — at home, in transit, on vacation, and in everyday outings.",
+      "How to position, react, and lead the people you love through threats, at home, in transit, on vacation, and in everyday outings.",
   },
 ];
 
@@ -45,18 +45,18 @@ export default function WorkshopSection() {
             2 Hours That Could Change Your Life
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
-            A hands-on, physical training experience — not a lecture, not a
+            A hands-on, physical training experience, not a lecture, not a
             PowerPoint. Real skills you can use the next day.
           </p>
         </div>
 
-        {/* Featured pitch video — single column on mobile, 2-column on desktop */}
+        {/* Featured pitch video, single column on mobile, 2-column on desktop */}
         <div className="animate-on-scroll mb-20 max-w-5xl mx-auto">
           <p className="text-accent-gold text-xs uppercase tracking-[3px] font-bold mb-6 font-body text-center lg:text-left">
             A Message From Franck
           </p>
           <div className="grid lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-8 lg:gap-12 items-center">
-            {/* Video — 9:16 vertical, constrained width on desktop */}
+            {/* Video, 9:16 vertical, constrained width on desktop */}
             <div className="mx-auto w-full max-w-xs lg:max-w-none rounded-lg overflow-hidden border-t-2 border-accent-red shadow-2xl">
               <video
                 controls
@@ -77,7 +77,7 @@ export default function WorkshopSection() {
                 {[
                   {
                     title: "25 years on the front line",
-                    body: "Built on real-world executive protection experience — not theory, not YouTube clips.",
+                    body: "Built on real-world executive protection experience, not theory, not YouTube clips.",
                   },
                   {
                     title: "Hands-on, not a lecture",
@@ -89,7 +89,7 @@ export default function WorkshopSection() {
                   },
                   {
                     title: "Skills you can use the next day",
-                    body: "Situational awareness, de-escalation, boundary setting, and self-defense fundamentals — all in 2 hours.",
+                    body: "Situational awareness, de-escalation, boundary setting, and self-defense fundamentals, all in 2 hours.",
                   },
                 ].map((point) => (
                   <li key={point.title} className="flex items-start gap-3">
@@ -114,8 +114,8 @@ export default function WorkshopSection() {
             What You Will Learn in This Workshop
           </h3>
           <p className="text-text-secondary text-base lg:text-lg max-w-2xl mx-auto font-body">
-            Six core areas of training — every one of them rehearsed, not
-            lectured — so you walk out with skills you can actually use.
+            Six core areas of training, every one of them rehearsed, not
+            lectured, so you walk out with skills you can actually use.
           </p>
         </div>
 

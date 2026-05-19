@@ -20,7 +20,7 @@ export default function AboutSection() {
               {/* Replace with actual portrait */}
               <img
                 src="/images/16_professional_headshot_studio.png"
-                alt="Franck Pala — Executive Protection Specialist"
+                alt="Franck Pala, Executive Protection Specialist"
                 className="w-full h-full object-cover object-top"
               />
             </div>
@@ -32,7 +32,7 @@ export default function AboutSection() {
               Your Instructor
             </p>
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase mb-6 text-white leading-tight">
-              Franck Pala — 25 Years of Real-World Protection
+              Franck Pala, 25 Years of Real-World Protection
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed mb-8 font-body">
               Franck Pala is not a YouTube self-defense instructor. He is a
@@ -44,8 +44,8 @@ export default function AboutSection() {
               continents.
             </p>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed mb-8 font-body">
-              His proprietary methodology is built on biomechanics — how the
-              human body actually moves under stress — not flashy techniques
+              His proprietary methodology is built on biomechanics, how the
+              human body actually moves under stress, not flashy techniques
               that look good on camera. When you train with Franck, you are
               learning from someone who has done it. Not someone who teaches
               about it.
