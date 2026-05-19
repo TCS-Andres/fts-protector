@@ -17,7 +17,7 @@ export default function ProblemSection() {
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed font-body">
               Your wife. Your husband. Your kids. Your mom. Your dad. Whoever
-              you love — they expect you to keep them safe. Not because you
+              you love, they expect you to keep them safe. Not because you
               asked for the role, but because you&apos;re the one they look at
               when something feels wrong. The instinct is already there. What
               most people are missing is the training to back it up. Hope is
@@ -38,13 +38,13 @@ export default function ProblemSection() {
               The World Changed. Most People Didn&apos;t.
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed font-body">
-              Threats that used to feel distant are now local — in your
+              Threats that used to feel distant are now local, in your
               parking lot, your hotel lobby, your kid&apos;s school pickup,
               your grocery store. And the self-defense content flooding your
               feed? Most of it will get you hurt. The techniques look good on
               camera and fail in real life. Being a protector isn&apos;t about
               fear. It&apos;s about being the calm, capable person in the room
-              when seconds matter — and that only comes from real training.
+              when seconds matter, and that only comes from real training.
             </p>
           </div>
         </div>

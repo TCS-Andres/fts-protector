@@ -75,7 +75,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="text-center pt-6 border-t border-white/5">
           <p className="text-text-muted text-xs font-body">
-            &copy; 2026 FrancktheSolution — TactOpsUSA LLC. All rights
+            &copy; 2026 FrancktheSolution, TactOpsUSA LLC. All rights
             reserved. Lic# A 1900001 – B 1900003
           </p>
         </div>

@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from "react";
 
-const DEADLINE_ISO = "2026-05-06T03:59:00Z";
+// Early-bird deadline: end of day Sunday, May 31, 2026 in US Eastern time.
+// EDT is UTC-4, so 11:59:59 PM ET = 03:59:59 UTC on the following day.
+const DEADLINE_ISO = "2026-06-01T03:59:59Z";
 
 function pad(n: number) {
   return n.toString().padStart(2, "0");

@@ -4,9 +4,9 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0 bg-bg-primary">
         <img
-          src="/images/01_vip_escort_red_carpet.png"
+          src="/images/hero_workshop_background.jpg"
           alt=""
-          className="absolute inset-0 w-full h-full object-cover object-[center_20%] opacity-40"
+          className="absolute inset-0 w-full h-full object-cover object-[center_30%] opacity-40"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
@@ -22,7 +22,7 @@ export default function Hero() {
 
             <div className="hero-animate hero-animate-1 flex flex-wrap items-center justify-center md:justify-start gap-2 mb-6">
               <span className="inline-flex items-center px-4 py-2 bg-accent-red/15 border border-accent-red/40 rounded-full text-accent-red text-xs uppercase tracking-[2px] font-bold font-body">
-                ⚡ Early Bird $97 — Reg $197 — Ends May 5
+                ⚡ Early Bird $147, Reg $197, Ends May 31
               </span>
               <span className="inline-flex items-center px-4 py-2 bg-accent-gold/15 border border-accent-gold/40 rounded-full text-accent-gold text-xs uppercase tracking-[2px] font-bold font-body">
                 🔒 Only 16 Spots Available
@@ -37,29 +37,33 @@ export default function Hero() {
               Self-Defense Workshops
             </p>
 
-            <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-10 max-w-2xl font-body">
-              Your wife, your husband, your kids, your parents — someone in
+            <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-6 max-w-2xl font-body">
+              Your wife, your husband, your kids, your parents. Someone in
               your life is counting on you to keep them safe. A 2-hour
               hands-on workshop built on 25 years of real-world executive
               protection. No martial arts background. No fitness
               requirements. Just the skills that turn instinct into action.
             </p>
+            <p className="hero-animate hero-animate-2 text-white text-base sm:text-lg leading-relaxed mb-10 max-w-2xl font-body">
+              <span className="font-bold text-accent-gold">Bring your partner. Bring your family.</span>{" "}
+              Train together so you protect together.
+            </p>
 
             <div className="hero-animate hero-animate-3">
               <a
-                href="https://buy.stripe.com/4gM28taUN8oB3mE56457W03"
+                href="https://buy.stripe.com/9B65kF3sl0W96yQ1TS57W04"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-10 py-4 bg-accent-red text-white text-base font-bold uppercase tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_20px_rgba(196,30,30,0.4)] hover:scale-[1.03] transition-all duration-300 min-h-[50px]"
               >
-                Claim $97 Early Bird
+                Claim $147 Early Bird
               </a>
               <p className="text-text-muted text-xs uppercase tracking-[2px] mt-3 font-body">
                 <span className="line-through text-text-muted/70">$197</span>{" "}
-                <span className="text-accent-gold font-bold">$97</span> until May 5
+                <span className="text-accent-gold font-bold">$147</span> until May 31
               </p>
               <p className="text-white text-sm mt-4 font-body">
-                <span className="text-accent-gold font-bold">📅 Saturday, May 9, 2026</span> · 9 AM – 11 AM
+                <span className="text-accent-gold font-bold">📅 Saturday, June 6, 2026</span> · 9 AM – 11 AM
                 <br />
                 📍{" "}
                 <a
@@ -68,7 +72,7 @@ export default function Hero() {
                   rel="noopener noreferrer"
                   className="underline decoration-accent-red/60 underline-offset-4 hover:text-accent-red transition-colors"
                 >
-                  KO Zone — Miami
+                  KO Zone, Miami
                 </a>
               </p>
               <p className="mt-4">
@@ -84,7 +88,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Logo badge — tablet & desktop only (side by side) */}
+          {/* Logo badge, tablet & desktop only (side by side) */}
           <div className="hero-animate hero-animate-1 hidden md:block md:flex-shrink-0">
             <img
               src="/logo.png"

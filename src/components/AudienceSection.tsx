@@ -4,9 +4,9 @@ const audiences = [
     alt: "A parent walking with family",
     title: "For Parents & Spouses",
     body1:
-      "You're already the protector. Your kids look at you when something feels off. Your partner trusts you to act if it goes bad. That responsibility doesn't go away because you're tired, untrained, or hoping nothing happens. This workshop gives you the tools to actually protect the people you love — at the park, in the parking lot, on vacation, at home.",
+      "You're already the protector. Your kids look at you when something feels off. Your partner trusts you to act if it goes bad. That responsibility doesn't go away because you're tired, untrained, or hoping nothing happens. This workshop gives you the tools to actually protect the people you love, at the park, in the parking lot, on vacation, at home.",
     body2:
-      "You don't need to be a fighter. You need to be prepared. Two hours of training is the difference between freezing and acting.",
+      "You don't need to be a fighter. You need to be prepared. Bring your spouse. Bring your kids. Two hours of training together is the difference between freezing and acting when seconds matter.",
     cta: "Train to protect your family",
   },
   {
@@ -14,10 +14,10 @@ const audiences = [
     alt: "Everyday people in a public space",
     title: "For Everyday Civilians",
     body1:
-      "You're a professional, a friend, a son or daughter, a neighbor. You move through the world every day — restaurants, gas stations, gyms, ride-shares, travel — and you have no idea what you'd actually do if something went wrong. Most people don't. The instinct kicks in, but the body has nothing to fall back on.",
+      "You're a professional, a friend, a son or daughter, a neighbor. You move through the world every day, restaurants, gas stations, gyms, ride-shares, travel, and you have no idea what you'd actually do if something went wrong. Most people don't. The instinct kicks in, but the body has nothing to fall back on.",
     body2:
-      "This isn't martial arts. It isn't theory. It's the muscle memory and situational awareness that working executive protection professionals rely on — taught in a way regular people can absorb in two hours.",
-    cta: "Reserve your spot — $97 early bird",
+      "This isn't martial arts. It isn't theory. It's the muscle memory and situational awareness that working executive protection professionals rely on, taught in a way regular people can absorb in two hours.",
+    cta: "Reserve your spot, $147 early bird",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function AudienceSection() {
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto mt-6 font-body">
             If there is anyone in your life you would step in front of a
-            threat for — this workshop is for you.
+            threat for, this workshop is for you.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export default function AudienceSection() {
                   {a.body2}
                 </p>
                 <a
-                  href="https://buy.stripe.com/4gM28taUN8oB3mE56457W03"
+                  href="https://buy.stripe.com/9B65kF3sl0W96yQ1TS57W04"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-accent-red text-sm uppercase tracking-[2px] font-bold hover:text-white transition-colors font-body"

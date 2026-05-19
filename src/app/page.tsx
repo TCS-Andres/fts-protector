@@ -7,7 +7,9 @@ import AboutSection from "@/components/AboutSection";
 import WorkshopSection from "@/components/WorkshopSection";
 import WorkshopDetailsSection from "@/components/WorkshopDetailsSection";
 import AudienceSection from "@/components/AudienceSection";
+import GallerySection from "@/components/GallerySection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import BootCampSection from "@/components/BootCampSection";
 import FAQSection from "@/components/FAQSection";
 import RegistrationSection from "@/components/RegistrationSection";
 import OnlineTrainingSection from "@/components/OnlineTrainingSection";
@@ -26,6 +28,8 @@ export default function Home() {
         <RedDivider />
         <WorkshopSection />
         <RedDivider />
+        <GallerySection />
+        <RedDivider />
         <AboutSection />
         <RedDivider />
         <WorkshopDetailsSection />
@@ -39,6 +43,7 @@ export default function Home() {
         <FAQSection />
         <RedDivider />
         <RegistrationSection />
+        <BootCampSection />
         <OnlineTrainingSection />
       </main>
       <Footer />

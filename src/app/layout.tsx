@@ -13,11 +13,11 @@ const inter = Inter({
   variable: "--font-body",
 });
 
-const SITE_TITLE = "Everyone Is a Protector — Self-Defense Workshops";
+const SITE_TITLE = "Everyone Is a Protector, Self-Defense Workshops";
 const SITE_DESCRIPTION =
-  "Everyone is a protector. Whether it's your spouse, your kids, or your parents — someone in your life is counting on you. Join FrancktheSolution's 2-hour hands-on self-defense workshop in Miami, built on 25 years of real-world executive protection experience. May 9, 2026 at KO Zone Miami. $97 early bird through May 5.";
+  "Everyone is a protector. Whether it's your spouse, your kids, or your parents, someone in your life is counting on you. Join FrancktheSolution's 2-hour hands-on self-defense workshop in Miami. Built on 25 years of real-world executive protection experience. Saturday, June 6, 2026 at KO Zone Miami. Bring your partner. Bring your family. $147 early bird through May 31, $197 after.";
 const SITE_OG_IMAGE_ALT =
-  "Franck Pala protecting a client on the red carpet — FrancktheSolution self-defense workshops";
+  "Hands-on self-defense training at the FrancktheSolution Everyone Is A Protector workshop in Miami";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://fts-protector.vercel.app"),
