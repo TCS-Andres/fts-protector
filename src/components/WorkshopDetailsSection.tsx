@@ -19,6 +19,7 @@ const logistics: LogisticsItem[] = [
     href: "https://maps.app.goo.gl/H6nH8Lnvpn6tE1M66",
   },
   { icon: "💰", label: "Regular Price", value: "$197 per person (after May 31)" },
+  { icon: "🎟️", label: "Plus One", value: "Bring a partner, family member, or friend at no extra cost" },
   { icon: "📦", label: "Includes", value: "Hands-on training, materials, follow-up resources, and certificate of completion" },
   { icon: "💪", label: "Fitness Level", value: "No requirements, scaled to every participant" },
   { icon: "👕", label: "What to Wear", value: "Comfortable, closed-toe sneakers, jeans, and a belt" },
@@ -50,6 +51,9 @@ export default function WorkshopDetailsSection() {
             <p className="text-accent-gold text-xs uppercase tracking-[3px] font-bold mb-3 font-body">
               ⚡ Early Bird Pricing, Ends May 31
             </p>
+            <div className="inline-flex items-center justify-center gap-2 mb-4 px-4 py-2 bg-accent-gold text-black rounded-full text-xs uppercase tracking-[2px] font-bold font-body shadow-[0_0_20px_rgba(212,175,55,0.45)]">
+              🎟️ Every ticket includes a +1 FREE
+            </div>
             <div className="flex items-baseline justify-center gap-4 mb-2">
               <span className="text-text-muted text-3xl lg:text-4xl line-through font-heading font-bold">
                 $197
@@ -59,7 +63,7 @@ export default function WorkshopDetailsSection() {
               </span>
             </div>
             <p className="text-white text-base font-body mb-2">
-              Save <span className="text-accent-gold font-bold">$50</span> when you register before May 31
+              Save <span className="text-accent-gold font-bold">$50</span> and bring a +1 when you register before May 31
             </p>
             <p className="text-text-secondary text-sm font-body mb-6">
               After May 31, the price returns to <span className="text-white font-bold">$197 per person</span>.

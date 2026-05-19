@@ -24,9 +24,9 @@ const faqs = [
       "Come in comfortable, closed-toe sneakers, jeans, and a belt, that's the uniform for this workshop. Water will be provided. No equipment needed.",
   },
   {
-    question: "Can I bring my partner, my family, or a friend?",
+    question: "Can I bring my partner, my family, or a friend for free?",
     answer:
-      "Yes, please do. This workshop is designed to be trained as a unit. Bringing your spouse, your kids (mature enough to participate), or anyone you would step in front of a threat for is exactly the point. Couples and families train together so they protect together. Group rates available for teams of 15+.",
+      "Yes. Every ticket includes a +1 at no extra charge, your spouse, your kid (mature enough to participate), a parent, a sibling, or a friend. This workshop is designed to be trained as a unit, so the people closest to you should be in the room with you. One ticket, two people trained. Group rates also available for teams of 15+.",
   },
   {
     question: "I've never trained for anything like this before.",
