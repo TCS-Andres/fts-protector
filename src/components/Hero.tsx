@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-40 pb-20 lg:pt-32 lg:pb-12 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-32 pb-16 sm:pt-40 sm:pb-20 lg:pt-32 lg:pb-12 w-full">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
           {/* Text content */}
           <div className="md:flex-1 text-center md:text-left">
@@ -29,7 +29,7 @@ export default function Hero() {
               </span>
             </div>
 
-            <h1 className="hero-animate hero-animate-2 font-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold uppercase leading-[0.95] mb-3 text-white">
+            <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl xl:text-8xl font-bold uppercase leading-[0.95] mb-3 text-white">
               Everyone Is
               <br />a Protector
             </h1>
@@ -54,7 +54,7 @@ export default function Hero() {
                 href="https://buy.stripe.com/9B65kF3sl0W96yQ1TS57W04"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-10 py-4 bg-accent-red text-white text-base font-bold uppercase tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_20px_rgba(196,30,30,0.4)] hover:scale-[1.03] transition-all duration-300 min-h-[50px]"
+                className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-10 py-4 bg-accent-red text-white text-sm sm:text-base font-bold uppercase tracking-[2px] sm:tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_20px_rgba(196,30,30,0.4)] hover:scale-[1.03] transition-all duration-300 min-h-[52px] text-center"
               >
                 Claim $147 Early Bird
               </a>

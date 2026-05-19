@@ -1,6 +1,6 @@
 export default function ProblemSection() {
   return (
-    <section className="relative bg-bg-primary py-20 lg:py-28 noise-bg">
+    <section className="relative bg-bg-primary py-14 sm:py-20 lg:py-28 noise-bg">
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Someone is counting on you */}

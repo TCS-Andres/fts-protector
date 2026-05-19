@@ -27,9 +27,9 @@ const logistics: LogisticsItem[] = [
 
 export default function WorkshopDetailsSection() {
   return (
-    <section className="bg-bg-primary py-20 lg:py-28 relative noise-bg">
+    <section className="bg-bg-primary py-14 sm:py-20 lg:py-28 relative noise-bg">
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="text-center mb-16 animate-on-scroll">
+        <div className="text-center mb-10 sm:mb-16 animate-on-scroll">
           <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
             Pricing & Details
           </p>
@@ -46,7 +46,7 @@ export default function WorkshopDetailsSection() {
           <div className="absolute top-0 right-0 bg-accent-red text-white text-xs font-bold uppercase tracking-[2px] px-4 py-2 font-body">
             Limited Time
           </div>
-          <div className="p-8 pt-14 lg:p-10 lg:pt-12 text-center">
+          <div className="px-5 py-7 pt-12 sm:p-8 sm:pt-14 lg:p-10 lg:pt-12 text-center">
             <p className="text-accent-gold text-xs uppercase tracking-[3px] font-bold mb-3 font-body">
               ⚡ Early Bird Pricing, Ends May 31
             </p>
@@ -128,14 +128,15 @@ export default function WorkshopDetailsSection() {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-16 animate-on-scroll">
+        <div className="text-center mt-10 sm:mt-16 animate-on-scroll">
           <a
             href="https://buy.stripe.com/9B65kF3sl0W96yQ1TS57W04"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-10 py-4 bg-accent-red text-white text-base font-bold uppercase tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_20px_rgba(196,30,30,0.4)] hover:scale-[1.03] transition-all duration-300"
+            className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-10 py-4 bg-accent-red text-white text-sm sm:text-base font-bold uppercase tracking-[2px] sm:tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_20px_rgba(196,30,30,0.4)] hover:scale-[1.03] transition-all duration-300 text-center min-h-[52px]"
           >
-            Claim $147 Early Bird, Only 16 Spots
+            <span className="sm:hidden">Claim $147 Early Bird</span>
+            <span className="hidden sm:inline">Claim $147 Early Bird, Only 16 Spots</span>
           </a>
           <p className="text-text-muted text-sm mt-4 font-body">
             Price returns to $197 after May 31. Group rates available for teams of 15+.

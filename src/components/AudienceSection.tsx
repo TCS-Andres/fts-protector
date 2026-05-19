@@ -23,9 +23,9 @@ const audiences = [
 
 export default function AudienceSection() {
   return (
-    <section id="audience" className="bg-bg-secondary py-20 lg:py-28 relative noise-bg">
+    <section id="audience" className="bg-bg-secondary py-14 sm:py-20 lg:py-28 relative noise-bg">
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="text-center mb-16 animate-on-scroll">
+        <div className="text-center mb-10 sm:mb-16 animate-on-scroll">
           <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
             Everyone Is a Protector
           </p>
@@ -51,7 +51,7 @@ export default function AudienceSection() {
                   className="w-full h-full object-cover object-[center_25%]"
                 />
               </div>
-              <div className="p-10">
+              <div className="p-6 sm:p-10">
                 <h3 className="font-heading text-2xl lg:text-3xl font-bold uppercase mb-4 text-white">
                   {a.title}
                 </h3>

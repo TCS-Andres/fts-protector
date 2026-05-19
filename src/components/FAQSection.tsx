@@ -74,7 +74,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 
 export default function FAQSection() {
   return (
-    <section id="faq" className="bg-bg-secondary py-20 lg:py-28 relative noise-bg">
+    <section id="faq" className="bg-bg-secondary py-14 sm:py-20 lg:py-28 relative noise-bg">
       <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-12 animate-on-scroll">
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">

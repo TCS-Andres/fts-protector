@@ -35,9 +35,9 @@ const workshopCards = [
 
 export default function WorkshopSection() {
   return (
-    <section id="workshop" className="bg-bg-primary py-20 lg:py-28 relative noise-bg">
+    <section id="workshop" className="bg-bg-primary py-14 sm:py-20 lg:py-28 relative noise-bg">
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="text-center mb-16 animate-on-scroll">
+        <div className="text-center mb-10 sm:mb-16 animate-on-scroll">
           <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
             The Workshop
           </p>
@@ -51,7 +51,7 @@ export default function WorkshopSection() {
         </div>
 
         {/* Featured pitch video, single column on mobile, 2-column on desktop */}
-        <div className="animate-on-scroll mb-20 max-w-5xl mx-auto">
+        <div className="animate-on-scroll mb-12 sm:mb-20 max-w-5xl mx-auto">
           <p className="text-accent-gold text-xs uppercase tracking-[3px] font-bold mb-6 font-body text-center lg:text-left">
             A Message From Franck
           </p>
@@ -124,7 +124,7 @@ export default function WorkshopSection() {
           {workshopCards.map((card) => (
             <div
               key={card.title}
-              className="animate-on-scroll bg-bg-card border-l-2 border-accent-red p-8 rounded-lg hover:translate-y-[-4px] hover:shadow-lg transition-all duration-300"
+              className="animate-on-scroll bg-bg-card border-l-2 border-accent-red p-6 sm:p-8 rounded-lg hover:translate-y-[-4px] hover:shadow-lg transition-all duration-300"
             >
               <h3 className="font-heading text-xl font-bold uppercase mb-3 text-white">
                 {card.title}

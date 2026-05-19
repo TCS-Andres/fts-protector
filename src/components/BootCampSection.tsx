@@ -13,7 +13,7 @@ export default function BootCampSection() {
   return (
     <section
       id="bootcamp"
-      className="relative py-20 lg:py-28 overflow-hidden"
+      className="relative py-14 sm:py-20 lg:py-28 overflow-hidden"
       style={{
         background:
           "linear-gradient(135deg, #04111f 0%, #061a2c 40%, #0a2440 100%)",
@@ -87,7 +87,7 @@ export default function BootCampSection() {
 
             <a
               href="mailto:franck@eprotectionvip.com?subject=7-Day%20Protectors%20Camp%20Inquiry"
-              className="inline-block px-8 py-4 bg-cyan-500 text-black text-base font-bold uppercase tracking-[3px] rounded hover:bg-cyan-400 hover:shadow-[0_0_30px_rgba(34,211,238,0.5)] hover:scale-[1.03] transition-all duration-300"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 bg-cyan-500 text-black text-sm sm:text-base font-bold uppercase tracking-[2px] sm:tracking-[3px] rounded hover:bg-cyan-400 hover:shadow-[0_0_30px_rgba(34,211,238,0.5)] hover:scale-[1.03] transition-all duration-300 text-center min-h-[52px]"
             >
               Apply for the Camp
             </a>
@@ -98,7 +98,7 @@ export default function BootCampSection() {
 
           {/* Right: modules grid */}
           <div className="animate-on-scroll">
-            <div className="bg-black/60 backdrop-blur border border-cyan-400/30 rounded-lg p-8">
+            <div className="bg-black/60 backdrop-blur border border-cyan-400/30 rounded-lg p-6 sm:p-8">
               <p className="text-cyan-300 text-xs uppercase tracking-[3px] font-bold mb-5 font-body">
                 Core curriculum
               </p>
