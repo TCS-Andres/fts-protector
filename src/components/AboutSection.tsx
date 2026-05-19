@@ -10,7 +10,7 @@ const credentials = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="bg-bg-secondary py-20 lg:py-28 relative noise-bg">
+    <section id="about" className="bg-bg-secondary py-14 sm:py-20 lg:py-28 relative noise-bg">
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image placeholder */}

@@ -44,7 +44,7 @@ export default function GallerySection() {
   };
 
   return (
-    <section className="bg-bg-secondary py-20 lg:py-28 relative noise-bg overflow-hidden">
+    <section className="bg-bg-secondary py-14 sm:py-20 lg:py-28 relative noise-bg overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-12 animate-on-scroll">
           <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
