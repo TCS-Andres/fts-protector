@@ -24,7 +24,7 @@ export default function RegistrationSection() {
             One workshop. Two hours. The skills you need to actually protect
             the people you love.
             <br />
-            <span className="text-white font-bold">Save $50 when you register before May 31.</span>
+            <span className="text-white font-bold">Save $50 and bring a +1 free, family, partner, or friend.</span>
           </p>
         </div>
 
@@ -41,9 +41,12 @@ export default function RegistrationSection() {
               $147
             </span>
           </div>
-          <p className="text-accent-gold text-base uppercase tracking-[2px] font-bold mb-6 font-body">
+          <p className="text-accent-gold text-base uppercase tracking-[2px] font-bold mb-3 font-body">
             Save $50, Today Only Through May 31
           </p>
+          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-accent-gold text-black rounded-full text-xs sm:text-sm uppercase tracking-[2px] font-bold font-body shadow-[0_0_20px_rgba(212,175,55,0.45)]">
+            🎟️ Includes a +1 FREE for your partner, family, or friend
+          </div>
 
           <div className="mb-8">
             <p className="text-text-muted text-xs uppercase tracking-[2px] mb-3 font-body">
@@ -78,7 +81,7 @@ export default function RegistrationSection() {
             </li>
             {[
               "Hands-on personal protection training",
-              "Bring your partner or family to train alongside you",
+              "Bring a +1 FREE: partner, family member, or friend",
               "Materials, follow-up resources & certificate of completion",
               "Only 16 spots available, first come, first served",
             ].map((item) => (

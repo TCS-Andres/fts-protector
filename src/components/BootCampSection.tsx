@@ -86,7 +86,7 @@ export default function BootCampSection() {
             </div>
 
             <a
-              href="mailto:franck@eprotectionvip.com?subject=7-Day%20Protectors%20Camp%20Inquiry"
+              href="mailto:TACTOPSUSA@gmail.com?subject=7-Day%20Protectors%20Camp%20Application"
               className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 bg-cyan-500 text-black text-sm sm:text-base font-bold uppercase tracking-[2px] sm:tracking-[3px] rounded hover:bg-cyan-400 hover:shadow-[0_0_30px_rgba(34,211,238,0.5)] hover:scale-[1.03] transition-all duration-300 text-center min-h-[52px]"
             >
               Apply for the Camp

@@ -6,7 +6,7 @@ const audiences = [
     body1:
       "You're already the protector. Your kids look at you when something feels off. Your partner trusts you to act if it goes bad. That responsibility doesn't go away because you're tired, untrained, or hoping nothing happens. This workshop gives you the tools to actually protect the people you love, at the park, in the parking lot, on vacation, at home.",
     body2:
-      "You don't need to be a fighter. You need to be prepared. Bring your spouse. Bring your kids. Two hours of training together is the difference between freezing and acting when seconds matter.",
+      "You don't need to be a fighter. You need to be prepared. Your ticket includes a +1 free, so bring your spouse, your kid, or whoever you would step in front of for. Two hours of training together is the difference between freezing and acting when seconds matter.",
     cta: "Train to protect your family",
   },
   {

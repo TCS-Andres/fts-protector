@@ -24,6 +24,9 @@ export default function Hero() {
               <span className="inline-flex items-center px-4 py-2 bg-accent-red/15 border border-accent-red/40 rounded-full text-accent-red text-xs uppercase tracking-[2px] font-bold font-body">
                 ⚡ Early Bird $147, Reg $197, Ends May 31
               </span>
+              <span className="inline-flex items-center px-4 py-2 bg-accent-gold text-black rounded-full text-xs uppercase tracking-[2px] font-bold font-body shadow-[0_0_20px_rgba(212,175,55,0.45)]">
+                🎟️ Bring a +1 FREE
+              </span>
               <span className="inline-flex items-center px-4 py-2 bg-accent-gold/15 border border-accent-gold/40 rounded-full text-accent-gold text-xs uppercase tracking-[2px] font-bold font-body">
                 🔒 Only 16 Spots Available
               </span>
@@ -45,8 +48,8 @@ export default function Hero() {
               requirements. Just the skills that turn instinct into action.
             </p>
             <p className="hero-animate hero-animate-2 text-white text-base sm:text-lg leading-relaxed mb-10 max-w-2xl font-body">
-              <span className="font-bold text-accent-gold">Bring your partner. Bring your family.</span>{" "}
-              Train together so you protect together.
+              <span className="font-bold text-accent-gold">Your ticket includes a +1, free.</span>{" "}
+              Bring your spouse, your kid, a friend. Train together so you protect together.
             </p>
 
             <div className="hero-animate hero-animate-3">
