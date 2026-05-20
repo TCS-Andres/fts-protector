@@ -44,7 +44,7 @@ export default function BootCampSection() {
               7-Day Protectors Training Camp
             </p>
             <p className="text-white/80 text-base lg:text-lg leading-relaxed mb-6 font-body">
-              The June 6 workshop is the doorway. The 7-day camp is the
+              The June 13 workshop is the doorway. The 7-day camp is the
               transformation. Train. Protect. Survive. Be the standard.
             </p>
             <p className="text-white/70 text-sm lg:text-base leading-relaxed mb-8 font-body">

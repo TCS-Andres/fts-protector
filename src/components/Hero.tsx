@@ -66,7 +66,7 @@ export default function Hero() {
                 <span className="text-accent-gold font-bold">$147</span> until May 31
               </p>
               <p className="text-white text-sm mt-4 font-body">
-                <span className="text-accent-gold font-bold">📅 Saturday, June 6, 2026</span> · 9 AM – 11 AM
+                <span className="text-accent-gold font-bold">📅 Saturday, June 13, 2026</span> · 9 AM – 11 AM
                 <br />
                 📍{" "}
                 <a

@@ -15,7 +15,7 @@ const inter = Inter({
 
 const SITE_TITLE = "Everyone Is a Protector, Self-Defense Workshops";
 const SITE_DESCRIPTION =
-  "Everyone is a protector. Whether it's your spouse, your kids, or your parents, someone in your life is counting on you. Join FrancktheSolution's 2-hour hands-on self-defense workshop in Miami. Built on 25 years of real-world executive protection experience. Saturday, June 6, 2026 at KO Zone Miami. Every ticket includes a +1 free, bring your partner, family, or a friend. $147 early bird through May 31, $197 after.";
+  "Everyone is a protector. Whether it's your spouse, your kids, or your parents, someone in your life is counting on you. Join FrancktheSolution's 2-hour hands-on self-defense workshop in Miami. Built on 25 years of real-world executive protection experience. Saturday, June 13, 2026 at KO Zone Miami. Every ticket includes a +1 free, bring your partner, family, or a friend. $147 early bird through May 31, $197 after.";
 const SITE_OG_IMAGE_ALT =
   "Hands-on self-defense training at the FrancktheSolution Everyone Is A Protector workshop in Miami";
 
