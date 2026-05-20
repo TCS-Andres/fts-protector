@@ -59,7 +59,7 @@ export default function RegistrationSection() {
             <li className="flex items-start gap-3 text-text-secondary font-body">
               <span className="text-accent-red flex-shrink-0 mt-1">✓</span>
               <span>
-                <span className="text-white font-bold">Saturday, June 6, 2026</span> · 9:00 AM – 11:00 AM (2 hours)
+                <span className="text-white font-bold">Saturday, June 13, 2026</span> · 9:00 AM – 11:00 AM (2 hours)
               </span>
             </li>
             <li className="flex items-start gap-3 text-text-secondary font-body">

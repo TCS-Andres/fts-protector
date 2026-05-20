@@ -9,7 +9,7 @@ type LogisticsItem = {
 };
 
 const logistics: LogisticsItem[] = [
-  { icon: "📅", label: "Date", value: "Saturday, June 6, 2026" },
+  { icon: "📅", label: "Date", value: "Saturday, June 13, 2026" },
   { icon: "⏱", label: "Duration", value: "2 Hours (9:00 AM – 11:00 AM)" },
   {
     icon: "📍",
