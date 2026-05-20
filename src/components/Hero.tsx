@@ -6,10 +6,12 @@ export default function Hero() {
         <img
           src="/images/hero_workshop_background.jpg"
           alt=""
-          className="absolute inset-0 w-full h-full object-cover object-[center_30%] opacity-40"
+          className="absolute inset-0 w-full h-full object-cover object-[center_30%] opacity-75"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+        {/* Left-side darkening for text readability, lighter on the right so the image shows */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-black/10 md:from-black/70 md:via-black/20 md:to-transparent" />
+        {/* Subtle bottom vignette */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-32 pb-16 sm:pt-40 sm:pb-20 lg:pt-32 lg:pb-12 w-full">
