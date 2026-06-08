@@ -79,8 +79,8 @@ const credentials = [
   { label: "Tactical Medic Trained", body: "Every agent on detail is trained to keep you alive long enough to reach a hospital." },
   { label: "Licensed", body: "Florida Class A and B licensed under TactOps USA LLC. License #A1900001, B1900003." },
   { label: "Fully Insured", body: "Commercial liability and professional indemnity coverage on every contract." },
-  { label: "25+ Years Operational", body: "Led by Franck Pala. Special Units Instructor Contractor, professional boxer, working EP across continents." },
-  { label: "Active Fugitive Apprehensions Agent", body: "Franck remains an actively-deployed fugitive apprehensions agent. The threat detection, tracking, and force-application skills that work in the field translate directly to the work we do for you." },
+  { label: "Actively Working Elite EP Specialist", body: "Franck is not a retired operator with a brand. He remains an actively-deployed elite executive protection specialist, running live details across the continents. 25+ years in the field, every year of it still in the field, not behind a desk." },
+  { label: "Active Fugitive Apprehensions Agent", body: "Franck also remains an actively-deployed fugitive apprehensions agent. The threat detection, tracking, and force-application skills that work in the field translate directly to the work we do for you." },
 ];
 
 const audience = [
@@ -147,13 +147,18 @@ export default function HireUsPage() {
                 </p>
               </div>
 
-              <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl xl:text-8xl font-bold uppercase leading-[0.95] mb-6 text-white">
+              <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl xl:text-8xl font-bold uppercase leading-[0.95] mb-4 text-white">
                 Protection
                 <br />
                 That Goes
                 <br />
                 Where You Go.
               </h1>
+
+              <p className="hero-animate hero-animate-2 text-white/95 text-base sm:text-lg lg:text-xl uppercase tracking-[3px] font-bold mb-6 font-body">
+                Elite Executive Protection.
+                <span className="text-accent-gold"> Across the Continents.</span>
+              </p>
 
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-8 font-body">
                 Executive protection and armed secure transport for the people
@@ -163,7 +168,7 @@ export default function HireUsPage() {
               </p>
 
               <div className="hero-animate hero-animate-2 flex flex-wrap items-center gap-2 mb-10">
-                {["Tactical Medic Trained", "Licensed", "Fully Insured", "25+ Years", "Active Fugitive Apprehensions Agent"].map((c) => (
+                {["Tactical Medic Trained", "Licensed", "Fully Insured", "Actively Working Elite EP Specialist", "Active Fugitive Apprehensions Agent"].map((c) => (
                   <span
                     key={c}
                     className="inline-flex items-center px-3 py-1.5 bg-white/5 border border-accent-gold/40 rounded-full text-accent-gold text-[11px] uppercase tracking-[2px] font-bold font-body"
