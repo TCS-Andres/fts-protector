@@ -19,9 +19,9 @@ export default function AboutSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               {/* Replace with actual portrait */}
               <img
-                src="/images/16_professional_headshot_studio.png"
-                alt="Franck Pala, Executive Protection Specialist"
-                className="w-full h-full object-cover object-top"
+                src="/images/franck_instructor_portrait.jpg"
+                alt="Franck Pala, Executive Protection Specialist — TactOps Executive Protection"
+                className="w-full h-full object-cover object-[center_15%]"
               />
             </div>
           </div>
