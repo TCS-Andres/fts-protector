@@ -72,6 +72,7 @@ const credentials = [
   { label: "Licensed", body: "Florida Class A and B licensed under TactOps USA LLC. License #A1900001, B1900003." },
   { label: "Fully Insured", body: "Commercial liability and professional indemnity coverage on every contract." },
   { label: "25+ Years Operational", body: "Led by Franck Pala. Special Units Instructor Contractor, professional boxer, working EP across continents." },
+  { label: "Active Fugitive Apprehensions Agent", body: "Franck remains an actively-deployed fugitive apprehensions agent. The threat detection, tracking, and force-application skills that work in the field translate directly to the work we do for you." },
 ];
 
 const audience = [
@@ -151,7 +152,7 @@ export default function HireUsPage() {
               </p>
 
               <div className="hero-animate hero-animate-2 flex flex-wrap items-center gap-2 mb-10">
-                {["Tactical Medic Trained", "Licensed", "Fully Insured", "25+ Years"].map((c) => (
+                {["Tactical Medic Trained", "Licensed", "Fully Insured", "25+ Years", "Active Fugitive Apprehensions Agent"].map((c) => (
                   <span
                     key={c}
                     className="inline-flex items-center px-3 py-1.5 bg-white/5 border border-accent-gold/40 rounded-full text-accent-gold text-[11px] uppercase tracking-[2px] font-bold font-body"
@@ -317,10 +318,14 @@ export default function HireUsPage() {
             </div>
 
             <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 stagger-children">
-              {credentials.map((c) => (
+              {credentials.map((c, i) => (
                 <div
                   key={c.label}
-                  className="animate-on-scroll bg-bg-card/60 backdrop-blur border border-accent-gold/30 rounded-lg p-6 sm:p-8"
+                  className={`animate-on-scroll bg-bg-card/60 backdrop-blur border border-accent-gold/30 rounded-lg p-6 sm:p-8 ${
+                    i === credentials.length - 1 && credentials.length % 2 === 1
+                      ? "sm:col-span-2"
+                      : ""
+                  }`}
                 >
                   <p className="text-accent-gold text-xs uppercase tracking-[3px] font-bold mb-3 font-body">
                     {c.label}
