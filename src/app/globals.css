@@ -108,6 +108,51 @@ body {
   animation: slideUp 0.3s ease-out forwards;
 }
 
+/* eProtection VIP page: hero ken burns slow zoom */
+@keyframes epKenBurns {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.08) translate(-1%, -1.5%); }
+}
+.ep-ken-burns {
+  animation: epKenBurns 18s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+/* eProtection VIP page: scrolling imagery marquee */
+@keyframes epMarqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.ep-marquee {
+  --marquee-duration: 60s;
+}
+.ep-marquee-track {
+  width: max-content;
+  animation: epMarqueeScroll var(--marquee-duration) linear infinite;
+  will-change: transform;
+}
+.ep-marquee:hover .ep-marquee-track {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ep-marquee-track {
+    animation: none;
+  }
+  .ep-ken-burns {
+    animation: none;
+  }
+}
+
+/* Subtle gold-line entrance for section eyebrows */
+.ep-glow-line::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--color-accent-gold), transparent);
+  margin: 0.75rem auto 0;
+}
+
 /* Subtle noise texture */
 .noise-bg::before {
   content: "";

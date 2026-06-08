@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollAnimator from "@/components/ScrollAnimator";
 import RedDivider from "@/components/RedDivider";
+import EPStats from "@/components/hire-us/EPStats";
+import EPImageMarquee from "@/components/hire-us/EPImageMarquee";
 
 const PAGE_TITLE = "Executive Protection & Armed Driving | eProtection VIP";
 const PAGE_DESCRIPTION =
@@ -37,31 +39,37 @@ const CONTACT_MAILTO = `mailto:${CONTACT_EMAIL}?subject=eProtection%20VIP%20Inqu
 const services = [
   {
     title: "Executive Protection",
+    image: "/images/01_vip_escort_red_carpet.png",
     body:
       "Close protection details for principals who can't afford to be unprepared. One agent or a full team, embedded into your day from arrival to departure, completely unobtrusive until the moment you need them.",
   },
   {
     title: "Armed Secure Transport",
+    image: "/images/02_suv_motorcade_arrival.png",
     body:
       "Trained protective drivers and armored or low-profile vehicles. Route planning, counter-surveillance, and the discipline to keep you exactly on schedule, no matter what the city throws at us.",
   },
   {
     title: "Advance Work & Site Surveys",
+    image: "/images/03_hotel_lobby_advance.png",
     body:
       "Every venue, restaurant, residence, and route is walked, photographed, and threat-assessed before you arrive. The work you never see is the reason nothing happens.",
   },
   {
     title: "Travel & Event Coverage",
+    image: "/images/04_nightclub_vip_section.png",
     body:
       "International travel, premieres, galas, fight nights, ringside, courtside, on-set. Coordinated with hotel and venue security, integrated with your existing team if you have one.",
   },
   {
     title: "Residential Security Detail",
+    image: "/images/06_boardroom_protection.jpg",
     body:
       "Standing details for primary residences, short-term protection during heightened threat windows, and discreet overnight coverage when needed. Professionals only, no rotating contractors.",
   },
   {
     title: "Family & Estate Protection",
+    image: "/images/17_walking_downtown_miami.png",
     body:
       "Spouse and child protection at school, errands, and travel. The agents we put on your family detail go through the same selection as the ones we put on you.",
   },
@@ -88,18 +96,21 @@ const process = [
   {
     step: "01",
     title: "Inquire",
+    image: "/images/06_boardroom_protection.jpg",
     body:
       "Send a brief message with the nature of the protection you need and the dates. Conversations are held in strict confidence.",
   },
   {
     step: "02",
     title: "Vet & Scope",
+    image: "/images/03_hotel_lobby_advance.png",
     body:
       "We perform a threat and logistics assessment, define the team composition, vehicles, and tactics required, and present a scoped proposal.",
   },
   {
     step: "03",
     title: "Deploy",
+    image: "/images/02_suv_motorcade_arrival.png",
     body:
       "Agents in position before the first movement. Mission-focused, low-profile, and ready for anything the day requires.",
   },
@@ -113,11 +124,11 @@ export default function HireUsPage() {
       <main>
         {/* HERO */}
         <section className="relative min-h-screen flex items-center overflow-hidden noise-bg">
-          <div className="absolute inset-0 bg-bg-primary">
+          <div className="absolute inset-0 bg-bg-primary overflow-hidden">
             <img
               src="/images/02_suv_motorcade_arrival.png"
               alt=""
-              className="absolute inset-0 w-full h-full object-cover object-[center_25%] opacity-65"
+              className="ep-ken-burns absolute inset-0 w-full h-full object-cover object-[center_25%] opacity-65"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/15 md:from-black/85 md:via-black/40 md:to-transparent" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
@@ -180,6 +191,8 @@ export default function HireUsPage() {
           </div>
         </section>
 
+        <EPStats />
+
         <RedDivider />
 
         {/* THE STANDARD */}
@@ -222,20 +235,33 @@ export default function HireUsPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
               {services.map((s, i) => (
-                <div
+                <article
                   key={s.title}
-                  className="animate-on-scroll bg-bg-card border-l-2 border-accent-gold p-6 sm:p-8 rounded-lg hover:translate-y-[-4px] hover:shadow-lg transition-all duration-300"
+                  className="animate-on-scroll group bg-bg-card rounded-lg overflow-hidden hover:translate-y-[-4px] hover:shadow-[0_10px_40px_rgba(0,0,0,0.4)] transition-all duration-300 border border-white/5 hover:border-accent-gold/40"
                 >
-                  <p className="text-accent-gold text-xs uppercase tracking-[3px] font-bold mb-3 font-body">
-                    {String(i + 1).padStart(2, "0")}
-                  </p>
-                  <h3 className="font-heading text-xl lg:text-2xl font-bold uppercase mb-3 text-white">
-                    {s.title}
-                  </h3>
-                  <p className="text-text-secondary text-sm lg:text-base leading-relaxed font-body">
-                    {s.body}
-                  </p>
-                </div>
+                  <div className="aspect-[16/10] relative overflow-hidden">
+                    <img
+                      src={s.image}
+                      alt=""
+                      loading="lazy"
+                      className="w-full h-full object-cover object-center transition-transform duration-[1200ms] group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-bg-card via-bg-card/30 to-transparent" />
+                    <div className="absolute top-4 left-4">
+                      <span className="inline-flex items-center px-3 py-1.5 bg-black/60 backdrop-blur border border-accent-gold/40 rounded-full text-accent-gold text-[10px] uppercase tracking-[3px] font-bold font-body">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="p-6 sm:p-7 border-l-2 border-accent-gold -mt-px">
+                    <h3 className="font-heading text-xl lg:text-2xl font-bold uppercase mb-3 text-white">
+                      {s.title}
+                    </h3>
+                    <p className="text-text-secondary text-sm lg:text-base leading-relaxed font-body">
+                      {s.body}
+                    </p>
+                  </div>
+                </article>
               ))}
             </div>
           </div>
@@ -298,6 +324,8 @@ export default function HireUsPage() {
             </div>
           </div>
         </section>
+
+        <EPImageMarquee />
 
         <RedDivider />
 
@@ -397,20 +425,31 @@ export default function HireUsPage() {
 
             <div className="grid md:grid-cols-3 gap-6 stagger-children">
               {process.map((p) => (
-                <div
+                <article
                   key={p.step}
-                  className="animate-on-scroll bg-bg-card rounded-lg p-6 sm:p-8 border-t-2 border-accent-red"
+                  className="animate-on-scroll group bg-bg-card rounded-lg overflow-hidden border-t-2 border-accent-red hover:translate-y-[-4px] transition-all duration-300"
                 >
-                  <p className="font-heading text-5xl text-accent-red font-bold mb-4 leading-none">
-                    {p.step}
-                  </p>
-                  <h3 className="font-heading text-xl lg:text-2xl font-bold uppercase mb-3 text-white">
-                    {p.title}
-                  </h3>
-                  <p className="text-text-secondary text-sm lg:text-base leading-relaxed font-body">
-                    {p.body}
-                  </p>
-                </div>
+                  <div className="aspect-[16/9] relative overflow-hidden">
+                    <img
+                      src={p.image}
+                      alt=""
+                      loading="lazy"
+                      className="w-full h-full object-cover object-center opacity-70 transition-all duration-[1000ms] group-hover:opacity-95 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-bg-card via-bg-card/40 to-transparent" />
+                    <p className="absolute bottom-3 left-6 font-heading text-6xl text-accent-red font-bold leading-none drop-shadow-[0_2px_10px_rgba(0,0,0,0.6)]">
+                      {p.step}
+                    </p>
+                  </div>
+                  <div className="p-6 sm:p-7">
+                    <h3 className="font-heading text-xl lg:text-2xl font-bold uppercase mb-3 text-white">
+                      {p.title}
+                    </h3>
+                    <p className="text-text-secondary text-sm lg:text-base leading-relaxed font-body">
+                      {p.body}
+                    </p>
+                  </div>
+                </article>
               ))}
             </div>
           </div>
