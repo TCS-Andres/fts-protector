@@ -69,7 +69,7 @@ const services = [
 
 const credentials = [
   { label: "Tactical Medic Trained", body: "Every agent on detail is trained to keep you alive long enough to reach a hospital." },
-  { label: "Licensed", body: "Florida Class A, B, and D licensed under TactOps USA LLC. License #A1900001, B1900003." },
+  { label: "Licensed", body: "Florida Class A and B licensed under TactOps USA LLC. License #A1900001, B1900003." },
   { label: "Fully Insured", body: "Commercial liability and professional indemnity coverage on every contract." },
   { label: "25+ Years Operational", body: "Led by Franck Pala. Special Units Instructor Contractor, professional boxer, working EP across continents." },
 ];
