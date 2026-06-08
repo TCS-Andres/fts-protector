@@ -3,11 +3,12 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { label: "Workshop", href: "#workshop" },
-  { label: "About", href: "#about" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Boot Camp", href: "#bootcamp" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Workshop", href: "/#workshop" },
+  { label: "About", href: "/#about" },
+  { label: "Testimonials", href: "/#testimonials" },
+  { label: "Boot Camp", href: "/#bootcamp" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Hire Us", href: "/hire-us" },
 ];
 
 export default function Navbar() {
@@ -28,7 +29,7 @@ export default function Navbar() {
         }`}
       >
         {/* Logo */}
-        <a href="#" className="flex items-center gap-3">
+        <a href="/" className="flex items-center gap-3">
           <img
             src="/logo.png"
             alt="FrancktheSolution"
