@@ -137,7 +137,7 @@ export default function GallerySection() {
         </div>
 
         <p className="text-center text-text-muted text-sm mt-10 font-body animate-on-scroll">
-          Click any photo to view full size. The June 13 seminar runs the same format with new drills.
+          Click any photo to view full size. The July 18 seminar runs the same format with new drills.
         </p>
       </div>
 

@@ -9,7 +9,7 @@ type LogisticsItem = {
 };
 
 const logistics: LogisticsItem[] = [
-  { icon: "📅", label: "Date", value: "Saturday, June 13, 2026" },
+  { icon: "📅", label: "Date", value: "Saturday, July 18, 2026" },
   { icon: "⏱", label: "Duration", value: "2 Hours (9:00 AM – 11:00 AM)" },
   {
     icon: "📍",
@@ -18,7 +18,7 @@ const logistics: LogisticsItem[] = [
     subValue: "301 NW 54th Street, Miami, FL 33127",
     href: "https://maps.app.goo.gl/H6nH8Lnvpn6tE1M66",
   },
-  { icon: "💰", label: "Regular Price", value: "$197 per person (after May 31)" },
+  { icon: "💰", label: "Regular Price", value: "$197 per person (after July 5)" },
   { icon: "🎟️", label: "Plus One", value: "Bring a partner, family member, or friend at no extra cost" },
   { icon: "📦", label: "Includes", value: "Hands-on training, materials, follow-up resources, and certificate of completion" },
   { icon: "💪", label: "Fitness Level", value: "No requirements, scaled to every participant" },
@@ -35,7 +35,7 @@ export default function WorkshopDetailsSection() {
             Pricing & Details
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase mb-4 text-white">
-            Lock In $147 Before May 31
+            Lock In $147 Before July 5
           </h2>
           <p className="text-accent-gold text-sm uppercase tracking-[3px] font-bold font-body">
             🔒 Only 16 spots available, first come, first served
@@ -49,7 +49,7 @@ export default function WorkshopDetailsSection() {
           </div>
           <div className="px-5 py-7 pt-12 sm:p-8 sm:pt-14 lg:p-10 lg:pt-12 text-center">
             <p className="text-accent-gold text-xs uppercase tracking-[3px] font-bold mb-3 font-body">
-              ⚡ Early Bird Pricing, Ends May 31
+              ⚡ Early Bird Pricing, Ends July 5
             </p>
             <div className="inline-flex items-center justify-center gap-2 mb-4 px-4 py-2 bg-accent-gold text-black rounded-full text-xs uppercase tracking-[2px] font-bold font-body shadow-[0_0_20px_rgba(212,175,55,0.45)]">
               🎟️ Every ticket includes a +1 FREE
@@ -63,10 +63,10 @@ export default function WorkshopDetailsSection() {
               </span>
             </div>
             <p className="text-white text-base font-body mb-2">
-              Save <span className="text-accent-gold font-bold">$50</span> and bring a +1 when you register before May 31
+              Save <span className="text-accent-gold font-bold">$50</span> and bring a +1 when you register before July 5
             </p>
             <p className="text-text-secondary text-sm font-body mb-6">
-              After May 31, the price returns to <span className="text-white font-bold">$197 per person</span>.
+              After July 5, the price returns to <span className="text-white font-bold">$197 per person</span>.
             </p>
             <div className="mb-6">
               <p className="text-text-muted text-xs uppercase tracking-[2px] mb-3 font-body">
@@ -143,7 +143,7 @@ export default function WorkshopDetailsSection() {
             <span className="hidden sm:inline">Claim $147 Early Bird, Only 16 Spots</span>
           </a>
           <p className="text-text-muted text-sm mt-4 font-body">
-            Price returns to $197 after May 31. Group rates available for teams of 15+.
+            Price returns to $197 after July 5. Group rates available for teams of 15+.
           </p>
         </div>
       </div>

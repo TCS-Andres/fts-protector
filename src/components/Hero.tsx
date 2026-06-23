@@ -24,7 +24,7 @@ export default function Hero() {
 
             <div className="hero-animate hero-animate-1 flex flex-wrap items-center justify-center md:justify-start gap-2 mb-6">
               <span className="inline-flex items-center px-4 py-2 bg-accent-red/15 border border-accent-red/40 rounded-full text-accent-red text-xs uppercase tracking-[2px] font-bold font-body">
-                ⚡ Early Bird $147, Reg $197, Ends May 31
+                ⚡ Early Bird $147, Reg $197, Ends July 5
               </span>
               <span className="inline-flex items-center px-4 py-2 bg-accent-gold text-black rounded-full text-xs uppercase tracking-[2px] font-bold font-body shadow-[0_0_20px_rgba(212,175,55,0.45)]">
                 🎟️ Bring a +1 FREE
@@ -65,10 +65,10 @@ export default function Hero() {
               </a>
               <p className="text-text-muted text-xs uppercase tracking-[2px] mt-3 font-body">
                 <span className="line-through text-text-muted/70">$197</span>{" "}
-                <span className="text-accent-gold font-bold">$147</span> until May 31
+                <span className="text-accent-gold font-bold">$147</span> until July 5
               </p>
               <p className="text-white text-sm mt-4 font-body">
-                <span className="text-accent-gold font-bold">📅 Saturday, June 13, 2026</span> · 9 AM – 11 AM
+                <span className="text-accent-gold font-bold">📅 Saturday, July 18, 2026</span> · 9 AM – 11 AM
                 <br />
                 📍{" "}
                 <a
