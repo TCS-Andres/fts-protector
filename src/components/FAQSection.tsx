@@ -6,7 +6,7 @@ const faqs = [
   {
     question: "Is the price really $147?",
     answer:
-      "Yes, but only until May 31. The early-bird rate is $147 per person, and after that the price returns to $197. This isn't a class, it's 2 hours of hands-on personal protection training with a professional who has guarded executives, trained law enforcement, and served in Special Forces. Most people spend more than this on a weekend without thinking about it. Lock in $147 before May 31.",
+      "Yes, but only until July 5. The early-bird rate is $147 per person, and after that the price returns to $197. This isn't a class, it's 2 hours of hands-on personal protection training with a professional who has guarded executives, trained law enforcement, and served in Special Forces. Most people spend more than this on a weekend without thinking about it. Lock in $147 before July 5.",
   },
   {
     question: "I'm not athletic / I'm out of shape.",
