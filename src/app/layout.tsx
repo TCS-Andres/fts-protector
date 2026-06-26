@@ -13,26 +13,28 @@ const inter = Inter({
   variable: "--font-body",
 });
 
-const SITE_TITLE = "Everyone Is a Protector, Self-Defense Workshops";
+const SITE_TITLE =
+  "FrancktheSolution — Protection, Training & Self-Defense Tools by Franck Pala";
 const SITE_DESCRIPTION =
-  "Everyone is a protector. Whether it's your spouse, your kids, or your parents, someone in your life is counting on you. Join FrancktheSolution's 2-hour hands-on self-defense workshop in Miami. Built on 25 years of real-world executive protection experience. Saturday, July 18, 2026 at KO Zone Miami. Every ticket includes a +1 free, bring your partner, family, or a friend. $147 early bird through July 5, $197 after.";
+  "Franck Pala — 20+ years in executive protection, former professional boxer, defensive-tactics innovator, inventor of the patented Self-Defender, and active fugitive apprehension agent. Hire protection, train at his workshops and online courses, and get the tools. Protect. Train. Be the Solution.";
 const SITE_OG_IMAGE_ALT =
-  "Hands-on self-defense training at the FrancktheSolution Everyone Is A Protector workshop in Miami";
+  "Franck Pala — FrancktheSolution: executive protection, training, and self-defense tools";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://fts-protector.vercel.app"),
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
   keywords: [
-    "self defense workshop",
-    "personal safety training",
-    "family protection",
-    "everyone is a protector",
-    "executive protection",
     "Franck Pala",
     "FrancktheSolution",
-    "Miami self defense",
-    "South Florida self defense",
+    "executive protection",
+    "security and investigations",
+    "self defense workshop",
+    "self defender tool",
+    "defensive tactics training",
+    "personal safety training",
+    "Miami executive protection",
+    "fugitive apprehension agent",
   ],
   openGraph: {
     type: "website",

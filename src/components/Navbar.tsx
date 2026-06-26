@@ -1,14 +1,15 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { routes, links } from "@/lib/links";
 
 const navLinks = [
-  { label: "Workshop", href: "/#workshop" },
-  { label: "About", href: "/#about" },
-  { label: "Testimonials", href: "/#testimonials" },
-  { label: "Boot Camp", href: "/#bootcamp" },
-  { label: "FAQ", href: "/#faq" },
-  { label: "Hire Us", href: "/hire-us" },
+  { label: "Workshops", href: routes.workshops },
+  { label: "Training", href: routes.training },
+  { label: "Hire Us", href: routes.hireUs },
+  { label: "Self-Defender", href: routes.selfDefender },
+  { label: "Shop", href: routes.shop },
+  { label: "Vlog", href: routes.vlog },
 ];
 
 export default function Navbar() {
@@ -38,21 +39,21 @@ export default function Navbar() {
         </a>
 
         {/* Desktop links */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-5 xl:gap-7">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm uppercase tracking-[2px] text-text-secondary hover:text-white transition-colors duration-300 font-body"
+              className="text-[13px] uppercase tracking-[1.5px] text-text-secondary hover:text-white transition-colors duration-300 font-body whitespace-nowrap"
             >
               {link.label}
             </a>
           ))}
           <a
-            href="https://buy.stripe.com/9B65kF3sl0W96yQ1TS57W04"
+            href={links.workshopStripe}
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-4 px-6 py-2.5 bg-accent-red text-white text-sm font-bold uppercase tracking-[2px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_20px_rgba(196,30,30,0.4)] transition-all duration-300 hover:scale-[1.03]"
+            className="ml-1 px-5 py-2.5 bg-accent-red text-white text-[13px] font-bold uppercase tracking-[1.5px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_20px_rgba(196,30,30,0.4)] transition-all duration-300 hover:scale-[1.03] whitespace-nowrap"
           >
             $147 Early Bird
           </a>
@@ -91,7 +92,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="https://buy.stripe.com/9B65kF3sl0W96yQ1TS57W04"
+            href={links.workshopStripe}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMobileOpen(false)}
