@@ -14,6 +14,27 @@ export default function Footer() {
           </span>
         </div>
 
+        {/* Site navigation */}
+        <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm mb-8">
+          {[
+            { label: "Workshops", href: "/workshops" },
+            { label: "Training", href: "/training" },
+            { label: "Hire Us", href: "/hire-us" },
+            { label: "Self-Defender", href: "/self-defender" },
+            { label: "Shop", href: "/shop" },
+            { label: "Vlog", href: "/vlog" },
+            { label: "About", href: "/about" },
+          ].map((l) => (
+            <a
+              key={l.href}
+              href={l.href}
+              className="text-text-secondary hover:text-accent-gold transition-colors font-body uppercase tracking-[1.5px] text-xs"
+            >
+              {l.label}
+            </a>
+          ))}
+        </nav>
+
         {/* Links */}
         <div className="flex flex-wrap items-center justify-center gap-6 text-sm mb-8">
           <a
