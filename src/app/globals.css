@@ -7,6 +7,12 @@
   --color-accent-red: #C41E1E;
   --color-accent-red-dark: #9B1818;
   --color-accent-gold: #C9A84C;
+  /* Law-enforcement palette: charcoal + steel blue */
+  --color-bg-steel: #0C1118;
+  --color-bg-steel-card: #141C28;
+  --color-accent-blue: #2E72B8;
+  --color-accent-blue-dark: #1F5A97;
+  --color-accent-blue-light: #6CA8E2;
   --color-text-primary: #FFFFFF;
   --color-text-secondary: #B0B0B0;
   --color-text-muted: #666666;
