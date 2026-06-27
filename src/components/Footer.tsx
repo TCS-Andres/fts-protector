@@ -19,7 +19,8 @@ export default function Footer() {
           {[
             { label: "Workshops", href: "/workshops" },
             { label: "Training", href: "/training" },
-            { label: "Hire Us", href: "/hire-us" },
+            { label: "Executive Protection", href: "/hire-us" },
+            { label: "Investigations", href: "/investigations" },
             { label: "TheSelfDefender", href: "/self-defender" },
             { label: "Shop", href: "/shop" },
             { label: "Vlog", href: "/vlog" },
