@@ -19,7 +19,7 @@ export default function OnlineTrainingSection() {
           href="https://www.skool.com/defensivetactics/about?ref=5872d5e010f741d2a991a3878f95b264"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-10 py-4 border-2 border-accent-red text-accent-red text-base font-bold uppercase tracking-[3px] rounded hover:bg-accent-red hover:text-white transition-all duration-300"
+          className="inline-block px-10 py-4 border-2 border-accent-blue text-accent-blue-light text-base font-bold uppercase tracking-[3px] rounded hover:bg-accent-blue hover:text-white transition-all duration-300"
         >
           Explore Online Training &rarr;
         </a>

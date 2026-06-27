@@ -38,7 +38,7 @@ export default function WorkshopSection() {
     <section id="workshop" className="bg-bg-primary py-14 sm:py-20 lg:py-28 relative noise-bg">
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-10 sm:mb-16 animate-on-scroll">
-          <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+          <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
             The Workshop
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase mb-4 text-white">
@@ -52,12 +52,12 @@ export default function WorkshopSection() {
 
         {/* Featured pitch video, single column on mobile, 2-column on desktop */}
         <div className="animate-on-scroll mb-12 sm:mb-20 max-w-5xl mx-auto">
-          <p className="text-accent-gold text-xs uppercase tracking-[3px] font-bold mb-6 font-body text-center lg:text-left">
+          <p className="text-accent-blue-light text-xs uppercase tracking-[3px] font-bold mb-6 font-body text-center lg:text-left">
             A Message From Franck
           </p>
           <div className="grid lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-8 lg:gap-12 items-center">
             {/* Video, 9:16 vertical, constrained width on desktop */}
-            <div className="mx-auto w-full max-w-xs lg:max-w-none rounded-lg overflow-hidden border-t-2 border-accent-red shadow-2xl">
+            <div className="mx-auto w-full max-w-xs lg:max-w-none rounded-lg overflow-hidden border-t-2 border-accent-blue shadow-2xl">
               <video
                 controls
                 playsInline
@@ -93,7 +93,7 @@ export default function WorkshopSection() {
                   },
                 ].map((point) => (
                   <li key={point.title} className="flex items-start gap-3">
-                    <span className="text-accent-red text-lg flex-shrink-0 leading-tight mt-1">▸</span>
+                    <span className="text-accent-blue-light text-lg flex-shrink-0 leading-tight mt-1">▸</span>
                     <div>
                       <p className="text-white font-bold font-body">{point.title}</p>
                       <p className="text-text-secondary text-sm font-body leading-relaxed">{point.body}</p>
@@ -107,7 +107,7 @@ export default function WorkshopSection() {
 
         {/* What You Will Learn */}
         <div className="text-center mb-12 animate-on-scroll">
-          <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+          <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
             The Curriculum
           </p>
           <h3 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-4">
@@ -124,7 +124,7 @@ export default function WorkshopSection() {
           {workshopCards.map((card) => (
             <div
               key={card.title}
-              className="animate-on-scroll bg-bg-card border-l-2 border-accent-red p-6 sm:p-8 rounded-lg hover:translate-y-[-4px] hover:shadow-lg transition-all duration-300"
+              className="animate-on-scroll bg-bg-card border-l-2 border-accent-blue p-6 sm:p-8 rounded-lg hover:translate-y-[-4px] hover:shadow-lg transition-all duration-300"
             >
               <h3 className="font-heading text-xl font-bold uppercase mb-3 text-white">
                 {card.title}

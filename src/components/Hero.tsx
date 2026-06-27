@@ -18,7 +18,7 @@ export default function Hero() {
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
           {/* Text content */}
           <div className="md:flex-1 text-center md:text-left">
-            <p className="hero-animate hero-animate-1 text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-6 font-body">
+            <p className="hero-animate hero-animate-1 text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-6 font-body">
               FrancktheSolution Presents
             </p>
 
@@ -26,10 +26,10 @@ export default function Hero() {
               <span className="inline-flex items-center px-4 py-2 bg-accent-red/15 border border-accent-red/40 rounded-full text-accent-red text-xs uppercase tracking-[2px] font-bold font-body">
                 ⚡ Early Bird $147, Reg $197, Ends July 5
               </span>
-              <span className="inline-flex items-center px-4 py-2 bg-accent-gold text-black rounded-full text-xs uppercase tracking-[2px] font-bold font-body shadow-[0_0_20px_rgba(212,175,55,0.45)]">
+              <span className="inline-flex items-center px-4 py-2 bg-accent-blue text-white rounded-full text-xs uppercase tracking-[2px] font-bold font-body shadow-[0_0_20px_rgba(46,114,184,0.45)]">
                 🎟️ Bring a +1 FREE
               </span>
-              <span className="inline-flex items-center px-4 py-2 bg-accent-gold/15 border border-accent-gold/40 rounded-full text-accent-gold text-xs uppercase tracking-[2px] font-bold font-body">
+              <span className="inline-flex items-center px-4 py-2 bg-accent-blue/15 border border-accent-blue/40 rounded-full text-accent-blue-light text-xs uppercase tracking-[2px] font-bold font-body">
                 🔒 Only 16 Spots Available
               </span>
             </div>
@@ -50,7 +50,7 @@ export default function Hero() {
               requirements. Just the skills that turn instinct into action.
             </p>
             <p className="hero-animate hero-animate-2 text-white text-base sm:text-lg leading-relaxed mb-10 max-w-2xl font-body">
-              <span className="font-bold text-accent-gold">Your ticket includes a +1, free.</span>{" "}
+              <span className="font-bold text-accent-blue-light">Your ticket includes a +1, free.</span>{" "}
               Bring your spouse, your kid, a friend. Train together so you protect together.
             </p>
 
@@ -65,17 +65,17 @@ export default function Hero() {
               </a>
               <p className="text-text-muted text-xs uppercase tracking-[2px] mt-3 font-body">
                 <span className="line-through text-text-muted/70">$197</span>{" "}
-                <span className="text-accent-gold font-bold">$147</span> until July 5
+                <span className="text-accent-blue-light font-bold">$147</span> until July 5
               </p>
               <p className="text-white text-sm mt-4 font-body">
-                <span className="text-accent-gold font-bold">📅 Saturday, July 18, 2026</span> · 9 AM – 11 AM
+                <span className="text-accent-blue-light font-bold">📅 Saturday, July 18, 2026</span> · 9 AM – 11 AM
                 <br />
                 📍{" "}
                 <a
                   href="https://maps.app.goo.gl/H6nH8Lnvpn6tE1M66"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline decoration-accent-red/60 underline-offset-4 hover:text-accent-red transition-colors"
+                  className="underline decoration-accent-blue/60 underline-offset-4 hover:text-accent-blue-light transition-colors"
                 >
                   KO Zone, Miami
                 </a>

@@ -142,7 +142,7 @@ export default function HireUsPage() {
                   alt="eProtection VIP"
                   className="h-12 w-12 object-contain"
                 />
-                <p className="text-accent-gold text-xs sm:text-sm uppercase tracking-[4px] font-bold font-body">
+                <p className="text-accent-blue-light text-xs sm:text-sm uppercase tracking-[4px] font-bold font-body">
                   eProtection VIP, by Franck Pala
                 </p>
               </div>
@@ -157,7 +157,7 @@ export default function HireUsPage() {
 
               <p className="hero-animate hero-animate-2 text-white/95 text-base sm:text-lg lg:text-xl uppercase tracking-[3px] font-bold mb-6 font-body">
                 Elite Executive Protection.
-                <span className="text-accent-gold"> Across the Continents.</span>
+                <span className="text-accent-blue-light"> Across the Continents.</span>
               </p>
 
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-8 font-body">
@@ -171,7 +171,7 @@ export default function HireUsPage() {
                 {["Tactical Medic Trained", "Licensed", "Fully Insured", "Actively Working Elite EP Specialist", "Active Fugitive Apprehensions Agent"].map((c) => (
                   <span
                     key={c}
-                    className="inline-flex items-center px-3 py-1.5 bg-white/5 border border-accent-gold/40 rounded-full text-accent-gold text-[11px] uppercase tracking-[2px] font-bold font-body"
+                    className="inline-flex items-center px-3 py-1.5 bg-white/5 border border-accent-blue/40 rounded-full text-accent-blue-light text-[11px] uppercase tracking-[2px] font-bold font-body"
                   >
                     {c}
                   </span>
@@ -181,7 +181,7 @@ export default function HireUsPage() {
               <div className="hero-animate hero-animate-3 flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <a
                   href={CONTACT_MAILTO}
-                  className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-10 py-4 bg-accent-red text-white text-sm sm:text-base font-bold uppercase tracking-[2px] sm:tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_20px_rgba(196,30,30,0.4)] hover:scale-[1.03] transition-all duration-300 text-center min-h-[52px]"
+                  className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-10 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] sm:tracking-[3px] rounded hover:bg-accent-blue-dark hover:shadow-[0_0_20px_rgba(46,114,184,0.4)] hover:scale-[1.03] transition-all duration-300 text-center min-h-[52px]"
                 >
                   Request a Consultation
                 </a>
@@ -204,7 +204,7 @@ export default function HireUsPage() {
         <section className="bg-bg-primary py-14 sm:py-20 lg:py-28 relative noise-bg">
           <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-12">
             <div className="text-center mb-10 animate-on-scroll">
-              <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+              <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
                 The Standard
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-6">
@@ -226,7 +226,7 @@ export default function HireUsPage() {
         <section id="services" className="bg-bg-secondary py-14 sm:py-20 lg:py-28 relative noise-bg">
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
             <div className="text-center mb-10 sm:mb-16 animate-on-scroll">
-              <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+              <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
                 Services
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-4">
@@ -242,7 +242,7 @@ export default function HireUsPage() {
               {services.map((s, i) => (
                 <article
                   key={s.title}
-                  className="animate-on-scroll group bg-bg-card rounded-lg overflow-hidden hover:translate-y-[-4px] hover:shadow-[0_10px_40px_rgba(0,0,0,0.4)] transition-all duration-300 border border-white/5 hover:border-accent-gold/40"
+                  className="animate-on-scroll group bg-bg-card rounded-lg overflow-hidden hover:translate-y-[-4px] hover:shadow-[0_10px_40px_rgba(0,0,0,0.4)] transition-all duration-300 border border-white/5 hover:border-accent-blue/40"
                 >
                   <div className="aspect-[16/10] relative overflow-hidden">
                     <img
@@ -253,12 +253,12 @@ export default function HireUsPage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-bg-card via-bg-card/30 to-transparent" />
                     <div className="absolute top-4 left-4">
-                      <span className="inline-flex items-center px-3 py-1.5 bg-black/60 backdrop-blur border border-accent-gold/40 rounded-full text-accent-gold text-[10px] uppercase tracking-[3px] font-bold font-body">
+                      <span className="inline-flex items-center px-3 py-1.5 bg-black/60 backdrop-blur border border-accent-blue/40 rounded-full text-accent-blue-light text-[10px] uppercase tracking-[3px] font-bold font-body">
                         {String(i + 1).padStart(2, "0")}
                       </span>
                     </div>
                   </div>
-                  <div className="p-6 sm:p-7 border-l-2 border-accent-gold -mt-px">
+                  <div className="p-6 sm:p-7 border-l-2 border-accent-blue -mt-px">
                     <h3 className="font-heading text-xl lg:text-2xl font-bold uppercase mb-3 text-white">
                       {s.title}
                     </h3>
@@ -279,7 +279,7 @@ export default function HireUsPage() {
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="animate-on-scroll order-2 lg:order-1">
-                <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+                <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
                   The Team
                 </p>
                 <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-6 leading-tight">
@@ -306,7 +306,7 @@ export default function HireUsPage() {
                     "Trusted to keep what they see and hear in the room",
                   ].map((line) => (
                     <li key={line} className="flex items-start gap-3 text-white font-body">
-                      <span className="text-accent-gold flex-shrink-0 mt-1">▸</span>
+                      <span className="text-accent-blue-light flex-shrink-0 mt-1">▸</span>
                       <span>{line}</span>
                     </li>
                   ))}
@@ -338,7 +338,7 @@ export default function HireUsPage() {
         <section className="bg-bg-secondary py-14 sm:py-20 lg:py-28 relative noise-bg">
           <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12">
             <div className="text-center mb-10 sm:mb-16 animate-on-scroll">
-              <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+              <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
                 The Bar
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-4">
@@ -354,13 +354,13 @@ export default function HireUsPage() {
               {credentials.map((c, i) => (
                 <div
                   key={c.label}
-                  className={`animate-on-scroll bg-bg-card/60 backdrop-blur border border-accent-gold/30 rounded-lg p-6 sm:p-8 ${
+                  className={`animate-on-scroll bg-bg-card/60 backdrop-blur border border-accent-blue/30 rounded-lg p-6 sm:p-8 ${
                     i === credentials.length - 1 && credentials.length % 2 === 1
                       ? "sm:col-span-2"
                       : ""
                   }`}
                 >
-                  <p className="text-accent-gold text-xs uppercase tracking-[3px] font-bold mb-3 font-body">
+                  <p className="text-accent-blue-light text-xs uppercase tracking-[3px] font-bold mb-3 font-body">
                     {c.label}
                   </p>
                   <p className="text-white text-base lg:text-lg leading-relaxed font-body">
@@ -387,7 +387,7 @@ export default function HireUsPage() {
 
           <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-12">
             <div className="text-center mb-10 sm:mb-12 animate-on-scroll">
-              <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+              <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
                 Who We Serve
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-6">
@@ -420,7 +420,7 @@ export default function HireUsPage() {
         <section className="bg-bg-secondary py-14 sm:py-20 lg:py-28 relative noise-bg">
           <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12">
             <div className="text-center mb-10 sm:mb-16 animate-on-scroll">
-              <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+              <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
                 The Process
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
@@ -432,7 +432,7 @@ export default function HireUsPage() {
               {process.map((p) => (
                 <article
                   key={p.step}
-                  className="animate-on-scroll group bg-bg-card rounded-lg overflow-hidden border-t-2 border-accent-red hover:translate-y-[-4px] transition-all duration-300"
+                  className="animate-on-scroll group bg-bg-card rounded-lg overflow-hidden border-t-2 border-accent-blue hover:translate-y-[-4px] transition-all duration-300"
                 >
                   <div className="aspect-[16/9] relative overflow-hidden">
                     <img
@@ -442,7 +442,7 @@ export default function HireUsPage() {
                       className="w-full h-full object-cover object-center opacity-70 transition-all duration-[1000ms] group-hover:opacity-95 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-bg-card via-bg-card/40 to-transparent" />
-                    <p className="absolute bottom-3 left-6 font-heading text-6xl text-accent-red font-bold leading-none drop-shadow-[0_2px_10px_rgba(0,0,0,0.6)]">
+                    <p className="absolute bottom-3 left-6 font-heading text-6xl text-accent-blue-light font-bold leading-none drop-shadow-[0_2px_10px_rgba(0,0,0,0.6)]">
                       {p.step}
                     </p>
                   </div>
@@ -475,7 +475,7 @@ export default function HireUsPage() {
 
           <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-12 text-center">
             <div className="animate-on-scroll">
-              <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+              <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
                 Begin
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-6">
@@ -491,7 +491,7 @@ export default function HireUsPage() {
             <div className="animate-on-scroll flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <a
                 href={CONTACT_MAILTO}
-                className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-10 py-4 bg-accent-red text-white text-sm sm:text-base font-bold uppercase tracking-[2px] sm:tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_30px_rgba(196,30,30,0.6)] hover:scale-[1.03] transition-all duration-300 text-center min-h-[52px]"
+                className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-10 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] sm:tracking-[3px] rounded hover:bg-accent-blue-dark hover:shadow-[0_0_30px_rgba(46,114,184,0.6)] hover:scale-[1.03] transition-all duration-300 text-center min-h-[52px]"
               >
                 Email Franck Directly
               </a>
@@ -499,7 +499,7 @@ export default function HireUsPage() {
                 href="https://eprotectionvip.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-8 py-4 border border-accent-gold text-accent-gold text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-gold/10 transition-all duration-300 text-center min-h-[52px]"
+                className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-8 py-4 border border-accent-blue text-accent-blue-light text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue/10 transition-all duration-300 text-center min-h-[52px]"
               >
                 Visit eProtectionVIP.com
               </a>

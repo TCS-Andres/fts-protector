@@ -29,7 +29,7 @@ export default function TestimonialsSection() {
           {testimonialVideos.map((video, i) => (
             <div
               key={i}
-              className="animate-on-scroll bg-bg-card rounded-lg border-t-2 border-accent-red overflow-hidden hover:translate-y-[-4px] hover:shadow-xl transition-all duration-300"
+              className="animate-on-scroll bg-bg-card rounded-lg border-t-2 border-accent-blue overflow-hidden hover:translate-y-[-4px] hover:shadow-xl transition-all duration-300"
             >
               <video
                 controls

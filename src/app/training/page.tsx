@@ -83,13 +83,13 @@ export default function TrainingPage() {
           </div>
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-36 pb-16 sm:pt-44 lg:pt-32 w-full">
             <div className="max-w-3xl">
-              <p className="hero-animate hero-animate-1 text-accent-gold text-xs sm:text-sm uppercase tracking-[5px] font-bold mb-5 font-body">
+              <p className="hero-animate hero-animate-1 text-accent-blue-light text-xs sm:text-sm uppercase tracking-[5px] font-bold mb-5 font-body">
                 Learn From Franck
               </p>
               <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
                 Become the
                 <br />
-                <span className="text-accent-red">Protector.</span>
+                <span className="text-accent-blue-light">Protector.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed max-w-2xl font-body">
                 In person or online, beginner to advanced — every path to
@@ -106,7 +106,7 @@ export default function TrainingPage() {
         <section className="bg-bg-primary py-16 sm:py-20 lg:py-28 relative noise-bg">
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
             <div className="text-center mb-10 sm:mb-16 animate-on-scroll">
-              <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+              <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
                 Ways to Train
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
@@ -118,7 +118,7 @@ export default function TrainingPage() {
               {programs.map((p) => (
                 <div
                   key={p.title}
-                  className="animate-on-scroll group flex flex-col bg-bg-card rounded-lg overflow-hidden border border-white/5 hover:border-accent-gold/40 transition-all duration-300"
+                  className="animate-on-scroll group flex flex-col bg-bg-card rounded-lg overflow-hidden border border-white/5 hover:border-accent-blue/40 transition-all duration-300"
                 >
                   <div className="aspect-[16/9] relative overflow-hidden">
                     <img
@@ -129,11 +129,11 @@ export default function TrainingPage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-bg-card via-bg-card/40 to-transparent" />
                     <div className="absolute top-4 left-4 flex items-center gap-2">
-                      <span className="inline-flex items-center px-3 py-1.5 bg-black/60 backdrop-blur border border-accent-gold/40 rounded-full text-accent-gold text-[10px] uppercase tracking-[2px] font-bold font-body">
+                      <span className="inline-flex items-center px-3 py-1.5 bg-black/60 backdrop-blur border border-accent-blue/40 rounded-full text-accent-blue-light text-[10px] uppercase tracking-[2px] font-bold font-body">
                         {p.kicker}
                       </span>
                       {p.status === "soon" && (
-                        <span className="inline-flex items-center px-3 py-1.5 bg-accent-red text-white rounded-full text-[10px] uppercase tracking-[2px] font-bold font-body">
+                        <span className="inline-flex items-center px-3 py-1.5 bg-accent-blue text-white rounded-full text-[10px] uppercase tracking-[2px] font-bold font-body">
                           Coming Soon
                         </span>
                       )}
@@ -155,7 +155,7 @@ export default function TrainingPage() {
                         href={p.href}
                         target={p.external ? "_blank" : undefined}
                         rel={p.external ? "noopener noreferrer" : undefined}
-                        className="text-accent-gold text-sm uppercase tracking-[2px] font-bold hover:text-white transition-colors font-body"
+                        className="text-accent-blue-light text-sm uppercase tracking-[2px] font-bold hover:text-white transition-colors font-body"
                       >
                         {p.cta} &rarr;
                       </a>

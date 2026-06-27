@@ -16,7 +16,7 @@ export default function EPImageMarquee() {
   return (
     <section className="bg-bg-primary py-14 sm:py-20 lg:py-24 relative overflow-hidden noise-bg">
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 mb-8 sm:mb-12 text-center">
-        <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body animate-on-scroll">
+        <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body animate-on-scroll">
           In the Field
         </p>
         <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white animate-on-scroll">
@@ -48,7 +48,7 @@ export default function EPImageMarquee() {
                 />
               </div>
               <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent px-4 py-4 pt-12">
-                <p className="text-accent-gold text-[10px] uppercase tracking-[3px] font-bold font-body">
+                <p className="text-accent-blue-light text-[10px] uppercase tracking-[3px] font-bold font-body">
                   Scene
                 </p>
                 <p className="text-white text-sm sm:text-base font-bold font-body mt-1">

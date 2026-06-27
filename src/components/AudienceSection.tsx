@@ -26,7 +26,7 @@ export default function AudienceSection() {
     <section id="audience" className="bg-bg-secondary py-14 sm:py-20 lg:py-28 relative noise-bg">
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-10 sm:mb-16 animate-on-scroll">
-          <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+          <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
             Everyone Is a Protector
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
@@ -65,7 +65,7 @@ export default function AudienceSection() {
                   href="https://buy.stripe.com/9B65kF3sl0W96yQ1TS57W04"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-accent-red text-sm uppercase tracking-[2px] font-bold hover:text-white transition-colors font-body"
+                  className="text-accent-blue-light text-sm uppercase tracking-[2px] font-bold hover:text-white transition-colors font-body"
                 >
                   {a.cta} &rarr;
                 </a>

@@ -61,8 +61,8 @@ const stats = [
 
 export default function EPStats() {
   return (
-    <section className="bg-bg-secondary py-12 sm:py-16 lg:py-20 relative border-y border-accent-gold/20">
-      <div className="absolute inset-0 bg-gradient-to-r from-accent-gold/5 via-transparent to-accent-gold/5" />
+    <section className="bg-bg-secondary py-12 sm:py-16 lg:py-20 relative border-y border-accent-blue/20">
+      <div className="absolute inset-0 bg-gradient-to-r from-accent-blue/5 via-transparent to-accent-blue/5" />
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-6 lg:divide-x lg:divide-white/10">
           {stats.map((s, i) => (

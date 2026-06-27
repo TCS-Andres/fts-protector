@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-bg-primary border-t border-accent-red">
+    <footer className="bg-bg-primary border-t border-accent-blue">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
         {/* Large stacked logo */}
         <div className="flex flex-col items-center mb-12">
@@ -28,7 +28,7 @@ export default function Footer() {
             <a
               key={l.href}
               href={l.href}
-              className="text-text-secondary hover:text-accent-gold transition-colors font-body uppercase tracking-[1.5px] text-xs"
+              className="text-text-secondary hover:text-accent-blue-light transition-colors font-body uppercase tracking-[1.5px] text-xs"
             >
               {l.label}
             </a>
@@ -84,7 +84,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={social.label}
-              className="text-white/60 hover:text-accent-red transition-colors duration-300"
+              className="text-white/60 hover:text-accent-blue-light transition-colors duration-300"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                 <path d={social.path} fill="currentColor" />
