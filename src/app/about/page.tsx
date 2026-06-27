@@ -8,7 +8,7 @@ import { routes, links } from "@/lib/links";
 export const metadata: Metadata = {
   title: "About Franck Pala | FrancktheSolution",
   description:
-    "Franck Pala — 20+ years in executive protection, former professional boxer, defensive-tactics innovator, inventor of the patented Self-Defender, active fugitive apprehension agent, and author of Circular Footwork Mechanics.",
+    "Franck Pala — 20+ years in executive protection, former professional boxer, defensive-tactics innovator, inventor of the patented SelfDefenderTool, active fugitive apprehension agent, and author of Circular Footwork Mechanics.",
   alternates: { canonical: "/about" },
 };
 
@@ -23,7 +23,7 @@ const timeline = [
   },
   {
     title: "The Inventor",
-    body: "Creator of the Self-Defender tool (three patents) and a patent-pending system for improvised self-defense, including the everyday fork.",
+    body: "Creator of the SelfDefenderTool (three patents) and a patent-pending system for improvised self-defense, including the everyday fork.",
   },
   {
     title: "Still in the Field",
@@ -101,9 +101,9 @@ export default function AboutPage() {
                   rel="noopener noreferrer"
                   className="text-accent-gold font-semibold underline decoration-accent-gold/50 underline-offset-4 hover:text-white transition-colors"
                 >
-                  Self-Defender
+                  SelfDefenderTool
                 </a>{" "}
-                tool holds three patents, with a patent-pending improvised-weapon
+                holds three patents, with a patent-pending improvised-weapon
                 system to follow.
               </p>
               <p>

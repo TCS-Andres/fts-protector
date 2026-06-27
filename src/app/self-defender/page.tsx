@@ -6,16 +6,16 @@ import ScrollAnimator from "@/components/ScrollAnimator";
 import { links } from "@/lib/links";
 
 export const metadata: Metadata = {
-  title: "The Self-Defender — Patented Self-Defense Tool | FrancktheSolution",
+  title: "The SelfDefenderTool — Patented Self-Defense Tool | FrancktheSolution",
   description:
-    "The Self-Defender is a patented everyday-carry self-defense tool invented by Franck Pala. Three patents. Built from 20+ years of real-world protection experience.",
+    "The SelfDefenderTool is a patented everyday-carry self-defense tool invented by Franck Pala. Three patents. Built from 20+ years of real-world protection experience.",
   alternates: { canonical: "/self-defender" },
 };
 
 const features = [
   {
     title: "3 Patents",
-    body: "The Self-Defender is protected by three patents — a genuine innovation, not a rebranded keychain. Designed, tested, and refined by a working protector.",
+    body: "The SelfDefenderTool is protected by three patents — a genuine innovation, not a rebranded keychain. Designed, tested, and refined by a working protector.",
   },
   {
     title: "Everyday Carry",
@@ -27,7 +27,7 @@ const features = [
   },
   {
     title: "Anyone Can Use It",
-    body: "No martial arts background, no special strength. The Self-Defender is built so that ordinary people can defend themselves effectively under stress.",
+    body: "No martial arts background, no special strength. The SelfDefenderTool is built so that ordinary people can defend themselves effectively under stress.",
   },
 ];
 
@@ -51,7 +51,7 @@ export default function SelfDefenderPage() {
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-36 pb-20 sm:pt-44 lg:pt-32 w-full">
             <div className="max-w-3xl">
               <p className="hero-animate hero-animate-1 text-accent-gold text-xs sm:text-sm uppercase tracking-[5px] font-bold mb-5 font-body">
-                The Self-Defender — 3 Patents
+                The SelfDefenderTool — 3 Patents
               </p>
               <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
                 A Patented Edge,
@@ -59,7 +59,7 @@ export default function SelfDefenderPage() {
                 <span className="text-accent-red">Always On You.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-9 max-w-2xl font-body">
-                Invented by Franck Pala, the Self-Defender is a patented
+                Invented by Franck Pala, the SelfDefenderTool is a patented
                 everyday self-defense tool built from two decades of real-world
                 protection work — designed so anyone can stay safe.
               </p>
@@ -69,7 +69,7 @@ export default function SelfDefenderPage() {
                 rel="noopener noreferrer"
                 className="hero-animate hero-animate-3 inline-flex items-center justify-center px-9 py-4 bg-accent-gold text-black text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-white hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
               >
-                Get the Self-Defender &rarr;
+                Get the SelfDefenderTool &rarr;
               </a>
             </div>
           </div>
@@ -118,7 +118,7 @@ export default function SelfDefenderPage() {
               Anything Can Be a Tool
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed font-body">
-              Beyond the Self-Defender, Franck has developed a patent-pending
+              Beyond the SelfDefenderTool, Franck has developed a patent-pending
               system for turning an everyday object — even a simple fork — into
               an effective means of self-defense. It&apos;s the same principle
               that runs through everything he teaches: awareness, leverage, and
@@ -138,7 +138,7 @@ export default function SelfDefenderPage() {
               Carry the Solution
             </h2>
             <p className="text-text-secondary text-base lg:text-lg mb-8 font-body">
-              Order the Self-Defender directly from the official store.
+              Order the SelfDefenderTool directly from the official store.
             </p>
             <a
               href={links.selfDefender}

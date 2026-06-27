@@ -16,7 +16,7 @@ const inter = Inter({
 const SITE_TITLE =
   "FrancktheSolution — Protection, Training & Self-Defense Tools by Franck Pala";
 const SITE_DESCRIPTION =
-  "Franck Pala — 20+ years in executive protection, former professional boxer, defensive-tactics innovator, inventor of the patented Self-Defender, and active fugitive apprehension agent. Hire protection, train at his workshops and online courses, and get the tools. Protect. Train. Be the Solution.";
+  "Franck Pala — 20+ years in executive protection, former professional boxer, defensive-tactics innovator, inventor of the patented SelfDefenderTool, and active fugitive apprehension agent. Hire protection, train at his workshops and online courses, and get the tools. Protect. Train. Be the Solution.";
 const SITE_OG_IMAGE_ALT =
   "Franck Pala — FrancktheSolution: executive protection, training, and self-defense tools";
 

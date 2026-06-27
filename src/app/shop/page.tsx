@@ -8,7 +8,7 @@ import { links } from "@/lib/links";
 export const metadata: Metadata = {
   title: "Shop | FrancktheSolution",
   description:
-    "Get the patented Self-Defender tool, upcoming video courses, and Franck Pala's forthcoming book, Circular Footwork Mechanics (CFM).",
+    "Get the patented SelfDefenderTool, upcoming video courses, and Franck Pala's forthcoming book, Circular Footwork Mechanics (CFM).",
   alternates: { canonical: "/shop" },
 };
 
@@ -27,7 +27,7 @@ type Product = {
 const products: Product[] = [
   {
     kicker: "Self-Defense Tool",
-    title: "The Self-Defender",
+    title: "The SelfDefenderTool",
     body: "The patented everyday-carry self-defense tool invented by Franck. Three patents, built from 20+ years of real-world protection. Order direct from the official store.",
     image: "/images/19_emergency_extraction.png",
     cta: "Buy Now",
@@ -82,7 +82,7 @@ export default function ShopPage() {
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed max-w-2xl font-body">
                 The same tools and teaching Franck&apos;s own work is built on —
-                the patented Self-Defender, on-demand courses, and his upcoming
+                the patented SelfDefenderTool, on-demand courses, and his upcoming
                 book.
               </p>
             </div>

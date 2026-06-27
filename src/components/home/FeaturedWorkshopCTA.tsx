@@ -13,7 +13,7 @@ export default function FeaturedWorkshopCTA() {
       </div>
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-12 text-center animate-on-scroll">
-        <p className="text-accent-gold text-xs sm:text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+        <p className="text-accent-blue-light text-xs sm:text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
           Next Workshop — Saturday, July 18, 2026
         </p>
         <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-white mb-5 leading-tight">
@@ -29,7 +29,7 @@ export default function FeaturedWorkshopCTA() {
         </p>
         <a
           href={routes.workshops}
-          className="inline-flex items-center justify-center w-full sm:w-auto px-10 py-4 bg-accent-red text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_24px_rgba(196,30,30,0.5)] hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
+          className="inline-flex items-center justify-center w-full sm:w-auto px-10 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue-dark hover:shadow-[0_0_24px_rgba(46,114,184,0.5)] hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
         >
           See the Workshop
         </a>
