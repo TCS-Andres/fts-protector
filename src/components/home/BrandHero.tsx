@@ -47,11 +47,11 @@ export default function BrandHero() {
             </h1>
 
             <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-9 max-w-xl mx-auto lg:mx-0 font-body">
-              Over two decades protecting executives across the globe. A former
-              professional boxer, defensive-tactics expert, inventor, and
-              still-active fugitive apprehension agent. Whether you need
-              protection, want to learn it, or are looking for the tools — this
-              is where it starts.
+              No theory. No fluff. Only tactics that work when lives depend on
+              it. For over two decades, Franck Pala has forged ordinary people
+              into highly capable protectors — through real violence, real
+              pressure, and real solutions. Move smarter, strike faster, and
+              protect the people who count on you with absolute confidence.
             </p>
 
             <div className="hero-animate hero-animate-3 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
