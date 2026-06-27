@@ -41,7 +41,7 @@ function CountUp({
   return (
     <span
       ref={ref}
-      className="font-heading font-bold text-white text-4xl sm:text-5xl lg:text-6xl leading-none"
+      className="font-heading font-bold text-accent-blue-dark text-4xl sm:text-5xl lg:text-6xl leading-none"
     >
       {count}
       {suffix}
@@ -59,15 +59,15 @@ const stats = [
 export default function HomeStats() {
   return (
     <section
-      className="py-12 sm:py-16 lg:py-20 relative border-y border-accent-blue/20"
-      style={{ background: "linear-gradient(90deg, #0A0E14 0%, #101A28 50%, #0A0E14 100%)" }}
+      className="py-12 sm:py-16 lg:py-20 relative border-y border-black/10"
+      style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #EEF1F5 100%)" }}
     >
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-6 lg:divide-x lg:divide-white/10">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-6 lg:divide-x lg:divide-black/10">
           {stats.map((s, i) => (
             <div key={s.label} className={`text-center ${i > 0 ? "lg:pl-6" : ""}`}>
               <CountUp target={s.value} suffix={s.suffix} />
-              <p className="text-text-secondary text-[11px] sm:text-xs uppercase tracking-[2px] mt-3 font-body leading-tight max-w-[170px] mx-auto">
+              <p className="text-[#4A5568] text-[11px] sm:text-xs uppercase tracking-[2px] mt-3 font-body leading-tight max-w-[170px] mx-auto font-semibold">
                 {s.label}
               </p>
             </div>
