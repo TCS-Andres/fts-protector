@@ -1,8 +1,8 @@
 import { routes } from "@/lib/links";
 
 const tickerItems = [
-  "20+ Years Executive Protection",
-  "Inventor — SelfDefenderTool (3 Patents)",
+  "Elite Executive Protection",
+  "Inventor — TheSelfDefender (3 Patents)",
   "Former Professional Boxer",
   "Contractor for Special Units",
   "Active Fugitive Apprehension Agent — FL",

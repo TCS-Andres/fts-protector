@@ -2,7 +2,7 @@ import { routes, links } from "@/lib/links";
 
 const achievements = [
   { stat: "20+", label: "Years in Executive Protection" },
-  { stat: "3", label: "Patents — SelfDefenderTool" },
+  { stat: "3", label: "Patents — TheSelfDefender" },
   { stat: "Special Units", label: "Contractor & Instructor" },
   { stat: "Active", label: "Fugitive Apprehension Agent, FL" },
 ];
@@ -13,7 +13,7 @@ const credentials = [
   "Former Professional Boxer",
   "Expert — Close Combat & Defensive Tactics",
   "Improvised Weapons & Deadly Strategy",
-  "Inventor — SelfDefenderTool (3 Patents)",
+  "Inventor — TheSelfDefender (3 Patents)",
   "Fork Self-Defense System (Patent Pending)",
   "Active Fugitive Apprehension Agent (FL)",
   "Licensed & Insured Security + Investigations",
@@ -95,7 +95,7 @@ export default function BioSection() {
                   rel="noopener noreferrer"
                   className="text-accent-blue-light font-semibold underline decoration-accent-blue/50 underline-offset-4 hover:text-white transition-colors"
                 >
-                  SelfDefenderTool
+                  TheSelfDefender
                 </a>
                 , protected by{" "}
                 <span className="text-white font-semibold">three patents</span>,
