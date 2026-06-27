@@ -20,6 +20,7 @@ export const routes = {
   workshops: "/workshops",
   training: "/training",
   hireUs: "/hire-us",
+  investigations: "/investigations",
   selfDefender: "/self-defender",
   shop: "/shop",
   vlog: "/vlog",
