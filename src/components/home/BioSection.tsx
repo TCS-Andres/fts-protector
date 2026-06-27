@@ -1,9 +1,9 @@
 import { routes, links } from "@/lib/links";
 
 const achievements = [
-  { stat: "20+", label: "Years in Executive Protection" },
+  { stat: "20+", label: "Years Protecting & Training" },
   { stat: "3", label: "Patents — TheSelfDefender" },
-  { stat: "Special Units", label: "Contractor & Instructor" },
+  { stat: "CFM", label: "Creator of the System" },
   { stat: "Active", label: "Fugitive Apprehension Agent, FL" },
 ];
 
@@ -15,9 +15,9 @@ const credentials = [
   "Improvised Weapons & Deadly Strategy",
   "Inventor — TheSelfDefender (3 Patents)",
   "Fork Self-Defense System (Patent Pending)",
+  "Creator — Circular Footwork Mechanics (CFM)",
   "Active Fugitive Apprehension Agent (FL)",
   "Licensed & Insured Security + Investigations",
-  "Author — Circular Footwork Mechanics",
 ];
 
 export default function BioSection() {
@@ -72,23 +72,27 @@ export default function BioSection() {
               Who Is Franck
             </p>
             <h2 className="font-heading text-3xl lg:text-5xl font-bold uppercase mb-6 text-white leading-[1.05]">
-              A Lifetime On the Line — So You Don&apos;t Have to Be
+              Raising the Standard of Tactical Defense
             </h2>
 
             <div className="space-y-5 text-text-secondary text-base lg:text-lg leading-relaxed font-body">
               <p>
-                Franck Pala has spent more than two decades in executive
-                protection — guarding principals across multiple countries and
-                serving as a contractor for special units. This isn&apos;t
-                theory learned from a screen. It&apos;s a career built in the
-                field, where being wrong once is not an option.
+                Known worldwide as FrancktheSolution, Franck Pala is a
+                high-performance tactical instructor and one of the most
+                respected authorities in close-combat defensive tactics, deadly
+                strategies, and improvised weapons. A former professional
+                fighter turned elite protection specialist, he has built his
+                reputation transforming ordinary individuals into highly capable
+                operators through direct, efficient, combat-proven methods.
               </p>
               <p>
-                A former professional boxer, Franck is a recognized expert in
-                close combat, defensive tactics, improvised weapons, and
-                deadly-force strategy. He is also an{" "}
-                <span className="text-white font-semibold">inventor</span>: the
-                creator of{" "}
+                He is the creator of the{" "}
+                <span className="text-white font-semibold">
+                  Circular Footwork Mechanics (CFM)
+                </span>{" "}
+                system — a breakthrough in movement efficiency used by athletes,
+                law enforcement, contractors, and executive protection teams. He
+                is also an inventor: the mind behind{" "}
                 <a
                   href={links.selfDefender}
                   target="_blank"
@@ -99,23 +103,28 @@ export default function BioSection() {
                 </a>
                 , protected by{" "}
                 <span className="text-white font-semibold">three patents</span>,
-                and the developer of a patent-pending system for turning an
-                everyday fork into an effective self-defense tool.
+                plus a patent-pending system for turning an everyday fork into an
+                effective self-defense tool.
               </p>
               <p>
-                Today he remains an{" "}
-                <span className="text-white font-semibold">
-                  active fugitive apprehension agent
-                </span>{" "}
-                in the state of Florida, runs licensed and insured security and
-                investigation operations, and is writing his book,{" "}
-                <span className="text-white font-semibold italic">
-                  Circular Footwork Mechanics
-                </span>
-                . When you train with Franck, learn from him, or hire his team,
-                you&apos;re drawing on the real thing.
+                Franck teaches law-enforcement units, federal contractors,
+                private security teams, and high-net-worth executive clients. His
+                courses are built around real violence, real pressure, and real
+                solutions — no theory, no fluff, only tactics that work when
+                lives depend on it. His mission is simple: empower people to move
+                smarter, strike faster, survive danger, and protect others with
+                absolute confidence.
               </p>
             </div>
+
+            <blockquote className="mt-7 border-l-2 border-accent-blue pl-5">
+              <p className="font-heading text-lg lg:text-xl uppercase tracking-[1px] text-white italic">
+                &ldquo;Adapting to chaos rather than resisting it.&rdquo;
+              </p>
+              <cite className="text-accent-blue-light text-xs uppercase tracking-[2px] font-body not-italic">
+                — Franck Pala
+              </cite>
+            </blockquote>
 
             {/* Credential chips */}
             <div className="flex flex-wrap gap-2.5 mt-8">
