@@ -20,7 +20,7 @@ export default function Footer() {
             { label: "Workshops", href: "/workshops" },
             { label: "Training", href: "/training" },
             { label: "Hire Us", href: "/hire-us" },
-            { label: "SelfDefenderTool", href: "/self-defender" },
+            { label: "TheSelfDefender", href: "/self-defender" },
             { label: "Shop", href: "/shop" },
             { label: "Vlog", href: "/vlog" },
             { label: "About", href: "/about" },

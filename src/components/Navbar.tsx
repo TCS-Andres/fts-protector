@@ -7,7 +7,7 @@ const navLinks = [
   { label: "Workshops", href: routes.workshops },
   { label: "Training", href: routes.training },
   { label: "Hire Us", href: routes.hireUs },
-  { label: "SelfDefenderTool", href: routes.selfDefender },
+  { label: "TheSelfDefender", href: routes.selfDefender },
   { label: "Shop", href: routes.shop },
   { label: "Vlog", href: routes.vlog },
 ];
