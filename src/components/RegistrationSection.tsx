@@ -11,13 +11,13 @@ export default function RegistrationSection() {
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-12 text-center">
         <div className="animate-on-scroll">
-          <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+          <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
             ⚡ Limited-Time Early Bird
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-4">
             Lock In $147 Before July 5
           </h2>
-          <p className="text-accent-gold text-sm uppercase tracking-[3px] font-bold font-body mb-6">
+          <p className="text-accent-blue-light text-sm uppercase tracking-[3px] font-bold font-body mb-6">
             🔒 Only 16 spots available
           </p>
           <p className="text-text-secondary text-lg mb-12 font-body">
@@ -41,10 +41,10 @@ export default function RegistrationSection() {
               $147
             </span>
           </div>
-          <p className="text-accent-gold text-base uppercase tracking-[2px] font-bold mb-3 font-body">
+          <p className="text-accent-blue-light text-base uppercase tracking-[2px] font-bold mb-3 font-body">
             Save $50, Today Only Through July 5
           </p>
-          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-accent-gold text-black rounded-full text-xs sm:text-sm uppercase tracking-[2px] font-bold font-body shadow-[0_0_20px_rgba(212,175,55,0.45)]">
+          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-accent-blue text-white rounded-full text-xs sm:text-sm uppercase tracking-[2px] font-bold font-body shadow-[0_0_20px_rgba(46,114,184,0.45)]">
             🎟️ Includes a +1 FREE for your partner, family, or friend
           </div>
 
@@ -57,20 +57,20 @@ export default function RegistrationSection() {
 
           <ul className="text-left max-w-md mx-auto mb-8 space-y-3">
             <li className="flex items-start gap-3 text-text-secondary font-body">
-              <span className="text-accent-red flex-shrink-0 mt-1">✓</span>
+              <span className="text-accent-blue-light flex-shrink-0 mt-1">✓</span>
               <span>
                 <span className="text-white font-bold">Saturday, July 18, 2026</span> · 9:00 AM – 11:00 AM (2 hours)
               </span>
             </li>
             <li className="flex items-start gap-3 text-text-secondary font-body">
-              <span className="text-accent-red flex-shrink-0 mt-1">📍</span>
+              <span className="text-accent-blue-light flex-shrink-0 mt-1">📍</span>
               <span>
                 Held at{" "}
                 <a
                   href="https://maps.app.goo.gl/H6nH8Lnvpn6tE1M66"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white font-bold underline decoration-accent-red/60 underline-offset-4 hover:text-accent-red transition-colors"
+                  className="text-white font-bold underline decoration-accent-blue/60 underline-offset-4 hover:text-accent-blue-light transition-colors"
                 >
                   KO Zone, Miami
                 </a>
@@ -86,12 +86,12 @@ export default function RegistrationSection() {
               "Only 16 spots available, first come, first served",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3 text-text-secondary font-body">
-                <span className="text-accent-red flex-shrink-0 mt-1">✓</span>
+                <span className="text-accent-blue-light flex-shrink-0 mt-1">✓</span>
                 <span>{item}</span>
               </li>
             ))}
             <li className="flex items-start gap-3 text-text-secondary font-body">
-              <span className="text-accent-red flex-shrink-0 mt-1">👕</span>
+              <span className="text-accent-blue-light flex-shrink-0 mt-1">👕</span>
               <span>
                 <span className="text-white font-bold">What to wear:</span>{" "}
                 comfortable, closed-toe sneakers, jeans, and a belt
@@ -120,7 +120,7 @@ export default function RegistrationSection() {
           Group rates available for teams of 15+. Contact{" "}
           <a
             href="mailto:franck@eprotectionvip.com"
-            className="text-accent-red hover:underline"
+            className="text-accent-blue-light hover:underline"
           >
             franck@eprotectionvip.com
           </a>{" "}

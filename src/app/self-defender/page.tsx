@@ -50,13 +50,13 @@ export default function SelfDefenderPage() {
           </div>
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-36 pb-20 sm:pt-44 lg:pt-32 w-full">
             <div className="max-w-3xl">
-              <p className="hero-animate hero-animate-1 text-accent-gold text-xs sm:text-sm uppercase tracking-[5px] font-bold mb-5 font-body">
+              <p className="hero-animate hero-animate-1 text-accent-blue-light text-xs sm:text-sm uppercase tracking-[5px] font-bold mb-5 font-body">
                 TheSelfDefender — 3 Patents
               </p>
               <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
                 A Patented Edge,
                 <br />
-                <span className="text-accent-red">Always On You.</span>
+                <span className="text-accent-blue-light">Always On You.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-9 max-w-2xl font-body">
                 Invented by Franck Pala, TheSelfDefender is a patented
@@ -67,7 +67,7 @@ export default function SelfDefenderPage() {
                 href={links.selfDefender}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hero-animate hero-animate-3 inline-flex items-center justify-center px-9 py-4 bg-accent-gold text-black text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-white hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
+                className="hero-animate hero-animate-3 inline-flex items-center justify-center px-9 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-white hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
               >
                 Get TheSelfDefender &rarr;
               </a>
@@ -81,7 +81,7 @@ export default function SelfDefenderPage() {
         <section className="bg-bg-primary py-16 sm:py-20 lg:py-28 relative noise-bg">
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
             <div className="text-center mb-10 sm:mb-16 animate-on-scroll">
-              <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+              <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
                 Why It Works
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
@@ -92,7 +92,7 @@ export default function SelfDefenderPage() {
               {features.map((f) => (
                 <div
                   key={f.title}
-                  className="animate-on-scroll bg-bg-card border-l-2 border-accent-gold p-6 sm:p-8 rounded-lg"
+                  className="animate-on-scroll bg-bg-card border-l-2 border-accent-blue p-6 sm:p-8 rounded-lg"
                 >
                   <h3 className="font-heading text-xl lg:text-2xl font-bold uppercase mb-3 text-white">
                     {f.title}
@@ -111,7 +111,7 @@ export default function SelfDefenderPage() {
         {/* The fork system / improvised weapons */}
         <section className="bg-bg-secondary py-16 sm:py-20 lg:py-28 relative noise-bg">
           <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12 text-center animate-on-scroll">
-            <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+            <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
               Patent Pending
             </p>
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-6">
@@ -144,7 +144,7 @@ export default function SelfDefenderPage() {
               href={links.selfDefender}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center w-full sm:w-auto px-10 py-4 bg-accent-gold text-black text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-white hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-10 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-white hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
             >
               Visit theselfdefendertool.com &rarr;
             </a>

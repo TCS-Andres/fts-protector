@@ -47,7 +47,7 @@ export default function GallerySection() {
     <section className="bg-bg-secondary py-14 sm:py-20 lg:py-28 relative noise-bg overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-12 animate-on-scroll">
-          <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+          <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
             From the last workshop
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-4">
@@ -89,7 +89,7 @@ export default function GallerySection() {
             type="button"
             onClick={() => scrollBy(-1)}
             aria-label="Previous photo"
-            className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 backdrop-blur border border-white/10 text-white text-xl flex items-center justify-center hover:bg-accent-red/80 transition-colors"
+            className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 backdrop-blur border border-white/10 text-white text-xl flex items-center justify-center hover:bg-accent-blue/80 transition-colors"
           >
             &#8249;
           </button>
@@ -97,7 +97,7 @@ export default function GallerySection() {
             type="button"
             onClick={() => scrollBy(1)}
             aria-label="Next photo"
-            className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 backdrop-blur border border-white/10 text-white text-xl flex items-center justify-center hover:bg-accent-red/80 transition-colors"
+            className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 backdrop-blur border border-white/10 text-white text-xl flex items-center justify-center hover:bg-accent-blue/80 transition-colors"
           >
             &#8250;
           </button>
@@ -108,7 +108,7 @@ export default function GallerySection() {
               <span
                 key={i}
                 className={`h-1.5 rounded-full transition-all ${
-                  i === activeIndex ? "w-6 bg-accent-red" : "w-1.5 bg-white/30"
+                  i === activeIndex ? "w-6 bg-accent-blue" : "w-1.5 bg-white/30"
                 }`}
               />
             ))}
@@ -122,7 +122,7 @@ export default function GallerySection() {
               key={p.src}
               type="button"
               onClick={() => setLightbox(i)}
-              className={`aspect-[3/2] rounded-lg overflow-hidden bg-bg-card border border-white/5 group focus:outline-none focus:ring-2 focus:ring-accent-red ${
+              className={`aspect-[3/2] rounded-lg overflow-hidden bg-bg-card border border-white/5 group focus:outline-none focus:ring-2 focus:ring-accent-blue ${
                 i === 0 || i === 7 ? "col-span-2 row-span-2 aspect-square" : ""
               }`}
             >

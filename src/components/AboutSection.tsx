@@ -28,7 +28,7 @@ export default function AboutSection() {
 
           {/* Bio content */}
           <div className="animate-on-scroll">
-            <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+            <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
               Your Instructor
             </p>
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase mb-6 text-white leading-tight">
@@ -56,7 +56,7 @@ export default function AboutSection() {
               {credentials.map((cred) => (
                 <span
                   key={cred}
-                  className="px-4 py-2 border border-accent-gold/40 text-accent-gold text-xs uppercase tracking-[2px] rounded-full font-body"
+                  className="px-4 py-2 border border-accent-blue/40 text-accent-blue-light text-xs uppercase tracking-[2px] rounded-full font-body"
                 >
                   {cred}
                 </span>

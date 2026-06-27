@@ -58,13 +58,13 @@ export default function AboutPage() {
           </div>
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-36 pb-20 sm:pt-44 lg:pt-32 w-full">
             <div className="max-w-3xl">
-              <p className="hero-animate hero-animate-1 text-accent-gold text-xs sm:text-sm uppercase tracking-[5px] font-bold mb-5 font-body">
+              <p className="hero-animate hero-animate-1 text-accent-blue-light text-xs sm:text-sm uppercase tracking-[5px] font-bold mb-5 font-body">
                 About Franck Pala
               </p>
               <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
                 The Standard,
                 <br />
-                <span className="text-accent-red">Not the Story.</span>
+                <span className="text-accent-blue-light">Not the Story.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed max-w-2xl font-body">
                 Most people in this space talk about protection. Franck has
@@ -156,7 +156,7 @@ export default function AboutPage() {
               {timeline.map((t) => (
                 <div
                   key={t.title}
-                  className="animate-on-scroll bg-bg-card border-l-2 border-accent-gold p-6 sm:p-8 rounded-lg"
+                  className="animate-on-scroll bg-bg-card border-l-2 border-accent-blue p-6 sm:p-8 rounded-lg"
                 >
                   <h3 className="font-heading text-xl font-bold uppercase mb-3 text-white">
                     {t.title}
@@ -175,7 +175,7 @@ export default function AboutPage() {
         {/* The book */}
         <section className="bg-bg-secondary py-16 sm:py-20 lg:py-28 relative noise-bg">
           <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12 text-center animate-on-scroll">
-            <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+            <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
               Coming Soon — The Book
             </p>
             <h2 className="font-heading text-3xl lg:text-5xl font-bold uppercase text-white mb-5">
@@ -192,13 +192,13 @@ export default function AboutPage() {
                 href={links.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-4 bg-accent-red text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-red-dark hover:scale-[1.03] transition-all duration-300"
+                className="inline-flex items-center justify-center px-8 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue-dark hover:scale-[1.03] transition-all duration-300"
               >
                 Follow for Updates
               </a>
               <a
                 href={routes.hireUs}
-                className="inline-flex items-center justify-center px-8 py-4 border border-white/20 text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:border-accent-gold hover:text-accent-gold transition-all duration-300"
+                className="inline-flex items-center justify-center px-8 py-4 border border-white/20 text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:border-accent-blue hover:text-accent-blue-light transition-all duration-300"
               >
                 Work With Franck
               </a>

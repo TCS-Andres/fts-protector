@@ -155,7 +155,7 @@ body {
   display: block;
   width: 48px;
   height: 2px;
-  background: linear-gradient(to right, transparent, var(--color-accent-gold), transparent);
+  background: linear-gradient(to right, transparent, var(--color-accent-blue), transparent);
   margin: 0.75rem auto 0;
 }
 

@@ -53,7 +53,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
           {question}
         </span>
         <span
-          className={`text-accent-red text-2xl flex-shrink-0 transition-transform duration-300 ${
+          className={`text-accent-blue-light text-2xl flex-shrink-0 transition-transform duration-300 ${
             open ? "rotate-45" : ""
           }`}
         >

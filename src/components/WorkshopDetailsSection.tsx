@@ -31,13 +31,13 @@ export default function WorkshopDetailsSection() {
     <section className="bg-bg-primary py-14 sm:py-20 lg:py-28 relative noise-bg">
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-10 sm:mb-16 animate-on-scroll">
-          <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+          <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
             Pricing & Details
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase mb-4 text-white">
             Lock In $147 Before July 5
           </h2>
-          <p className="text-accent-gold text-sm uppercase tracking-[3px] font-bold font-body">
+          <p className="text-accent-blue-light text-sm uppercase tracking-[3px] font-bold font-body">
             🔒 Only 16 spots available, first come, first served
           </p>
         </div>
@@ -48,10 +48,10 @@ export default function WorkshopDetailsSection() {
             Limited Time
           </div>
           <div className="px-5 py-7 pt-12 sm:p-8 sm:pt-14 lg:p-10 lg:pt-12 text-center">
-            <p className="text-accent-gold text-xs uppercase tracking-[3px] font-bold mb-3 font-body">
+            <p className="text-accent-blue-light text-xs uppercase tracking-[3px] font-bold mb-3 font-body">
               ⚡ Early Bird Pricing, Ends July 5
             </p>
-            <div className="inline-flex items-center justify-center gap-2 mb-4 px-4 py-2 bg-accent-gold text-black rounded-full text-xs uppercase tracking-[2px] font-bold font-body shadow-[0_0_20px_rgba(212,175,55,0.45)]">
+            <div className="inline-flex items-center justify-center gap-2 mb-4 px-4 py-2 bg-accent-blue text-white rounded-full text-xs uppercase tracking-[2px] font-bold font-body shadow-[0_0_20px_rgba(46,114,184,0.45)]">
               🎟️ Every ticket includes a +1 FREE
             </div>
             <div className="flex items-baseline justify-center gap-4 mb-2">
@@ -63,7 +63,7 @@ export default function WorkshopDetailsSection() {
               </span>
             </div>
             <p className="text-white text-base font-body mb-2">
-              Save <span className="text-accent-gold font-bold">$50</span> and bring a +1 when you register before July 5
+              Save <span className="text-accent-blue-light font-bold">$50</span> and bring a +1 when you register before July 5
             </p>
             <p className="text-text-secondary text-sm font-body mb-6">
               After July 5, the price returns to <span className="text-white font-bold">$197 per person</span>.
@@ -111,7 +111,7 @@ export default function WorkshopDetailsSection() {
                           href={item.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="underline decoration-accent-red/60 underline-offset-4 hover:text-accent-red transition-colors"
+                          className="underline decoration-accent-blue/60 underline-offset-4 hover:text-accent-blue-light transition-colors"
                         >
                           {item.value}
                         </a>
