@@ -112,11 +112,13 @@ export default function ShopPage() {
                       }`}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-bg-card via-bg-card/40 to-transparent" />
-                    <span className="absolute top-4 left-4 inline-flex items-center px-3 py-1.5 bg-black/60 backdrop-blur border border-accent-blue/40 rounded-full text-accent-blue-light text-[10px] uppercase tracking-[2px] font-bold font-body">
+                    <span className="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] uppercase tracking-[2px] font-extrabold font-body text-white bg-gradient-to-r from-accent-blue to-accent-blue-light shadow-[0_0_20px_rgba(46,114,184,0.65)] ring-1 ring-white/20">
+                      <span className="w-1.5 h-1.5 rounded-full bg-white/90" />
                       {p.kicker}
                     </span>
                     {p.status === "soon" && (
-                      <span className="absolute top-4 right-4 inline-flex items-center px-3 py-1.5 bg-accent-blue text-white rounded-full text-[10px] uppercase tracking-[2px] font-bold font-body">
+                      <span className="absolute top-4 right-4 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] uppercase tracking-[2px] font-extrabold font-body text-black bg-gradient-to-r from-accent-gold to-[#F0DDA0] shadow-[0_0_22px_rgba(201,168,76,0.75)] ring-1 ring-black/10 animate-pulse">
+                        <span className="w-1.5 h-1.5 rounded-full bg-black/70" />
                         Coming Soon
                       </span>
                     )}
