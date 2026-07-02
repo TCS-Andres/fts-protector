@@ -1,23 +1,18 @@
 import { routes, links } from "@/lib/links";
 
 const achievements = [
-  { stat: "20+", label: "Years Protecting & Training" },
+  { stat: "20+", label: "Years as Global Elite Ops" },
   { stat: "3", label: "Patents — TheSelfDefender" },
-  { stat: "CFM", label: "Creator of the System" },
-  { stat: "Active", label: "Fugitive Apprehension Agent, FL" },
+  { stat: "CFM", label: "Creator — Circular Footwork Mechanics" },
+  { stat: "CCDS", label: "Creator — Close Combat Defense System" },
 ];
 
-const credentials = [
-  "Executive Protection Specialist",
-  "Contractor for Special Units",
-  "Former Professional Boxer",
-  "Expert — Close Combat & Defensive Tactics",
-  "Improvised Weapons & Deadly Strategy",
-  "Inventor — TheSelfDefender (3 Patents)",
-  "Fork Self-Defense System (Patent Pending)",
-  "Creator — Circular Footwork Mechanics (CFM)",
+// Primary roles, shown in order as a clean credential list.
+const roles = [
+  "Elite Executive Protection Specialist",
+  "Private Investigations",
+  "Expert — Close Combat Defensive Tactics, Improvised Weapons & Deadly Strategies",
   "Active Fugitive Apprehension Agent (FL)",
-  "Licensed & Insured Security + Investigations",
 ];
 
 export default function BioSection() {
@@ -86,13 +81,16 @@ export default function BioSection() {
                 operators through direct, efficient, combat-proven methods.
               </p>
               <p>
-                He is the creator of the{" "}
+                He is the creator of two proprietary systems —{" "}
                 <span className="text-white font-semibold">
                   Circular Footwork Mechanics (CFM)
                 </span>{" "}
-                system — a breakthrough in movement efficiency used by athletes,
-                law enforcement, contractors, and executive protection teams. He
-                is also an inventor: the mind behind{" "}
+                and the{" "}
+                <span className="text-white font-semibold">
+                  Close Combat Defense System (CCDS)
+                </span>{" "}
+                — used by athletes, law enforcement, contractors, and executive
+                protection teams. He is also an inventor: the mind behind{" "}
                 <a
                   href={links.selfDefender}
                   target="_blank"
@@ -126,16 +124,26 @@ export default function BioSection() {
               </cite>
             </blockquote>
 
-            {/* Credential chips */}
-            <div className="flex flex-wrap gap-2.5 mt-8">
-              {credentials.map((c) => (
-                <span
-                  key={c}
-                  className="px-3.5 py-1.5 border border-accent-blue/35 text-accent-blue-light text-[11px] uppercase tracking-[1.5px] rounded-full font-body"
-                >
-                  {c}
-                </span>
-              ))}
+            {/* What Franck does — clean credential list */}
+            <div className="mt-8">
+              <p className="text-accent-blue-light text-xs uppercase tracking-[3px] font-bold mb-4 font-body">
+                What Franck Does
+              </p>
+              <div className="rounded-xl border border-accent-blue/25 bg-bg-steel-card/60 overflow-hidden">
+                {roles.map((r) => (
+                  <div
+                    key={r}
+                    className="flex items-start gap-3.5 px-5 py-4 border-b border-white/5 last:border-b-0 hover:bg-accent-blue/5 transition-colors"
+                  >
+                    <span className="mt-0.5 flex-shrink-0 w-6 h-6 rounded-md bg-accent-blue/15 border border-accent-blue/40 flex items-center justify-center text-accent-blue-light text-xs">
+                      ▸
+                    </span>
+                    <span className="text-white text-sm lg:text-[15px] font-body leading-snug">
+                      {r}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
 
             <div className="mt-9 flex flex-col sm:flex-row gap-3 sm:gap-4">
