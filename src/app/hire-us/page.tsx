@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
 };
 
-const CONTACT_EMAIL = "franck@eprotectionvip.com";
+const CONTACT_EMAIL = "info@franckthesolution.com";
 const CONTACT_MAILTO = `mailto:${CONTACT_EMAIL}?subject=eProtection%20VIP%20Inquiry`;
 
 const services = [

@@ -119,10 +119,10 @@ export default function RegistrationSection() {
         <p className="text-text-muted text-xs font-body mt-8">
           Group rates available for teams of 15+. Contact{" "}
           <a
-            href="mailto:franck@eprotectionvip.com"
+            href="mailto:info@franckthesolution.com"
             className="text-accent-blue-light hover:underline"
           >
-            franck@eprotectionvip.com
+            info@franckthesolution.com
           </a>{" "}
           for details.
         </p>

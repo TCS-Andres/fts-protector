@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title: PAGE_TITLE, description: PAGE_DESCRIPTION },
 };
 
-const CONTACT_EMAIL = "franck@eprotectionvip.com";
+const CONTACT_EMAIL = "info@franckthesolution.com";
 const CONTACT_MAILTO = `mailto:${CONTACT_EMAIL}?subject=Investigative%20Services%20Inquiry`;
 
 const stats = [
