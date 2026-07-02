@@ -108,6 +108,32 @@ export default function SelfDefenderPage() {
 
         <RedDivider />
 
+        {/* See it in action — product demo video */}
+        <section className="bg-bg-secondary py-16 sm:py-20 lg:py-28 relative noise-bg">
+          <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12">
+            <div className="text-center mb-8 sm:mb-10 animate-on-scroll">
+              <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+                See It In Action
+              </p>
+              <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white">
+                The Tool, In the Real World
+              </h2>
+            </div>
+            <div className="animate-on-scroll rounded-xl overflow-hidden border border-accent-blue/30 shadow-[0_20px_60px_rgba(0,0,0,0.5)] bg-black">
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                poster="/images/selfdefender_demo_poster.jpg"
+                className="w-full aspect-video bg-black"
+                src="/videos/selfdefender_demo.mp4#t=0.1"
+              />
+            </div>
+          </div>
+        </section>
+
+        <RedDivider />
+
         {/* The fork system / improvised weapons */}
         <section className="bg-bg-secondary py-16 sm:py-20 lg:py-28 relative noise-bg">
           <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12 text-center animate-on-scroll">
