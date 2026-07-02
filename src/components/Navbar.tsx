@@ -44,15 +44,18 @@ export default function Navbar() {
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 h-[90px] flex items-center justify-between px-6 lg:px-12 transition-all duration-300 ${
-          scrolled ? "nav-scrolled" : "bg-transparent"
+          scrolled ? "nav-neon-scrolled" : "nav-neon"
         }`}
       >
+        {/* Animated neon sweep on the bottom edge */}
+        <span className="nav-sweep" aria-hidden />
+
         {/* Logo */}
         <a href="/" className="flex items-center gap-3">
           <img
             src="/logo.png"
             alt="FrancktheSolution"
-            className="h-[90px] lg:h-[70px] w-auto"
+            className="h-[90px] lg:h-[70px] w-auto drop-shadow-[0_0_14px_rgba(46,114,184,0.45)]"
           />
         </a>
 
@@ -63,10 +66,10 @@ export default function Navbar() {
               <div key={link.label} className="relative group">
                 <a
                   href={link.href}
-                  className="flex items-center gap-1 text-[13px] uppercase tracking-[1.5px] text-text-secondary group-hover:text-white transition-colors duration-300 font-body whitespace-nowrap"
+                  className="nav-neon-link flex items-center gap-1 text-[13px] uppercase tracking-[1.5px] font-body whitespace-nowrap"
                 >
                   {link.label}
-                  <span className="text-[9px] mt-0.5 transition-transform duration-300 group-hover:rotate-180">
+                  <span className="text-[9px] mt-0.5 transition-transform duration-300 group-hover:rotate-180 group-hover:text-accent-blue-light">
                     ▾
                   </span>
                 </a>
@@ -94,7 +97,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-[13px] uppercase tracking-[1.5px] text-text-secondary hover:text-white transition-colors duration-300 font-body whitespace-nowrap"
+                className="nav-neon-link text-[13px] uppercase tracking-[1.5px] font-body whitespace-nowrap"
               >
                 {link.label}
               </a>
@@ -104,7 +107,7 @@ export default function Navbar() {
             href={links.workshopStripe}
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-1 px-5 py-2.5 bg-accent-red text-white text-[13px] font-bold uppercase tracking-[1.5px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_20px_rgba(196,30,30,0.4)] transition-all duration-300 hover:scale-[1.03] whitespace-nowrap"
+            className="ml-1 px-5 py-2.5 bg-accent-red text-white text-[13px] font-bold uppercase tracking-[1.5px] rounded ring-1 ring-accent-blue/40 hover:bg-accent-red-dark hover:ring-accent-blue-light hover:shadow-[0_0_22px_rgba(46,114,184,0.55)] transition-all duration-300 hover:scale-[1.03] whitespace-nowrap"
           >
             $147 Early Bird
           </a>
@@ -112,13 +115,13 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className="lg:hidden flex flex-col gap-1.5 p-2"
+          className="lg:hidden group flex flex-col gap-1.5 p-2"
           onClick={() => setMobileOpen(true)}
           aria-label="Open menu"
         >
-          <span className="block w-6 h-0.5 bg-white" />
-          <span className="block w-6 h-0.5 bg-white" />
-          <span className="block w-6 h-0.5 bg-white" />
+          <span className="block w-6 h-0.5 bg-accent-blue-light shadow-[0_0_8px_#6ca8e2] transition-all group-hover:w-7" />
+          <span className="block w-6 h-0.5 bg-white shadow-[0_0_6px_rgba(108,168,226,0.7)]" />
+          <span className="block w-6 h-0.5 bg-accent-blue-light shadow-[0_0_8px_#6ca8e2] transition-all group-hover:w-7" />
         </button>
       </nav>
 
