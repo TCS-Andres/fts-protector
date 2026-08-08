@@ -2,12 +2,12 @@ import { routes } from "@/lib/links";
 
 const tickerItems = [
   "Elite Executive Protection",
-  "Inventor — TheSelfDefender (3 Patents)",
-  "Inventor — FranckTheSolution Fork (Patented)",
+  "Inventor - TheSelfDefender (3 Patents)",
+  "Inventor - FranckTheSolution Fork (Patented)",
   "Former Professional Boxer",
   "Contractor for Special Units",
-  "Active Fugitive Apprehension Agent — FL",
-  "Expert — Close Combat, Defensive Tactics & Improvised Weapons",
+  "Active Fugitive Apprehension Agent - FL",
+  "Expert - Close Combat, Defensive Tactics & Improvised Weapons",
   "Deadly-Force Strategy",
 ];
 
@@ -36,7 +36,7 @@ export default function BrandHero() {
           {/* Text */}
           <div className="text-center lg:text-left order-2 lg:order-1">
             <p className="hero-animate hero-animate-1 text-accent-blue-light text-xs sm:text-sm uppercase tracking-[5px] font-bold mb-5 font-body">
-              Franck Pala — FrancktheSolution
+              Franck Pala - FrancktheSolution
             </p>
 
             <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl xl:text-8xl font-bold uppercase leading-[0.92] text-white mb-6">
@@ -50,7 +50,7 @@ export default function BrandHero() {
             <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-9 max-w-xl mx-auto lg:mx-0 font-body">
               No theory. No fluff. Only tactics that work when lives depend on
               it. For over two decades, Franck Pala has forged ordinary people
-              into highly capable protectors — through real violence, real
+              into highly capable protectors - through real violence, real
               pressure, and real solutions. Move smarter, strike faster, and
               protect the people who count on you with absolute confidence.
             </p>
@@ -71,13 +71,13 @@ export default function BrandHero() {
             </div>
           </div>
 
-          {/* Portrait — framed, full, no zoom */}
+          {/* Portrait - framed, full, no zoom */}
           <div className="hero-animate hero-animate-1 order-1 lg:order-2 relative mx-auto w-full max-w-sm lg:max-w-none">
             <div className="absolute -inset-3 bg-gradient-to-br from-accent-blue/30 via-transparent to-accent-blue/10 rounded-2xl blur-xl" />
             <div className="relative rounded-xl overflow-hidden border border-accent-blue/30 bg-black/40 shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
               <img
                 src="/images/franck_instructor_portrait.jpg"
-                alt="Franck Pala — executive protection specialist and instructor"
+                alt="Franck Pala - executive protection specialist and instructor"
                 className="w-full h-auto object-contain"
               />
               <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/70 to-transparent pointer-events-none" />
@@ -86,7 +86,7 @@ export default function BrandHero() {
                   Franck Pala
                 </p>
                 <p className="text-accent-blue-light text-[11px] uppercase tracking-[3px] font-body mt-1">
-                  TactOps — The Solution
+                  TactOps - The Solution
                 </p>
               </div>
             </div>

@@ -9,24 +9,24 @@ const CONTACT_EMAIL = "info@franckthesolution.com";
 const MAILTO = `mailto:${CONTACT_EMAIL}?subject=Online%20Training%20Inquiry`;
 
 export const metadata: Metadata = {
-  title: "Online Training — Live via Zoom | FrancktheSolution",
+  title: "Online Training - Live via Zoom | FrancktheSolution",
   description:
-    "Train live with Franck Pala from anywhere in the world. Real-time online training sessions over Zoom — personalized coaching, CFM and CCDS fundamentals, awareness, and improvised-weapons skills.",
+    "Train live with Franck Pala from anywhere in the world. Real-time online training sessions over Zoom - personalized coaching, CFM and CCDS fundamentals, awareness, and improvised-weapons skills.",
   alternates: { canonical: "/training/online" },
 };
 
 const features = [
   {
     title: "Live, Not Pre-Recorded",
-    body: "Real-time sessions over Zoom with Franck himself — he watches you move, corrects you on the spot, and adapts the session as you go. This is coaching, not content.",
+    body: "Real-time sessions over Zoom with Franck himself - he watches you move, corrects you on the spot, and adapts the session as you go. This is coaching, not content.",
   },
   {
     title: "Personalized Curriculum",
-    body: "Your sessions are built around your goals, your environment, and your starting point — the same programming approach as in-person private training.",
+    body: "Your sessions are built around your goals, your environment, and your starting point - the same programming approach as in-person private training.",
   },
   {
     title: "Train From Anywhere",
-    body: "Miami to Manila — all you need is a camera and some floor space. Keep training on business trips, deployments, or wherever life puts you.",
+    body: "Miami to Manila - all you need is a camera and some floor space. Keep training on business trips, deployments, or wherever life puts you.",
   },
   {
     title: "CFM & CCDS Foundations",
@@ -34,11 +34,11 @@ const features = [
   },
   {
     title: "Awareness & Strategy",
-    body: "Situational awareness, threat recognition, home and travel security, improvised weapons — the thinking skills that don't need a training partner.",
+    body: "Situational awareness, threat recognition, home and travel security, improvised weapons - the thinking skills that don't need a training partner.",
   },
   {
     title: "Drills & Accountability",
-    body: "You leave every session with homework — solo drills, movement patterns, and checkpoints Franck reviews with you the next time you meet.",
+    body: "You leave every session with homework - solo drills, movement patterns, and checkpoints Franck reviews with you the next time you meet.",
   },
 ];
 
@@ -58,12 +58,12 @@ const steps = [
   {
     num: "02",
     title: "Schedule Your Sessions",
-    body: "Pick a cadence that works — weekly, biweekly, or an intensive block. Sessions run live over Zoom.",
+    body: "Pick a cadence that works - weekly, biweekly, or an intensive block. Sessions run live over Zoom.",
   },
   {
     num: "03",
     title: "Train Live",
-    body: "Show up, move, get corrected in real time — and build real capability from wherever you are.",
+    body: "Show up, move, get corrected in real time - and build real capability from wherever you are.",
   },
 ];
 
@@ -87,7 +87,7 @@ export default function OnlineTrainingPage() {
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-36 pb-20 sm:pt-44 lg:pt-32 w-full">
             <div className="max-w-3xl">
               <p className="hero-animate hero-animate-1 text-accent-blue-light text-xs sm:text-sm uppercase tracking-[5px] font-bold mb-5 font-body">
-                Online Training — Live via Zoom
+                Online Training - Live via Zoom
               </p>
               <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
                 Train With Franck,
@@ -95,7 +95,7 @@ export default function OnlineTrainingPage() {
                 <span className="text-accent-blue-light">From Anywhere.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-9 max-w-2xl font-body">
-                Live one-on-one and small-group training sessions over Zoom —
+                Live one-on-one and small-group training sessions over Zoom -
                 real-time coaching from Franck, personalized to your goals, no
                 matter where in the world you are.
               </p>
@@ -207,7 +207,7 @@ export default function OnlineTrainingPage() {
               Keep Training All Week
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed font-body mb-8">
-              Live Zoom sessions are the core — and between them you can drill
+              Live Zoom sessions are the core - and between them you can drill
               with Franck&apos;s Defensive Tactics community on Skool, with
               structured on-demand video courses launching soon.
             </p>
@@ -233,7 +233,7 @@ export default function OnlineTrainingPage() {
               Ready to Train Online?
             </h2>
             <p className="text-text-secondary text-base lg:text-lg mb-8 font-body">
-              Tell us your goals and your time zone — we&apos;ll get your first
+              Tell us your goals and your time zone - we&apos;ll get your first
               live session on the calendar.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">

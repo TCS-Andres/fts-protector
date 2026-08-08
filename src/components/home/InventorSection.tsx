@@ -5,7 +5,7 @@ const inventions = [
     badge: "3 Patents",
     name: "TheSelfDefender",
     tagline: "The all-in-one non-lethal survival tool",
-    body: "A patented everyday-carry tool that combines self-defense striking, a glass breaker, a seatbelt cutter, and bleeding control — protected by three patents and carried worldwide.",
+    body: "A patented everyday-carry tool that combines self-defense striking, a glass breaker, a seatbelt cutter, and bleeding control - protected by three patents and carried worldwide.",
     image: "/images/selfdefender_overview_poster.jpg",
     href: routes.selfDefender,
     cta: "Explore TheSelfDefender",
@@ -14,7 +14,7 @@ const inventions = [
     badge: "Patented",
     name: "The FranckTheSolution Fork",
     tagline: "An everyday fork, reengineered",
-    body: "Franck's newest invention: a patented, legal-to-carry self-defense tool built from an everyday fork — a knuckle-style grip and precision striking tips hiding in plain sight.",
+    body: "Franck's newest invention: a patented, legal-to-carry self-defense tool built from an everyday fork - a knuckle-style grip and precision striking tips hiding in plain sight.",
     image: "/images/fts_fork_poster.jpg",
     href: routes.ftsFork,
     cta: "Explore the FranckTheSolution Fork",
@@ -36,11 +36,11 @@ export default function InventorSection() {
             The Inventor
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-5 leading-[1.05]">
-            Not Just a Protector —<br className="hidden sm:block" />{" "}
+            Not Just a Protector -<br className="hidden sm:block" />{" "}
             <span className="text-accent-blue-light">an Inventor.</span>
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
-            Two decades in the field didn&apos;t just make Franck a protector —
+            Two decades in the field didn&apos;t just make Franck a protector -
             it made him a builder of tools that keep ordinary people alive.
             Real innovations, backed by real patents.
           </p>

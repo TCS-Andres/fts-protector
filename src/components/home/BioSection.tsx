@@ -2,17 +2,17 @@ import { routes, links } from "@/lib/links";
 
 const achievements = [
   { stat: "20+", label: "Years as Global Elite Ops" },
-  { stat: "4", label: "Patents — TheSelfDefender & FranckTheSolution Fork" },
-  { stat: "CFM", label: "Creator — Circular Footwork Mechanics" },
-  { stat: "CCDS", label: "Creator — Close Combat Defense System" },
+  { stat: "4", label: "Patents - TheSelfDefender & FranckTheSolution Fork" },
+  { stat: "CFM", label: "Creator - Circular Footwork Mechanics" },
+  { stat: "CCDS", label: "Creator - Close Combat Defense System" },
 ];
 
 // Primary roles, shown in order as a clean credential list.
 const roles = [
   "Elite Executive Protection Specialist",
-  "Inventor — TheSelfDefender & the FranckTheSolution Fork (4 Patents)",
+  "Inventor - TheSelfDefender & the FranckTheSolution Fork (4 Patents)",
   "Private Investigations",
-  "Expert — Close Combat Defensive Tactics, Improvised Weapons & Deadly Strategies",
+  "Expert - Close Combat Defensive Tactics, Improvised Weapons & Deadly Strategies",
   "Active Fugitive Apprehension Agent (FL)",
 ];
 
@@ -30,7 +30,7 @@ export default function BioSection() {
             <div className="relative rounded-xl overflow-hidden border border-accent-blue/30 bg-black/40">
               <img
                 src="/images/franck_instructor_portrait.jpg"
-                alt="Franck Pala — executive protection specialist, instructor, and inventor"
+                alt="Franck Pala - executive protection specialist, instructor, and inventor"
                 className="w-full h-auto object-contain"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
@@ -82,7 +82,7 @@ export default function BioSection() {
                 operators through direct, efficient, combat-proven methods.
               </p>
               <p>
-                He is the creator of two proprietary systems —{" "}
+                He is the creator of two proprietary systems -{" "}
                 <span className="text-white font-semibold">
                   Circular Footwork Mechanics (CFM)
                 </span>{" "}
@@ -90,7 +90,7 @@ export default function BioSection() {
                 <span className="text-white font-semibold">
                   Close Combat Defense System (CCDS)
                 </span>{" "}
-                — used by athletes, law enforcement, contractors, and executive
+                - used by athletes, law enforcement, contractors, and executive
                 protection teams. He is also an inventor: the mind behind{" "}
                 <a
                   href={links.selfDefender}
@@ -109,14 +109,14 @@ export default function BioSection() {
                 >
                   FranckTheSolution Fork
                 </a>{" "}
-                — an everyday fork reengineered into a patented self-defense
+                - an everyday fork reengineered into a patented self-defense
                 tool. Together, his inventions hold four patents.
               </p>
               <p>
                 Franck teaches law-enforcement units, federal contractors,
                 private security teams, and high-net-worth executive clients. His
                 courses are built around real violence, real pressure, and real
-                solutions — no theory, no fluff, only tactics that work when
+                solutions - no theory, no fluff, only tactics that work when
                 lives depend on it. His mission is simple: empower people to move
                 smarter, strike faster, survive danger, and protect others with
                 absolute confidence.
@@ -128,11 +128,11 @@ export default function BioSection() {
                 &ldquo;Adapting to chaos rather than resisting it.&rdquo;
               </p>
               <cite className="text-accent-blue-light text-xs uppercase tracking-[2px] font-body not-italic">
-                — Franck Pala
+                - Franck Pala
               </cite>
             </blockquote>
 
-            {/* What Franck does — clean credential list */}
+            {/* What Franck does - clean credential list */}
             <div className="mt-8">
               <p className="text-accent-blue-light text-xs uppercase tracking-[3px] font-bold mb-4 font-body">
                 What Franck Does

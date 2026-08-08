@@ -4,7 +4,7 @@ const types = [
   {
     num: "01",
     title: "Online Training",
-    body: "Live training sessions with Franck via Zoom — real-time coaching and personalized programming, from anywhere in the world.",
+    body: "Live training sessions with Franck via Zoom - real-time coaching and personalized programming, from anywhere in the world.",
     image: "/images/10_corporate_hr_training.png",
     href: routes.trainingOnline,
     cta: "Train Online",
@@ -12,7 +12,7 @@ const types = [
   {
     num: "02",
     title: "One-on-One Private Training",
-    body: "A personalized curriculum taught directly by Franck — CFM, CCDS, and real-world scenarios built around you.",
+    body: "A personalized curriculum taught directly by Franck - CFM, CCDS, and real-world scenarios built around you.",
     image: "/images/16_professional_headshot_studio.png",
     href: routes.trainingPrivate,
     cta: "Go Private",
@@ -20,7 +20,7 @@ const types = [
   {
     num: "03",
     title: "Group Training",
-    body: "Families, companies, schools, and teams — hands-on sessions scaled to any group, any experience level.",
+    body: "Families, companies, schools, and teams - hands-on sessions scaled to any group, any experience level.",
     image: "/images/08_seminar_stage_speaking.png",
     href: routes.trainingGroup,
     cta: "Train Your Group",
@@ -28,7 +28,7 @@ const types = [
   {
     num: "04",
     title: "EPS Training",
-    body: "The professional Executive Protection Specialist track — advance work, protective details, and defensive tactics.",
+    body: "The professional Executive Protection Specialist track - advance work, protective details, and defensive tactics.",
     image: "/images/02_suv_motorcade_arrival.png",
     href: routes.trainingEps,
     cta: "Go Pro",
@@ -47,7 +47,7 @@ export default function TrainingTypesSection() {
             Four Ways In
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
-            Online, one-on-one, with your group, or on the professional track —
+            Online, one-on-one, with your group, or on the professional track -
             there&apos;s a path for every protector.
           </p>
         </div>

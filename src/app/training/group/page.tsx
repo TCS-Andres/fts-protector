@@ -11,24 +11,24 @@ const MAILTO = `mailto:${CONTACT_EMAIL}?subject=Group%20Training%20Inquiry`;
 export const metadata: Metadata = {
   title: "Group Training | FrancktheSolution",
   description:
-    "Group self-defense and defensive-tactics training with Franck Pala — for families, companies, schools, churches, and teams. Hands-on, scalable, and built on real-world protection experience.",
+    "Group self-defense and defensive-tactics training with Franck Pala - for families, companies, schools, churches, and teams. Hands-on, scalable, and built on real-world protection experience.",
   alternates: { canonical: "/training/group" },
 };
 
 const formats = [
   {
     title: "Families & Couples",
-    body: "Train as the unit you actually are. Households learn to move, communicate, and react together — who leads, who covers, where to go when seconds matter.",
+    body: "Train as the unit you actually are. Households learn to move, communicate, and react together - who leads, who covers, where to go when seconds matter.",
     image: "/images/11_school_safety_presentation.png",
   },
   {
     title: "Corporate Teams",
-    body: "Workplace-violence readiness, travel safety, and situational awareness for staff — delivered on-site as a team-building experience with real takeaways.",
+    body: "Workplace-violence readiness, travel safety, and situational awareness for staff - delivered on-site as a team-building experience with real takeaways.",
     image: "/images/10_corporate_hr_training.png",
   },
   {
     title: "Schools, Churches & Organizations",
-    body: "Safety seminars and hands-on training scaled to any audience — from staff-only sessions to full community events.",
+    body: "Safety seminars and hands-on training scaled to any audience - from staff-only sessions to full community events.",
     image: "/images/08_seminar_stage_speaking.png",
   },
 ];
@@ -36,7 +36,7 @@ const formats = [
 const benefits = [
   {
     title: "Hands-On, Not a Lecture",
-    body: "Every participant physically rehearses every skill. No PowerPoints, no sitting still — muscle memory is built by doing.",
+    body: "Every participant physically rehearses every skill. No PowerPoints, no sitting still - muscle memory is built by doing.",
   },
   {
     title: "Scaled to Every Body",
@@ -52,11 +52,11 @@ const benefits = [
   },
   {
     title: "Taught by a Working Professional",
-    body: "Instruction comes straight from active executive protection and fugitive-apprehension work — not from theory.",
+    body: "Instruction comes straight from active executive protection and fugitive-apprehension work - not from theory.",
   },
   {
     title: "Any Group Size",
-    body: "From a family of four to a company of hundreds — the format, duration, and content are tailored to your headcount and goals.",
+    body: "From a family of four to a company of hundreds - the format, duration, and content are tailored to your headcount and goals.",
   },
 ];
 
@@ -64,7 +64,7 @@ const steps = [
   {
     num: "01",
     title: "Tell Us About Your Group",
-    body: "Family, company, school, or team — share your headcount, location, and what you want your people to walk away with.",
+    body: "Family, company, school, or team - share your headcount, location, and what you want your people to walk away with.",
   },
   {
     num: "02",
@@ -74,7 +74,7 @@ const steps = [
   {
     num: "03",
     title: "Train Together",
-    body: "A high-energy, hands-on session your group will talk about for months — and skills they keep for life.",
+    body: "A high-energy, hands-on session your group will talk about for months - and skills they keep for life.",
   },
 ];
 
@@ -107,7 +107,7 @@ export default function GroupTrainingPage() {
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-9 max-w-2xl font-body">
                 Hands-on self-defense and awareness training for families,
-                companies, schools, and teams — delivered by Franck Pala and
+                companies, schools, and teams - delivered by Franck Pala and
                 scaled to any group size.
               </p>
               <a
@@ -235,7 +235,7 @@ export default function GroupTrainingPage() {
               Bring Franck to Your Group
             </h2>
             <p className="text-text-secondary text-base lg:text-lg mb-8 font-body">
-              Tell us about your family, company, or team — we&apos;ll build
+              Tell us about your family, company, or team - we&apos;ll build
               the session around you. Group rates available for 15+.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">

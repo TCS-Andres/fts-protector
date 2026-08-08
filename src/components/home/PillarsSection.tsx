@@ -33,7 +33,7 @@ const pillars: Pillar[] = [
   {
     kicker: "Equip",
     title: "TheSelfDefender & Shop",
-    body: "TheSelfDefender, the upcoming Circular Footwork Mechanics book, and video courses — the same tools and knowledge Franck builds his work on.",
+    body: "TheSelfDefender, the upcoming Circular Footwork Mechanics book, and video courses - the same tools and knowledge Franck builds his work on.",
     image: "/images/17_walking_downtown_miami.png",
     imagePos: "object-[center_15%]",
     cta: "Visit the Shop",

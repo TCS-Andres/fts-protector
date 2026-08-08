@@ -6,7 +6,7 @@ const faqs = [
   {
     question: "When is the next workshop?",
     answer:
-      "There is no workshop currently scheduled. New dates are announced right here on this page first — stay tuned for the next Everyone Is a Protector workshop.",
+      "There is no workshop currently scheduled. New dates are announced right here on this page first - stay tuned for the next Everyone Is a Protector workshop.",
   },
   {
     question: "I'm not athletic / I'm out of shape.",
@@ -26,7 +26,7 @@ const faqs = [
   {
     question: "Can I train with my partner, my family, or a friend?",
     answer:
-      "Absolutely — the workshop is designed to be trained as a unit. The people closest to you should be in the room with you, so couples and families are encouraged to attend together. Group rates are also available for teams of 15+.",
+      "Absolutely - the workshop is designed to be trained as a unit. The people closest to you should be in the room with you, so couples and families are encouraged to attend together. Group rates are also available for teams of 15+.",
   },
   {
     question: "I've never trained for anything like this before.",

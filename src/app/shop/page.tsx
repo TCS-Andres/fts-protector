@@ -29,7 +29,7 @@ const products: Product[] = [
   {
     kicker: "Just Launched",
     title: "The FranckTheSolution Fork",
-    body: "Franck's newest invention — an everyday fork, reengineered into a patented, legal-to-carry self-defense tool with a knuckle-style grip and precision striking tips.",
+    body: "Franck's newest invention - an everyday fork, reengineered into a patented, legal-to-carry self-defense tool with a knuckle-style grip and precision striking tips.",
     image: "/images/fts_fork_poster.jpg",
     cta: "See the FranckTheSolution Fork",
     href: routes.ftsFork,
@@ -48,7 +48,7 @@ const products: Product[] = [
   {
     kicker: "Video Courses",
     title: "On-Demand Training",
-    body: "Structured video courses covering situational awareness, defensive tactics, and improvised weapons — learn the full system step by step, on your schedule.",
+    body: "Structured video courses covering situational awareness, defensive tactics, and improvised weapons - learn the full system step by step, on your schedule.",
     image: "/images/11_school_safety_presentation.png",
     cta: "Coming Soon",
     status: "soon",
@@ -56,7 +56,7 @@ const products: Product[] = [
   {
     kicker: "Out Now",
     title: "Circular Footwork Mechanics",
-    body: "Franck's new book — CFM. The biomechanics of circular footwork and the strategies behind it, for protectors, officers, and athletes. His Close Combat Defense System, in a manual.",
+    body: "Franck's new book - CFM. The biomechanics of circular footwork and the strategies behind it, for protectors, officers, and athletes. His Close Combat Defense System, in a manual.",
     image: "/images/cfm_book_front.jpg",
     cta: "Get the Book",
     href: "mailto:info@franckthesolution.com?subject=CFM%20Book%20Order",
@@ -94,7 +94,7 @@ export default function ShopPage() {
                 <span className="text-accent-blue-light">That Protect.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed max-w-2xl font-body">
-                The same tools and teaching Franck&apos;s own work is built on —
+                The same tools and teaching Franck&apos;s own work is built on -
                 the new FranckTheSolution Fork, TheSelfDefender, his new book CFM, and
                 on-demand courses.
               </p>

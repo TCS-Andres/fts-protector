@@ -8,7 +8,7 @@ import { links, routes } from "@/lib/links";
 export const metadata: Metadata = {
   title: "Training & Online Courses | FrancktheSolution",
   description:
-    "Train with Franck Pala: online training, one-on-one private training, group training, and Executive Protection Specialist (EPS) training — plus workshops and the 7-day Protectors Camp.",
+    "Train with Franck Pala: online training, one-on-one private training, group training, and Executive Protection Specialist (EPS) training - plus workshops and the 7-day Protectors Camp.",
   alternates: { canonical: "/training" },
 };
 
@@ -28,7 +28,7 @@ const trainingTypes: Program[] = [
   {
     kicker: "Live via Zoom",
     title: "Online Training",
-    body: "Train live with Franck from anywhere in the world. Real-time coaching sessions over Zoom — personalized programming, on-the-spot correction, and drills between sessions.",
+    body: "Train live with Franck from anywhere in the world. Real-time coaching sessions over Zoom - personalized programming, on-the-spot correction, and drills between sessions.",
     image: "/images/10_corporate_hr_training.png",
     cta: "Explore Online Training",
     href: routes.trainingOnline,
@@ -37,7 +37,7 @@ const trainingTypes: Program[] = [
   {
     kicker: "One-on-One",
     title: "Private Training",
-    body: "Train directly with Franck. A fully personalized curriculum — CFM, CCDS, improvised weapons, and real-world scenarios — built around your body, your risks, and your goals.",
+    body: "Train directly with Franck. A fully personalized curriculum - CFM, CCDS, improvised weapons, and real-world scenarios - built around your body, your risks, and your goals.",
     image: "/images/16_professional_headshot_studio.png",
     cta: "Explore Private Training",
     href: routes.trainingPrivate,
@@ -46,7 +46,7 @@ const trainingTypes: Program[] = [
   {
     kicker: "Teams & Families",
     title: "Group Training",
-    body: "Hands-on training for families, companies, schools, and organizations. Groups that train together protect together — scaled to any size and any experience level.",
+    body: "Hands-on training for families, companies, schools, and organizations. Groups that train together protect together - scaled to any size and any experience level.",
     image: "/images/08_seminar_stage_speaking.png",
     cta: "Explore Group Training",
     href: routes.trainingGroup,
@@ -55,7 +55,7 @@ const trainingTypes: Program[] = [
   {
     kicker: "Professional Track",
     title: "EPS Training",
-    body: "Executive Protection Specialist training for aspiring and working EP agents — advance work, protective details, threat assessment, and close-combat defensive tactics.",
+    body: "Executive Protection Specialist training for aspiring and working EP agents - advance work, protective details, threat assessment, and close-combat defensive tactics.",
     image: "/images/02_suv_motorcade_arrival.png",
     cta: "Explore EPS Training",
     href: routes.trainingEps,
@@ -68,7 +68,7 @@ const morePrograms: Program[] = [
   {
     kicker: "Community",
     title: "Defensive Tactics on Skool",
-    body: "Franck's online community — drills, breakdowns, Q&A, and a network of committed protectors to keep you sharp between live sessions.",
+    body: "Franck's online community - drills, breakdowns, Q&A, and a network of committed protectors to keep you sharp between live sessions.",
     image: "/images/11_school_safety_presentation.png",
     cta: "Join the Community",
     href: links.skool,
@@ -78,7 +78,7 @@ const morePrograms: Program[] = [
   {
     kicker: "In Person",
     title: "Everyone Is A Protector Workshop",
-    body: "The hands-on self-defense workshop in Miami. No experience needed. There's no date currently scheduled — stay tuned for the next workshop.",
+    body: "The hands-on self-defense workshop in Miami. No experience needed. There's no date currently scheduled - stay tuned for the next workshop.",
     image: "/images/hero_workshop_background.jpg",
     cta: "About the Workshop",
     href: routes.workshops,
@@ -173,7 +173,7 @@ export default function TrainingPage() {
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed max-w-2xl font-body">
                 Online, one-on-one, in a group, or on the professional EPS
-                track — every path to training under a working executive
+                track - every path to training under a working executive
                 protection specialist, in one place.
               </p>
             </div>

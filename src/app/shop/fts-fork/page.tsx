@@ -6,20 +6,20 @@ import ScrollAnimator from "@/components/ScrollAnimator";
 import { routes } from "@/lib/links";
 
 export const metadata: Metadata = {
-  title: "The FranckTheSolution Fork — Patented Self-Defense Tool | FrancktheSolution",
+  title: "The FranckTheSolution Fork - Patented Self-Defense Tool | FrancktheSolution",
   description:
-    "The FranckTheSolution Fork by FrancktheSolution: a patented, legal-to-carry self-defense tool built from an everyday fork — reengineered for close-combat defense strategies.",
+    "The FranckTheSolution Fork by FrancktheSolution: a patented, legal-to-carry self-defense tool built from an everyday fork - reengineered for close-combat defense strategies.",
   alternates: { canonical: "/shop/fts-fork" },
 };
 
 const features = [
   {
     title: "Patented Design",
-    body: "Not a bent piece of cutlery — a patented reengineering of an everyday fork into a purpose-built self-defense tool, invented by Franck Pala.",
+    body: "Not a bent piece of cutlery - a patented reengineering of an everyday fork into a purpose-built self-defense tool, invented by Franck Pala.",
   },
   {
     title: "Legal to Carry",
-    body: "It's a fork. No concealed-carry license, no permits — an everyday object you can keep on your keys, in your bag, or in your pocket.",
+    body: "It's a fork. No concealed-carry license, no permits - an everyday object you can keep on your keys, in your bag, or in your pocket.",
   },
   {
     title: "Knuckle-Style Grip",
@@ -27,15 +27,15 @@ const features = [
   },
   {
     title: "Precision Tips",
-    body: "The tines concentrate the force of every strike into small points of contact — maximum deterrent effect from minimal strength.",
+    body: "The tines concentrate the force of every strike into small points of contact - maximum deterrent effect from minimal strength.",
   },
   {
     title: "Built for Close Combat",
-    body: "Designed to work with Franck's Close Combat Defense System — the same improvised-weapons principles he teaches contractors and protection teams.",
+    body: "Designed to work with Franck's Close Combat Defense System - the same improvised-weapons principles he teaches contractors and protection teams.",
   },
   {
     title: "Stainless Steel, Clip-On Carry",
-    body: "18/10 stainless steel construction with a carabiner clip — rugged enough to trust, discreet enough to carry everywhere.",
+    body: "18/10 stainless steel construction with a carabiner clip - rugged enough to trust, discreet enough to carry everywhere.",
   },
 ];
 
@@ -53,7 +53,7 @@ export default function FtsForkPage() {
             <div className="grid lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] gap-12 lg:gap-16 items-center">
               <div>
                 <p className="hero-animate hero-animate-1 text-accent-blue-light text-xs sm:text-sm uppercase tracking-[5px] font-bold mb-5 font-body">
-                  New From FrancktheSolution — Patented
+                  New From FrancktheSolution - Patented
                 </p>
                 <h1 className="hero-animate hero-animate-2 font-heading text-[40px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
                   The FranckTheSolution
@@ -64,7 +64,7 @@ export default function FtsForkPage() {
                   An everyday fork, reengineered into a legal-to-carry
                   self-defense tool. The patented bend turns the handle into a
                   knuckle-style grip and the tines into precision striking
-                  tips — close-combat capability hiding in plain sight.
+                  tips - close-combat capability hiding in plain sight.
                 </p>
                 <div className="hero-animate hero-animate-2 flex flex-wrap gap-2 mb-9">
                   {["Patented", "Legal to Carry", "18/10 Stainless Steel"].map((chip) => (
@@ -148,7 +148,7 @@ export default function FtsForkPage() {
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed font-body">
               Franck built his reputation teaching that the environment is
-              always armed — if you know how to use it. The FranckTheSolution Fork is that
+              always armed - if you know how to use it. The FranckTheSolution Fork is that
               philosophy made real: an object nobody looks at twice, carrying
               genuine close-combat capability. Pair it with Franck&apos;s
               training and you&apos;re never unarmed, anywhere.
@@ -158,7 +158,7 @@ export default function FtsForkPage() {
 
         <RedDivider />
 
-        {/* Buy online — Shopify section */}
+        {/* Buy online - Shopify section */}
         <section id="buy" className="relative py-16 sm:py-20 lg:py-28 overflow-hidden noise-bg" style={{ background: "linear-gradient(180deg, #0C1118 0%, #06090D 100%)" }}>
           <div className="absolute -bottom-32 right-1/4 w-[500px] h-[300px] bg-accent-blue/12 blur-[120px] rounded-full pointer-events-none" />
           <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12">
@@ -183,7 +183,7 @@ export default function FtsForkPage() {
                 <ul className="space-y-3 mb-7">
                   {[
                     "Patented self-defense design",
-                    "Legal to carry — no license required",
+                    "Legal to carry - no license required",
                     "18/10 stainless steel with carabiner clip",
                     "Knuckle-style grip, precision striking tips",
                     "Backed by Franck's close-combat training system",
@@ -216,7 +216,7 @@ export default function FtsForkPage() {
                 </p>
                 <p className="text-text-secondary text-sm max-w-sm font-body">
                   Secure Shopify checkout for the FranckTheSolution Fork is being connected
-                  and will live right here. Check back shortly — or follow
+                  and will live right here. Check back shortly - or follow
                   @FranckTheSolution for the drop announcement.
                 </p>
               </div>
@@ -235,7 +235,7 @@ export default function FtsForkPage() {
               Complete Your Carry
             </h2>
             <p className="text-text-secondary text-base lg:text-lg mb-8 font-body">
-              Pair the FranckTheSolution Fork with TheSelfDefender — Franck&apos;s patented
+              Pair the FranckTheSolution Fork with TheSelfDefender - Franck&apos;s patented
               all-in-one survival keychain.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">

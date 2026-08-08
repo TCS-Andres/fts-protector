@@ -58,7 +58,7 @@ export default function Footer() {
             Ready to Be <span className="text-accent-blue-light">the Solution?</span>
           </h2>
           <p className="text-text-secondary text-base sm:text-lg max-w-xl mx-auto mb-9 font-body">
-            Train with Franck, hire his team, or get the tools. One standard —
+            Train with Franck, hire his team, or get the tools. One standard -
             the highest one.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
@@ -174,7 +174,7 @@ export default function Footer() {
         <div className="border-t border-white/10">
           <div className="max-w-7xl mx-auto px-6 lg:px-12 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-center">
             <p className="text-text-muted text-xs font-body">
-              &copy; 2026 FrancktheSolution — TactOps USA LLC. All rights reserved.
+              &copy; 2026 FrancktheSolution - TactOps USA LLC. All rights reserved.
             </p>
             <p className="text-text-muted text-xs font-body">
               Lic# A 1900001 &middot; B 1900003

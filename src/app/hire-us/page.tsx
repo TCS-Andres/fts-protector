@@ -35,8 +35,8 @@ export const metadata: Metadata = {
 
 const CONTACT_EMAIL = "info@franckthesolution.com";
 const CONTACT_MAILTO = `mailto:${CONTACT_EMAIL}?subject=EProtection%20VIP%20Inquiry`;
-const EP_MAILTO = `mailto:${CONTACT_EMAIL}?subject=Hire%20Franck%20—%20Executive%20Protection`;
-const INVESTIGATIONS_MAILTO = `mailto:${CONTACT_EMAIL}?subject=Hire%20Franck%20—%20Investigative%20Services`;
+const EP_MAILTO = `mailto:${CONTACT_EMAIL}?subject=Hire%20Franck%20-%20Executive%20Protection`;
+const INVESTIGATIONS_MAILTO = `mailto:${CONTACT_EMAIL}?subject=Hire%20Franck%20-%20Investigative%20Services`;
 
 const services = [
   {

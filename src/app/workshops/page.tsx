@@ -17,9 +17,9 @@ import Footer from "@/components/Footer";
 import ScrollAnimator from "@/components/ScrollAnimator";
 
 export const metadata: Metadata = {
-  title: "Everyone Is a Protector — Self-Defense Workshop | FrancktheSolution",
+  title: "Everyone Is a Protector - Self-Defense Workshop | FrancktheSolution",
   description:
-    "A hands-on self-defense workshop in Miami built on 25+ years of real-world executive protection. No workshop currently scheduled — stay tuned for the next date.",
+    "A hands-on self-defense workshop in Miami built on 25+ years of real-world executive protection. No workshop currently scheduled - stay tuned for the next date.",
   alternates: { canonical: "/workshops" },
 };
 

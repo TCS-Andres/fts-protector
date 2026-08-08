@@ -18,7 +18,7 @@ export default function StayTunedSection() {
           <p className="text-text-secondary text-lg font-body max-w-xl mx-auto">
             There is no workshop currently scheduled. The next Everyone Is a
             Protector date, location, and details will be announced right
-            here — check back soon.
+            here - check back soon.
           </p>
         </div>
 

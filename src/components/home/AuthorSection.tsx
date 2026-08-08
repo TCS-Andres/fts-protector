@@ -1,12 +1,12 @@
 const CONTACT_EMAIL = "info@franckthesolution.com";
-const BOOK_MAILTO = `mailto:${CONTACT_EMAIL}?subject=CFM%20—%20Circular%20Footwork%20Mechanics%20(Book)`;
+const BOOK_MAILTO = `mailto:${CONTACT_EMAIL}?subject=CFM%20-%20Circular%20Footwork%20Mechanics%20(Book)`;
 
 const pillars = ["Footwork", "Control", "Awareness", "Decision", "Survival"];
 
 const endorsements = [
   {
     quote:
-      "Franck is a true master of his craft — intelligence matched with real-world experience. If you're looking to become elite, do whatever he tells you.",
+      "Franck is a true master of his craft - intelligence matched with real-world experience. If you're looking to become elite, do whatever he tells you.",
     name: "Phil Daru",
     title: "5x Coach of the Year · 7x World Title Wins",
   },
@@ -43,11 +43,11 @@ export default function AuthorSection() {
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
             <span className="text-white font-semibold">
-              CFM — Circular Footwork Mechanics
+              CFM - Circular Footwork Mechanics
             </span>{" "}
             is Franck&apos;s manual on the biomechanics of circular footwork and
             the strategies behind it, written for protectors, law-enforcement
-            officers, and athletes — the core of his Close Combat Defense System
+            officers, and athletes - the core of his Close Combat Defense System
             (CCDS).
           </p>
         </div>
@@ -64,12 +64,12 @@ export default function AuthorSection() {
           ))}
         </div>
 
-        {/* Covers — front & back */}
+        {/* Covers - front & back */}
         <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 lg:gap-12 mb-12 sm:mb-16">
           <figure className="animate-on-scroll w-full max-w-[460px]">
             <img
               src="/images/cfm_book_front.jpg"
-              alt="CFM: Circular Footwork Mechanics — front cover"
+              alt="CFM: Circular Footwork Mechanics - front cover"
               loading="lazy"
               className="w-full h-auto rounded-xl border border-accent-blue/30 shadow-[0_24px_70px_rgba(0,0,0,0.6)]"
             />
@@ -80,7 +80,7 @@ export default function AuthorSection() {
           <figure className="animate-on-scroll w-full max-w-[460px]">
             <img
               src="/images/cfm_book_back.jpg"
-              alt="CFM: Circular Footwork Mechanics — back cover, with author bio and endorsements"
+              alt="CFM: Circular Footwork Mechanics - back cover, with author bio and endorsements"
               loading="lazy"
               className="w-full h-auto rounded-xl border border-accent-blue/30 shadow-[0_24px_70px_rgba(0,0,0,0.6)]"
             />

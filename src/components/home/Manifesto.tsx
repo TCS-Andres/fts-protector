@@ -39,7 +39,7 @@ export default function Manifesto() {
           </span>
         </h2>
         <p className="text-text-secondary text-base sm:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto font-body">
-          Protection isn&apos;t a product you buy once — it&apos;s a standard you
+          Protection isn&apos;t a product you buy once - it&apos;s a standard you
           live by. Franck has held that standard for over twenty years, in the
           field, where it counts. Now he brings it to you: the team to protect
           you, the training to prepare you, and the tools to back you up.

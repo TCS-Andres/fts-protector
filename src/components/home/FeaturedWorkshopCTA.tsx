@@ -18,7 +18,7 @@ export default function FeaturedWorkshopCTA() {
           Everyone Is a Protector
         </h2>
         <p className="text-text-secondary text-base sm:text-lg mb-6 font-body">
-          A hands-on self-defense workshop in Miami. No experience needed —
+          A hands-on self-defense workshop in Miami. No experience needed -
           real skills, taught by a working executive protection specialist.
         </p>
         <p className="text-white text-lg sm:text-xl font-bold font-body">

@@ -6,9 +6,9 @@ import ScrollAnimator from "@/components/ScrollAnimator";
 import { links, routes } from "@/lib/links";
 
 export const metadata: Metadata = {
-  title: "TheSelfDefender — Non-Lethal Survival Tool | FrancktheSolution",
+  title: "TheSelfDefender - Non-Lethal Survival Tool | FrancktheSolution",
   description:
-    "TheSelfDefender Keychain 3.0 — the patented, all-in-one non-lethal survival tool invented by Franck Pala. Self-defense striking, glass breaker, seatbelt cutter, tourniquet assist. No concealed-carry license needed.",
+    "TheSelfDefender Keychain 3.0 - the patented, all-in-one non-lethal survival tool invented by Franck Pala. Self-defense striking, glass breaker, seatbelt cutter, tourniquet assist. No concealed-carry license needed.",
   alternates: { canonical: "/self-defender" },
 };
 
@@ -17,22 +17,22 @@ const functions = [
   {
     icon: "✊",
     title: "Self-Defense",
-    body: "Deliver powerful, precise blunt-force strikes to subdue or deter an attacker — designed so ordinary people can generate real stopping power under stress.",
+    body: "Deliver powerful, precise blunt-force strikes to subdue or deter an attacker - designed so ordinary people can generate real stopping power under stress.",
   },
   {
     icon: "🚗",
     title: "Glass Breaker",
-    body: "A tungsten-carbide tip shatters vehicle or building glass in an instant — the difference-maker in a submerged car or a blocked exit.",
+    body: "A tungsten-carbide tip shatters vehicle or building glass in an instant - the difference-maker in a submerged car or a blocked exit.",
   },
   {
     icon: "🪢",
     title: "Seatbelt Cutter",
-    body: "A recessed, replaceable blade slices through a jammed seatbelt in one pull — and a free replacement blade is included with every tool.",
+    body: "A recessed, replaceable blade slices through a jammed seatbelt in one pull - and a free replacement blade is included with every tool.",
   },
   {
     icon: "🩸",
     title: "Tourniquet Assist",
-    body: "Built to help apply pressure and control serious bleeding until help arrives — a life-saving function most carry tools ignore.",
+    body: "Built to help apply pressure and control serious bleeding until help arrives - a life-saving function most carry tools ignore.",
   },
   {
     icon: "🔑",
@@ -42,7 +42,7 @@ const functions = [
   {
     icon: "🖐",
     title: "Ambidextrous Grip",
-    body: "Finger grooves seat the tool naturally in either hand, keeping it locked in your fist through impact — no special training required.",
+    body: "Finger grooves seat the tool naturally in either hand, keeping it locked in your fist through impact - no special training required.",
   },
 ];
 
@@ -51,7 +51,7 @@ const specs = [
   { label: "Weight", value: "5 ounces" },
   { label: "Body", value: "383 / ADC12 aluminum" },
   { label: "Glass-Breaker Tip", value: "Tungsten carbide" },
-  { label: "Cutter Blade", value: "Replaceable — free spare included" },
+  { label: "Cutter Blade", value: "Replaceable - free spare included" },
   { label: "Classification", value: "Non-lethal · No concealed-carry license needed" },
 ];
 
@@ -59,7 +59,7 @@ const specs = [
 const trainingModes = [
   {
     title: "Subdue",
-    body: "Control, move, and drop an aggressor by exploiting pressure points — end the threat without escalating it.",
+    body: "Control, move, and drop an aggressor by exploiting pressure points - end the threat without escalating it.",
   },
   {
     title: "Rescue",
@@ -67,7 +67,7 @@ const trainingModes = [
   },
   {
     title: "Escape",
-    body: "Break free from grabs, holds, and threatening situations — create distance and get to safety.",
+    body: "Break free from grabs, holds, and threatening situations - create distance and get to safety.",
   },
   {
     title: "Strike",
@@ -111,7 +111,7 @@ export default function SelfDefenderPage() {
                 <span className="text-accent-blue-light">Survival Tool.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-6 max-w-2xl font-body">
-                The most versatile non-lethal survival tool on the market —
+                The most versatile non-lethal survival tool on the market -
                 invented by Franck Pala and protected by three patents.
                 Self-defense striking, glass breaking, seatbelt cutting, and
                 bleeding control, all on your keychain.
@@ -133,7 +133,7 @@ export default function SelfDefenderPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-full sm:w-auto px-9 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-white hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
                 >
-                  Get It — $59.99 &rarr;
+                  Get It - $59.99 &rarr;
                 </a>
                 <span className="text-text-muted text-xs uppercase tracking-[2px] font-body">
                   Direct from the official store
@@ -247,15 +247,15 @@ export default function SelfDefenderPage() {
                 <div className="space-y-5 text-text-secondary text-base lg:text-lg leading-relaxed font-body mb-8">
                   <p>
                     TheSelfDefender wasn&apos;t drawn up in a marketing
-                    meeting. It was engineered by Franck Pala — former
+                    meeting. It was engineered by Franck Pala - former
                     professional fighter, elite executive protection
                     specialist, and defensive-tactics instructor with 20+
-                    years in the field — to be the tool he wished every client
+                    years in the field - to be the tool he wished every client
                     carried.
                   </p>
                   <p>
                     Along the way it has found its way into some famous
-                    hands — {notables.slice(0, -1).join(", ")}, and{" "}
+                    hands - {notables.slice(0, -1).join(", ")}, and{" "}
                     {notables[notables.length - 1]} among them.
                   </p>
                 </div>
@@ -282,7 +282,7 @@ export default function SelfDefenderPage() {
 
         <RedDivider />
 
-        {/* Watch it work — YouTube */}
+        {/* Watch it work - YouTube */}
         <section className="bg-bg-secondary py-16 sm:py-20 lg:py-28 relative noise-bg">
           <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12">
             <div className="text-center mb-10 sm:mb-14 animate-on-scroll">
@@ -297,7 +297,7 @@ export default function SelfDefenderPage() {
               <div className="animate-on-scroll rounded-xl overflow-hidden border border-accent-blue/30 bg-black shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
                 <iframe
                   src="https://www.youtube-nocookie.com/embed/IdX7JvGPiTw"
-                  title="TheSelfDefender — official video"
+                  title="TheSelfDefender - official video"
                   loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
@@ -307,7 +307,7 @@ export default function SelfDefenderPage() {
               <div className="animate-on-scroll rounded-xl overflow-hidden border border-accent-blue/30 bg-black shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
                 <iframe
                   src="https://www.youtube-nocookie.com/embed/NXhSvtmOpE0"
-                  title="TheSelfDefender — demonstration"
+                  title="TheSelfDefender - demonstration"
                   loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
@@ -401,7 +401,7 @@ export default function SelfDefenderPage() {
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed font-body mb-8">
               The same inventive mind turned an everyday fork into a patented,
-              legal-to-carry self-defense tool — the new FranckTheSolution Fork. Awareness,
+              legal-to-carry self-defense tool - the new FranckTheSolution Fork. Awareness,
               leverage, and decisive action beat brute force every time.
             </p>
             <a
@@ -424,7 +424,7 @@ export default function SelfDefenderPage() {
               Carry the Solution
             </h2>
             <p className="text-text-secondary text-base lg:text-lg mb-8 font-body">
-              TheSelfDefender® Keychain 3.0 —{" "}
+              TheSelfDefender® Keychain 3.0 -{" "}
               <span className="text-white font-bold">$59.99</span>, with a free
               replacement cutter blade included. Order direct from the
               official store.

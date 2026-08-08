@@ -11,14 +11,14 @@ const MAILTO = `mailto:${CONTACT_EMAIL}?subject=EPS%20Training%20Inquiry`;
 export const metadata: Metadata = {
   title: "Executive Protection Specialist (EPS) Training | FrancktheSolution",
   description:
-    "Professional-track Executive Protection Specialist training with Franck Pala — advance work, protective details, threat assessment, and close-combat defensive tactics for aspiring and working EP agents.",
+    "Professional-track Executive Protection Specialist training with Franck Pala - advance work, protective details, threat assessment, and close-combat defensive tactics for aspiring and working EP agents.",
   alternates: { canonical: "/training/eps" },
 };
 
 const modules = [
   {
     title: "Protective Detail Operations",
-    body: "Formations, positioning, and movement — solo details and team details, on foot and in vehicles, in crowds and controlled venues.",
+    body: "Formations, positioning, and movement - solo details and team details, on foot and in vehicles, in crowds and controlled venues.",
   },
   {
     title: "Advance Work & Route Planning",
@@ -30,7 +30,7 @@ const modules = [
   },
   {
     title: "Close Combat Defensive Tactics",
-    body: "Franck's CCDS applied to protective work — weapon retention, third-party protection, and controlling threats while covering a principal.",
+    body: "Franck's CCDS applied to protective work - weapon retention, third-party protection, and controlling threats while covering a principal.",
   },
   {
     title: "Emergency Extraction",
@@ -38,7 +38,7 @@ const modules = [
   },
   {
     title: "Professional Conduct & Client Relations",
-    body: "The soft skills that keep you employed — protocol, discretion, dress, communication, and working alongside estates, EAs, and venue security.",
+    body: "The soft skills that keep you employed - protocol, discretion, dress, communication, and working alongside estates, EAs, and venue security.",
   },
 ];
 
@@ -46,19 +46,19 @@ const outcomes = [
   "Train under an active, working Elite Executive Protection specialist",
   "Learn the standards used with high-net-worth and high-profile clients",
   "Build a realistic path into the executive protection industry",
-  "Pressure-tested skills — not classroom-only certification theater",
+  "Pressure-tested skills - not classroom-only certification theater",
 ];
 
 const steps = [
   {
     num: "01",
     title: "Apply",
-    body: "Tell us about your background — military, law enforcement, security, martial arts, or committed civilian. Every applicant is screened.",
+    body: "Tell us about your background - military, law enforcement, security, martial arts, or committed civilian. Every applicant is screened.",
   },
   {
     num: "02",
     title: "Train the Standard",
-    body: "Complete the EPS curriculum under Franck's direct instruction — classroom, hands-on, and scenario-based evaluation.",
+    body: "Complete the EPS curriculum under Franck's direct instruction - classroom, hands-on, and scenario-based evaluation.",
   },
   {
     num: "03",
@@ -158,7 +158,7 @@ export default function EpsTrainingPage() {
                   <p>
                     Most EP courses are taught by people who left the industry
                     years ago. Franck is an active elite executive protection
-                    specialist and fugitive apprehension agent — the tactics
+                    specialist and fugitive apprehension agent - the tactics
                     you learn are the ones being used on details right now.
                   </p>
                 </div>

@@ -20,7 +20,7 @@ export default function AboutSection() {
               {/* Replace with actual portrait */}
               <img
                 src="/images/franck_instructor_portrait.jpg"
-                alt="Franck Pala, Executive Protection Specialist — TactOps Executive Protection"
+                alt="Franck Pala, Executive Protection Specialist - TactOps Executive Protection"
                 className="w-full h-full object-cover object-[center_15%]"
               />
             </div>

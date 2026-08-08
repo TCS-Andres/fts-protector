@@ -11,7 +11,7 @@ const MAILTO = `mailto:${CONTACT_EMAIL}?subject=Private%20Training%20Inquiry`;
 export const metadata: Metadata = {
   title: "One-on-One Private Training | FrancktheSolution",
   description:
-    "Train one-on-one with Franck Pala. A fully personalized close-combat and self-defense curriculum — Circular Footwork Mechanics, CCDS, and real-world protective skills, built around you.",
+    "Train one-on-one with Franck Pala. A fully personalized close-combat and self-defense curriculum - Circular Footwork Mechanics, CCDS, and real-world protective skills, built around you.",
   alternates: { canonical: "/training/private" },
 };
 
@@ -22,7 +22,7 @@ const curriculum = [
   },
   {
     title: "Circular Footwork Mechanics",
-    body: "Franck's proprietary CFM system — the movement foundation that puts you in position to strike, escape, or control before the threat can.",
+    body: "Franck's proprietary CFM system - the movement foundation that puts you in position to strike, escape, or control before the threat can.",
   },
   {
     title: "Close Combat Defense System",
@@ -30,7 +30,7 @@ const curriculum = [
   },
   {
     title: "Improvised Weapons",
-    body: "Learn to turn everyday objects — keys, pens, even a fork — into effective defensive tools. The environment is always armed if you know how to use it.",
+    body: "Learn to turn everyday objects - keys, pens, even a fork - into effective defensive tools. The environment is always armed if you know how to use it.",
   },
   {
     title: "Scenario Pressure-Testing",
@@ -53,7 +53,7 @@ const steps = [
   {
     num: "01",
     title: "Book a Consultation",
-    body: "Reach out and tell Franck about you — your goals, your schedule, your starting point. Every private program begins with a conversation.",
+    body: "Reach out and tell Franck about you - your goals, your schedule, your starting point. Every private program begins with a conversation.",
   },
   {
     num: "02",
@@ -96,7 +96,7 @@ export default function PrivateTrainingPage() {
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-9 max-w-2xl font-body">
                 A fully personalized curriculum built around your body, your
-                risks, and your goals — taught one-on-one by the creator of
+                risks, and your goals - taught one-on-one by the creator of
                 Circular Footwork Mechanics and the Close Combat Defense
                 System.
               </p>
@@ -140,8 +140,8 @@ export default function PrivateTrainingPage() {
                     instead of years.
                   </p>
                   <p>
-                    Sessions are scheduled around your life — at your home,
-                    your office, or a private facility — and remain completely
+                    Sessions are scheduled around your life - at your home,
+                    your office, or a private facility - and remain completely
                     confidential. It&apos;s the same standard of instruction
                     Franck delivers to executives, contractors, and
                     law-enforcement professionals.
@@ -249,7 +249,7 @@ export default function PrivateTrainingPage() {
               Ready to Train One-on-One?
             </h2>
             <p className="text-text-secondary text-base lg:text-lg mb-8 font-body">
-              Availability is limited — Franck takes on a small number of
+              Availability is limited - Franck takes on a small number of
               private students at a time.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">

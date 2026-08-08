@@ -24,7 +24,7 @@ export default function Hero() {
 
             <div className="hero-animate hero-animate-1 flex flex-wrap items-center justify-center md:justify-start gap-2 mb-6">
               <span className="inline-flex items-center px-4 py-2 bg-accent-blue/15 border border-accent-blue/40 rounded-full text-accent-blue-light text-xs uppercase tracking-[2px] font-bold font-body">
-                📅 Next Workshop — To Be Announced
+                📅 Next Workshop - To Be Announced
               </span>
             </div>
 
