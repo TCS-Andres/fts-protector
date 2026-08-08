@@ -26,13 +26,12 @@ type Program = {
 // The four core ways to train with Franck.
 const trainingTypes: Program[] = [
   {
-    kicker: "Train From Anywhere",
+    kicker: "Live via Zoom",
     title: "Online Training",
-    body: "Franck's Defensive Tactics community on Skool — drills, breakdowns, Q&A, and a network of committed protectors. Structured video courses are launching soon.",
+    body: "Train live with Franck from anywhere in the world. Real-time coaching sessions over Zoom — personalized programming, on-the-spot correction, and drills between sessions.",
     image: "/images/10_corporate_hr_training.png",
-    cta: "Join the Community",
-    href: links.skool,
-    external: true,
+    cta: "Explore Online Training",
+    href: routes.trainingOnline,
     status: "live",
   },
   {
@@ -66,6 +65,16 @@ const trainingTypes: Program[] = [
 
 // Additional programs beyond the four core types.
 const morePrograms: Program[] = [
+  {
+    kicker: "Community",
+    title: "Defensive Tactics on Skool",
+    body: "Franck's online community — drills, breakdowns, Q&A, and a network of committed protectors to keep you sharp between live sessions.",
+    image: "/images/11_school_safety_presentation.png",
+    cta: "Join the Community",
+    href: links.skool,
+    external: true,
+    status: "live",
+  },
   {
     kicker: "In Person",
     title: "Everyone Is A Protector Workshop",

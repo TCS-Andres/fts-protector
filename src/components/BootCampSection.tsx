@@ -60,7 +60,7 @@ export default function BootCampSection() {
                   Dates
                 </p>
                 <p className="text-white text-sm font-body mt-1">
-                  June 22 to 28, 2026
+                  To be announced
                 </p>
               </div>
               <div className="border-l-2 border-cyan-400/60 pl-4">

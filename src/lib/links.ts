@@ -19,6 +19,7 @@ export const routes = {
   home: "/",
   workshops: "/workshops",
   training: "/training",
+  trainingOnline: "/training/online",
   trainingPrivate: "/training/private",
   trainingGroup: "/training/group",
   trainingEps: "/training/eps",

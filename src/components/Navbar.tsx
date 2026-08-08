@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { routes } from "@/lib/links";
 
-type Child = { label: string; href: string; desc: string };
+type Child = { label: string; href: string; desc: string; external?: boolean };
 type NavLink = { label: string; href: string; children?: Child[] };
 
 const navLinks: NavLink[] = [
@@ -12,6 +12,11 @@ const navLinks: NavLink[] = [
     label: "Training",
     href: routes.training,
     children: [
+      {
+        label: "Online Training",
+        href: routes.trainingOnline,
+        desc: "Live sessions with Franck via Zoom",
+      },
       {
         label: "Private Training",
         href: routes.trainingPrivate,
@@ -100,6 +105,8 @@ export default function Navbar() {
                       <a
                         key={c.label}
                         href={c.href}
+                        target={c.external ? "_blank" : undefined}
+                        rel={c.external ? "noopener noreferrer" : undefined}
                         className="block px-4 py-3 rounded-md hover:bg-white/5 transition-colors group/item"
                       >
                         <span className="block text-[13px] uppercase tracking-[1.5px] font-bold text-white group-hover/item:text-accent-blue-light transition-colors font-body">
@@ -163,6 +170,8 @@ export default function Navbar() {
                   <a
                     key={c.label}
                     href={c.href}
+                    target={c.external ? "_blank" : undefined}
+                    rel={c.external ? "noopener noreferrer" : undefined}
                     onClick={() => setMobileOpen(false)}
                     className="text-sm uppercase tracking-[2px] text-text-secondary hover:text-accent-blue-light transition-colors"
                   >

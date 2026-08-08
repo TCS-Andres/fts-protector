@@ -1,13 +1,12 @@
-import { links, routes } from "@/lib/links";
+import { routes } from "@/lib/links";
 
 const types = [
   {
     num: "01",
     title: "Online Training",
-    body: "Drills, breakdowns, and coaching in Franck's Defensive Tactics community — train from anywhere in the world.",
+    body: "Live training sessions with Franck via Zoom — real-time coaching and personalized programming, from anywhere in the world.",
     image: "/images/10_corporate_hr_training.png",
-    href: links.skool,
-    external: true,
+    href: routes.trainingOnline,
     cta: "Train Online",
   },
   {
@@ -58,8 +57,6 @@ export default function TrainingTypesSection() {
             <a
               key={t.num}
               href={t.href}
-              target={t.external ? "_blank" : undefined}
-              rel={t.external ? "noopener noreferrer" : undefined}
               className="animate-on-scroll group relative flex flex-col rounded-xl overflow-hidden border border-accent-blue/20 bg-bg-steel-card hover:border-accent-blue-light/60 hover:shadow-[0_0_34px_rgba(46,114,184,0.25)] transition-all duration-300"
             >
               <div className="aspect-[16/10] relative overflow-hidden">
