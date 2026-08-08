@@ -2,7 +2,7 @@ import { routes, links } from "@/lib/links";
 
 const achievements = [
   { stat: "20+", label: "Years as Global Elite Ops" },
-  { stat: "3", label: "Patents — TheSelfDefender" },
+  { stat: "4", label: "Patents — TheSelfDefender & FranckTheSolution Fork" },
   { stat: "CFM", label: "Creator — Circular Footwork Mechanics" },
   { stat: "CCDS", label: "Creator — Close Combat Defense System" },
 ];
@@ -10,7 +10,7 @@ const achievements = [
 // Primary roles, shown in order as a clean credential list.
 const roles = [
   "Elite Executive Protection Specialist",
-  "Inventor — TheSelfDefender (3 Patents) & the FTS Fork (Patent Pending)",
+  "Inventor — TheSelfDefender & the FranckTheSolution Fork (4 Patents)",
   "Private Investigations",
   "Expert — Close Combat Defensive Tactics, Improvised Weapons & Deadly Strategies",
   "Active Fugitive Apprehension Agent (FL)",
@@ -107,10 +107,10 @@ export default function BioSection() {
                   href={routes.ftsFork}
                   className="text-accent-blue-light font-semibold underline decoration-accent-blue/50 underline-offset-4 hover:text-white transition-colors"
                 >
-                  FTS Fork
+                  FranckTheSolution Fork
                 </a>{" "}
                 — an everyday fork reengineered into a patented self-defense
-                tool.
+                tool. Together, his inventions hold four patents.
               </p>
               <p>
                 Franck teaches law-enforcement units, federal contractors,

@@ -6,9 +6,9 @@ import ScrollAnimator from "@/components/ScrollAnimator";
 import { routes } from "@/lib/links";
 
 export const metadata: Metadata = {
-  title: "The FTS Fork — Patented Self-Defense Tool | FrancktheSolution",
+  title: "The FranckTheSolution Fork — Patented Self-Defense Tool | FrancktheSolution",
   description:
-    "The FTS Fork by FrancktheSolution: a patented, legal-to-carry self-defense tool built from an everyday fork — reengineered for close-combat defense strategies.",
+    "The FranckTheSolution Fork by FrancktheSolution: a patented, legal-to-carry self-defense tool built from an everyday fork — reengineered for close-combat defense strategies.",
   alternates: { canonical: "/shop/fts-fork" },
 };
 
@@ -55,8 +55,8 @@ export default function FtsForkPage() {
                 <p className="hero-animate hero-animate-1 text-accent-blue-light text-xs sm:text-sm uppercase tracking-[5px] font-bold mb-5 font-body">
                   New From FrancktheSolution — Patented
                 </p>
-                <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
-                  The FTS
+                <h1 className="hero-animate hero-animate-2 font-heading text-[40px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
+                  The FranckTheSolution
                   <br />
                   <span className="text-accent-blue-light">Fork.</span>
                 </h1>
@@ -97,7 +97,7 @@ export default function FtsForkPage() {
                   />
                 </div>
                 <p className="text-text-muted text-xs uppercase tracking-[2px] mt-3 text-center font-body">
-                  The FTS Fork in action
+                  The FranckTheSolution Fork in action
                 </p>
               </div>
             </div>
@@ -148,7 +148,7 @@ export default function FtsForkPage() {
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed font-body">
               Franck built his reputation teaching that the environment is
-              always armed — if you know how to use it. The FTS Fork is that
+              always armed — if you know how to use it. The FranckTheSolution Fork is that
               philosophy made real: an object nobody looks at twice, carrying
               genuine close-combat capability. Pair it with Franck&apos;s
               training and you&apos;re never unarmed, anywhere.
@@ -167,7 +167,7 @@ export default function FtsForkPage() {
                 Get Yours
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                Buy the FTS Fork Online
+                Buy the FranckTheSolution Fork Online
               </h2>
             </div>
 
@@ -178,7 +178,7 @@ export default function FtsForkPage() {
                   FrancktheSolution
                 </p>
                 <h3 className="font-heading text-2xl lg:text-3xl font-bold uppercase text-white mb-4">
-                  The FTS Fork
+                  The FranckTheSolution Fork
                 </h3>
                 <ul className="space-y-3 mb-7">
                   {[
@@ -215,7 +215,7 @@ export default function FtsForkPage() {
                   Online Checkout Launching Soon
                 </p>
                 <p className="text-text-secondary text-sm max-w-sm font-body">
-                  Secure Shopify checkout for the FTS Fork is being connected
+                  Secure Shopify checkout for the FranckTheSolution Fork is being connected
                   and will live right here. Check back shortly — or follow
                   @FranckTheSolution for the drop announcement.
                 </p>
@@ -235,7 +235,7 @@ export default function FtsForkPage() {
               Complete Your Carry
             </h2>
             <p className="text-text-secondary text-base lg:text-lg mb-8 font-body">
-              Pair the FTS Fork with TheSelfDefender — Franck&apos;s patented
+              Pair the FranckTheSolution Fork with TheSelfDefender — Franck&apos;s patented
               all-in-one survival keychain.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">

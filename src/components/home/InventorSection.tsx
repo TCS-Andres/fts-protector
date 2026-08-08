@@ -11,13 +11,13 @@ const inventions = [
     cta: "Explore TheSelfDefender",
   },
   {
-    badge: "Patent Pending",
-    name: "The FTS Fork",
+    badge: "Patented",
+    name: "The FranckTheSolution Fork",
     tagline: "An everyday fork, reengineered",
-    body: "Franck's newest invention: a patent-pending, legal-to-carry self-defense tool built from an everyday fork — a knuckle-style grip and precision striking tips hiding in plain sight.",
+    body: "Franck's newest invention: a patented, legal-to-carry self-defense tool built from an everyday fork — a knuckle-style grip and precision striking tips hiding in plain sight.",
     image: "/images/fts_fork_poster.jpg",
     href: routes.ftsFork,
-    cta: "Explore the FTS Fork",
+    cta: "Explore the FranckTheSolution Fork",
   },
 ];
 
@@ -49,9 +49,9 @@ export default function InventorSection() {
         {/* Patent stat strip */}
         <div className="grid grid-cols-3 gap-4 max-w-3xl mx-auto mb-12 sm:mb-16 stagger-children">
           {[
-            { stat: "2", label: "Patented Inventions" },
-            { stat: "3", label: "Patents — TheSelfDefender" },
-            { stat: "1", label: "Patent Pending — FTS Fork" },
+            { stat: "4", label: "Patents Total" },
+            { stat: "3", label: "TheSelfDefender" },
+            { stat: "1", label: "FranckTheSolution Fork" },
           ].map((s) => (
             <div
               key={s.label}

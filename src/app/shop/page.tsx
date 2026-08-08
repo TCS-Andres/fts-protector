@@ -8,7 +8,7 @@ import { links, routes } from "@/lib/links";
 export const metadata: Metadata = {
   title: "Shop | FrancktheSolution",
   description:
-    "Get the new FTS Fork, TheSelfDefender (patented), upcoming video courses, and Franck Pala's forthcoming book, Circular Footwork Mechanics (CFM).",
+    "Get the new FranckTheSolution Fork, TheSelfDefender (patented), upcoming video courses, and Franck Pala's forthcoming book, Circular Footwork Mechanics (CFM).",
   alternates: { canonical: "/shop" },
 };
 
@@ -28,10 +28,10 @@ type Product = {
 const products: Product[] = [
   {
     kicker: "Just Launched",
-    title: "The FTS Fork",
+    title: "The FranckTheSolution Fork",
     body: "Franck's newest invention — an everyday fork, reengineered into a patented, legal-to-carry self-defense tool with a knuckle-style grip and precision striking tips.",
     image: "/images/fts_fork_poster.jpg",
-    cta: "See the FTS Fork",
+    cta: "See the FranckTheSolution Fork",
     href: routes.ftsFork,
     status: "live",
   },
@@ -95,7 +95,7 @@ export default function ShopPage() {
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed max-w-2xl font-body">
                 The same tools and teaching Franck&apos;s own work is built on —
-                the new FTS Fork, TheSelfDefender, his new book CFM, and
+                the new FranckTheSolution Fork, TheSelfDefender, his new book CFM, and
                 on-demand courses.
               </p>
             </div>

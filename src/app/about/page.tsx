@@ -23,7 +23,7 @@ const timeline = [
   },
   {
     title: "The Inventor",
-    body: "Creator of TheSelfDefender (three patents) and a patent-pending system for improvised self-defense, including the everyday fork.",
+    body: "Creator of TheSelfDefender (three patents) and the FranckTheSolution Fork — four patents in total across his self-defense inventions.",
   },
   {
     title: "Still in the Field",
@@ -110,8 +110,8 @@ export default function AboutPage() {
                 </a>
                 , protected by{" "}
                 <span className="text-white font-semibold">three patents</span>,
-                plus a patent-pending system for turning an everyday fork into an
-                effective self-defense tool. His instruction blends biomechanics,
+                plus the FranckTheSolution Fork — bringing his inventions to four
+                patents in total. His instruction blends biomechanics,
                 real-world scenario training, and tactical psychology to produce
                 controlled aggression, sharp decision-making, and unmatched
                 situational dominance.

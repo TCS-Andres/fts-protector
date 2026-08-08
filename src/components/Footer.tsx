@@ -90,8 +90,8 @@ export default function Footer() {
                   alt="FrancktheSolution"
                   className="w-16 h-16 object-contain drop-shadow-[0_0_24px_rgba(46,114,184,0.4)]"
                 />
-                <span className="text-white text-lg font-heading uppercase tracking-[3px] leading-tight">
-                  Franckthe<br className="hidden sm:block" />Solution
+                <span className="text-white text-base sm:text-lg font-heading uppercase tracking-[2px] leading-tight whitespace-nowrap">
+                  FranckTheSolution
                 </span>
               </div>
               <p className="text-text-secondary text-sm leading-relaxed mb-6 font-body max-w-xs">

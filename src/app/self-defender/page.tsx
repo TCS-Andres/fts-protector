@@ -401,14 +401,14 @@ export default function SelfDefenderPage() {
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed font-body mb-8">
               The same inventive mind turned an everyday fork into a patented,
-              legal-to-carry self-defense tool — the new FTS Fork. Awareness,
+              legal-to-carry self-defense tool — the new FranckTheSolution Fork. Awareness,
               leverage, and decisive action beat brute force every time.
             </p>
             <a
               href={routes.ftsFork}
               className="inline-flex items-center justify-center px-9 py-4 border border-accent-blue-light/50 text-accent-blue-light text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-all duration-300 min-h-[52px]"
             >
-              Meet the FTS Fork &rarr;
+              Meet the FranckTheSolution Fork &rarr;
             </a>
           </div>
         </section>

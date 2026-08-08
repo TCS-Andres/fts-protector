@@ -117,7 +117,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3 ml-1">
             <a
               href={routes.training}
-              className="px-5 py-2.5 border border-accent-blue-light/50 text-accent-blue-light text-[13px] font-bold uppercase tracking-[1.5px] rounded hover:bg-accent-blue hover:text-white hover:border-accent-blue hover:shadow-[0_0_22px_rgba(46,114,184,0.45)] transition-all duration-300 hover:scale-[1.03] whitespace-nowrap"
+              className="px-5 py-2.5 bg-accent-red text-white text-[13px] font-bold uppercase tracking-[1.5px] rounded ring-1 ring-accent-red/40 hover:bg-accent-red-dark hover:ring-accent-red hover:shadow-[0_0_22px_rgba(196,30,30,0.55)] transition-all duration-300 hover:scale-[1.03] whitespace-nowrap"
             >
               Train With Us
             </a>
@@ -193,7 +193,7 @@ export default function Navbar() {
             <a
               href={routes.training}
               onClick={() => setMobileOpen(false)}
-              className="w-full text-center px-10 py-4 border border-accent-blue-light/50 text-accent-blue-light text-lg font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-all duration-300"
+              className="w-full text-center px-10 py-4 bg-accent-red text-white text-lg font-bold uppercase tracking-[2px] rounded hover:bg-accent-red-dark transition-all duration-300"
             >
               Train With Us
             </a>

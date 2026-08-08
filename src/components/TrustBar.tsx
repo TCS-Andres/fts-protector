@@ -39,7 +39,7 @@ function CountUp({ target, suffix = "" }: { target: number; suffix?: string }) {
 
 const stats = [
   { value: 25, suffix: "+", label: "Years of Protection Experience" },
-  { value: 20, suffix: "K+", label: "Instagram Followers" },
+  { value: 45, suffix: "K+", label: "Instagram Followers" },
   { value: 500, suffix: "+", label: "Professionals Trained" },
   { value: 2, suffix: "", label: "Hour Hands-On Workshop" },
 ];
