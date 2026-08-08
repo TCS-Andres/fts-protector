@@ -27,6 +27,7 @@ const columns = [
       { label: "Investigations", href: routes.investigations },
       { label: "TheSelfDefender", href: routes.selfDefender },
       { label: "About Franck", href: routes.about },
+      { label: "Contact", href: routes.contact },
     ],
   },
 ];

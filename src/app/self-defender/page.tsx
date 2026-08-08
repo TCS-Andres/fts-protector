@@ -75,14 +75,6 @@ const trainingModes = [
   },
 ];
 
-const notables = [
-  "Phil Collins",
-  "Gary Vaynerchuk",
-  "Steve Harvey",
-  "Ice-T",
-  "Shemar Moore",
-];
-
 export default function SelfDefenderPage() {
   return (
     <>
@@ -236,7 +228,7 @@ export default function SelfDefenderPage() {
                 </p>
               </div>
 
-              {/* Inventor + notables */}
+              {/* Inventor */}
               <div className="animate-on-scroll">
                 <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
                   The Inventor
@@ -254,20 +246,12 @@ export default function SelfDefenderPage() {
                     carried.
                   </p>
                   <p>
-                    Along the way it has found its way into some famous
-                    hands - {notables.slice(0, -1).join(", ")}, and{" "}
-                    {notables[notables.length - 1]} among them.
+                    It&apos;s the same tool Franck carries himself. As an elite
+                    protection specialist, he relies on TheSelfDefender - and
+                    the FranckTheSolution Fork - to protect his clients anywhere
+                    in the world. If it earns a place on a working protector, it
+                    earns a place on you.
                   </p>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {notables.map((n) => (
-                    <span
-                      key={n}
-                      className="inline-flex items-center px-4 py-2 rounded-full border border-white/15 bg-white/5 text-white text-xs uppercase tracking-[2px] font-bold font-body"
-                    >
-                      {n}
-                    </span>
-                  ))}
                 </div>
                 <a
                   href={routes.about}

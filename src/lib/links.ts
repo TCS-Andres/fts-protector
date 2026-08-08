@@ -14,6 +14,11 @@ export const links = {
   emailTactops: "mailto:TACTOPSUSA@gmail.com",
 } as const;
 
+// Web3Forms public access key (safe for client-side use).
+// Submissions are routed to the recipient configured in the Web3Forms dashboard.
+export const WEB3FORMS_ACCESS_KEY = "928919bd-0630-41dd-8405-06a306002ada";
+export const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
+
 // Internal routes
 export const routes = {
   home: "/",
@@ -30,4 +35,5 @@ export const routes = {
   ftsFork: "/shop/fts-fork",
   vlog: "/vlog",
   about: "/about",
+  contact: "/contact",
 } as const;

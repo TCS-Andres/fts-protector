@@ -175,19 +175,17 @@ export default function EpsTrainingPage() {
                   ))}
                 </ul>
               </div>
-              <div className="animate-on-scroll order-1 lg:order-2 grid grid-cols-2 gap-4">
-                <img
-                  src="/images/03_hotel_lobby_advance.png"
-                  alt="Advance work in a hotel lobby"
-                  loading="lazy"
-                  className="rounded-xl border border-accent-blue/20 object-cover aspect-[3/4] w-full"
-                />
-                <img
-                  src="/images/01_vip_escort_red_carpet.png"
-                  alt="VIP escort at a red carpet event"
-                  loading="lazy"
-                  className="rounded-xl border border-accent-blue/20 object-cover aspect-[3/4] w-full mt-8"
-                />
+              <div className="animate-on-scroll order-1 lg:order-2">
+                <div className="mx-auto w-full max-w-xs lg:max-w-sm rounded-xl overflow-hidden border border-accent-blue/30 shadow-[0_20px_60px_rgba(0,0,0,0.5)] bg-black">
+                  <video
+                    controls
+                    playsInline
+                    preload="metadata"
+                    poster="/images/eps_training_poster.jpg"
+                    className="w-full aspect-[9/16] object-cover bg-black"
+                    src="/videos/eps_training.mp4#t=0.1"
+                  />
+                </div>
               </div>
             </div>
           </div>
