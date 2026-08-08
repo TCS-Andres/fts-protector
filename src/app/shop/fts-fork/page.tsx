@@ -6,36 +6,36 @@ import ScrollAnimator from "@/components/ScrollAnimator";
 import { routes } from "@/lib/links";
 
 export const metadata: Metadata = {
-  title: "The FranckTheSolution Fork - Patented Self-Defense Tool | FrancktheSolution",
+  title: "The FranckTheSolution Fork - Patented Everyday-Carry Tool | FrancktheSolution",
   description:
-    "The FranckTheSolution Fork by FrancktheSolution: a patented, legal-to-carry self-defense tool built from an everyday fork - reengineered for close-combat defense strategies.",
+    "The FranckTheSolution Fork by FrancktheSolution: a patented, non-lethal everyday-carry tool. Legal to carry across the U.S. and worldwide - because it's a fork. No concealed-carry license required, TSA-friendly, 18/10 stainless steel with carabiner clip and magnet.",
   alternates: { canonical: "/shop/fts-fork" },
 };
 
 const features = [
   {
-    title: "Patented Design",
-    body: "Not a bent piece of cutlery - a patented reengineering of an everyday fork into a purpose-built self-defense tool, invented by Franck Pala.",
+    title: "Patented as a Tool",
+    body: "This is patented as a tool - not a weapon. That's the whole point: a fork is a fork, so it carries the freedom of an everyday object, not the restrictions of a weapon.",
   },
   {
-    title: "Legal to Carry",
-    body: "It's a fork. No concealed-carry license, no permits - an everyday object you can keep on your keys, in your bag, or in your pocket.",
+    title: "Legal to Carry, Anywhere",
+    body: "Legal across the U.S. and everywhere in the world - because it's a fork. No concealed-carry license, no permits. Nobody stops you for carrying your own fork.",
   },
   {
-    title: "Knuckle-Style Grip",
-    body: "The bend seats the handle across your fingers like a brass-knuckle, locking the tool into your fist so it can't be stripped away under stress.",
+    title: "TSA-Friendly",
+    body: "Take off the magnet and carabiner and it's simply a fork - TSA-friendly and ready to travel with you anywhere, in your bag or your pocket.",
   },
   {
-    title: "Precision Tips",
-    body: "The tines concentrate the force of every strike into small points of contact - maximum deterrent effect from minimal strength.",
+    title: "Quick-Snap Deployment",
+    body: "18/10 stainless steel with a carabiner clip and a magnet, so it snaps into hand fast and quiet the moment you need it.",
   },
   {
-    title: "Built for Close Combat",
-    body: "Designed to work with Franck's Close Combat Defense System - the same improvised-weapons principles he teaches contractors and protection teams.",
+    title: "Non-Lethal & Versatile",
+    body: "Non-lethal, powerful, efficient, and versatile - a genuinely useful everyday tool that's also ready for close quarters in trained hands.",
   },
   {
-    title: "Stainless Steel, Clip-On Carry",
-    body: "18/10 stainless steel construction with a carabiner clip - rugged enough to trust, discreet enough to carry everywhere.",
+    title: "Ergonomic & Non-Threatening",
+    body: "The ergonomics are built for a natural, open-hand grip - so it never looks threatening or intimidating. To anyone watching, it's just a fork.",
   },
 ];
 
@@ -53,7 +53,7 @@ export default function FtsForkPage() {
             <div className="grid lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] gap-12 lg:gap-16 items-center">
               <div>
                 <p className="hero-animate hero-animate-1 text-accent-blue-light text-xs sm:text-sm uppercase tracking-[5px] font-bold mb-5 font-body">
-                  New From FrancktheSolution - Patented
+                  New From FrancktheSolution - Patented Tool
                 </p>
                 <h1 className="hero-animate hero-animate-2 font-heading text-[40px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
                   The FranckTheSolution
@@ -61,13 +61,14 @@ export default function FtsForkPage() {
                   <span className="text-accent-blue-light">Fork.</span>
                 </h1>
                 <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-6 max-w-2xl font-body">
-                  An everyday fork, reengineered into a legal-to-carry
-                  self-defense tool. The patented bend turns the handle into a
-                  knuckle-style grip and the tines into precision striking
-                  tips - close-combat capability hiding in plain sight.
+                  An everyday fork, engineered into a patented tool. Because
+                  it&apos;s a fork, it&apos;s legal to carry across the U.S. and
+                  around the world - no concealed-carry license, TSA-friendly,
+                  and never threatening. An everyday tool that also happens to
+                  be ready when you need it.
                 </p>
                 <div className="hero-animate hero-animate-2 flex flex-wrap gap-2 mb-9">
-                  {["Patented", "Legal to Carry", "18/10 Stainless Steel"].map((chip) => (
+                  {["Patented Tool", "Legal to Carry", "TSA-Friendly", "18/10 Stainless Steel"].map((chip) => (
                     <span
                       key={chip}
                       className="inline-flex items-center px-4 py-2 bg-accent-blue/15 border border-accent-blue/40 rounded-full text-accent-blue-light text-xs uppercase tracking-[2px] font-bold font-body"
@@ -114,7 +115,7 @@ export default function FtsForkPage() {
                 Why It Works
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                Deadly Simple by Design
+                One Tool. Zero Restrictions.
               </h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
@@ -141,17 +142,19 @@ export default function FtsForkPage() {
         <section className="bg-bg-secondary py-16 sm:py-20 lg:py-28 relative noise-bg">
           <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12 text-center animate-on-scroll">
             <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
-              The Improvised-Weapons Principle
+              Why a Fork
             </p>
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-6">
-              Anything Can Be a Tool
+              A Tool Is a Tool
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed font-body">
-              Franck built his reputation teaching that the environment is
-              always armed - if you know how to use it. The FranckTheSolution Fork is that
-              philosophy made real: an object nobody looks at twice, carrying
-              genuine close-combat capability. Pair it with Franck&apos;s
-              training and you&apos;re never unarmed, anywhere.
+              At the end of the day, nobody will stop you anywhere in the world
+              for carrying your own fork - it&apos;s just a tool to eat with.
+              Where a tactical pen, pencil, or knife can be restricted or
+              confiscated when you travel, a fork goes wherever you go.
+              That&apos;s the genius of it: an everyday tool nobody looks at
+              twice, always on you, and - paired with Franck&apos;s training -
+              ready for close quarters the moment it matters.
             </p>
           </div>
         </section>
@@ -182,11 +185,11 @@ export default function FtsForkPage() {
                 </h3>
                 <ul className="space-y-3 mb-7">
                   {[
-                    "Patented self-defense design",
-                    "Legal to carry - no license required",
-                    "18/10 stainless steel with carabiner clip",
-                    "Knuckle-style grip, precision striking tips",
-                    "Backed by Franck's close-combat training system",
+                    "Patented as a tool - not a weapon",
+                    "Legal to carry across the U.S. & worldwide - no license",
+                    "18/10 stainless steel, carabiner clip + magnet for quick-snap deployment",
+                    "TSA-friendly - take off the magnet and it's just a fork",
+                    "Non-lethal, powerful, efficient & versatile",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-text-secondary text-sm lg:text-base font-body">
                       <span className="text-accent-blue-light flex-shrink-0 mt-0.5">✓</span>
@@ -195,8 +198,8 @@ export default function FtsForkPage() {
                   ))}
                 </ul>
                 <p className="text-text-muted text-xs font-body">
-                  Ships from the USA. Check your local regulations before
-                  carrying any self-defense tool.
+                  Ships from the USA. It&apos;s a fork - an everyday-carry tool
+                  you can take just about anywhere.
                 </p>
               </div>
 

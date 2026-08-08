@@ -14,7 +14,7 @@ const inventions = [
     badge: "Patented",
     name: "The FranckTheSolution Fork",
     tagline: "An everyday fork, reengineered",
-    body: "Franck's newest invention: a patented, legal-to-carry self-defense tool built from an everyday fork - a knuckle-style grip and precision striking tips hiding in plain sight.",
+    body: "Franck's newest invention: a patented, legal-to-carry tool built from an everyday fork - legal anywhere because it's a fork, TSA-friendly, and never threatening.",
     image: "/images/fts_fork_poster.jpg",
     href: routes.ftsFork,
     cta: "Explore the FranckTheSolution Fork",

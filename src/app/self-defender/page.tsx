@@ -401,7 +401,7 @@ export default function SelfDefenderPage() {
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed font-body mb-8">
               The same inventive mind turned an everyday fork into a patented,
-              legal-to-carry self-defense tool - the new FranckTheSolution Fork. Awareness,
+              legal-to-carry tool - the new FranckTheSolution Fork. Awareness,
               leverage, and decisive action beat brute force every time.
             </p>
             <a

@@ -109,8 +109,8 @@ export default function BioSection() {
                 >
                   FranckTheSolution Fork
                 </a>{" "}
-                - an everyday fork reengineered into a patented self-defense
-                tool. Together, his inventions hold four patents.
+                - an everyday fork reengineered into a patented tool. Together,
+                his inventions hold four patents.
               </p>
               <p>
                 Franck teaches law-enforcement units, federal contractors,
