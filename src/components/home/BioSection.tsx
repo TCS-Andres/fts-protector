@@ -10,6 +10,7 @@ const achievements = [
 // Primary roles, shown in order as a clean credential list.
 const roles = [
   "Elite Executive Protection Specialist",
+  "Inventor — TheSelfDefender (3 Patents) & the FTS Fork (Patent Pending)",
   "Private Investigations",
   "Expert — Close Combat Defensive Tactics, Improvised Weapons & Deadly Strategies",
   "Active Fugitive Apprehension Agent (FL)",

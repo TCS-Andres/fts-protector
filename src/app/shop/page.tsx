@@ -22,6 +22,7 @@ type Product = {
   href?: string;
   external?: boolean;
   status: "live" | "soon";
+  imgPos?: string;
 };
 
 const products: Product[] = [
@@ -53,12 +54,15 @@ const products: Product[] = [
     status: "soon",
   },
   {
-    kicker: "The Book",
+    kicker: "Out Now",
     title: "Circular Footwork Mechanics",
-    body: "Franck's forthcoming book — CFM — distilling the footwork and movement principles behind everything he teaches. Be first to know when it drops.",
-    image: "/images/17_walking_downtown_miami.png",
-    cta: "Coming Soon",
-    status: "soon",
+    body: "Franck's new book — CFM. The biomechanics of circular footwork and the strategies behind it, for protectors, officers, and athletes. His Close Combat Defense System, in a manual.",
+    image: "/images/cfm_book_front.jpg",
+    cta: "Get the Book",
+    href: "mailto:info@franckthesolution.com?subject=CFM%20Book%20Order",
+    external: true,
+    status: "live",
+    imgPos: "object-top",
   },
 ];
 
@@ -91,8 +95,8 @@ export default function ShopPage() {
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed max-w-2xl font-body">
                 The same tools and teaching Franck&apos;s own work is built on —
-                the new FTS Fork, TheSelfDefender, on-demand courses, and his
-                upcoming book.
+                the new FTS Fork, TheSelfDefender, his new book CFM, and
+                on-demand courses.
               </p>
             </div>
           </div>
@@ -115,6 +119,8 @@ export default function ShopPage() {
                       alt=""
                       loading="lazy"
                       className={`w-full h-full object-cover transition-all duration-[1000ms] group-hover:scale-105 ${
+                        p.imgPos ?? ""
+                      } ${
                         p.status === "soon"
                           ? "opacity-40 grayscale"
                           : "opacity-85 group-hover:opacity-100"
@@ -161,8 +167,7 @@ export default function ShopPage() {
             </div>
 
             <p className="text-center text-text-muted text-sm mt-12 font-body animate-on-scroll">
-              Video courses and the CFM book are launching soon. Want to be
-              notified first?{" "}
+              Video courses are launching soon. Want to be notified first?{" "}
               <a
                 href={links.instagram}
                 target="_blank"

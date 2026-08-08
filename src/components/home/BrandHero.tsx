@@ -3,6 +3,7 @@ import { routes } from "@/lib/links";
 const tickerItems = [
   "Elite Executive Protection",
   "Inventor — TheSelfDefender (3 Patents)",
+  "Inventor — FranckTheSolution Fork (Patent Pending)",
   "Former Professional Boxer",
   "Contractor for Special Units",
   "Active Fugitive Apprehension Agent — FL",
