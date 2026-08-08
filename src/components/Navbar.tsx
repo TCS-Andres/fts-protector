@@ -1,14 +1,34 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { routes, links } from "@/lib/links";
+import { routes } from "@/lib/links";
 
 type Child = { label: string; href: string; desc: string };
 type NavLink = { label: string; href: string; children?: Child[] };
 
 const navLinks: NavLink[] = [
   { label: "Workshops", href: routes.workshops },
-  { label: "Training", href: routes.training },
+  {
+    label: "Training",
+    href: routes.training,
+    children: [
+      {
+        label: "Private Training",
+        href: routes.trainingPrivate,
+        desc: "One-on-one, built around you",
+      },
+      {
+        label: "Group Training",
+        href: routes.trainingGroup,
+        desc: "Teams, families & organizations",
+      },
+      {
+        label: "EPS Training",
+        href: routes.trainingEps,
+        desc: "Executive protection specialist track",
+      },
+    ],
+  },
   {
     label: "Hire Us",
     href: routes.hireUs,
@@ -104,12 +124,10 @@ export default function Navbar() {
             )
           )}
           <a
-            href={links.workshopStripe}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-1 px-5 py-2.5 bg-accent-red text-white text-[13px] font-bold uppercase tracking-[1.5px] rounded ring-1 ring-accent-blue/40 hover:bg-accent-red-dark hover:ring-accent-blue-light hover:shadow-[0_0_22px_rgba(46,114,184,0.55)] transition-all duration-300 hover:scale-[1.03] whitespace-nowrap"
+            href={routes.hireUs}
+            className="ml-1 px-5 py-2.5 bg-accent-blue text-white text-[13px] font-bold uppercase tracking-[1.5px] rounded ring-1 ring-accent-blue/40 hover:bg-accent-blue-dark hover:ring-accent-blue-light hover:shadow-[0_0_22px_rgba(46,114,184,0.55)] transition-all duration-300 hover:scale-[1.03] whitespace-nowrap"
           >
-            $147 Early Bird
+            Work With Franck
           </a>
         </div>
 
@@ -164,13 +182,11 @@ export default function Navbar() {
             )
           )}
           <a
-            href={links.workshopStripe}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={routes.hireUs}
             onClick={() => setMobileOpen(false)}
-            className="mt-2 px-10 py-4 bg-accent-red text-white text-lg font-bold uppercase tracking-[2px] rounded hover:bg-accent-red-dark transition-all duration-300"
+            className="mt-2 px-10 py-4 bg-accent-blue text-white text-lg font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue-dark transition-all duration-300"
           >
-            $147 Early Bird, Until July 5
+            Work With Franck
           </a>
         </div>
       )}

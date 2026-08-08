@@ -63,12 +63,10 @@ export default function Footer() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <a
-              href={links.workshopStripe}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 bg-accent-red text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_28px_rgba(196,30,30,0.55)] hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
+              href={routes.training}
+              className="inline-flex items-center justify-center px-8 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue-dark hover:shadow-[0_0_28px_rgba(46,114,184,0.55)] hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
             >
-              Claim $147 Early Bird
+              Train With Franck
             </a>
             <a
               href={routes.hireUs}

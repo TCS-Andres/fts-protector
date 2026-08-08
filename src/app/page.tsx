@@ -3,6 +3,7 @@ import BrandHero from "@/components/home/BrandHero";
 import HomeStats from "@/components/home/HomeStats";
 import BioSection from "@/components/home/BioSection";
 import PillarsSection from "@/components/home/PillarsSection";
+import TrainingTypesSection from "@/components/home/TrainingTypesSection";
 import Manifesto from "@/components/home/Manifesto";
 import FeaturedWorkshopCTA from "@/components/home/FeaturedWorkshopCTA";
 import GallerySection from "@/components/GallerySection";
@@ -20,6 +21,7 @@ export default function Home() {
         <HomeStats />
         <BioSection />
         <PillarsSection />
+        <TrainingTypesSection />
         <Manifesto />
         <GallerySection />
         <TestimonialsSection />

@@ -58,17 +58,9 @@ export default function AudienceSection() {
                 <p className="text-text-secondary text-base leading-relaxed mb-6 font-body">
                   {a.body1}
                 </p>
-                <p className="text-text-secondary text-base leading-relaxed mb-8 font-body">
+                <p className="text-text-secondary text-base leading-relaxed font-body">
                   {a.body2}
                 </p>
-                <a
-                  href="https://buy.stripe.com/9B65kF3sl0W96yQ1TS57W04"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent-blue-light text-sm uppercase tracking-[2px] font-bold hover:text-white transition-colors font-body"
-                >
-                  {a.cta} &rarr;
-                </a>
               </div>
             </div>
           ))}

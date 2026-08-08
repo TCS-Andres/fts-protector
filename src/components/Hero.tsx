@@ -23,14 +23,8 @@ export default function Hero() {
             </p>
 
             <div className="hero-animate hero-animate-1 flex flex-wrap items-center justify-center md:justify-start gap-2 mb-6">
-              <span className="inline-flex items-center px-4 py-2 bg-accent-red/15 border border-accent-red/40 rounded-full text-accent-red text-xs uppercase tracking-[2px] font-bold font-body">
-                ⚡ Early Bird $147, Reg $197, Ends July 5
-              </span>
-              <span className="inline-flex items-center px-4 py-2 bg-accent-blue text-white rounded-full text-xs uppercase tracking-[2px] font-bold font-body shadow-[0_0_20px_rgba(46,114,184,0.45)]">
-                🎟️ Bring a +1 FREE
-              </span>
               <span className="inline-flex items-center px-4 py-2 bg-accent-blue/15 border border-accent-blue/40 rounded-full text-accent-blue-light text-xs uppercase tracking-[2px] font-bold font-body">
-                🔒 Only 16 Spots Available
+                📅 Next Workshop — To Be Announced
               </span>
             </div>
 
@@ -44,52 +38,22 @@ export default function Hero() {
 
             <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-6 max-w-2xl font-body">
               Your wife, your husband, your kids, your parents. Someone in
-              your life is counting on you to keep them safe. A 2-hour
-              hands-on workshop built on 25 years of real-world executive
-              protection. No martial arts background. No fitness
-              requirements. Just the skills that turn instinct into action.
-            </p>
-            <p className="hero-animate hero-animate-2 text-white text-base sm:text-lg leading-relaxed mb-10 max-w-2xl font-body">
-              <span className="font-bold text-accent-blue-light">Your ticket includes a +1, free.</span>{" "}
-              Bring your spouse, your kid, a friend. Train together so you protect together.
+              your life is counting on you to keep them safe. A hands-on
+              workshop built on 25 years of real-world executive protection.
+              No martial arts background. No fitness requirements. Just the
+              skills that turn instinct into action.
             </p>
 
-            <div className="hero-animate hero-animate-3">
-              <a
-                href="https://buy.stripe.com/9B65kF3sl0W96yQ1TS57W04"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-10 py-4 bg-accent-red text-white text-sm sm:text-base font-bold uppercase tracking-[2px] sm:tracking-[3px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_20px_rgba(196,30,30,0.4)] hover:scale-[1.03] transition-all duration-300 min-h-[52px] text-center"
-              >
-                Claim $147 Early Bird
-              </a>
-              <p className="text-text-muted text-xs uppercase tracking-[2px] mt-3 font-body">
-                <span className="line-through text-text-muted/70">$197</span>{" "}
-                <span className="text-accent-blue-light font-bold">$147</span> until July 5
-              </p>
-              <p className="text-white text-sm mt-4 font-body">
-                <span className="text-accent-blue-light font-bold">📅 Saturday, July 18, 2026</span> · 9 AM – 11 AM
-                <br />
-                📍{" "}
-                <a
-                  href="https://maps.app.goo.gl/H6nH8Lnvpn6tE1M66"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline decoration-accent-blue/60 underline-offset-4 hover:text-accent-blue-light transition-colors"
-                >
-                  KO Zone, Miami
-                </a>
-              </p>
-              <p className="mt-4">
-                <a
-                  href="https://www.skool.com/defensivetactics/about?ref=5872d5e010f741d2a991a3878f95b264"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-text-secondary text-sm hover:underline transition-colors hover:text-white font-body"
-                >
-                  Can&apos;t attend in person? Train online &rarr;
-                </a>
-              </p>
+            <div className="hero-animate hero-animate-3 inline-block md:block">
+              <div className="border-l-2 border-accent-blue pl-5 text-left max-w-xl">
+                <p className="text-white text-lg sm:text-xl font-bold font-body">
+                  Stay tuned for our next workshop.
+                </p>
+                <p className="text-text-secondary text-sm sm:text-base mt-1.5 font-body">
+                  Dates for the next Everyone Is a Protector workshop will be
+                  announced here soon.
+                </p>
+              </div>
             </div>
           </div>
 

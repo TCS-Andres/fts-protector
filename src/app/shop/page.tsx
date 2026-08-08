@@ -3,12 +3,12 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RedDivider from "@/components/RedDivider";
 import ScrollAnimator from "@/components/ScrollAnimator";
-import { links } from "@/lib/links";
+import { links, routes } from "@/lib/links";
 
 export const metadata: Metadata = {
   title: "Shop | FrancktheSolution",
   description:
-    "Get TheSelfDefender (patented), upcoming video courses, and Franck Pala's forthcoming book, Circular Footwork Mechanics (CFM).",
+    "Get the new FTS Fork, TheSelfDefender (patented), upcoming video courses, and Franck Pala's forthcoming book, Circular Footwork Mechanics (CFM).",
   alternates: { canonical: "/shop" },
 };
 
@@ -25,6 +25,15 @@ type Product = {
 };
 
 const products: Product[] = [
+  {
+    kicker: "Just Launched",
+    title: "The FTS Fork",
+    body: "Franck's newest invention — an everyday fork, reengineered into a patented, legal-to-carry self-defense tool with a knuckle-style grip and precision striking tips.",
+    image: "/images/fts_fork_poster.jpg",
+    cta: "See the FTS Fork",
+    href: routes.ftsFork,
+    status: "live",
+  },
   {
     kicker: "Self-Defense Tool",
     title: "TheSelfDefender",
@@ -82,8 +91,8 @@ export default function ShopPage() {
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed max-w-2xl font-body">
                 The same tools and teaching Franck&apos;s own work is built on —
-                TheSelfDefender, on-demand courses, and his upcoming
-                book.
+                the new FTS Fork, TheSelfDefender, on-demand courses, and his
+                upcoming book.
               </p>
             </div>
           </div>
@@ -94,7 +103,7 @@ export default function ShopPage() {
         {/* Products */}
         <section className="bg-bg-primary py-16 sm:py-20 lg:py-28 relative noise-bg">
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
-            <div className="grid md:grid-cols-3 gap-6 stagger-children">
+            <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 stagger-children">
               {products.map((p) => (
                 <div
                   key={p.title}
@@ -112,16 +121,18 @@ export default function ShopPage() {
                       }`}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-bg-card via-bg-card/40 to-transparent" />
-                    <span className="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] uppercase tracking-[2px] font-extrabold font-body text-white bg-gradient-to-r from-accent-blue to-accent-blue-light shadow-[0_0_20px_rgba(46,114,184,0.65)] ring-1 ring-white/20">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white/90" />
-                      {p.kicker}
-                    </span>
-                    {p.status === "soon" && (
-                      <span className="absolute top-4 right-4 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] uppercase tracking-[2px] font-extrabold font-body text-black bg-gradient-to-r from-accent-gold to-[#F0DDA0] shadow-[0_0_22px_rgba(201,168,76,0.75)] ring-1 ring-black/10 animate-pulse">
-                        <span className="w-1.5 h-1.5 rounded-full bg-black/70" />
-                        Coming Soon
+                    <div className="absolute top-4 left-4 flex flex-col items-start gap-2">
+                      <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] uppercase tracking-[2px] font-extrabold font-body text-white bg-gradient-to-r from-accent-blue to-accent-blue-light shadow-[0_0_20px_rgba(46,114,184,0.65)] ring-1 ring-white/20">
+                        <span className="w-1.5 h-1.5 rounded-full bg-white/90" />
+                        {p.kicker}
                       </span>
-                    )}
+                      {p.status === "soon" && (
+                        <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] uppercase tracking-[2px] font-extrabold font-body text-black bg-gradient-to-r from-accent-gold to-[#F0DDA0] shadow-[0_0_22px_rgba(201,168,76,0.75)] ring-1 ring-black/10 animate-pulse">
+                          <span className="w-1.5 h-1.5 rounded-full bg-black/70" />
+                          Coming Soon
+                        </span>
+                      )}
+                    </div>
                   </div>
                   <div className="p-6 sm:p-8 flex flex-col flex-1">
                     <h3 className="font-heading text-xl lg:text-2xl font-bold uppercase mb-3 text-white">

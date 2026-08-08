@@ -101,8 +101,15 @@ export default function BioSection() {
                 </a>
                 , protected by{" "}
                 <span className="text-white font-semibold">three patents</span>,
-                plus a patent-pending system for turning an everyday fork into an
-                effective self-defense tool.
+                plus the new{" "}
+                <a
+                  href={routes.ftsFork}
+                  className="text-accent-blue-light font-semibold underline decoration-accent-blue/50 underline-offset-4 hover:text-white transition-colors"
+                >
+                  FTS Fork
+                </a>{" "}
+                — an everyday fork reengineered into a patented self-defense
+                tool.
               </p>
               <p>
                 Franck teaches law-enforcement units, federal contractors,
