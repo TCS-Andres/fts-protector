@@ -30,7 +30,7 @@ const products: Product[] = [
     kicker: "Just Launched",
     title: "The FranckTheSolution Fork",
     body: "Franck's newest invention - an everyday fork, reengineered into a patented, legal-to-carry tool. A knuckle-style grip and precision tips, legal anywhere because it's a fork.",
-    image: "/images/fts_fork_poster.jpg",
+    image: "/images/fork_main.jpg",
     cta: "See the FranckTheSolution Fork",
     href: routes.ftsFork,
     status: "live",

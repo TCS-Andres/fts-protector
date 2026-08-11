@@ -85,21 +85,15 @@ export default function FtsForkPage() {
                 </a>
               </div>
 
-              {/* Vertical product video */}
-              <div className="hero-animate hero-animate-2 mx-auto w-full max-w-xs">
+              {/* Product studio shot */}
+              <div className="hero-animate hero-animate-2">
                 <div className="rounded-xl overflow-hidden border border-accent-blue/30 shadow-[0_20px_60px_rgba(0,0,0,0.6)] bg-black">
-                  <video
-                    controls
-                    playsInline
-                    preload="metadata"
-                    poster="/images/fts_fork_poster.jpg"
-                    className="w-full aspect-[9/16] object-cover bg-black"
-                    src="/videos/fts_fork.mp4#t=0.1"
+                  <img
+                    src="/images/fork_main.jpg"
+                    alt="The FranckTheSolution Fork shown from three angles - carabiner clip, 18/10 stainless steel fork with signature engraving, and the quick-release magnet"
+                    className="w-full h-auto"
                   />
                 </div>
-                <p className="text-text-muted text-xs uppercase tracking-[2px] mt-3 text-center font-body">
-                  The FranckTheSolution Fork in action
-                </p>
               </div>
             </div>
           </div>
@@ -138,24 +132,62 @@ export default function FtsForkPage() {
 
         <RedDivider />
 
-        {/* Philosophy */}
+        {/* See it in action - vertical video */}
+        <section className="bg-bg-primary py-16 sm:py-20 lg:py-28 relative noise-bg">
+          <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12">
+            <div className="text-center mb-8 sm:mb-10 animate-on-scroll">
+              <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+                See It In Action
+              </p>
+              <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white">
+                The Fork, In Hand
+              </h2>
+            </div>
+            <div className="animate-on-scroll mx-auto w-full max-w-xs rounded-xl overflow-hidden border border-accent-blue/30 shadow-[0_20px_60px_rgba(0,0,0,0.5)] bg-black">
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                poster="/images/fts_fork_poster.jpg"
+                className="w-full aspect-[9/16] object-cover bg-black"
+                src="/videos/fts_fork.mp4#t=0.1"
+              />
+            </div>
+          </div>
+        </section>
+
+        <RedDivider />
+
+        {/* Philosophy + real-world carry */}
         <section className="bg-bg-secondary py-16 sm:py-20 lg:py-28 relative noise-bg">
-          <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12 text-center animate-on-scroll">
-            <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
-              Why a Fork
-            </p>
-            <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-6">
-              A Tool Is a Tool
-            </h2>
-            <p className="text-text-secondary text-base lg:text-lg leading-relaxed font-body">
-              At the end of the day, nobody will stop you anywhere in the world
-              for carrying your own fork - it&apos;s just a tool to eat with.
-              Where a tactical pen, pencil, or knife can be restricted or
-              confiscated when you travel, a fork goes wherever you go.
-              That&apos;s the genius of it: an everyday tool nobody looks at
-              twice, always on you, and - paired with Franck&apos;s training -
-              ready for close quarters the moment it matters.
-            </p>
+          <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              <div className="animate-on-scroll order-2 lg:order-1 mx-auto w-full max-w-sm">
+                <img
+                  src="/images/fork_carry.jpg"
+                  alt="The FranckTheSolution Fork clipped by its carabiner to a tactical pack"
+                  loading="lazy"
+                  className="w-full h-auto rounded-xl border border-accent-blue/20 shadow-[0_20px_60px_rgba(0,0,0,0.4)]"
+                />
+              </div>
+              <div className="animate-on-scroll order-1 lg:order-2">
+                <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+                  Why a Fork
+                </p>
+                <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-6">
+                  A Tool Is a Tool
+                </h2>
+                <p className="text-text-secondary text-base lg:text-lg leading-relaxed font-body">
+                  At the end of the day, nobody will stop you anywhere in the
+                  world for carrying your own fork - it&apos;s just a tool to eat
+                  with. Where a tactical pen, pencil, or knife can be restricted
+                  or confiscated when you travel, a fork goes wherever you go.
+                  That&apos;s the genius of it: an everyday tool nobody looks at
+                  twice, always on you, and - paired with Franck&apos;s training
+                  - ready for close quarters the moment it matters.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
