@@ -5,8 +5,9 @@ import ScrollAnimator from "@/components/ScrollAnimator";
 import RedDivider from "@/components/RedDivider";
 import EPStats from "@/components/hire-us/EPStats";
 import EPImageMarquee from "@/components/hire-us/EPImageMarquee";
+import ContactForm from "@/components/ContactForm";
 
-const PAGE_TITLE = "Executive Protection & Armed Driving | eProtection VIP";
+const PAGE_TITLE = "Executive Protection & Armed Driving | EProtection VIP";
 const PAGE_DESCRIPTION =
   "Discreet, professional protection for executives, athletes, entertainers, and high-net-worth families. Licensed. Insured. Tactical medic trained. Led by Franck Pala, 25+ years of real-world protection.";
 
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Franck Pala protecting a client, eProtection VIP",
+        alt: "Franck Pala protecting a client, EProtection VIP",
       },
     ],
   },
@@ -34,12 +35,12 @@ export const metadata: Metadata = {
 };
 
 const CONTACT_EMAIL = "info@franckthesolution.com";
-const CONTACT_MAILTO = `mailto:${CONTACT_EMAIL}?subject=eProtection%20VIP%20Inquiry`;
+const CONTACT_MAILTO = `mailto:${CONTACT_EMAIL}?subject=EProtection%20VIP%20Inquiry`;
 
 const services = [
   {
     title: "Executive Protection",
-    image: "/images/01_vip_escort_red_carpet.png",
+    image: "/images/05_private_jet_security.jpg",
     body:
       "Close protection details for principals who can't afford to be unprepared. One agent or a full team, embedded into your day from arrival to departure, completely unobtrusive until the moment you need them.",
   },
@@ -139,11 +140,19 @@ export default function HireUsPage() {
               <div className="hero-animate hero-animate-1 flex items-center gap-3 mb-6">
                 <img
                   src="/eprotectionvip_logo.png"
-                  alt="eProtection VIP"
+                  alt="EProtection VIP"
                   className="h-12 w-12 object-contain"
                 />
                 <p className="text-accent-blue-light text-xs sm:text-sm uppercase tracking-[4px] font-bold font-body">
-                  eProtection VIP, by Franck Pala
+                  <a
+                    href="https://eprotectionvip.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white underline decoration-accent-blue/40 underline-offset-4 transition-colors"
+                  >
+                    EProtection VIP
+                  </a>
+                  , by Franck Pala
                 </p>
               </div>
 
@@ -180,18 +189,21 @@ export default function HireUsPage() {
 
               <div className="hero-animate hero-animate-3 flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <a
-                  href={CONTACT_MAILTO}
-                  className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-10 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] sm:tracking-[3px] rounded hover:bg-accent-blue-dark hover:shadow-[0_0_20px_rgba(46,114,184,0.4)] hover:scale-[1.03] transition-all duration-300 text-center min-h-[52px]"
+                  href="#book"
+                  className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-9 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue-dark hover:shadow-[0_0_20px_rgba(46,114,184,0.4)] hover:scale-[1.03] transition-all duration-300 text-center min-h-[52px]"
                 >
-                  Request a Consultation
+                  Hire Us for Executive Protection
                 </a>
                 <a
-                  href="#services"
-                  className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-8 py-4 border border-white/30 text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-white/5 hover:border-white/50 transition-all duration-300 text-center min-h-[52px]"
+                  href="#book"
+                  className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-9 py-4 border border-accent-blue-light/60 text-accent-blue-light text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-all duration-300 text-center min-h-[52px]"
                 >
-                  See Our Services
+                  Hire Us for Investigative Services
                 </a>
               </div>
+              <p className="hero-animate hero-animate-3 text-text-muted text-xs uppercase tracking-[2px] mt-4 font-body">
+                Book directly with Franck &middot; Strictly confidential
+              </p>
             </div>
           </div>
         </section>
@@ -211,8 +223,16 @@ export default function HireUsPage() {
                 We Take This Job As Seriously As Your Life Depends On It.
               </h2>
               <p className="text-text-secondary text-lg lg:text-xl leading-relaxed font-body">
-                Because it does. Every agent on an eProtection VIP detail
-                accepts a single, non-negotiable principle: your safety comes
+                Because it does. Every agent on an{" "}
+                <a
+                  href="https://eprotectionvip.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white underline decoration-accent-blue/40 underline-offset-4 transition-colors"
+                >
+                  EProtection VIP
+                </a>{" "}
+                detail accepts a single, non-negotiable principle: your safety comes
                 before ours. That is the bar we hire to, train to, and operate
                 to, every single day.
               </p>
@@ -318,7 +338,7 @@ export default function HireUsPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
                   <img
                     src="/images/franck_instructor_portrait.jpg"
-                    alt="Franck Pala, Founder, eProtection VIP"
+                    alt="Franck Pala, Founder, EProtection VIP"
                     className="w-full h-full object-cover object-[center_15%]"
                   />
                 </div>
@@ -407,9 +427,17 @@ export default function HireUsPage() {
             </div>
 
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed text-center mt-10 max-w-3xl mx-auto font-body animate-on-scroll">
-              If your name, your family, or your business creates exposure,
-              eProtection VIP exists to absorb that risk for you, quietly,
-              completely, on your schedule.
+              If your name, your family, or your business creates exposure,{" "}
+              <a
+                href="https://eprotectionvip.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white underline decoration-accent-blue/40 underline-offset-4 transition-colors"
+              >
+                EProtection VIP
+              </a>{" "}
+              exists to absorb that risk for you, quietly, completely, on your
+              schedule.
             </p>
           </div>
         </section>
@@ -462,19 +490,19 @@ export default function HireUsPage() {
 
         <RedDivider />
 
-        {/* CONTACT CTA */}
-        <section className="relative py-14 sm:py-20 lg:py-28 overflow-hidden">
+        {/* CONTACT / BOOK */}
+        <section id="book" className="relative py-14 sm:py-20 lg:py-28 overflow-hidden scroll-mt-[112px]">
           <div className="absolute inset-0 bg-bg-primary">
             <img
               src="/images/06_boardroom_protection.jpg"
               alt=""
-              className="absolute inset-0 w-full h-full object-cover object-center opacity-30"
+              className="absolute inset-0 w-full h-full object-cover object-center opacity-25"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/80 to-black/95" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/85 to-black/95" />
           </div>
 
-          <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-12 text-center">
-            <div className="animate-on-scroll">
+          <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-12">
+            <div className="text-center animate-on-scroll">
               <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
                 Begin
               </p>
@@ -488,26 +516,35 @@ export default function HireUsPage() {
               </p>
             </div>
 
-            <div className="animate-on-scroll flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <div className="animate-on-scroll rounded-2xl border border-accent-blue/25 bg-bg-steel-card/50 backdrop-blur p-6 sm:p-8 lg:p-10 text-left">
+              <ContactForm
+                subject="EProtection VIP inquiry"
+                serviceOptions={[
+                  "Executive Protection",
+                  "Investigative Services",
+                  "Both",
+                ]}
+                messagePlaceholder="Tell us the nature of the protection you need, the dates, and the location. Held in strict confidence."
+                submitLabel="Request a Consultation"
+              />
+            </div>
+
+            <p className="text-text-muted text-sm mt-8 font-body animate-on-scroll text-center">
+              Prefer email?{" "}
               <a
                 href={CONTACT_MAILTO}
-                className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-10 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] sm:tracking-[3px] rounded hover:bg-accent-blue-dark hover:shadow-[0_0_30px_rgba(46,114,184,0.6)] hover:scale-[1.03] transition-all duration-300 text-center min-h-[52px]"
+                className="text-accent-blue-light hover:text-white transition-colors"
               >
-                Email Franck Directly
-              </a>
+                {CONTACT_EMAIL}
+              </a>{" "}
+              &middot;{" "}
               <a
                 href="https://eprotectionvip.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-8 py-4 border border-accent-blue text-accent-blue-light text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue/10 transition-all duration-300 text-center min-h-[52px]"
+                className="text-accent-blue-light hover:text-white transition-colors"
               >
-                Visit eProtectionVIP.com
-              </a>
-            </div>
-
-            <p className="text-text-muted text-sm mt-8 font-body animate-on-scroll">
-              <a href={CONTACT_MAILTO} className="hover:text-white transition-colors">
-                {CONTACT_EMAIL}
+                EProtectionVIP.com
               </a>
             </p>
           </div>

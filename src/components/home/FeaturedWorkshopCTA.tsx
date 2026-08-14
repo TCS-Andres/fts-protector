@@ -1,5 +1,3 @@
-import { routes } from "@/lib/links";
-
 export default function FeaturedWorkshopCTA() {
   return (
     <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden">
@@ -14,25 +12,21 @@ export default function FeaturedWorkshopCTA() {
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-12 text-center animate-on-scroll">
         <p className="text-accent-blue-light text-xs sm:text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
-          Next Workshop — Saturday, July 18, 2026
+          The Workshop
         </p>
         <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-white mb-5 leading-tight">
           Everyone Is a Protector
         </h2>
-        <p className="text-text-secondary text-base sm:text-lg mb-8 font-body">
-          A 2-hour hands-on self-defense workshop in Miami. No experience
-          needed. Every ticket includes a +1 free — bring your partner, family,
-          or a friend.{" "}
-          <span className="text-white font-bold">
-            $147 early bird through July 5.
-          </span>
+        <p className="text-text-secondary text-base sm:text-lg mb-6 font-body">
+          A hands-on self-defense workshop in Miami. No experience needed -
+          real skills, taught by a working executive protection specialist.
         </p>
-        <a
-          href={routes.workshops}
-          className="inline-flex items-center justify-center w-full sm:w-auto px-10 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue-dark hover:shadow-[0_0_24px_rgba(46,114,184,0.5)] hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
-        >
-          See the Workshop
-        </a>
+        <p className="text-white text-lg sm:text-xl font-bold font-body">
+          Stay tuned for our next workshop.
+        </p>
+        <p className="text-text-secondary text-sm sm:text-base mt-2 font-body">
+          New dates and details will be announced soon.
+        </p>
       </div>
     </section>
   );

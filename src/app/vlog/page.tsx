@@ -8,7 +8,7 @@ import { links } from "@/lib/links";
 export const metadata: Metadata = {
   title: "Vlog | FrancktheSolution",
   description:
-    "Follow Franck Pala from the field — breakdowns, training clips, and behind-the-scenes from a working executive protection specialist. On Instagram and TikTok.",
+    "Follow Franck Pala from the field - breakdowns, training clips, and behind-the-scenes from a working executive protection specialist. On Instagram and TikTok.",
   alternates: { canonical: "/vlog" },
 };
 
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 // To embed real posts later: drop Instagram/TikTok blockquote embed codes
 // (with their embed.js scripts) in place of these tiles.
 const reels = [
-  { image: "/images/01_vip_escort_red_carpet.png", caption: "On detail — red carpet movement" },
+  { image: "/images/04_nightclub_vip_section.png", caption: "On detail - venue security" },
   { image: "/images/03_hotel_lobby_advance.png", caption: "Advance work: reading a room" },
   { image: "/images/17_walking_downtown_miami.png", caption: "Situational awareness on foot" },
   { image: "/images/08_seminar_stage_speaking.png", caption: "Workshop breakdown" },

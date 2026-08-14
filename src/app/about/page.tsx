@@ -8,7 +8,7 @@ import { routes, links } from "@/lib/links";
 export const metadata: Metadata = {
   title: "About Franck Pala | FrancktheSolution",
   description:
-    "Franck Pala — 20+ years in executive protection, former professional boxer, defensive-tactics innovator, inventor of TheSelfDefender (patented), active fugitive apprehension agent, and author of Circular Footwork Mechanics.",
+    "Franck Pala - 20+ years in executive protection, former professional boxer, defensive-tactics innovator, inventor of TheSelfDefender (patented), active fugitive apprehension agent, and author of Circular Footwork Mechanics.",
   alternates: { canonical: "/about" },
 };
 
@@ -19,11 +19,11 @@ const timeline = [
   },
   {
     title: "The Ring",
-    body: "A former professional boxer — the foundation of the striking, footwork, and composure under pressure that define his methodology.",
+    body: "A former professional boxer - the foundation of the striking, footwork, and composure under pressure that define his methodology.",
   },
   {
     title: "The Inventor",
-    body: "Creator of TheSelfDefender (three patents) and a patent-pending system for improvised self-defense, including the everyday fork.",
+    body: "Creator of TheSelfDefender (three patents) and the FranckTheSolution Fork - four patents in total across his self-defense inventions.",
   },
   {
     title: "Still in the Field",
@@ -31,7 +31,7 @@ const timeline = [
   },
   {
     title: "The Instructor",
-    body: "A recognized teacher of defensive tactics, improvised weapons, and deadly-force strategy — for civilians, professionals, and agencies alike.",
+    body: "A recognized teacher of defensive tactics, improvised weapons, and deadly-force strategy - for civilians, professionals, and agencies alike.",
   },
   {
     title: "The Author",
@@ -68,7 +68,7 @@ export default function AboutPage() {
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed max-w-2xl font-body">
                 Most people in this space talk about protection. Franck has
-                lived it — every day, for over two decades, and still does.
+                lived it - every day, for over two decades, and still does.
               </p>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function AboutPage() {
                 <span className="text-white font-semibold">
                   Circular Footwork Mechanics (CFM)
                 </span>{" "}
-                system — a breakthrough in movement efficiency used by athletes,
+                system - a breakthrough in movement efficiency used by athletes,
                 security professionals, law enforcement, contractors, and
                 executive protection teams. He is also an inventor: the mind
                 behind{" "}
@@ -110,8 +110,8 @@ export default function AboutPage() {
                 </a>
                 , protected by{" "}
                 <span className="text-white font-semibold">three patents</span>,
-                plus a patent-pending system for turning an everyday fork into an
-                effective self-defense tool. His instruction blends biomechanics,
+                plus the FranckTheSolution Fork - bringing his inventions to four
+                patents in total. His instruction blends biomechanics,
                 real-world scenario training, and tactical psychology to produce
                 controlled aggression, sharp decision-making, and unmatched
                 situational dominance.
@@ -120,7 +120,7 @@ export default function AboutPage() {
                 Franck teaches law-enforcement units, federal contractors,
                 private security teams, and high-net-worth executive clients. His
                 courses are built around real violence, real pressure, and real
-                solutions — no theory, no fluff, only tactics that work when
+                solutions - no theory, no fluff, only tactics that work when
                 lives depend on it. He remains an active fugitive apprehension
                 agent in Florida and runs licensed, insured security and
                 investigation operations.
@@ -135,7 +135,7 @@ export default function AboutPage() {
                   &ldquo;Adapting to chaos rather than resisting it.&rdquo;
                 </p>
                 <cite className="text-accent-blue-light text-xs uppercase tracking-[2px] font-body not-italic">
-                  — Franck Pala
+                  - Franck Pala
                 </cite>
               </blockquote>
             </div>
@@ -176,14 +176,14 @@ export default function AboutPage() {
         <section className="bg-bg-secondary py-16 sm:py-20 lg:py-28 relative noise-bg">
           <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12 text-center animate-on-scroll">
             <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
-              Coming Soon — The Book
+              Coming Soon - The Book
             </p>
             <h2 className="font-heading text-3xl lg:text-5xl font-bold uppercase text-white mb-5">
               Circular Footwork Mechanics
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed mb-8 font-body">
               Franck&apos;s forthcoming book breaks down the footwork and
-              movement principles at the core of his protection system — the
+              movement principles at the core of his protection system - the
               same mechanics he teaches operators, civilians, and agencies.
               Follow along to be first to know when it&apos;s released.
             </p>

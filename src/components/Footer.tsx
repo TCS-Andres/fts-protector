@@ -27,6 +27,7 @@ const columns = [
       { label: "Investigations", href: routes.investigations },
       { label: "TheSelfDefender", href: routes.selfDefender },
       { label: "About Franck", href: routes.about },
+      { label: "Contact", href: routes.contact },
     ],
   },
 ];
@@ -58,17 +59,15 @@ export default function Footer() {
             Ready to Be <span className="text-accent-blue-light">the Solution?</span>
           </h2>
           <p className="text-text-secondary text-base sm:text-lg max-w-xl mx-auto mb-9 font-body">
-            Train with Franck, hire his team, or get the tools. One standard —
+            Train with Franck, hire his team, or get the tools. One standard -
             the highest one.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <a
-              href={links.workshopStripe}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 bg-accent-red text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-red-dark hover:shadow-[0_0_28px_rgba(196,30,30,0.55)] hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
+              href={routes.training}
+              className="inline-flex items-center justify-center px-8 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue-dark hover:shadow-[0_0_28px_rgba(46,114,184,0.55)] hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
             >
-              Claim $147 Early Bird
+              Train With Franck
             </a>
             <a
               href={routes.hireUs}
@@ -92,8 +91,8 @@ export default function Footer() {
                   alt="FrancktheSolution"
                   className="w-16 h-16 object-contain drop-shadow-[0_0_24px_rgba(46,114,184,0.4)]"
                 />
-                <span className="text-white text-lg font-heading uppercase tracking-[3px] leading-tight">
-                  Franckthe<br className="hidden sm:block" />Solution
+                <span className="text-white text-base sm:text-lg font-heading uppercase tracking-[2px] leading-tight whitespace-nowrap">
+                  FranckTheSolution
                 </span>
               </div>
               <p className="text-text-secondary text-sm leading-relaxed mb-6 font-body max-w-xs">
@@ -176,7 +175,7 @@ export default function Footer() {
         <div className="border-t border-white/10">
           <div className="max-w-7xl mx-auto px-6 lg:px-12 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-center">
             <p className="text-text-muted text-xs font-body">
-              &copy; 2026 FrancktheSolution — TactOps USA LLC. All rights reserved.
+              &copy; 2026 FrancktheSolution - TactOps USA LLC. All rights reserved.
             </p>
             <p className="text-text-muted text-xs font-body">
               Lic# A 1900001 &middot; B 1900003

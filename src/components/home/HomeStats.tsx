@@ -51,7 +51,7 @@ function CountUp({
 
 const stats = [
   { value: 20, suffix: "+", label: "Years on the Front Line" },
-  { value: 3, suffix: "", label: "Patents — TheSelfDefender" },
+  { value: 4, suffix: "", label: "Patents Across His Inventions" },
   { value: 100, suffix: "%", label: "Mission-First Mindset" },
   { value: 24, suffix: "/7", label: "Availability for Clients" },
 ];

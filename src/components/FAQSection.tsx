@@ -4,9 +4,9 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "Is the price really $147?",
+    question: "When is the next workshop?",
     answer:
-      "Yes, but only until July 5. The early-bird rate is $147 per person, and after that the price returns to $197. This isn't a class, it's 2 hours of hands-on personal protection training with a professional who has guarded executives, trained law enforcement, and served in Special Forces. Most people spend more than this on a weekend without thinking about it. Lock in $147 before July 5.",
+      "There is no workshop currently scheduled. New dates are announced right here on this page first - stay tuned for the next Everyone Is a Protector workshop.",
   },
   {
     question: "I'm not athletic / I'm out of shape.",
@@ -24,9 +24,9 @@ const faqs = [
       "Come in comfortable, closed-toe sneakers, jeans, and a belt, that's the uniform for this workshop. Water will be provided. No equipment needed.",
   },
   {
-    question: "Can I bring my partner, my family, or a friend for free?",
+    question: "Can I train with my partner, my family, or a friend?",
     answer:
-      "Yes. Every ticket includes a +1 at no extra charge, your spouse, your kid (mature enough to participate), a parent, a sibling, or a friend. This workshop is designed to be trained as a unit, so the people closest to you should be in the room with you. One ticket, two people trained. Group rates also available for teams of 15+.",
+      "Absolutely - the workshop is designed to be trained as a unit. The people closest to you should be in the room with you, so couples and families are encouraged to attend together. Group rates are also available for teams of 15+.",
   },
   {
     question: "I've never trained for anything like this before.",

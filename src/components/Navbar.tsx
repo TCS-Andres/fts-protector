@@ -1,27 +1,36 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { routes, links } from "@/lib/links";
+import { routes } from "@/lib/links";
 
-type Child = { label: string; href: string; desc: string };
+type Child = { label: string; href: string; desc: string; external?: boolean };
 type NavLink = { label: string; href: string; children?: Child[] };
 
 const navLinks: NavLink[] = [
   { label: "Workshops", href: routes.workshops },
-  { label: "Training", href: routes.training },
   {
-    label: "Hire Us",
-    href: routes.hireUs,
+    label: "Training",
+    href: routes.training,
     children: [
       {
-        label: "Executive Protection",
-        href: routes.hireUs,
-        desc: "Close protection & secure transport",
+        label: "Online Training",
+        href: routes.trainingOnline,
+        desc: "Live sessions with Franck via Zoom",
       },
       {
-        label: "Investigative Services",
-        href: routes.investigations,
-        desc: "Surveillance, due diligence & more",
+        label: "Private Training",
+        href: routes.trainingPrivate,
+        desc: "One-on-one, built around you",
+      },
+      {
+        label: "Group Training",
+        href: routes.trainingGroup,
+        desc: "Teams, families & organizations",
+      },
+      {
+        label: "EPS Training",
+        href: routes.trainingEps,
+        desc: "Executive protection specialist track",
       },
     ],
   },
@@ -43,7 +52,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 h-[90px] flex items-center justify-between px-6 lg:px-12 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 h-[112px] flex items-center justify-between px-6 lg:px-12 transition-all duration-300 ${
           scrolled ? "nav-neon-scrolled" : "nav-neon"
         }`}
       >
@@ -55,7 +64,7 @@ export default function Navbar() {
           <img
             src="/logo.png"
             alt="FrancktheSolution"
-            className="h-[90px] lg:h-[70px] w-auto drop-shadow-[0_0_14px_rgba(46,114,184,0.45)]"
+            className="h-[104px] lg:h-[92px] w-auto drop-shadow-[0_0_14px_rgba(46,114,184,0.45)]"
           />
         </a>
 
@@ -80,6 +89,8 @@ export default function Navbar() {
                       <a
                         key={c.label}
                         href={c.href}
+                        target={c.external ? "_blank" : undefined}
+                        rel={c.external ? "noopener noreferrer" : undefined}
                         className="block px-4 py-3 rounded-md hover:bg-white/5 transition-colors group/item"
                       >
                         <span className="block text-[13px] uppercase tracking-[1.5px] font-bold text-white group-hover/item:text-accent-blue-light transition-colors font-body">
@@ -103,14 +114,20 @@ export default function Navbar() {
               </a>
             )
           )}
-          <a
-            href={links.workshopStripe}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-1 px-5 py-2.5 bg-accent-red text-white text-[13px] font-bold uppercase tracking-[1.5px] rounded ring-1 ring-accent-blue/40 hover:bg-accent-red-dark hover:ring-accent-blue-light hover:shadow-[0_0_22px_rgba(46,114,184,0.55)] transition-all duration-300 hover:scale-[1.03] whitespace-nowrap"
-          >
-            $147 Early Bird
-          </a>
+          <div className="flex items-center gap-3 ml-1">
+            <a
+              href={routes.training}
+              className="px-5 py-2.5 bg-accent-red text-white text-[13px] font-bold uppercase tracking-[1.5px] rounded ring-1 ring-accent-red/40 hover:bg-accent-red-dark hover:ring-accent-red hover:shadow-[0_0_22px_rgba(196,30,30,0.55)] transition-all duration-300 hover:scale-[1.03] whitespace-nowrap"
+            >
+              Train With Us
+            </a>
+            <a
+              href={routes.hireUs}
+              className="px-5 py-2.5 bg-accent-blue text-white text-[13px] font-bold uppercase tracking-[1.5px] rounded ring-1 ring-accent-blue/40 hover:bg-accent-blue-dark hover:ring-accent-blue-light hover:shadow-[0_0_22px_rgba(46,114,184,0.55)] transition-all duration-300 hover:scale-[1.03] whitespace-nowrap"
+            >
+              Hire Us
+            </a>
+          </div>
         </div>
 
         {/* Mobile hamburger */}
@@ -145,6 +162,8 @@ export default function Navbar() {
                   <a
                     key={c.label}
                     href={c.href}
+                    target={c.external ? "_blank" : undefined}
+                    rel={c.external ? "noopener noreferrer" : undefined}
                     onClick={() => setMobileOpen(false)}
                     className="text-sm uppercase tracking-[2px] text-text-secondary hover:text-accent-blue-light transition-colors"
                   >
@@ -163,15 +182,22 @@ export default function Navbar() {
               </a>
             )
           )}
-          <a
-            href={links.workshopStripe}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setMobileOpen(false)}
-            className="mt-2 px-10 py-4 bg-accent-red text-white text-lg font-bold uppercase tracking-[2px] rounded hover:bg-accent-red-dark transition-all duration-300"
-          >
-            $147 Early Bird, Until July 5
-          </a>
+          <div className="mt-2 flex flex-col items-center gap-3 w-full max-w-xs px-8">
+            <a
+              href={routes.hireUs}
+              onClick={() => setMobileOpen(false)}
+              className="w-full text-center px-10 py-4 bg-accent-blue text-white text-lg font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue-dark transition-all duration-300"
+            >
+              Hire Us
+            </a>
+            <a
+              href={routes.training}
+              onClick={() => setMobileOpen(false)}
+              className="w-full text-center px-10 py-4 bg-accent-red text-white text-lg font-bold uppercase tracking-[2px] rounded hover:bg-accent-red-dark transition-all duration-300"
+            >
+              Train With Us
+            </a>
+          </div>
         </div>
       )}
     </>

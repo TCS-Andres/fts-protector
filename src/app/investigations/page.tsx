@@ -6,7 +6,7 @@ import RedDivider from "@/components/RedDivider";
 
 const PAGE_TITLE = "Investigative Services | FrancktheSolution";
 const PAGE_DESCRIPTION =
-  "Licensed, insured private investigations led by Franck Pala — an active fugitive apprehension agent with 20+ years in the field. Surveillance, due diligence, skip tracing, corporate and fraud investigations, asset searches, and more. Discreet, court-ready results.";
+  "Licensed, insured private investigations led by Franck Pala - an active fugitive apprehension agent with 20+ years in the field. Surveillance, due diligence, skip tracing, corporate and fraud investigations, asset searches, and more. Discreet, court-ready results.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -42,7 +42,7 @@ const services = [
     title: "Background Checks & Due Diligence",
     image: "/images/06_boardroom_protection.jpg",
     imagePos: "object-center",
-    body: "Know exactly who you're dealing with before you sign, hire, partner, or invest. Identity, history, affiliations, and red flags — verified, not assumed.",
+    body: "Know exactly who you're dealing with before you sign, hire, partner, or invest. Identity, history, affiliations, and red flags - verified, not assumed.",
   },
   {
     title: "Skip Tracing & Locating",
@@ -60,7 +60,7 @@ const services = [
     title: "Asset & Financial Searches",
     image: "/images/05_private_jet_security.jpg",
     imagePos: "object-center",
-    body: "Locate and document assets, businesses, and financial interests for litigation, collections, divorce, or due diligence — within the bounds of the law.",
+    body: "Locate and document assets, businesses, and financial interests for litigation, collections, divorce, or due diligence - within the bounds of the law.",
   },
   {
     title: "Domestic & Personal Investigations",
@@ -71,9 +71,9 @@ const services = [
 ];
 
 const credentials = [
-  { label: "Licensed & Insured", body: "Investigations conducted under licensed, insured operations — every engagement handled within the law and to a professional standard." },
+  { label: "Licensed & Insured", body: "Investigations conducted under licensed, insured operations - every engagement handled within the law and to a professional standard." },
   { label: "Active Fugitive Apprehension Agent", body: "Franck remains an actively-deployed fugitive apprehension agent in Florida. The tracking, source development, and field skills that find fugitives are the same ones we put to work for you." },
-  { label: "20+ Years in the Field", body: "Two decades of real-world protection, surveillance, and field operations across multiple countries — alongside law enforcement and as a contractor for special units." },
+  { label: "20+ Years in the Field", body: "Two decades of real-world protection, surveillance, and field operations across multiple countries - alongside law enforcement and as a contractor for special units." },
   { label: "Confidential by Default", body: "Your case never becomes a story. Tight need-to-know handling, secure communication, and discretion around everyone in your life." },
 ];
 
@@ -92,7 +92,7 @@ const process = [
     title: "Confidential Intake",
     image: "/images/06_boardroom_protection.jpg",
     imagePos: "object-center",
-    body: "Tell us what you need to know. We listen, define the objective, and scope exactly what can be done — held in strict confidence from the first word.",
+    body: "Tell us what you need to know. We listen, define the objective, and scope exactly what can be done - held in strict confidence from the first word.",
   },
   {
     step: "02",
@@ -106,7 +106,7 @@ const process = [
     title: "Report",
     image: "/images/10_corporate_hr_training.png",
     imagePos: "object-[center_25%]",
-    body: "You receive a clear, organized report with the evidence — photos, video, records, and findings — ready for your decision, your attorney, or the court.",
+    body: "You receive a clear, organized report with the evidence - photos, video, records, and findings - ready for your decision, your attorney, or the court.",
   },
 ];
 
@@ -151,7 +151,7 @@ export default function InvestigationsPage() {
                 When the truth matters, guessing isn&apos;t an option. Led by an
                 active fugitive apprehension agent with 20+ years in the field,
                 we deliver discreet surveillance, deep due diligence, and
-                court-ready evidence — quietly and lawfully.
+                court-ready evidence - quietly and lawfully.
               </p>
 
               <div className="hero-animate hero-animate-2 flex flex-wrap items-center gap-2 mb-10">
@@ -213,11 +213,11 @@ export default function InvestigationsPage() {
               The Standard
             </p>
             <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-6">
-              Facts You Can Act On — and Defend.
+              Facts You Can Act On - and Defend.
             </h2>
             <p className="text-text-secondary text-lg lg:text-xl leading-relaxed font-body">
               Anyone can hand you a hunch. We deliver documented, lawful,
-              court-ready evidence — gathered with the same discipline Franck
+              court-ready evidence - gathered with the same discipline Franck
               brings to protection and fugitive work. No shortcuts, no
               exposure, no surprises.
             </p>
@@ -287,7 +287,7 @@ export default function InvestigationsPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
                   <img
                     src="/images/franck_instructor_portrait.jpg"
-                    alt="Franck Pala — licensed investigator and fugitive apprehension agent"
+                    alt="Franck Pala - licensed investigator and fugitive apprehension agent"
                     className="w-full h-full object-cover object-[center_15%]"
                   />
                 </div>
@@ -306,7 +306,7 @@ export default function InvestigationsPage() {
                 <p className="text-text-secondary text-base lg:text-lg leading-relaxed mb-6 font-body">
                   Most investigators read about the work. Franck lives it. As an
                   active fugitive apprehension agent, he tracks and locates
-                  people for a living — and brings that same instinct, source
+                  people for a living - and brings that same instinct, source
                   network, and field discipline to every case.
                 </p>
                 <p className="text-text-secondary text-base lg:text-lg leading-relaxed mb-8 font-body">
@@ -319,7 +319,7 @@ export default function InvestigationsPage() {
                 <ul className="space-y-3">
                   {[
                     "Lawful, court-ready evidence and reporting",
-                    "Total confidentiality — your case stays yours",
+                    "Total confidentiality - your case stays yours",
                     "Real field tracking, not just database lookups",
                     "Calm under pressure, precise under scrutiny",
                   ].map((line) => (

@@ -1,5 +1,4 @@
 const scenes = [
-  { src: "/images/01_vip_escort_red_carpet.png", label: "Red Carpet Escort", alt: "VIP escort on the red carpet" },
   { src: "/images/02_suv_motorcade_arrival.png", label: "Motorcade Arrival", alt: "SUV motorcade arriving at venue" },
   { src: "/images/03_hotel_lobby_advance.png", label: "Hotel Lobby Advance", alt: "Hotel lobby security advance" },
   { src: "/images/04_nightclub_vip_section.png", label: "Nightclub Section", alt: "VIP section protection at a nightclub" },
