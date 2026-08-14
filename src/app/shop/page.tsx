@@ -4,69 +4,116 @@ import Footer from "@/components/Footer";
 import RedDivider from "@/components/RedDivider";
 import ScrollAnimator from "@/components/ScrollAnimator";
 import { links, routes } from "@/lib/links";
+import {
+  getProducts,
+  formatMoney,
+  isShopifyConfigured,
+  type ProductListItem,
+} from "@/lib/shopify";
+
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: "Shop | FrancktheSolution",
   description:
-    "Get the new FranckTheSolution Fork, TheSelfDefender (patented), upcoming video courses, and Franck Pala's forthcoming book, Circular Footwork Mechanics (CFM).",
+    "Shop FrancktheSolution: the patented FranckTheSolution Fork, the Circular Footwork Mechanics (CFM) manual, TheSelfDefender, and more. Secure checkout by Shopify.",
   alternates: { canonical: "/shop" },
 };
 
-type Product = {
-  kicker: string;
+type ShopCard = {
+  key: string;
   title: string;
-  body: string;
   image: string;
-  price?: string;
-  cta: string;
-  href?: string;
+  imageAlt?: string;
+  href: string;
   external?: boolean;
-  status: "live" | "soon";
+  price?: string;
+  badge: string;
+  cta: string;
+  body?: string;
+  soldOut?: boolean;
+  soon?: boolean;
   imgPos?: string;
 };
 
-const products: Product[] = [
+// Products that are not in the Shopify store and stay curated.
+const selfDefenderCard: ShopCard = {
+  key: "selfdefender",
+  title: "TheSelfDefender",
+  image: "/images/19_emergency_extraction.png",
+  href: links.selfDefender,
+  external: true,
+  badge: "Self-Defense Tool",
+  cta: "Buy Now",
+  body: "The patented everyday-carry self-defense tool invented by Franck. Three patents, built from 20+ years of real-world protection. Order from the official store.",
+};
+
+const videoCoursesCard: ShopCard = {
+  key: "courses",
+  title: "On-Demand Training",
+  image: "/images/11_school_safety_presentation.png",
+  href: routes.training,
+  badge: "Video Courses",
+  cta: "Coming Soon",
+  soon: true,
+  body: "Structured video courses covering situational awareness, defensive tactics, and improvised weapons - the full system, step by step, on your schedule.",
+};
+
+// Fallback cards used only when the Shopify store isn't connected yet.
+const fallbackCards: ShopCard[] = [
   {
-    kicker: "Just Launched",
+    key: "fork",
     title: "The FranckTheSolution Fork",
-    body: "Franck's newest invention - an everyday fork, reengineered into a patented, legal-to-carry tool. A knuckle-style grip and precision tips, legal anywhere because it's a fork.",
     image: "/images/fork_main.jpg",
-    cta: "See the FranckTheSolution Fork",
     href: routes.ftsFork,
-    status: "live",
+    badge: "Just Launched",
+    cta: "See the Fork",
+    body: "Franck's newest invention - an everyday fork, reengineered into a patented, legal-to-carry tool.",
   },
+  selfDefenderCard,
   {
-    kicker: "Self-Defense Tool",
-    title: "TheSelfDefender",
-    body: "The patented everyday-carry self-defense tool invented by Franck. Three patents, built from 20+ years of real-world protection. Order direct from the official store.",
-    image: "/images/19_emergency_extraction.png",
-    cta: "Buy Now",
-    href: links.selfDefender,
-    external: true,
-    status: "live",
-  },
-  {
-    kicker: "Video Courses",
-    title: "On-Demand Training",
-    body: "Structured video courses covering situational awareness, defensive tactics, and improvised weapons - learn the full system step by step, on your schedule.",
-    image: "/images/11_school_safety_presentation.png",
-    cta: "Coming Soon",
-    status: "soon",
-  },
-  {
-    kicker: "Out Now",
+    key: "cfm",
     title: "Circular Footwork Mechanics",
-    body: "Franck's new book - CFM. The biomechanics of circular footwork and the strategies behind it, for protectors, officers, and athletes. His Close Combat Defense System, in a manual.",
     image: "/images/cfm_book_front.jpg",
-    cta: "Get the Book",
     href: "mailto:info@franckthesolution.com?subject=CFM%20Book%20Order",
     external: true,
-    status: "live",
+    badge: "Out Now",
+    cta: "Get the Book",
+    body: "Franck's new book - CFM. The biomechanics of circular footwork and the strategies behind it, in a manual.",
     imgPos: "object-top",
   },
+  videoCoursesCard,
 ];
 
-export default function ShopPage() {
+function toCard(p: ProductListItem): ShopCard {
+  return {
+    key: p.handle,
+    title: p.title,
+    image: p.featuredImage?.url ?? "/images/fork_main.jpg",
+    imageAlt: p.featuredImage?.altText ?? p.title,
+    href: `/shop/products/${p.handle}`,
+    price: formatMoney(p.price),
+    badge: "Shop",
+    cta: "View Product",
+    soldOut: !p.availableForSale,
+  };
+}
+
+async function loadCards(): Promise<ShopCard[]> {
+  if (!isShopifyConfigured()) return fallbackCards;
+  try {
+    const products = await getProducts();
+    if (products.length === 0) return fallbackCards;
+    // Live Shopify products first, then the items sold outside this store.
+    return [...products.map(toCard), selfDefenderCard, videoCoursesCard];
+  } catch {
+    return fallbackCards;
+  }
+}
+
+export default async function ShopPage() {
+  const cards = await loadCards();
+
   return (
     <>
       <ScrollAnimator />
@@ -95,8 +142,8 @@ export default function ShopPage() {
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed max-w-2xl font-body">
                 The same tools and teaching Franck&apos;s own work is built on -
-                the new FranckTheSolution Fork, TheSelfDefender, his new book CFM, and
-                on-demand courses.
+                the FranckTheSolution Fork, the CFM manual, TheSelfDefender, and
+                more. Secure checkout handled by Shopify.
               </p>
             </div>
           </div>
@@ -107,21 +154,21 @@ export default function ShopPage() {
         {/* Products */}
         <section className="bg-bg-primary py-16 sm:py-20 lg:py-28 relative noise-bg">
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
-            <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 stagger-children">
-              {products.map((p) => (
+            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 stagger-children">
+              {cards.map((p) => (
                 <div
-                  key={p.title}
+                  key={p.key}
                   className="animate-on-scroll group flex flex-col bg-bg-card rounded-lg overflow-hidden border border-white/5 hover:border-accent-blue/40 transition-all duration-300"
                 >
-                  <div className="aspect-[4/3] relative overflow-hidden">
+                  <div className="aspect-[4/3] relative overflow-hidden bg-black">
                     <img
                       src={p.image}
-                      alt=""
+                      alt={p.imageAlt ?? ""}
                       loading="lazy"
                       className={`w-full h-full object-cover transition-all duration-[1000ms] group-hover:scale-105 ${
                         p.imgPos ?? ""
                       } ${
-                        p.status === "soon"
+                        p.soon
                           ? "opacity-40 grayscale"
                           : "opacity-85 group-hover:opacity-100"
                       }`}
@@ -130,44 +177,58 @@ export default function ShopPage() {
                     <div className="absolute top-4 left-4 flex flex-col items-start gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] uppercase tracking-[2px] font-extrabold font-body text-white bg-gradient-to-r from-accent-blue to-accent-blue-light shadow-[0_0_20px_rgba(46,114,184,0.65)] ring-1 ring-white/20">
                         <span className="w-1.5 h-1.5 rounded-full bg-white/90" />
-                        {p.kicker}
+                        {p.badge}
                       </span>
-                      {p.status === "soon" && (
+                      {p.soon && (
                         <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] uppercase tracking-[2px] font-extrabold font-body text-black bg-gradient-to-r from-accent-gold to-[#F0DDA0] shadow-[0_0_22px_rgba(201,168,76,0.75)] ring-1 ring-black/10 animate-pulse">
                           <span className="w-1.5 h-1.5 rounded-full bg-black/70" />
                           Coming Soon
                         </span>
                       )}
+                      {p.soldOut && (
+                        <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] uppercase tracking-[2px] font-extrabold font-body text-white bg-black/70 border border-white/20">
+                          Sold Out
+                        </span>
+                      )}
                     </div>
+                    {p.price && (
+                      <span className="absolute bottom-4 right-4 inline-flex items-center px-3 py-1.5 rounded-full text-sm font-bold font-body text-white bg-black/70 border border-white/15">
+                        {p.price}
+                      </span>
+                    )}
                   </div>
                   <div className="p-6 sm:p-8 flex flex-col flex-1">
                     <h3 className="font-heading text-xl lg:text-2xl font-bold uppercase mb-3 text-white">
                       {p.title}
                     </h3>
-                    <p className="text-text-secondary text-sm lg:text-base leading-relaxed mb-6 font-body flex-1">
-                      {p.body}
-                    </p>
-                    {p.status === "live" && p.href ? (
-                      <a
-                        href={p.href}
-                        target={p.external ? "_blank" : undefined}
-                        rel={p.external ? "noopener noreferrer" : undefined}
-                        className="inline-flex items-center justify-center px-6 py-3 bg-accent-blue text-white text-sm font-bold uppercase tracking-[2px] rounded hover:bg-white transition-colors duration-300"
-                      >
-                        {p.cta} &rarr;
-                      </a>
-                    ) : (
-                      <span className="inline-flex items-center justify-center px-6 py-3 border border-white/15 text-text-muted text-sm font-bold uppercase tracking-[2px] rounded cursor-default">
-                        {p.cta}
-                      </span>
+                    {p.body && (
+                      <p className="text-text-secondary text-sm lg:text-base leading-relaxed mb-6 font-body flex-1">
+                        {p.body}
+                      </p>
                     )}
+                    <div className={p.body ? "" : "mt-auto pt-2"}>
+                      {p.soon ? (
+                        <span className="inline-flex items-center justify-center px-6 py-3 border border-white/15 text-text-muted text-sm font-bold uppercase tracking-[2px] rounded cursor-default">
+                          {p.cta}
+                        </span>
+                      ) : (
+                        <a
+                          href={p.href}
+                          target={p.external ? "_blank" : undefined}
+                          rel={p.external ? "noopener noreferrer" : undefined}
+                          className="inline-flex items-center justify-center px-6 py-3 bg-accent-blue text-white text-sm font-bold uppercase tracking-[2px] rounded hover:bg-white hover:text-bg-primary transition-colors duration-300"
+                        >
+                          {p.cta} &rarr;
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               ))}
             </div>
 
             <p className="text-center text-text-muted text-sm mt-12 font-body animate-on-scroll">
-              Video courses are launching soon. Want to be notified first?{" "}
+              Want to be first to know when new drops go live?{" "}
               <a
                 href={links.instagram}
                 target="_blank"

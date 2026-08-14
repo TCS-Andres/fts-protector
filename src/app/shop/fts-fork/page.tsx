@@ -241,19 +241,24 @@ export default function FtsForkPage() {
                   placeholder below. */}
               <div
                 id="shopify-buy-fts-fork"
-                className="rounded-xl border-2 border-dashed border-accent-blue/35 bg-black/30 p-7 sm:p-9 flex flex-col items-center justify-center text-center"
+                className="rounded-xl border border-accent-blue/30 bg-black/30 p-7 sm:p-9 flex flex-col items-center justify-center text-center"
               >
                 <span className="w-14 h-14 rounded-full bg-accent-blue/15 border border-accent-blue/40 flex items-center justify-center text-2xl mb-5">
                   🛒
                 </span>
                 <p className="text-white font-heading text-xl uppercase font-bold mb-2">
-                  Online Checkout Launching Soon
+                  Buy the Fork
                 </p>
-                <p className="text-text-secondary text-sm max-w-sm font-body">
-                  Secure Shopify checkout for the FranckTheSolution Fork is being connected
-                  and will live right here. Check back shortly - or follow
-                  @FranckTheSolution for the drop announcement.
+                <p className="text-text-secondary text-sm max-w-sm font-body mb-6">
+                  View the product and check out securely through Shopify - your
+                  order and payment are handled on Shopify&apos;s secure checkout.
                 </p>
+                <a
+                  href="/shop/products/the-fork-by-franckthesolution"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue-dark hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
+                >
+                  View &amp; Buy the Fork &rarr;
+                </a>
               </div>
             </div>
           </div>

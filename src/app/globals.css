@@ -222,6 +222,23 @@ body {
   margin: 0.75rem auto 0;
 }
 
+/* Shopify product description (descriptionHtml) formatting */
+.shopify-prose p { margin-bottom: 0.9rem; }
+.shopify-prose p:last-child { margin-bottom: 0; }
+.shopify-prose ul { list-style: disc; padding-left: 1.25rem; margin-bottom: 0.9rem; }
+.shopify-prose ol { list-style: decimal; padding-left: 1.25rem; margin-bottom: 0.9rem; }
+.shopify-prose li { margin-bottom: 0.35rem; }
+.shopify-prose a { color: var(--color-accent-blue-light); text-decoration: underline; text-underline-offset: 3px; }
+.shopify-prose a:hover { color: #fff; }
+.shopify-prose strong, .shopify-prose b { color: #fff; font-weight: 700; }
+.shopify-prose h2, .shopify-prose h3, .shopify-prose h4 {
+  color: #fff;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 1.4rem 0 0.6rem;
+}
+
 /* Subtle noise texture */
 .noise-bg::before {
   content: "";
