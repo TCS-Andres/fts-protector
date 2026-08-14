@@ -76,6 +76,19 @@ export type ProductVariant = {
   price: Money;
 };
 
+// A single piece of product media: an image, a Shopify-hosted video, or an
+// embedded external video (YouTube/Vimeo). Powers the product gallery.
+export type ProductMedia =
+  | { kind: "image"; id: string; url: string; alt: string | null }
+  | {
+      kind: "video";
+      id: string;
+      sources: { url: string; type: string }[];
+      poster: string | null;
+      alt: string | null;
+    }
+  | { kind: "external_video"; id: string; embedUrl: string; poster: string | null; alt: string | null };
+
 export type Product = {
   id: string;
   title: string;
@@ -83,6 +96,7 @@ export type Product = {
   descriptionHtml: string;
   availableForSale: boolean;
   images: ShopifyImage[];
+  media: ProductMedia[];
   variants: ProductVariant[];
   price: Money;
 };
@@ -116,7 +130,12 @@ const PRODUCTS_QUERY = /* GraphQL */ `
           title
           handle
           availableForSale
-          featuredImage { url altText width height }
+          featuredImage {
+            url(transform: { maxWidth: 1000, preferredContentType: WEBP })
+            altText
+            width
+            height
+          }
           priceRange { minVariantPrice { amount currencyCode } }
         }
       }
@@ -139,6 +158,17 @@ export async function getProducts(first = 30): Promise<ProductListItem[]> {
   }));
 }
 
+type MediaNode = {
+  id: string;
+  mediaContentType: "IMAGE" | "VIDEO" | "EXTERNAL_VIDEO" | "MODEL_3D";
+  alt: string | null;
+  image?: { url: string } | null;
+  sources?: { url: string; mimeType: string }[];
+  previewImage?: { url: string } | null;
+  host?: string | null;
+  embedUrl?: string | null;
+};
+
 type ProductDetailNode = {
   id: string;
   title: string;
@@ -146,6 +176,7 @@ type ProductDetailNode = {
   descriptionHtml: string;
   availableForSale: boolean;
   images: { edges: { node: ShopifyImage }[] };
+  media: { edges: { node: MediaNode }[] };
   priceRange: { minVariantPrice: Money };
   variants: {
     edges: {
@@ -154,6 +185,8 @@ type ProductDetailNode = {
   };
 };
 
+// maxWidth + preferredContentType forces web-safe formats (e.g. converts an
+// uploaded .heic to a viewable image) and keeps downloads reasonable.
 const PRODUCT_QUERY = /* GraphQL */ `
   query Product($handle: String!) {
     product(handle: $handle) {
@@ -162,8 +195,40 @@ const PRODUCT_QUERY = /* GraphQL */ `
       handle
       descriptionHtml
       availableForSale
-      images(first: 8) {
-        edges { node { url altText width height } }
+      images(first: 12) {
+        edges {
+          node {
+            url(transform: { maxWidth: 1600, preferredContentType: WEBP })
+            altText
+            width
+            height
+          }
+        }
+      }
+      media(first: 25) {
+        edges {
+          node {
+            id
+            mediaContentType
+            alt
+            ... on MediaImage {
+              image {
+                url(transform: { maxWidth: 1600, preferredContentType: WEBP })
+              }
+            }
+            ... on Video {
+              sources { url mimeType }
+              previewImage {
+                url(transform: { maxWidth: 1600, preferredContentType: WEBP })
+              }
+            }
+            ... on ExternalVideo {
+              host
+              embedUrl
+              previewImage { url }
+            }
+          }
+        }
       }
       priceRange { minVariantPrice { amount currencyCode } }
       variants(first: 25) {
@@ -180,19 +245,64 @@ const PRODUCT_QUERY = /* GraphQL */ `
   }
 `;
 
+function toMedia(node: MediaNode): ProductMedia | null {
+  if (node.mediaContentType === "IMAGE" && node.image?.url) {
+    return { kind: "image", id: node.id, url: node.image.url, alt: node.alt };
+  }
+  if (node.mediaContentType === "VIDEO") {
+    // Only MP4 sources play natively across all browsers in a <video> tag.
+    const sources = (node.sources ?? [])
+      .filter((s) => s.mimeType === "video/mp4")
+      .map((s) => ({ url: s.url, type: s.mimeType }));
+    if (sources.length === 0) return null;
+    return {
+      kind: "video",
+      id: node.id,
+      sources,
+      poster: node.previewImage?.url ?? null,
+      alt: node.alt,
+    };
+  }
+  if (node.mediaContentType === "EXTERNAL_VIDEO" && node.embedUrl) {
+    return {
+      kind: "external_video",
+      id: node.id,
+      embedUrl: node.embedUrl,
+      poster: node.previewImage?.url ?? null,
+      alt: node.alt,
+    };
+  }
+  return null;
+}
+
 export async function getProduct(handle: string): Promise<Product | null> {
   const data = await shopifyFetch<{ product: ProductDetailNode | null }>(PRODUCT_QUERY, {
     handle,
   });
   const p = data.product;
   if (!p) return null;
+  const images = p.images.edges.map((e) => e.node);
+  const parsedMedia = p.media.edges
+    .map((e) => toMedia(e.node))
+    .filter((m): m is ProductMedia => m !== null);
+  // Fall back to plain images if the media connection came back empty.
+  const media: ProductMedia[] =
+    parsedMedia.length > 0
+      ? parsedMedia
+      : images.map((img) => ({
+          kind: "image" as const,
+          id: img.url,
+          url: img.url,
+          alt: img.altText,
+        }));
   return {
     id: p.id,
     title: p.title,
     handle: p.handle,
     descriptionHtml: p.descriptionHtml,
     availableForSale: p.availableForSale,
-    images: p.images.edges.map((e) => e.node),
+    images,
+    media,
     variants: p.variants.edges.map((e) => e.node),
     price: p.priceRange.minVariantPrice,
   };
