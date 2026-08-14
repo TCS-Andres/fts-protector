@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import RedDivider from "@/components/RedDivider";
 import ScrollAnimator from "@/components/ScrollAnimator";
 import BuyButton from "@/components/shop/BuyButton";
+import ProductGallery from "@/components/shop/ProductGallery";
 import { routes } from "@/lib/links";
 import {
   getProduct,
@@ -61,8 +62,6 @@ export default async function ProductPage({
   if (!product) notFound();
 
   const variant = product.variants[0];
-  const mainImage = product.images[0] ?? null;
-  const thumbs = product.images.slice(1, 5);
 
   return (
     <>
@@ -84,38 +83,7 @@ export default async function ProductPage({
 
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
               {/* Gallery */}
-              <div>
-                <div className="rounded-xl overflow-hidden border border-accent-blue/30 shadow-[0_20px_60px_rgba(0,0,0,0.6)] bg-black">
-                  {mainImage ? (
-                    <img
-                      src={mainImage.url}
-                      alt={mainImage.altText ?? product.title}
-                      className="w-full h-auto"
-                    />
-                  ) : (
-                    <div className="aspect-square flex items-center justify-center text-text-muted font-body">
-                      No image
-                    </div>
-                  )}
-                </div>
-                {thumbs.length > 0 && (
-                  <div className="grid grid-cols-4 gap-3 mt-3">
-                    {thumbs.map((img) => (
-                      <div
-                        key={img.url}
-                        className="rounded-lg overflow-hidden border border-white/10 bg-black"
-                      >
-                        <img
-                          src={img.url}
-                          alt={img.altText ?? product.title}
-                          loading="lazy"
-                          className="w-full h-full object-cover aspect-square"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
+              <ProductGallery media={product.media} title={product.title} />
 
               {/* Details */}
               <div>
