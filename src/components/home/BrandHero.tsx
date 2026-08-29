@@ -63,10 +63,10 @@ export default function BrandHero() {
                 Train With Franck
               </a>
               <a
-                href={routes.hireUs}
+                href={routes.shop}
                 className="inline-flex items-center justify-center px-8 py-4 bg-transparent border border-white/30 text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:border-accent-blue-light hover:text-accent-blue-light transition-all duration-300 min-h-[52px]"
               >
-                Hire Protection
+                Shop the Store
               </a>
             </div>
           </div>

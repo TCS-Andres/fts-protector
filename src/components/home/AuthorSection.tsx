@@ -1,5 +1,4 @@
-const CONTACT_EMAIL = "info@franckthesolution.com";
-const BOOK_MAILTO = `mailto:${CONTACT_EMAIL}?subject=CFM%20-%20Circular%20Footwork%20Mechanics%20(Book)`;
+import { routes } from "@/lib/links";
 
 const pillars = ["Footwork", "Control", "Awareness", "Decision", "Survival"];
 
@@ -118,7 +117,7 @@ export default function AuthorSection() {
             &ldquo;Train the body. Master the mind. Protect what matters.&rdquo;
           </p>
           <a
-            href={BOOK_MAILTO}
+            href={routes.cfmBook}
             className="inline-flex items-center justify-center px-9 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue-dark hover:shadow-[0_0_24px_rgba(46,114,184,0.5)] hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
           >
             Get the Book &rarr;

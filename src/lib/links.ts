@@ -33,6 +33,8 @@ export const routes = {
   selfDefender: "/self-defender",
   shop: "/shop",
   ftsFork: "/shop/fts-fork",
+  // Shopify product page for the CFM manual
+  cfmBook: "/shop/products/cfm-circular-footwork-mechanics-manual-by-franck-pala",
   vlog: "/vlog",
   about: "/about",
   contact: "/contact",
