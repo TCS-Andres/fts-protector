@@ -26,11 +26,11 @@ export default function Home() {
         <BrandHero />
         <HomeStats />
         <BioSection />
+        <ShopSection />
         <PillarsSection />
         <TrainingTypesSection />
         <InventorSection />
         <AuthorSection />
-        <ShopSection />
         <Manifesto />
         <GallerySection />
         <TestimonialsSection />
