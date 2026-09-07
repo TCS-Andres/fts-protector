@@ -18,12 +18,12 @@ const tiers = [
     image: "/images/cert_expert_protector.jpg",
   },
   {
-    name: "Lead Protector",
+    name: "Elite Protector",
     stars: 3,
     summary:
       "The highest level. Mastery of the system and the judgment to apply it - the standard Franck holds his own operators to.",
     accent: "from-accent-gold to-[#F0DDA0]",
-    image: "/images/cert_lead_protector.jpg",
+    image: "/images/cert_elite_protector.jpg",
   },
 ];
 
