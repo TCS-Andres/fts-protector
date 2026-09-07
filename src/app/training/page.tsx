@@ -3,6 +3,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RedDivider from "@/components/RedDivider";
 import ScrollAnimator from "@/components/ScrollAnimator";
+import CurriculumSection from "@/components/training/CurriculumSection";
+import CertificationSection from "@/components/training/CertificationSection";
+import RatesSection from "@/components/training/RatesSection";
 import { links, routes } from "@/lib/links";
 
 export const metadata: Metadata = {
@@ -201,6 +204,12 @@ export default function TrainingPage() {
             </div>
           </div>
         </section>
+
+        <CurriculumSection />
+
+        <CertificationSection />
+
+        <RatesSection />
 
         <RedDivider />
 
