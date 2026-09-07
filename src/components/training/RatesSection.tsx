@@ -53,7 +53,20 @@ const campBring = [
   "Holster for a Glock 19 / 17",
 ];
 
-export default function RatesSection() {
+type Props = {
+  /** Page-specific lead paragraph. Falls back to the general one. */
+  intro?: string;
+  showSessions?: boolean;
+  showPackages?: boolean;
+  showCamps?: boolean;
+};
+
+export default function RatesSection({
+  intro,
+  showSessions = true,
+  showPackages = true,
+  showCamps = true,
+}: Props) {
   return (
     <section
       id="rates"
@@ -71,12 +84,13 @@ export default function RatesSection() {
             Train on Your Terms
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
-            Private and semi-private rates, monthly blocks, and full immersion
-            camps - all taught directly by Franck.
+            {intro ??
+              "Private and semi-private rates, monthly blocks, and full immersion camps - all taught directly by Franck."}
           </p>
         </div>
 
         {/* Sessions */}
+        {showSessions && (
         <div className="mb-12 sm:mb-16">
           <h3 className="font-heading text-xl font-bold uppercase text-white mb-5 text-center sm:text-left animate-on-scroll">
             Single Sessions
@@ -105,8 +119,10 @@ export default function RatesSection() {
             ))}
           </div>
         </div>
+        )}
 
         {/* Monthly packages */}
+        {showPackages && (
         <div className="mb-12 sm:mb-16">
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-5 animate-on-scroll">
             <h3 className="font-heading text-xl font-bold uppercase text-white">
@@ -138,8 +154,10 @@ export default function RatesSection() {
             ))}
           </div>
         </div>
+        )}
 
         {/* Camps */}
+        {showCamps && (
         <div className="animate-on-scroll rounded-2xl border border-accent-blue/25 bg-bg-steel-card/40 p-6 sm:p-9 lg:p-10">
           <div className="text-center mb-8">
             <p className="text-accent-blue-light text-xs uppercase tracking-[3px] font-bold mb-3 font-body">
@@ -209,6 +227,7 @@ export default function RatesSection() {
             </div>
           </div>
         </div>
+        )}
 
         {/* CTA */}
         <div className="text-center mt-12 animate-on-scroll">

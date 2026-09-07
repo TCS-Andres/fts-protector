@@ -39,7 +39,12 @@ const requirements = [
   "Real-life scenarios & force-on-force training",
 ];
 
-export default function CertificationSection() {
+export default function CertificationSection({
+  compact = false,
+}: {
+  /** Compact mode shows just the three levels - used on the training sub-pages. */
+  compact?: boolean;
+}) {
   return (
     <section
       id="certification"
@@ -105,6 +110,8 @@ export default function CertificationSection() {
           ))}
         </div>
 
+        {!compact && (
+          <>
         {/* The actual certificates */}
         <div className="mb-12 sm:mb-16">
           <p className="text-center text-accent-blue-light text-xs uppercase tracking-[3px] font-bold mb-6 font-body animate-on-scroll">
@@ -208,6 +215,19 @@ export default function CertificationSection() {
             </p>
           </div>
         </div>
+          </>
+        )}
+
+        {compact && (
+          <div className="text-center animate-on-scroll">
+            <a
+              href="/training#certification"
+              className="inline-flex items-center justify-center px-8 py-4 border border-accent-blue-light/50 text-accent-blue-light text-sm font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-all duration-300 min-h-[52px]"
+            >
+              See the Certificates &amp; Requirements &rarr;
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );
