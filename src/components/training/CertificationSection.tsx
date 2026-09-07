@@ -2,8 +2,16 @@
 // (License A & B, State of Florida) and signed by Franck Pala.
 const tiers = [
   {
-    name: "Protector",
+    name: "Civilian To Protector",
     stars: 1,
+    summary:
+      "The entry point. You have made the shift from civilian to protector, with the fundamentals of close combat defensive tactics.",
+    accent: "from-[#8A97A6] to-[#C3CDD8]",
+    image: "/images/cert_civilian_to_protector.jpg",
+  },
+  {
+    name: "Protector",
+    stars: 2,
     summary:
       "The foundation. You have demonstrated the skills, knowledge, and attitude of a Protector in close combat defensive tactics.",
     accent: "from-accent-blue to-accent-blue-light",
@@ -11,7 +19,7 @@ const tiers = [
   },
   {
     name: "Expert Protector",
-    stars: 2,
+    stars: 3,
     summary:
       "Advanced competence across the full syllabus - weapons, firearms, tact medic, and live scenario work under pressure.",
     accent: "from-accent-blue-dark to-accent-blue",
@@ -19,7 +27,7 @@ const tiers = [
   },
   {
     name: "Elite Protector",
-    stars: 3,
+    stars: 4,
     summary:
       "The highest level. Mastery of the system and the judgment to apply it - the standard Franck holds his own operators to.",
     accent: "from-accent-gold to-[#F0DDA0]",
@@ -65,12 +73,12 @@ export default function CertificationSection({
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
             Complete the TACT OPS Protector Program and you earn a formal
             certificate - issued by TACT OPS under Florida licenses A &amp; B and
-            signed by Franck Pala himself. Three levels, earned in order.
+            signed by Franck Pala himself. Four levels, earned in order.
           </p>
         </div>
 
         {/* Tiers */}
-        <div className="grid md:grid-cols-3 gap-6 mb-12 sm:mb-16 stagger-children">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 mb-12 sm:mb-16 stagger-children">
           {tiers.map((t, i) => (
             <div
               key={t.name}
@@ -117,7 +125,7 @@ export default function CertificationSection({
           <p className="text-center text-accent-blue-light text-xs uppercase tracking-[3px] font-bold mb-6 font-body animate-on-scroll">
             The Certificates
           </p>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6 stagger-children">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 stagger-children">
             {tiers.map((t) => (
               <a
                 key={`cert-${t.name}`}
