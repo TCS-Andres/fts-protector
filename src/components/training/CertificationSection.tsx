@@ -7,6 +7,7 @@ const tiers = [
     summary:
       "The foundation. You have demonstrated the skills, knowledge, and attitude of a Protector in close combat defensive tactics.",
     accent: "from-accent-blue to-accent-blue-light",
+    image: "/images/cert_protector.jpg",
   },
   {
     name: "Expert Protector",
@@ -14,6 +15,7 @@ const tiers = [
     summary:
       "Advanced competence across the full syllabus - weapons, firearms, tact medic, and live scenario work under pressure.",
     accent: "from-accent-blue-dark to-accent-blue",
+    image: "/images/cert_expert_protector.jpg",
   },
   {
     name: "Elite Protector",
@@ -21,6 +23,7 @@ const tiers = [
     summary:
       "The highest tier. Mastery of the system and the judgment to apply it - the standard Franck holds his own operators to.",
     accent: "from-accent-gold to-[#F0DDA0]",
+    image: "/images/cert_elite_protector.jpg",
   },
 ];
 
@@ -100,6 +103,42 @@ export default function CertificationSection() {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* The actual certificates */}
+        <div className="mb-12 sm:mb-16">
+          <p className="text-center text-accent-blue-light text-xs uppercase tracking-[3px] font-bold mb-6 font-body animate-on-scroll">
+            The Certificates
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6 stagger-children">
+            {tiers.map((t) => (
+              <a
+                key={`cert-${t.name}`}
+                href={t.image}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="animate-on-scroll group block rounded-xl overflow-hidden border border-accent-blue/25 bg-black/40 hover:border-accent-blue-light/70 hover:shadow-[0_0_34px_rgba(46,114,184,0.28)] transition-all duration-300"
+              >
+                <img
+                  src={t.image}
+                  alt={`${t.name} certificate - TACT OPS, Close Combat Defensive Tactics, signed by Franck Pala`}
+                  loading="lazy"
+                  className="w-full h-auto transition-transform duration-[900ms] group-hover:scale-[1.03]"
+                />
+                <div className="flex items-center justify-between gap-3 px-5 py-4 border-t border-white/10">
+                  <span className="font-heading text-sm lg:text-base font-bold uppercase text-white leading-none">
+                    {t.name}
+                  </span>
+                  <span className="text-accent-gold text-xs tracking-[1px]">
+                    {"★".repeat(t.stars)}
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+          <p className="text-center text-text-muted text-xs font-body mt-4">
+            Click any certificate to view it full size.
+          </p>
         </div>
 
         {/* What the certificate covers */}
