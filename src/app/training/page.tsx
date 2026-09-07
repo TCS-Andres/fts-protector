@@ -183,6 +183,13 @@ export default function TrainingPage() {
           </div>
         </section>
 
+        {/* Certification leads the page - it is what every program builds toward */}
+        <CertificationSection />
+
+        <CurriculumSection />
+
+        <RatesSection />
+
         <RedDivider />
 
         {/* The four ways to train */}
@@ -204,12 +211,6 @@ export default function TrainingPage() {
             </div>
           </div>
         </section>
-
-        <CurriculumSection />
-
-        <CertificationSection />
-
-        <RatesSection />
 
         <RedDivider />
 

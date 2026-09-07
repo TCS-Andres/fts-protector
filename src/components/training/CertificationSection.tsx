@@ -3,7 +3,7 @@
 const tiers = [
   {
     name: "Protector",
-    stars: 4,
+    stars: 1,
     summary:
       "The foundation. You have demonstrated the skills, knowledge, and attitude of a Protector in close combat defensive tactics.",
     accent: "from-accent-blue to-accent-blue-light",
@@ -11,19 +11,19 @@ const tiers = [
   },
   {
     name: "Expert Protector",
-    stars: 5,
+    stars: 2,
     summary:
       "Advanced competence across the full syllabus - weapons, firearms, tact medic, and live scenario work under pressure.",
     accent: "from-accent-blue-dark to-accent-blue",
     image: "/images/cert_expert_protector.jpg",
   },
   {
-    name: "Elite Protector",
-    stars: 6,
+    name: "Lead Protector",
+    stars: 3,
     summary:
-      "The highest tier. Mastery of the system and the judgment to apply it - the standard Franck holds his own operators to.",
+      "The highest level. Mastery of the system and the judgment to apply it - the standard Franck holds his own operators to.",
     accent: "from-accent-gold to-[#F0DDA0]",
-    image: "/images/cert_elite_protector.jpg",
+    image: "/images/cert_lead_protector.jpg",
   },
 ];
 
@@ -54,13 +54,13 @@ export default function CertificationSection() {
           <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
             Certification
           </p>
-          <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-5 leading-[1.05]">
+          <h2 className="font-heading text-5xl lg:text-7xl font-bold uppercase text-white mb-5 leading-[1.0]">
             Train to Be <span className="text-accent-blue-light">Certified.</span>
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
             Complete the TACT OPS Protector Program and you earn a formal
             certificate - issued by TACT OPS under Florida licenses A &amp; B and
-            signed by Franck Pala himself. Three tiers, earned in order.
+            signed by Franck Pala himself. Three levels, earned in order.
           </p>
         </div>
 
@@ -83,7 +83,7 @@ export default function CertificationSection() {
               </span>
 
               <p className="text-accent-blue-light text-[11px] uppercase tracking-[3px] font-bold font-body mb-2">
-                Tier {i + 1}
+                Level {i + 1}
               </p>
               <h3 className="font-heading text-2xl lg:text-3xl font-bold uppercase text-white leading-none mb-3">
                 {t.name}

@@ -58,7 +58,7 @@ export default function RatesSection() {
     <section
       id="rates"
       className="py-16 sm:py-20 lg:py-28 relative noise-bg scroll-mt-[112px]"
-      style={{ background: "linear-gradient(180deg, #0C1118 0%, #06090D 100%)" }}
+      style={{ background: "linear-gradient(180deg, #06090D 0%, #0C1118 100%)" }}
     >
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[620px] h-[300px] bg-accent-blue/12 blur-[130px] rounded-full pointer-events-none" />
 
