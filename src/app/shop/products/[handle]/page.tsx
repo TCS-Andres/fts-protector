@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import RedDivider from "@/components/RedDivider";
 import ScrollAnimator from "@/components/ScrollAnimator";
 import BuyButton from "@/components/shop/BuyButton";
+import ProductDisclaimer from "@/components/shop/ProductDisclaimer";
 import ProductGallery from "@/components/shop/ProductGallery";
 import { routes } from "@/lib/links";
 import {
@@ -62,6 +63,8 @@ export default async function ProductPage({
   if (!product) notFound();
 
   const variant = product.variants[0];
+  // The TACTOPSUSA gear disclaimer applies to physical equipment, not the book.
+  const showDisclaimer = !product.handle.startsWith("cfm-");
 
   return (
     <>
@@ -114,6 +117,10 @@ export default async function ProductPage({
                     dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
                   />
                 ) : null}
+
+                {showDisclaimer && (
+                  <ProductDisclaimer variant="full" className="mb-7" />
+                )}
 
                 {variant ? (
                   <BuyButton

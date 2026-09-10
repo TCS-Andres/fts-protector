@@ -1,5 +1,6 @@
 import { routes } from "@/lib/links";
 import { getProducts, formatMoney, isShopifyConfigured } from "@/lib/shopify";
+import ProductDisclaimer from "@/components/shop/ProductDisclaimer";
 
 // Marketing copy per Shopify product handle. Anything not listed here still
 // renders with the generic treatment, so new store products appear automatically.
@@ -64,6 +65,7 @@ type Card = {
   image: string | null;
   price: string | null;
   available: boolean;
+  gear: boolean;
   spotlight: Spotlight;
 };
 
@@ -76,6 +78,7 @@ const FALLBACK: Card[] = [
     image: "/images/fork_main.jpg",
     price: null,
     available: true,
+    gear: true,
     spotlight: SPOTLIGHTS["the-fork-by-franckthesolution"],
   },
   {
@@ -85,6 +88,7 @@ const FALLBACK: Card[] = [
     image: "/images/cfm_book_front.jpg",
     price: null,
     available: false,
+    gear: false,
     spotlight: SPOTLIGHTS["cfm-circular-footwork-mechanics-manual-by-franck-pala"],
   },
 ];
@@ -103,6 +107,7 @@ async function loadCards(): Promise<Card[]> {
         image: p.featuredImage?.url ?? null,
         price: formatMoney(p.price),
         available: p.availableForSale,
+        gear: !p.handle.startsWith("cfm-"),
         spotlight,
       };
     });
@@ -255,6 +260,10 @@ export default async function ShopSection() {
                       </li>
                     ))}
                   </ul>
+                )}
+
+                {c.gear && (
+                  <ProductDisclaimer variant="compact" className="mb-6" />
                 )}
 
                 <div className="flex flex-wrap items-center gap-4">
