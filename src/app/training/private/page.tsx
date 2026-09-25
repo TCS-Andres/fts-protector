@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RedDivider from "@/components/RedDivider";
 import ScrollAnimator from "@/components/ScrollAnimator";
+import CertificationSection from "@/components/training/CertificationSection";
+import RatesSection from "@/components/training/RatesSection";
 import { routes } from "@/lib/links";
 
 const CONTACT_EMAIL = "info@franckthesolution.com";
@@ -237,6 +239,14 @@ export default function PrivateTrainingPage() {
             </div>
           </div>
         </section>
+
+        <RedDivider />
+
+        <CertificationSection compact />
+
+        <RatesSection
+          intro="Private one-on-one rates, monthly training blocks, and full immersion camps - every session taught directly by Franck."
+        />
 
         {/* CTA */}
         <section className="relative py-16 sm:py-20 overflow-hidden">

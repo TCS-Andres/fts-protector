@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RedDivider from "@/components/RedDivider";
 import ScrollAnimator from "@/components/ScrollAnimator";
+import CertificationSection from "@/components/training/CertificationSection";
+import RatesSection from "@/components/training/RatesSection";
 import { routes } from "@/lib/links";
 
 const CONTACT_EMAIL = "info@franckthesolution.com";
@@ -221,6 +223,14 @@ export default function EpsTrainingPage() {
             </div>
           </div>
         </section>
+
+        <RedDivider />
+
+        <CertificationSection compact />
+
+        <RatesSection
+          intro="The professional track runs on the same rates - build with private blocks, or go straight into a full immersion camp."
+        />
 
         {/* CTA */}
         <section className="relative py-16 sm:py-20 overflow-hidden">

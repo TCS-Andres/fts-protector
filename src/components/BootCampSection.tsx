@@ -73,15 +73,15 @@ export default function BootCampSection() {
               </div>
               <div className="border-l-2 border-cyan-400/60 pl-4">
                 <p className="text-cyan-300 text-xs uppercase tracking-[2px] font-bold font-body">
-                  Early Bird
+                  Price
                 </p>
-                <p className="text-white text-sm font-body mt-1">$3,800</p>
+                <p className="text-white text-sm font-body mt-1">$3,599</p>
               </div>
               <div className="border-l-2 border-cyan-400/60 pl-4">
                 <p className="text-cyan-300 text-xs uppercase tracking-[2px] font-bold font-body">
-                  Regular
+                  Certification
                 </p>
-                <p className="text-white text-sm font-body mt-1">$4,500</p>
+                <p className="text-white text-sm font-body mt-1">Included</p>
               </div>
             </div>
 

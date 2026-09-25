@@ -35,6 +35,22 @@ const navLinks: NavLink[] = [
     ],
   },
   { label: "TheSelfDefender", href: routes.selfDefender },
+  {
+    label: "Hire Us",
+    href: routes.hireUs,
+    children: [
+      {
+        label: "Executive Protection",
+        href: routes.hireUs,
+        desc: "Close protection & secure transport",
+      },
+      {
+        label: "Investigative Services",
+        href: routes.investigations,
+        desc: "Surveillance, due diligence & more",
+      },
+    ],
+  },
   { label: "Shop", href: routes.shop },
   { label: "Vlog", href: routes.vlog },
 ];
@@ -122,10 +138,10 @@ export default function Navbar() {
               Train With Us
             </a>
             <a
-              href={routes.hireUs}
+              href={routes.shop}
               className="px-5 py-2.5 bg-accent-blue text-white text-[13px] font-bold uppercase tracking-[1.5px] rounded ring-1 ring-accent-blue/40 hover:bg-accent-blue-dark hover:ring-accent-blue-light hover:shadow-[0_0_22px_rgba(46,114,184,0.55)] transition-all duration-300 hover:scale-[1.03] whitespace-nowrap"
             >
-              Hire Us
+              Shop the Store
             </a>
           </div>
         </div>
@@ -184,11 +200,11 @@ export default function Navbar() {
           )}
           <div className="mt-2 flex flex-col items-center gap-3 w-full max-w-xs px-8">
             <a
-              href={routes.hireUs}
+              href={routes.shop}
               onClick={() => setMobileOpen(false)}
               className="w-full text-center px-10 py-4 bg-accent-blue text-white text-lg font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue-dark transition-all duration-300"
             >
-              Hire Us
+              Shop the Store
             </a>
             <a
               href={routes.training}
