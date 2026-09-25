@@ -3,6 +3,8 @@ export const links = {
   // Commerce / conversion
   workshopStripe: "https://buy.stripe.com/9B65kF3sl0W96yQ1TS57W04",
   selfDefender: "https://www.theselfdefendertool.com/",
+  // Affiliate partner - referral id belongs to Franck
+  athlonRub: "https://athlonrub.com/?rfsn=9343615.ec3edc",
   skool:
     "https://www.skool.com/defensivetactics/about?ref=5872d5e010f741d2a991a3878f95b264",
 

@@ -34,6 +34,10 @@ type ShopCard = {
   soldOut?: boolean;
   soon?: boolean;
   imgPos?: string;
+  /** Product shots on a white background look better contained than cropped. */
+  imgContain?: boolean;
+  /** Marks a partner link Franck earns a commission on. */
+  affiliate?: boolean;
 };
 
 // Products that are not in the Shopify store and stay curated.
@@ -46,6 +50,20 @@ const selfDefenderCard: ShopCard = {
   badge: "Self-Defense Tool",
   cta: "Buy Now",
   body: "The patented everyday-carry self-defense tool invented by Franck. Three patents, built from 20+ years of real-world protection. Order from the official store.",
+};
+
+const athlonRubCard: ShopCard = {
+  key: "athlon-rub",
+  title: "Athlon Rub",
+  image: "/images/athlon_rub.webp",
+  imageAlt: "Athlon Rub all-sports rub, 3.4 fl oz spray bottle",
+  href: links.athlonRub,
+  external: true,
+  affiliate: true,
+  imgContain: true,
+  badge: "Recovery",
+  cta: "Shop Athlon Rub",
+  body: "The all-sports rub Franck trains with. Warms muscles and joints, relieves soreness and tension, and supports faster recovery. Natural ingredients, non-GMO, non-greasy.",
 };
 
 const videoCoursesCard: ShopCard = {
@@ -71,6 +89,7 @@ const fallbackCards: ShopCard[] = [
     body: "Franck's newest invention - an everyday fork, reengineered into a patented, legal-to-carry tool.",
   },
   selfDefenderCard,
+  athlonRubCard,
   {
     key: "cfm",
     title: "Circular Footwork Mechanics",
@@ -105,7 +124,7 @@ async function loadCards(): Promise<ShopCard[]> {
     const products = await getProducts();
     if (products.length === 0) return fallbackCards;
     // Live Shopify products first, then the items sold outside this store.
-    return [...products.map(toCard), selfDefenderCard, videoCoursesCard];
+    return [...products.map(toCard), selfDefenderCard, athlonRubCard, videoCoursesCard];
   } catch {
     return fallbackCards;
   }
@@ -160,14 +179,18 @@ export default async function ShopPage() {
                   key={p.key}
                   className="animate-on-scroll group flex flex-col bg-bg-card rounded-lg overflow-hidden border border-white/5 hover:border-accent-blue/40 transition-all duration-300"
                 >
-                  <div className="aspect-[4/3] relative overflow-hidden bg-black">
+                  <div
+                    className={`aspect-[4/3] relative overflow-hidden ${
+                      p.imgContain ? "bg-white" : "bg-black"
+                    }`}
+                  >
                     <img
                       src={p.image}
                       alt={p.imageAlt ?? ""}
                       loading="lazy"
-                      className={`w-full h-full object-cover transition-all duration-[1000ms] group-hover:scale-105 ${
-                        p.imgPos ?? ""
-                      } ${
+                      className={`w-full h-full transition-all duration-[1000ms] group-hover:scale-105 ${
+                        p.imgContain ? "object-contain p-6" : "object-cover"
+                      } ${p.imgPos ?? ""} ${
                         p.soon
                           ? "opacity-40 grayscale"
                           : "opacity-85 group-hover:opacity-100"
@@ -179,6 +202,11 @@ export default async function ShopPage() {
                         <span className="w-1.5 h-1.5 rounded-full bg-white/90" />
                         {p.badge}
                       </span>
+                      {p.affiliate && (
+                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] uppercase tracking-[2px] font-bold font-body text-accent-gold bg-black/70 border border-accent-gold/50">
+                          Affiliate Partner
+                        </span>
+                      )}
                       {p.soon && (
                         <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] uppercase tracking-[2px] font-extrabold font-body text-black bg-gradient-to-r from-accent-gold to-[#F0DDA0] shadow-[0_0_22px_rgba(201,168,76,0.75)] ring-1 ring-black/10 animate-pulse">
                           <span className="w-1.5 h-1.5 rounded-full bg-black/70" />
@@ -227,7 +255,13 @@ export default async function ShopPage() {
               ))}
             </div>
 
-            <p className="text-center text-text-muted text-sm mt-12 font-body animate-on-scroll">
+            <p className="text-center text-text-muted text-xs mt-10 max-w-2xl mx-auto font-body animate-on-scroll">
+              Some links on this page are affiliate links, including Athlon Rub.
+              Franck may earn a commission on purchases made through them, at no
+              extra cost to you.
+            </p>
+
+            <p className="text-center text-text-muted text-sm mt-6 font-body animate-on-scroll">
               Want to be first to know when new drops go live?{" "}
               <a
                 href={links.instagram}
