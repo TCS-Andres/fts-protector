@@ -4,11 +4,15 @@ import Footer from "@/components/Footer";
 import RedDivider from "@/components/RedDivider";
 import ScrollAnimator from "@/components/ScrollAnimator";
 import CertificationSection from "@/components/training/CertificationSection";
+import CivilianProtectorCourse from "@/components/training/CivilianProtectorCourse";
 import RatesSection from "@/components/training/RatesSection";
 import { routes } from "@/lib/links";
 
 const CONTACT_EMAIL = "info@franckthesolution.com";
 const MAILTO = `mailto:${CONTACT_EMAIL}?subject=Private%20Training%20Inquiry`;
+
+// The course price and availability come from Shopify.
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: "One-on-One Private Training | FrancktheSolution",
@@ -243,6 +247,8 @@ export default function PrivateTrainingPage() {
         <RedDivider />
 
         <CertificationSection compact />
+
+        <CivilianProtectorCourse compact />
 
         <RatesSection
           intro="Private one-on-one rates, monthly training blocks, and full immersion camps - every session taught directly by Franck."

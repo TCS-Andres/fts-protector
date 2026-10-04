@@ -64,6 +64,7 @@ export type ProductListItem = {
   id: string;
   title: string;
   handle: string;
+  productType: string;
   availableForSale: boolean;
   featuredImage: ShopifyImage | null;
   price: Money;
@@ -93,6 +94,7 @@ export type Product = {
   id: string;
   title: string;
   handle: string;
+  productType: string;
   descriptionHtml: string;
   availableForSale: boolean;
   images: ShopifyImage[];
@@ -100,6 +102,12 @@ export type Product = {
   variants: ProductVariant[];
   price: Money;
 };
+
+// Training courses are sold through Shopify too, but they live on the training
+// pages, not in the gear shop. Set the product type to "Training" in Shopify.
+export function isTrainingProduct(p: { productType: string }): boolean {
+  return p.productType.trim().toLowerCase() === "training";
+}
 
 export function formatMoney(m: Money): string {
   try {
@@ -116,6 +124,7 @@ type ProductNode = {
   id: string;
   title: string;
   handle: string;
+  productType: string;
   availableForSale: boolean;
   featuredImage: ShopifyImage | null;
   priceRange: { minVariantPrice: Money };
@@ -129,6 +138,7 @@ const PRODUCTS_QUERY = /* GraphQL */ `
           id
           title
           handle
+          productType
           availableForSale
           featuredImage {
             url(transform: { maxWidth: 1000, preferredContentType: WEBP })
@@ -143,19 +153,23 @@ const PRODUCTS_QUERY = /* GraphQL */ `
   }
 `;
 
+// Gear for the shop. Training courses are left out (see isTrainingProduct).
 export async function getProducts(first = 30): Promise<ProductListItem[]> {
   const data = await shopifyFetch<{ products: { edges: { node: ProductNode }[] } }>(
     PRODUCTS_QUERY,
     { first }
   );
-  return data.products.edges.map(({ node }) => ({
-    id: node.id,
-    title: node.title,
-    handle: node.handle,
-    availableForSale: node.availableForSale,
-    featuredImage: node.featuredImage,
-    price: node.priceRange.minVariantPrice,
-  }));
+  return data.products.edges
+    .map(({ node }) => ({
+      id: node.id,
+      title: node.title,
+      handle: node.handle,
+      productType: node.productType,
+      availableForSale: node.availableForSale,
+      featuredImage: node.featuredImage,
+      price: node.priceRange.minVariantPrice,
+    }))
+    .filter((p) => !isTrainingProduct(p));
 }
 
 type MediaNode = {
@@ -173,6 +187,7 @@ type ProductDetailNode = {
   id: string;
   title: string;
   handle: string;
+  productType: string;
   descriptionHtml: string;
   availableForSale: boolean;
   images: { edges: { node: ShopifyImage }[] };
@@ -193,6 +208,7 @@ const PRODUCT_QUERY = /* GraphQL */ `
       id
       title
       handle
+      productType
       descriptionHtml
       availableForSale
       images(first: 12) {
@@ -299,6 +315,7 @@ export async function getProduct(handle: string): Promise<Product | null> {
     id: p.id,
     title: p.title,
     handle: p.handle,
+    productType: p.productType,
     descriptionHtml: p.descriptionHtml,
     availableForSale: p.availableForSale,
     images,

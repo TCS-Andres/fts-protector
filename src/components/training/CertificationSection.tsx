@@ -8,6 +8,8 @@ const tiers = [
       "The entry point. You have made the shift from civilian to protector, with the fundamentals of close combat defensive tactics.",
     accent: "from-[#8A97A6] to-[#C3CDD8]",
     image: "/images/cert_civilian_to_protector.jpg",
+    // Every page that shows the levels also has the course section below.
+    course: { label: "Take the 5-day course", href: "#civilian-to-protector" },
   },
   {
     name: "Protector",
@@ -111,6 +113,14 @@ export default function CertificationSection({
               <p className="text-text-secondary text-sm lg:text-[15px] leading-relaxed font-body flex-1">
                 {t.summary}
               </p>
+              {"course" in t && t.course && (
+                <a
+                  href={t.course.href}
+                  className="mt-5 inline-flex items-center gap-2 self-start text-accent-gold text-xs uppercase tracking-[2px] font-bold hover:text-white transition-colors font-body"
+                >
+                  {t.course.label} &rarr;
+                </a>
+              )}
               <p className="text-text-muted text-[11px] uppercase tracking-[2px] font-body mt-5 pt-5 border-t border-white/10">
                 Close Combat Defensive Tactics
               </p>
