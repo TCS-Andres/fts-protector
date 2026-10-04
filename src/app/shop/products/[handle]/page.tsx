@@ -13,6 +13,7 @@ import {
   getProducts,
   formatMoney,
   isShopifyConfigured,
+  isTrainingProduct,
   type Product,
 } from "@/lib/shopify";
 
@@ -63,8 +64,10 @@ export default async function ProductPage({
   if (!product) notFound();
 
   const variant = product.variants[0];
-  // The TACTOPSUSA gear disclaimer applies to physical equipment, not the book.
-  const showDisclaimer = !product.handle.startsWith("cfm-");
+  // The TACTOPSUSA gear disclaimer applies to physical equipment, not the book
+  // or training courses.
+  const showDisclaimer =
+    !product.handle.startsWith("cfm-") && !isTrainingProduct(product);
 
   return (
     <>

@@ -6,6 +6,8 @@ type Props = {
   variantId: string;
   available: boolean;
   label?: string;
+  /** Hide the stepper for one-per-order items like training courses. */
+  showQuantity?: boolean;
 };
 
 const MAX_QTY = 20;
@@ -13,7 +15,12 @@ const MAX_QTY = 20;
 // Quantity picker + checkout. Creates a Shopify cart via our /api/cart route,
 // then sends the browser to Shopify's secure hosted checkout. Payment never
 // touches this site.
-export default function BuyButton({ variantId, available, label = "Buy Now" }: Props) {
+export default function BuyButton({
+  variantId,
+  available,
+  label = "Buy Now",
+  showQuantity = true,
+}: Props) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [qty, setQty] = useState(1);
@@ -59,6 +66,7 @@ export default function BuyButton({ variantId, available, label = "Buy Now" }: P
     <div className="w-full sm:w-auto">
       <div className="flex flex-col sm:flex-row sm:items-center gap-4">
         {/* Quantity stepper */}
+        {showQuantity && (
         <div>
           <label
             htmlFor="qty"
@@ -98,12 +106,13 @@ export default function BuyButton({ variantId, available, label = "Buy Now" }: P
             </button>
           </div>
         </div>
+        )}
 
         {/* Checkout */}
         <button
           onClick={buy}
           disabled={loading}
-          className="inline-flex items-center justify-center w-full sm:w-auto px-9 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue-dark hover:shadow-[0_0_24px_rgba(46,114,184,0.5)] hover:scale-[1.02] transition-all duration-300 min-h-[52px] sm:mt-7 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100"
+          className={`inline-flex items-center justify-center w-full sm:w-auto px-9 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue-dark hover:shadow-[0_0_24px_rgba(46,114,184,0.5)] hover:scale-[1.02] transition-all duration-300 min-h-[52px] ${showQuantity ? "sm:mt-7" : ""} disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100`}
         >
           {loading ? "Taking you to checkout…" : `${label} →`}
         </button>

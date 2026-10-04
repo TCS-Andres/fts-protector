@@ -4,11 +4,15 @@ import Footer from "@/components/Footer";
 import RedDivider from "@/components/RedDivider";
 import ScrollAnimator from "@/components/ScrollAnimator";
 import CertificationSection from "@/components/training/CertificationSection";
+import CivilianProtectorCourse from "@/components/training/CivilianProtectorCourse";
 import RatesSection from "@/components/training/RatesSection";
 import { routes } from "@/lib/links";
 
 const CONTACT_EMAIL = "info@franckthesolution.com";
 const MAILTO = `mailto:${CONTACT_EMAIL}?subject=Group%20Training%20Inquiry`;
+
+// The course price and availability come from Shopify.
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: "Group Training | FrancktheSolution",
@@ -229,6 +233,8 @@ export default function GroupTrainingPage() {
         <RedDivider />
 
         <CertificationSection compact />
+
+        <CivilianProtectorCourse compact />
 
         <RatesSection showPackages={false}
           intro="CCW sessions and the camps run private or semi-private, so a small group can train together. Larger groups are quoted to your headcount and goals."
