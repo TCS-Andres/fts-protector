@@ -6,10 +6,14 @@ import ScrollAnimator from "@/components/ScrollAnimator";
 import CertificationSection from "@/components/training/CertificationSection";
 import CivilianProtectorCourse from "@/components/training/CivilianProtectorCourse";
 import RatesSection from "@/components/training/RatesSection";
+import EPImmersionProgram from "@/components/training/EPImmersionProgram";
+import {
+  ApplyEpsButton,
+  primaryBtn,
+} from "@/components/female-eps/EpsCtas";
 import { routes } from "@/lib/links";
 
 const CONTACT_EMAIL = "info@franckthesolution.com";
-const MAILTO = `mailto:${CONTACT_EMAIL}?subject=EPS%20Training%20Inquiry`;
 
 // The course price and availability come from Shopify.
 export const revalidate = 60;
@@ -17,7 +21,7 @@ export const revalidate = 60;
 export const metadata: Metadata = {
   title: "Executive Protection Specialist (EPS) Training | FrancktheSolution",
   description:
-    "Professional-track Executive Protection Specialist training with Franck Pala - advance work, protective details, threat assessment, and close-combat defensive tactics for aspiring and working EP agents.",
+    "Professional-track Executive Protection Specialist training with Franck Pala, including the 1-month full immersion Executive Protection Agent Operator certification ($8,999) - advance work, protective details, firearms, VIP driving, tactical medicine, and close-combat defensive tactics.",
   alternates: { canonical: "/training/eps" },
 };
 
@@ -106,12 +110,18 @@ export default function EpsTrainingPage() {
                 protective details, threat assessment, and the tactics that
                 keep principals alive.
               </p>
-              <a
-                href={MAILTO}
-                className="hero-animate hero-animate-3 inline-flex items-center justify-center px-9 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue-dark hover:shadow-[0_0_24px_rgba(46,114,184,0.5)] hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
-              >
-                Apply for EPS Training &rarr;
-              </a>
+              <div className="hero-animate hero-animate-3 flex flex-col sm:flex-row gap-3 sm:gap-4">
+                <ApplyEpsButton
+                  label="Apply for EPS Training"
+                  className={primaryBtn}
+                />
+                <a
+                  href="#ep-immersion"
+                  className="inline-flex items-center justify-center px-8 py-4 border border-accent-gold/50 text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:border-accent-gold hover:text-accent-gold transition-all duration-300 min-h-[52px]"
+                >
+                  1-Month Immersion &middot; $8,999
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -230,6 +240,8 @@ export default function EpsTrainingPage() {
 
         <RedDivider />
 
+        <EPImmersionProgram />
+
         <CertificationSection compact />
 
         <CivilianProtectorCourse compact />
@@ -253,12 +265,10 @@ export default function EpsTrainingPage() {
               tell us why you belong in the room.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-              <a
-                href={MAILTO}
-                className="inline-flex items-center justify-center px-9 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue-dark hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
-              >
-                Apply for EPS Training
-              </a>
+              <ApplyEpsButton
+                label="Apply for EPS Training"
+                className={primaryBtn}
+              />
               <a
                 href={routes.hireUs}
                 className="inline-flex items-center justify-center px-9 py-4 border border-white/20 text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:border-accent-blue-light hover:text-accent-blue-light transition-all duration-300 min-h-[52px]"

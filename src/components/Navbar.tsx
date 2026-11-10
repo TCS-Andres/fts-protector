@@ -32,6 +32,11 @@ const navLinks: NavLink[] = [
         href: routes.trainingEps,
         desc: "Executive protection specialist track",
       },
+      {
+        label: "1-Month EP Immersion",
+        href: routes.epImmersion,
+        desc: "Full curriculum + certification",
+      },
     ],
   },
   { label: "TheSelfDefender", href: routes.selfDefender },
@@ -43,6 +48,11 @@ const navLinks: NavLink[] = [
         label: "Executive Protection",
         href: routes.hireUs,
         desc: "Close protection & secure transport",
+      },
+      {
+        label: "Female Protection",
+        href: routes.femaleEps,
+        desc: "Female executive protection specialists",
       },
       {
         label: "Investigative Services",

@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import BrandHero from "@/components/home/BrandHero";
 import HomeStats from "@/components/home/HomeStats";
+import FemaleEpsSpotlight from "@/components/home/FemaleEpsSpotlight";
 import BioSection from "@/components/home/BioSection";
 import PillarsSection from "@/components/home/PillarsSection";
 import TrainingTypesSection from "@/components/home/TrainingTypesSection";
@@ -25,6 +26,7 @@ export default function Home() {
       <main>
         <BrandHero />
         <HomeStats />
+        <FemaleEpsSpotlight />
         <BioSection />
         <ShopSection />
         <PillarsSection />

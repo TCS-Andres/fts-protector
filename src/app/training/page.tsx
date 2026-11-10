@@ -7,6 +7,7 @@ import CurriculumSection from "@/components/training/CurriculumSection";
 import CertificationSection from "@/components/training/CertificationSection";
 import CivilianProtectorCourse from "@/components/training/CivilianProtectorCourse";
 import RatesSection from "@/components/training/RatesSection";
+import EPImmersionProgram from "@/components/training/EPImmersionProgram";
 import { links, routes } from "@/lib/links";
 
 // The course price and availability come from Shopify.
@@ -15,7 +16,7 @@ export const revalidate = 60;
 export const metadata: Metadata = {
   title: "Training & Online Courses | FrancktheSolution",
   description:
-    "Train with Franck Pala: the 5-day Civilian To Protector certification course, online training, one-on-one private training, group training, and Executive Protection Specialist (EPS) training - plus workshops and the 7-day Protectors Camp.",
+    "Train with Franck Pala: the 5-day Civilian To Protector certification course, online training, one-on-one private training, group training, and Executive Protection Specialist (EPS) training, and the 1-month full immersion Executive Protection Agent Operator certification - plus workshops and the 7-day Protectors Camp.",
   alternates: { canonical: "/training" },
 };
 
@@ -192,6 +193,9 @@ export default function TrainingPage() {
 
         {/* Level 1, for sale: the 5-day Civilian To Protector course */}
         <CivilianProtectorCourse />
+
+        {/* Professional track: the 1-month full immersion */}
+        <EPImmersionProgram compact />
 
         <CurriculumSection />
 

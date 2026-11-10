@@ -15,7 +15,7 @@ const sessions = [
   {
     name: "1-on-1 Private",
     detail: "2 hr block",
-    price: "$300",
+    price: "$330",
   },
 ];
 
@@ -59,6 +59,8 @@ type Props = {
   showSessions?: boolean;
   showPackages?: boolean;
   showCamps?: boolean;
+  /** The 1-month EP Agent Operator program, shown under the camps. */
+  showImmersion?: boolean;
 };
 
 export default function RatesSection({
@@ -66,6 +68,7 @@ export default function RatesSection({
   showSessions = true,
   showPackages = true,
   showCamps = true,
+  showImmersion = true,
 }: Props) {
   return (
     <section
@@ -227,6 +230,36 @@ export default function RatesSection({
             </div>
           </div>
         </div>
+        )}
+
+        {/* 1-month professional immersion */}
+        {showImmersion && (
+          <a
+            href={routes.epImmersion}
+            className="animate-on-scroll group mt-6 sm:mt-8 flex flex-col md:flex-row md:items-center gap-5 md:gap-8 rounded-2xl border border-accent-gold/40 bg-gradient-to-r from-accent-gold/[0.08] via-bg-steel-card/50 to-bg-steel-card/40 p-6 sm:p-8 hover:border-accent-gold/80 hover:shadow-[0_0_40px_rgba(201,168,76,0.12)] transition-all duration-300"
+          >
+            <div className="flex-1">
+              <p className="text-accent-gold text-xs uppercase tracking-[3px] font-bold mb-2 font-body">
+                Professional Track &middot; 1-Month Full Immersion
+              </p>
+              <p className="font-heading text-2xl lg:text-3xl font-bold uppercase text-white leading-tight">
+                Executive Protection Agent Operator
+              </p>
+              <p className="text-text-secondary text-sm leading-relaxed font-body mt-2 max-w-2xl">
+                The full executive protection curriculum in one month of hard
+                training - firearms, VIP driving, close combat, tactical
+                medicine, and protective operations - plus certification.
+              </p>
+            </div>
+            <div className="flex md:flex-col items-center md:items-end justify-between gap-3 md:text-right">
+              <p className="font-heading text-4xl lg:text-5xl font-bold text-accent-gold leading-none">
+                $8,999
+              </p>
+              <span className="text-accent-blue-light text-xs uppercase tracking-[2px] font-bold font-body group-hover:text-white transition-colors">
+                See the curriculum &rarr;
+              </span>
+            </div>
+          </a>
         )}
 
         {/* CTA */}

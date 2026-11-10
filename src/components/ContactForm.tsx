@@ -1,17 +1,28 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useState } from "react";
 import { WEB3FORMS_ACCESS_KEY, WEB3FORMS_ENDPOINT } from "@/lib/links";
 
-type Props = {
+export type ContactFormProps = {
   /** Fixed subject line for the email Franck receives. */
   subject?: string;
   /** When provided, shows a "What do you need?" dropdown and appends the choice to the subject. */
   serviceOptions?: string[];
+  /** Label above the dropdown. */
+  serviceLabel?: string;
+  /** Pre-selected dropdown option. */
+  defaultService?: string;
+  /** Placeholder option text in the dropdown. */
+  servicePlaceholder?: string;
   /** Placeholder / prompt for the message field. */
   messagePlaceholder?: string;
+  /** Lead-capture forms can make the message optional to lower friction. */
+  messageRequired?: boolean;
   /** Submit button label. */
   submitLabel?: string;
+  /** Heading and body shown after a successful submit. */
+  successTitle?: string;
+  successMessage?: string;
 };
 
 type Status = "idle" | "submitting" | "success" | "error";
@@ -21,7 +32,16 @@ export default function ContactForm({
   serviceOptions,
   messagePlaceholder = "Tell Franck what you need, your timeline, and the best way to reach you.",
   submitLabel = "Send Message",
-}: Props) {
+  serviceLabel = "What do you need?",
+  defaultService = "",
+  servicePlaceholder = "Select a service",
+  messageRequired = true,
+  successTitle = "Message Sent",
+  successMessage = "Thanks - your message is on its way to Franck's team. Expect a reply shortly.",
+}: ContactFormProps) {
+  // Unique ids so two forms (e.g. a page form and a popup form) never collide.
+  const uid = useId();
+  const fid = (name: string) => `cf-${name}-${uid}`;
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
 
@@ -75,11 +95,10 @@ export default function ContactForm({
           ✓
         </div>
         <h3 className="font-heading text-2xl font-bold uppercase text-white mb-2">
-          Message Sent
+          {successTitle}
         </h3>
         <p className="text-text-secondary font-body">
-          Thanks - your message is on its way to Franck&apos;s team. Expect a
-          reply shortly. For anything urgent, email{" "}
+          {successMessage} For anything urgent, email{" "}
           <a
             href="mailto:info@franckthesolution.com"
             className="text-accent-blue-light hover:text-white transition-colors"
@@ -111,11 +130,11 @@ export default function ContactForm({
 
       <div className="grid sm:grid-cols-2 gap-5">
         <div>
-          <label htmlFor="cf-name" className={labelClass}>
+          <label htmlFor={fid("name")} className={labelClass}>
             Name
           </label>
           <input
-            id="cf-name"
+            id={fid("name")}
             name="name"
             type="text"
             required
@@ -125,11 +144,11 @@ export default function ContactForm({
           />
         </div>
         <div>
-          <label htmlFor="cf-email" className={labelClass}>
+          <label htmlFor={fid("email")} className={labelClass}>
             Email
           </label>
           <input
-            id="cf-email"
+            id={fid("email")}
             name="email"
             type="email"
             required
@@ -142,11 +161,11 @@ export default function ContactForm({
 
       <div className="grid sm:grid-cols-2 gap-5">
         <div>
-          <label htmlFor="cf-phone" className={labelClass}>
+          <label htmlFor={fid("phone")} className={labelClass}>
             Phone <span className="text-text-muted normal-case tracking-normal">(optional)</span>
           </label>
           <input
-            id="cf-phone"
+            id={fid("phone")}
             name="phone"
             type="tel"
             autoComplete="tel"
@@ -156,12 +175,17 @@ export default function ContactForm({
         </div>
         {serviceOptions && serviceOptions.length > 0 && (
           <div>
-            <label htmlFor="cf-service" className={labelClass}>
-              What do you need?
+            <label htmlFor={fid("service")} className={labelClass}>
+              {serviceLabel}
             </label>
-            <select id="cf-service" name="service" className={inputClass} defaultValue="">
+            <select
+              id={fid("service")}
+              name="service"
+              className={inputClass}
+              defaultValue={defaultService}
+            >
               <option value="" disabled>
-                Select a service
+                {servicePlaceholder}
               </option>
               {serviceOptions.map((o) => (
                 <option key={o} value={o}>
@@ -174,13 +198,19 @@ export default function ContactForm({
       </div>
 
       <div>
-        <label htmlFor="cf-message" className={labelClass}>
+        <label htmlFor={fid("message")} className={labelClass}>
           Message
+          {!messageRequired && (
+            <>
+              {" "}
+              <span className="text-text-muted normal-case tracking-normal">(optional)</span>
+            </>
+          )}
         </label>
         <textarea
-          id="cf-message"
+          id={fid("message")}
           name="message"
-          required
+          required={messageRequired}
           rows={5}
           placeholder={messagePlaceholder}
           className={`${inputClass} resize-y`}

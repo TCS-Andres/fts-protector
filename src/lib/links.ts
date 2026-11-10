@@ -30,6 +30,9 @@ export const routes = {
   trainingPrivate: "/training/private",
   trainingGroup: "/training/group",
   trainingEps: "/training/eps",
+  // 1-month Executive Protection Agent Operator program (section on the EPS page)
+  epImmersion: "/training/eps#ep-immersion",
+  femaleEps: "/female-executive-protection",
   hireUs: "/hire-us",
   investigations: "/investigations",
   selfDefender: "/self-defender",

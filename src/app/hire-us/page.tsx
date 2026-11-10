@@ -6,6 +6,7 @@ import RedDivider from "@/components/RedDivider";
 import EPStats from "@/components/hire-us/EPStats";
 import EPImageMarquee from "@/components/hire-us/EPImageMarquee";
 import ContactForm from "@/components/ContactForm";
+import { routes } from "@/lib/links";
 
 const PAGE_TITLE = "Executive Protection & Armed Driving | EProtection VIP";
 const PAGE_DESCRIPTION =
@@ -289,6 +290,35 @@ export default function HireUsPage() {
                 </article>
               ))}
             </div>
+
+            {/* Female protection specialists */}
+            <a
+              href={routes.femaleEps}
+              className="animate-on-scroll group mt-6 sm:mt-8 grid sm:grid-cols-[140px_1fr] md:grid-cols-[180px_1fr_auto] gap-5 sm:gap-7 items-center rounded-2xl border border-accent-blue/30 bg-bg-card p-4 sm:p-5 pr-6 sm:pr-8 hover:border-accent-blue-light/60 hover:shadow-[0_10px_40px_rgba(0,0,0,0.4)] transition-all duration-300"
+            >
+              <img
+                src="/images/emma/emma_portrait_belt.jpg"
+                alt="Emma, female executive protection specialist"
+                loading="lazy"
+                className="w-full aspect-[16/10] sm:aspect-square rounded-xl object-cover object-[center_22%]"
+              />
+              <div>
+                <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-accent-blue text-white text-[10px] uppercase tracking-[2px] font-bold font-body mb-3">
+                  New
+                </span>
+                <h3 className="font-heading text-2xl lg:text-3xl font-bold uppercase text-white leading-tight mb-2">
+                  Female Protection Specialists
+                </h3>
+                <p className="text-text-secondary text-sm lg:text-base leading-relaxed font-body">
+                  Need a woman on the detail? Certified female executive
+                  protection specialists for women, families, and events -
+                  discreet, low-profile, and trained to the same standard.
+                </p>
+              </div>
+              <span className="text-accent-blue-light text-sm uppercase tracking-[2px] font-bold font-body whitespace-nowrap group-hover:text-white transition-colors">
+                Meet Emma &rarr;
+              </span>
+            </a>
           </div>
         </section>
 
@@ -521,6 +551,7 @@ export default function HireUsPage() {
                 subject="EProtection VIP inquiry"
                 serviceOptions={[
                   "Executive Protection",
+                  "Female Executive Protection Specialist",
                   "Investigative Services",
                   "Both",
                 ]}

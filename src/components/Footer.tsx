@@ -24,6 +24,7 @@ const columns = [
     title: "Services",
     links: [
       { label: "Executive Protection", href: routes.hireUs },
+      { label: "Female Protection", href: routes.femaleEps },
       { label: "Investigations", href: routes.investigations },
       { label: "TheSelfDefender", href: routes.selfDefender },
       { label: "About Franck", href: routes.about },

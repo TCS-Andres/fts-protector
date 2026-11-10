@@ -35,6 +35,20 @@ export default function BrandHero() {
         <div className="grid lg:grid-cols-[1fr_minmax(0,460px)] gap-10 lg:gap-16 items-center">
           {/* Text */}
           <div className="text-center lg:text-left order-2 lg:order-1">
+            <a
+              href="#female-eps"
+              className="hero-animate hero-animate-1 group inline-flex items-center gap-2.5 mb-6 pl-1.5 pr-4 py-1.5 rounded-full border border-accent-blue/40 bg-accent-blue/10 hover:border-accent-blue-light hover:bg-accent-blue/20 transition-all duration-300"
+            >
+              <span className="px-2.5 py-0.5 rounded-full bg-accent-blue text-white text-[10px] uppercase tracking-[2px] font-bold font-body">
+                New
+              </span>
+              <span className="text-white text-xs sm:text-[13px] font-body">
+                Female executive protection specialists
+              </span>
+              <span className="text-accent-blue-light transition-transform duration-300 group-hover:translate-x-0.5">
+                &rarr;
+              </span>
+            </a>
             <p className="hero-animate hero-animate-1 text-accent-blue-light text-xs sm:text-sm uppercase tracking-[5px] font-bold mb-5 font-body">
               Franck Pala - FrancktheSolution
             </p>

@@ -16,10 +16,12 @@ export const metadata: Metadata = {
 
 const services = [
   "Executive Protection",
+  "Female Executive Protection Specialist",
   "Investigative Services",
   "Private Training",
   "Group Training",
   "EPS Training",
+  "1-Month EP Immersion ($8,999)",
   "Online Training",
   "Workshop",
   "The FranckTheSolution Fork",
