@@ -31,6 +31,13 @@ body {
   font-family: var(--font-body);
 }
 
+/* Decorative blur glows are wider than a phone screen. Clip them so pages
+   never scroll sideways. "clip" (not "hidden") keeps sticky positioning and
+   vertical scrolling untouched. */
+main {
+  overflow-x: clip;
+}
+
 /* Scroll animations */
 .animate-on-scroll {
   opacity: 0;
