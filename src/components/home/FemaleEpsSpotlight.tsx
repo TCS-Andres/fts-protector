@@ -7,7 +7,8 @@ import { routes } from "@/lib/links";
 const points = [
   "Blends in where a bodyguard can't",
   "Goes where a male agent can't",
-  "Trained to the same standard as every operator",
+  "Trained in combat and extraction",
+  "Works alone or alongside a male protector",
 ];
 
 // Home-page emphasis for the female executive protection service.
@@ -68,9 +69,14 @@ export default function FemaleEpsSpotlight() {
               <span className="text-accent-blue-light">Champion.</span>{" "}
               Protector.
             </h2>
+            <p className="font-heading text-xl sm:text-2xl font-bold uppercase text-accent-gold leading-tight mb-4">
+              Beauty. Glamour. <br className="sm:hidden" />
+              Butcher hands if needed.
+            </p>
             <p className="text-text-secondary text-lg leading-relaxed font-body mb-7 max-w-xl mx-auto lg:mx-0">
-              Professional boxing champion. Certified Executive Protection
-              Agent Operator. Trained by Franck. Female executive protection
+              Emma Gongora is a WBA Gold champion, the official challenger for
+              the WBC world title, and now a certified Executive Protection
+              Agent Operator, trained by Franck. Female executive protection
               specialists are now part of the team - for women, families, and
               events that need a woman on the detail.
             </p>

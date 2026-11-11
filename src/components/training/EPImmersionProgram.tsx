@@ -141,7 +141,7 @@ function GraduateCard() {
       />
       <div>
         <p className="text-accent-gold text-[10px] uppercase tracking-[2px] font-bold font-body">
-          Recent Graduate
+          Recent Graduate · WBA Gold Champion
         </p>
         <p className="font-heading text-lg font-bold uppercase text-white leading-tight mt-0.5">
           Emma - Certified EP Agent Operator

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/emma/emma_hero_belt.jpg",
-        alt: "Emma, female executive protection specialist",
+        alt: "Emma Gongora, female executive protection specialist",
       },
     ],
   },
@@ -61,11 +61,66 @@ const reasons = [
   },
 ];
 
+// Franck's description of what a female protector is, tightened into copy.
+const protectorTraits = [
+  {
+    title: "Humble. No Ego.",
+    body: "The job is your safety, never her image.",
+  },
+  {
+    title: "Trained to Assess",
+    body: "She reads the room, the crowd, and the exits before anyone else does.",
+  },
+  {
+    title: "Loyal, With Integrity",
+    body: "Your schedule, your family, and your privacy, held in total confidence.",
+  },
+  {
+    title: "Takes the Hit First",
+    body: "She puts herself between you and the threat and will give her life protecting yours.",
+  },
+  {
+    title: "Confident & Intuitive",
+    body: "Calm under pressure, with instincts that catch trouble early.",
+  },
+  {
+    title: "A Sharp Mindset",
+    body: "Always a move ahead, so the threat never gets the first one.",
+  },
+  {
+    title: "Combat & Extraction",
+    body: "Trained to fight, to drive, and to get you out.",
+  },
+  {
+    title: "Teams With Male Agents",
+    body: "Works alone or side by side with a male protector on the same detail.",
+  },
+];
+
 const credentials = [
-  "Professional boxing champion with multiple title belts",
+  "WBA Gold champion, ranked #1 by the WBA in 2024",
+  "Official challenger for the WBC world title in 2025",
   "Certified Executive Protection Agent Operator - TACT OPS",
   "Graduate of the 1-month full immersion EP program",
   "Trained directly by Franck Pala, active elite EP specialist",
+];
+
+const fightStats = [
+  { value: "10-4-1", label: "Pro record" },
+  { value: "7", label: "Titles won" },
+  { value: "#1", label: "WBA ranking, 2024" },
+];
+
+// Most recent first. Highlighted rows get the gold treatment.
+const titles = [
+  { year: "2025", title: "WBC World Title", detail: "Official challenger", highlight: true },
+  { year: "2024", title: "WBA Gold Champion", detail: "Ranked #1 by the WBA", highlight: true },
+  { year: "2023", title: "WBC Francophone Champion", detail: "Featherweight" },
+  { year: "2022", title: "WBC Francophone Champion", detail: "Lightweight" },
+  { year: "2021", title: "French Pro Champion", detail: "Boxing" },
+  { year: "2019", title: "World Champion", detail: "K-1 - WCTS" },
+  { year: "2018", title: "European Champion", detail: "Kickboxing - ISKA" },
+  { year: "2017", title: "French Pro Champion", detail: "K-1" },
 ];
 
 const gallery = [
@@ -153,10 +208,10 @@ export default function FemaleExecutiveProtectionPage() {
                   <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
                   <div className="absolute bottom-4 left-5">
                     <p className="font-heading text-xl font-bold uppercase text-white leading-none">
-                      Emma
+                      Emma Gongora
                     </p>
                     <p className="text-accent-blue-light text-[11px] uppercase tracking-[3px] font-body mt-1">
-                      Executive Protection Specialist
+                      WBA Gold Champion · EP Specialist
                     </p>
                   </div>
                 </div>
@@ -166,6 +221,58 @@ export default function FemaleExecutiveProtectionPage() {
         </section>
 
         <RedDivider />
+
+        {/* The female protector */}
+        <section
+          className="py-16 sm:py-20 lg:py-28 relative overflow-hidden noise-bg"
+          style={{ background: "linear-gradient(180deg, #0A0A0A 0%, #0C1118 100%)" }}
+        >
+          <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[640px] h-[380px] bg-accent-blue/10 blur-[150px] rounded-full pointer-events-none" />
+          <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12">
+            <div className="text-center max-w-5xl mx-auto mb-12 sm:mb-16 animate-on-scroll">
+              <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-5 font-body">
+                The Female Protector
+              </p>
+              <h2 className="font-heading text-[40px] sm:text-6xl lg:text-7xl font-bold uppercase text-white leading-[0.95] mb-7">
+                Beauty. Glamour.
+                <br />
+                <span className="text-accent-blue-light">Butcher Hands</span>{" "}
+                <br className="lg:hidden" />
+                If Needed.
+              </h2>
+              <p className="text-text-secondary text-lg sm:text-xl leading-relaxed font-body max-w-3xl mx-auto">
+                She walks into the gala, the boutique, or the boardroom looking
+                like she belongs there - because she does. No one sees a
+                bodyguard. Behind the elegance is an operator trained in combat
+                and extraction, who will step in front of you and take the hit
+                before you do.
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 stagger-children">
+              {protectorTraits.map((t) => (
+                <div
+                  key={t.title}
+                  className="animate-on-scroll rounded-xl border border-white/10 bg-white/[0.03] p-6"
+                >
+                  <span className="block w-8 h-0.5 bg-accent-gold mb-4" />
+                  <h3 className="font-heading text-lg font-bold uppercase text-white leading-tight mb-2">
+                    {t.title}
+                  </h3>
+                  <p className="text-text-secondary text-sm leading-relaxed font-body">
+                    {t.body}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <p className="animate-on-scroll mt-12 sm:mt-16 text-center font-heading text-2xl sm:text-3xl font-bold uppercase text-white leading-tight max-w-3xl mx-auto">
+              For you or your family, a well-trained female protector isn&apos;t
+              a luxury.{" "}
+              <span className="text-accent-gold">She&apos;s a mandatory asset.</span>
+            </p>
+          </div>
+        </section>
 
         {/* Why a female EPS */}
         <section className="bg-bg-primary py-16 sm:py-20 lg:py-28 relative noise-bg">
@@ -253,22 +360,31 @@ export default function FemaleExecutiveProtectionPage() {
                     Currently Booked
                   </span>
                 </div>
-                <h2 className="font-heading text-5xl lg:text-6xl font-bold uppercase text-white leading-[0.95] mb-6">
+                <h2 className="font-heading text-5xl lg:text-6xl font-bold uppercase text-white leading-[0.95] mb-3">
                   Meet <span className="text-accent-blue-light">Emma.</span>
                 </h2>
+                <p className="text-white/80 text-xs sm:text-sm uppercase tracking-[3px] font-bold font-body mb-6">
+                  Emma Gongora
+                  <span className="text-accent-blue-light mx-2">/</span>
+                  France
+                  <span className="text-accent-blue-light mx-2">/</span>
+                  <span className="whitespace-nowrap">Pro Record 10-4-1</span>
+                </p>
                 <div className="space-y-5 text-text-secondary text-base lg:text-lg leading-relaxed font-body mb-8">
                   <p>
-                    Emma is a professional boxing champion with multiple title
-                    belts - and now a certified Executive Protection Agent
-                    Operator. She recently completed Franck Pala&apos;s 1-month
-                    full immersion program: firearms, VIP driving and
-                    extraction, close combat, tactical medicine, and the
-                    operational planning that keeps a principal safe.
+                    Emma Gongora is a world-class fighter with seven titles
+                    across K-1, kickboxing, and boxing - including the WBA Gold
+                    belt and a #1 WBA ranking in 2024. In 2025 she became the
+                    official challenger for the WBC world title.
                   </p>
                   <p>
-                    She brings a fighter&apos;s composure under pressure to
-                    every detail, with a presence that blends into any room
-                    until the moment it matters.
+                    Now she is a certified Executive Protection Agent Operator.
+                    She recently completed Franck Pala&apos;s 1-month full
+                    immersion program: firearms, VIP driving and extraction,
+                    close combat, tactical medicine, and the operational
+                    planning that keeps a principal safe. She brings a
+                    champion&apos;s composure to every detail, with a presence
+                    that blends into any room until the moment it matters.
                   </p>
                 </div>
                 <ul className="space-y-3.5 mb-9">
@@ -285,6 +401,57 @@ export default function FemaleExecutiveProtectionPage() {
                 </ul>
                 <HireFemaleEpsButton label="Request Emma" />
               </div>
+            </div>
+
+            {/* Fight record */}
+            <div className="mt-14 sm:mt-20 animate-on-scroll">
+              <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-8">
+                <div className="text-center lg:text-left">
+                  <p className="text-accent-gold text-sm uppercase tracking-[4px] font-bold mb-3 font-body">
+                    Fight Record
+                  </p>
+                  <h3 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white leading-tight">
+                    Seven Titles. Three Disciplines.
+                  </h3>
+                </div>
+                <dl className="grid grid-cols-3 gap-3 sm:gap-4 lg:min-w-[460px]">
+                  {fightStats.map((s) => (
+                    <div
+                      key={s.label}
+                      className="flex flex-col-reverse rounded-xl border border-accent-gold/30 bg-black/30 px-3 py-4 text-center"
+                    >
+                      <dt className="text-text-secondary text-[10px] sm:text-xs uppercase tracking-[1.5px] font-bold font-body mt-1.5">
+                        {s.label}
+                      </dt>
+                      <dd className="font-heading text-2xl sm:text-3xl font-bold text-white leading-none">
+                        {s.value}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+              <ol className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+                {titles.map((t) => (
+                  <li
+                    key={`${t.year}-${t.detail}`}
+                    className={`rounded-xl border p-4 sm:p-5 ${
+                      t.highlight
+                        ? "border-accent-gold/50 bg-accent-gold/[0.07]"
+                        : "border-white/10 bg-black/25"
+                    }`}
+                  >
+                    <p className="font-heading text-2xl sm:text-3xl font-bold text-accent-gold leading-none">
+                      {t.year}
+                    </p>
+                    <p className="font-heading text-base sm:text-lg font-bold uppercase text-white leading-tight mt-3">
+                      {t.title}
+                    </p>
+                    <p className="text-text-secondary text-xs sm:text-sm font-body mt-1">
+                      {t.detail}
+                    </p>
+                  </li>
+                ))}
+              </ol>
             </div>
           </div>
         </section>
