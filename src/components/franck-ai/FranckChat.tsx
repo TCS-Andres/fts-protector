@@ -393,12 +393,16 @@ export default function FranckChat() {
           <button
             onClick={() => setOpen(true)}
             aria-label="Chat with Franck"
-            className="group relative flex items-center gap-3 rounded-full border border-white/15 bg-bg-primary/95 p-1 sm:pr-5 shadow-[0_10px_40px_rgba(0,0,0,0.6)] backdrop-blur hover:border-accent-red/70 transition-colors"
+            className="group relative flex items-center gap-2.5 sm:gap-3 rounded-full border border-white/15 bg-bg-primary/95 p-1 pr-4 sm:pr-5 shadow-[0_10px_40px_rgba(0,0,0,0.6)] backdrop-blur hover:border-accent-red/70 transition-colors"
           >
             <span className="relative block h-12 w-12 sm:h-14 sm:w-14 overflow-hidden rounded-full ring-2 ring-accent-red">
               <Image src={AVATAR} alt="Franck Pala" fill sizes="56px" className="object-cover" />
             </span>
             <span className="absolute left-10 top-1 sm:left-12 h-3 w-3 rounded-full bg-green-500 ring-2 ring-bg-primary" />
+            {/* Phones: one-line label next to the avatar */}
+            <span className="sm:hidden font-heading text-sm font-bold uppercase tracking-[1.5px] text-white whitespace-nowrap">
+              Chat with Franck
+            </span>
             <span className="hidden sm:flex flex-col items-start leading-tight">
               <span className="font-heading text-sm font-bold uppercase tracking-[2px] text-white">
                 Talk to Franck
