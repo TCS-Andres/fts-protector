@@ -43,7 +43,8 @@ export const libraryVideos: LibraryVideo[] = [
     title: "Lesson 1 (title coming soon)",
     description: "Placeholder lesson. The real title and summary go here.",
     duration: "",
-    bunnyVideoId: "",
+    // Test upload in Bunny library 812911, used to check playback end to end.
+    bunnyVideoId: "b2b87b9f-da3f-435e-a4a8-4c33b0fddab6",
     productHandles: [VIDEO_LIBRARY_PRODUCT_HANDLE],
   },
   {
