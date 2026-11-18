@@ -86,17 +86,35 @@ function BrowseButton() {
 
 // Optional "all videos" bundle. Only rendered when that Shopify product exists
 // and is for sale.
-function BundleBox({ bundle, count }: { bundle: Product; count: number }) {
+function BundleBox({
+  bundle,
+  count,
+  singlesTotal,
+}: {
+  bundle: Product;
+  count: number;
+  singlesTotal: number;
+}) {
   const variant = bundle.variants[0];
+  const savings = singlesTotal - parseFloat(variant.price.amount);
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex items-end gap-3">
+      <div className="flex flex-wrap items-end gap-x-3 gap-y-1">
         <p className="font-heading text-5xl lg:text-6xl font-bold text-white leading-none">
           {formatMoney(variant.price).replace(/\.00$/, "")}
         </p>
         <p className="text-text-muted text-xs uppercase tracking-[1.5px] font-body pb-1.5">
-          All {count} videos
+          {count === 1 ? "Full library bundle" : `All ${count} videos`}
         </p>
+        {savings >= 0.01 ? (
+          <p className="text-accent-blue-light text-xs uppercase tracking-[1.5px] font-bold font-body pb-1.5">
+            Save{" "}
+            {formatMoney({
+              amount: savings.toFixed(2),
+              currencyCode: variant.price.currencyCode,
+            }).replace(/\.00$/, "")}
+          </p>
+        ) : null}
       </div>
       <BuyButton
         variantId={variant.id}
@@ -129,15 +147,17 @@ function PrimaryCta({
   bundle,
   count,
   anyOnSale,
+  singlesTotal,
 }: {
   bundle: Product | null;
   count: number;
   anyOnSale: boolean;
+  singlesTotal: number;
 }) {
-  if (bundle && isOnSale(bundle)) {
+  if (bundle && isOnSale(bundle) && count > 0) {
     return (
       <div className="flex flex-col gap-5">
-        <BundleBox bundle={bundle} count={count} />
+        <BundleBox bundle={bundle} count={count} singlesTotal={singlesTotal} />
         <a
           href="#videos"
           className="text-text-secondary text-sm font-body hover:text-white transition-colors"
@@ -163,6 +183,11 @@ export default async function VideoLibraryPage() {
   }));
   const count = videos.length;
   const anyOnSale = offers.some((o) => isOnSale(o.product));
+  // What buying every video one by one would cost, to show the bundle saving.
+  const singlesTotal = offers.reduce(
+    (sum, o) => sum + (isOnSale(o.product) ? parseFloat(o.product!.variants[0].price.amount) : 0),
+    0
+  );
   const countLabel = `${count} ${count === 1 ? "Video" : "Videos"}`;
 
   return (
@@ -196,7 +221,12 @@ export default async function VideoLibraryPage() {
                 or computer. Rewatch any technique as often as you need.
               </p>
               <div className="hero-animate hero-animate-3 flex flex-col gap-6">
-                <PrimaryCta bundle={bundle} count={count} anyOnSale={anyOnSale} />
+                <PrimaryCta
+                  bundle={bundle}
+                  count={count}
+                  anyOnSale={anyOnSale}
+                  singlesTotal={singlesTotal}
+                />
                 <SignInLink />
               </div>
             </div>
@@ -280,7 +310,12 @@ export default async function VideoLibraryPage() {
               <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-6">
                 Start Training Today
               </h2>
-              <PrimaryCta bundle={bundle} count={count} anyOnSale={anyOnSale} />
+              <PrimaryCta
+                  bundle={bundle}
+                  count={count}
+                  anyOnSale={anyOnSale}
+                  singlesTotal={singlesTotal}
+                />
               <SignInLink className="mt-6" />
             </div>
             <p className="text-text-muted text-xs font-body mt-6 text-center">
