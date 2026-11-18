@@ -30,6 +30,11 @@ export const routes = {
   trainingPrivate: "/training/private",
   trainingGroup: "/training/group",
   trainingEps: "/training/eps",
+  // On-demand video library: sales page, and the buyer-only watch pages
+  videoLibrary: "/training/video-library",
+  myVideos: "/my-videos",
+  accountLogin: "/account/login",
+  accountLogout: "/account/logout",
   // 1-month Executive Protection Agent Operator program (section on the EPS page)
   epImmersion: "/training/eps#ep-immersion",
   femaleEps: "/female-executive-protection",

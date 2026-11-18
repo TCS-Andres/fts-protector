@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { routes } from "@/lib/links";
 
 type Child = { label: string; href: string; desc: string; external?: boolean };
@@ -16,6 +17,11 @@ const navLinks: NavLink[] = [
         label: "Online Training",
         href: routes.trainingOnline,
         desc: "Live sessions with Franck via Zoom",
+      },
+      {
+        label: "Video Library",
+        href: routes.videoLibrary,
+        desc: "Stream Franck's lessons on demand",
       },
       {
         label: "Private Training",
@@ -86,13 +92,13 @@ export default function Navbar() {
         <span className="nav-sweep" aria-hidden />
 
         {/* Logo */}
-        <a href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3">
           <img
             src="/logo.png"
             alt="FrancktheSolution"
             className="h-[104px] lg:h-[92px] w-auto drop-shadow-[0_0_14px_rgba(46,114,184,0.45)]"
           />
-        </a>
+        </Link>
 
         {/* Desktop links */}
         <div className="hidden lg:flex items-center gap-5 xl:gap-7">
