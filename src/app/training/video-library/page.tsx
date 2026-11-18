@@ -13,7 +13,7 @@ import {
   type Product,
 } from "@/lib/shopify";
 import { loginHref } from "@/lib/video-access";
-import { publishedVideos, VIDEO_BUNDLE_HANDLE } from "@/lib/video-library";
+import { bundleVideos, publishedVideos, VIDEO_BUNDLE_HANDLE } from "@/lib/video-library";
 
 // Prices and availability come live from the Shopify products, refreshed
 // every minute like the rest of the shop.
@@ -84,8 +84,9 @@ function BrowseButton() {
   );
 }
 
-// Optional "all videos" bundle. Only rendered when that Shopify product exists
-// and is for sale.
+// Optional bundle. Only rendered when that Shopify product exists, is for
+// sale, and at least one published video is marked inBundle. It covers a fixed
+// set of videos; ones added later are sold separately.
 function BundleBox({
   bundle,
   count,
@@ -104,7 +105,7 @@ function BundleBox({
           {formatMoney(variant.price).replace(/\.00$/, "")}
         </p>
         <p className="text-text-muted text-xs uppercase tracking-[1.5px] font-body pb-1.5">
-          {count === 1 ? "Full library bundle" : `All ${count} videos`}
+          {count === 1 ? "1-video bundle" : `${count}-video bundle`}
         </p>
         {savings >= 0.01 ? (
           <p className="text-accent-blue-light text-xs uppercase tracking-[1.5px] font-bold font-body pb-1.5">
@@ -119,7 +120,7 @@ function BundleBox({
       <BuyButton
         variantId={variant.id}
         available
-        label="Get Every Video"
+        label="Get the Bundle"
         showQuantity={false}
       />
     </div>
@@ -155,6 +156,7 @@ function PrimaryCta({
   singlesTotal: number;
 }) {
   if (bundle && isOnSale(bundle) && count > 0) {
+    // count here is the number of videos in the bundle.
     return (
       <div className="flex flex-col gap-5">
         <BundleBox bundle={bundle} count={count} singlesTotal={singlesTotal} />
@@ -183,9 +185,16 @@ export default async function VideoLibraryPage() {
   }));
   const count = videos.length;
   const anyOnSale = offers.some((o) => isOnSale(o.product));
-  // What buying every video one by one would cost, to show the bundle saving.
+  const inBundle = new Set(bundleVideos().map((v) => v.slug));
+  const bundleCount = inBundle.size;
+  const bundleOnSale = isOnSale(bundle) && bundleCount > 0;
+  // What buying the bundle's videos one by one would cost, to show the saving.
   const singlesTotal = offers.reduce(
-    (sum, o) => sum + (isOnSale(o.product) ? parseFloat(o.product!.variants[0].price.amount) : 0),
+    (sum, o) =>
+      sum +
+      (inBundle.has(o.video.slug) && isOnSale(o.product)
+        ? parseFloat(o.product!.variants[0].price.amount)
+        : 0),
     0
   );
   const countLabel = `${count} ${count === 1 ? "Video" : "Videos"}`;
@@ -223,7 +232,7 @@ export default async function VideoLibraryPage() {
               <div className="hero-animate hero-animate-3 flex flex-col gap-6">
                 <PrimaryCta
                   bundle={bundle}
-                  count={count}
+                  count={bundleCount}
                   anyOnSale={anyOnSale}
                   singlesTotal={singlesTotal}
                 />
@@ -255,7 +264,7 @@ export default async function VideoLibraryPage() {
                 </p>
               </div>
               <div className="animate-on-scroll">
-                <VideoOfferList offers={offers} />
+                <VideoOfferList offers={offers} bundleOnSale={bundleOnSale} />
               </div>
               <p className="text-text-muted text-xs font-body leading-relaxed text-center mt-8">
                 Secure checkout by Shopify. Streaming only, so videos play on
@@ -312,7 +321,7 @@ export default async function VideoLibraryPage() {
               </h2>
               <PrimaryCta
                   bundle={bundle}
-                  count={count}
+                  count={bundleCount}
                   anyOnSale={anyOnSale}
                   singlesTotal={singlesTotal}
                 />

@@ -38,7 +38,14 @@ export type VideoOffer = { video: LibraryVideo; product: Product | null };
 
 // Sales page: every published video with its own price and Buy button. The
 // video itself stays locked until it is bought.
-export function VideoOfferList({ offers }: { offers: VideoOffer[] }) {
+export function VideoOfferList({
+  offers,
+  bundleOnSale = false,
+}: {
+  offers: VideoOffer[];
+  /** Tag the videos the bundle includes, when a bundle is for sale. */
+  bundleOnSale?: boolean;
+}) {
   return (
     <ol className="space-y-4">
       {offers.map(({ video, product }) => {
@@ -67,6 +74,11 @@ export function VideoOfferList({ offers }: { offers: VideoOffer[] }) {
                 {video.description ? (
                   <p className="text-text-secondary text-sm font-body mt-2 leading-relaxed">
                     {video.description}
+                  </p>
+                ) : null}
+                {bundleOnSale && video.inBundle ? (
+                  <p className="inline-block mt-3 px-2.5 py-1 rounded border border-accent-blue/40 bg-accent-blue/10 text-accent-blue-light text-[11px] uppercase tracking-[1.5px] font-bold font-body">
+                    In the bundle
                   </p>
                 ) : null}
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5 mt-5">

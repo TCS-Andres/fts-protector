@@ -3,8 +3,13 @@
 //
 // How access works: every video is its own Shopify product, so a customer
 // only gets the videos they paid for. A customer can watch a video when one
-// of their paid orders contains that video's product, or the optional
-// "all videos" bundle product.
+// of their paid orders contains that video's product, or when the video is
+// part of the bundle (inBundle: true) and they bought the bundle.
+//
+// The bundle is a fixed set: only videos marked inBundle are unlocked by it.
+// Videos added later are sold separately, so leave inBundle false on them
+// (marking a video true later would also give it to everyone who already
+// bought the bundle).
 //
 // Only videos with a bunnyVideoId are listed, sold, or playable. Add a new
 // entry with an empty bunnyVideoId while it uploads and it stays hidden until
@@ -17,11 +22,12 @@
 //      tracked, published to the Headless channel. Give it the handle
 //      "franck-video-library-<slug>" (the Shopify storefront redirect sends
 //      any handle containing "video-library" to the sales page).
-//   3. Add an entry below with the same slug, handle, and Bunny ID.
+//   3. Add an entry below with the same slug, handle, and Bunny ID, and
+//      inBundle: false unless it belongs to the original bundle.
 
-// Optional bundle that unlocks every video. It only shows on the sales page
-// when a Shopify product with this handle exists and is available, so leave
-// it uncreated to sell videos one by one only.
+// Optional bundle product that unlocks the videos marked inBundle. It only
+// shows on the sales page when a Shopify product with this handle exists and
+// is available.
 export const VIDEO_BUNDLE_HANDLE = "franck-video-library";
 
 export type LibraryVideo = {
@@ -34,6 +40,8 @@ export type LibraryVideo = {
   bunnyVideoId: string;
   /** Shopify product handle that sells this one video. */
   productHandle: string;
+  /** Part of the fixed bundle. Videos added after launch stay false. */
+  inBundle: boolean;
 };
 
 // TODO: real titles, descriptions and lengths, in the order they should be
@@ -46,6 +54,7 @@ export const libraryVideos: LibraryVideo[] = [
     duration: "",
     bunnyVideoId: "b2b87b9f-da3f-435e-a4a8-4c33b0fddab6",
     productHandle: "franck-video-library-lesson-1",
+    inBundle: true,
   },
 ];
 
@@ -64,7 +73,15 @@ export function videoNumber(video: LibraryVideo): number {
 }
 
 export function ownsVideo(video: LibraryVideo, ownedHandles: ReadonlySet<string>): boolean {
-  return ownedHandles.has(video.productHandle) || ownedHandles.has(VIDEO_BUNDLE_HANDLE);
+  return (
+    ownedHandles.has(video.productHandle) ||
+    (video.inBundle && ownedHandles.has(VIDEO_BUNDLE_HANDLE))
+  );
+}
+
+/** The published videos the bundle unlocks. */
+export function bundleVideos(): LibraryVideo[] {
+  return publishedVideos().filter((v) => v.inBundle);
 }
 
 export function videosUnlockedBy(ownedHandles: ReadonlySet<string>): LibraryVideo[] {
