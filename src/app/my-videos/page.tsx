@@ -8,8 +8,14 @@ import LibraryShell, {
   secondaryButton,
 } from "@/components/video-library/LibraryShell";
 import { routes } from "@/lib/links";
+import { MoreVideosList } from "@/components/video-library/LessonList";
 import { getVideoAccess, loginHref, refreshHref } from "@/lib/video-access";
-import { videosUnlockedBy } from "@/lib/video-library";
+import {
+  ownsVideo,
+  publishedVideos,
+  videoNumber,
+  videosUnlockedBy,
+} from "@/lib/video-library";
 
 export const dynamic = "force-dynamic";
 
@@ -60,7 +66,7 @@ export default async function MyVideosPage({
           <Title>My Videos</Title>
           <p className="text-text-secondary text-base leading-relaxed font-body mb-8">
             Sign-in for the video library is almost ready. If you already
-            bought it, email{" "}
+            bought a video, email{" "}
             <a href={`mailto:${CONTACT_EMAIL}`} className="text-accent-blue-light hover:underline">
               {CONTACT_EMAIL}
             </a>{" "}
@@ -102,7 +108,7 @@ export default async function MyVideosPage({
               Sign In &rarr;
             </a>
             <a href={routes.videoLibrary} className={secondaryButton}>
-              Get the Library
+              Browse Videos
             </a>
           </div>
         </Panel>
@@ -133,6 +139,7 @@ export default async function MyVideosPage({
   }
 
   const videos = videosUnlockedBy(access.ownedHandles);
+  const notOwned = publishedVideos().filter((v) => !ownsVideo(v, access.ownedHandles));
 
   if (videos.length === 0) {
     return (
@@ -141,7 +148,7 @@ export default async function MyVideosPage({
           <Eyebrow>Video Library</Eyebrow>
           <Title>No Videos Yet</Title>
           <p className="text-text-secondary text-base leading-relaxed font-body mb-3">
-            We couldn&apos;t find a video library purchase on this account.
+            We couldn&apos;t find any video purchases on this account.
           </p>
           <p className="text-text-muted text-sm leading-relaxed font-body mb-8">
             Bought it with a different email? Sign out, then sign in with that
@@ -150,7 +157,7 @@ export default async function MyVideosPage({
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8">
             <a href={routes.videoLibrary} className={primaryButton}>
-              Get the Library &rarr;
+              Browse Videos &rarr;
             </a>
             <a href={routes.myVideos} className={secondaryButton}>
               Refresh
@@ -175,7 +182,7 @@ export default async function MyVideosPage({
       </div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {videos.map((v, i) => (
+        {videos.map((v) => (
           <a
             key={v.slug}
             href={`${routes.myVideos}/${v.slug}`}
@@ -183,7 +190,7 @@ export default async function MyVideosPage({
           >
             <div className="flex items-center justify-between mb-5">
               <span className="w-10 h-10 rounded-md bg-accent-blue/15 border border-accent-blue/40 flex items-center justify-center font-heading text-sm font-bold text-accent-blue-light">
-                {String(i + 1).padStart(2, "0")}
+                {String(videoNumber(v)).padStart(2, "0")}
               </span>
               {v.duration ? (
                 <span className="text-text-muted text-xs font-body tabular-nums">
@@ -205,6 +212,18 @@ export default async function MyVideosPage({
           </a>
         ))}
       </div>
+
+      {notOwned.length > 0 ? (
+        <div className="mt-14 sm:mt-16 max-w-3xl">
+          <p className="text-accent-blue-light text-xs sm:text-sm uppercase tracking-[4px] font-bold mb-3 font-body">
+            More From Franck
+          </p>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold uppercase text-white mb-6">
+            More Videos
+          </h2>
+          <MoreVideosList videos={notOwned} />
+        </div>
+      ) : null}
     </LibraryShell>
   );
 }

@@ -1,5 +1,7 @@
+import BuyButton from "@/components/shop/BuyButton";
 import { routes } from "@/lib/links";
-import type { LibraryVideo } from "@/lib/video-library";
+import { formatMoney, type Product } from "@/lib/shopify";
+import { salesAnchor, videoNumber, type LibraryVideo } from "@/lib/video-library";
 
 function LockIcon() {
   return (
@@ -18,7 +20,7 @@ function PlayIcon() {
   );
 }
 
-function LessonNumber({ n, active }: { n: number; active?: boolean }) {
+export function LessonNumber({ n, active }: { n: number; active?: boolean }) {
   return (
     <span
       className={`flex-shrink-0 w-9 h-9 rounded-md border flex items-center justify-center font-heading text-sm font-bold ${
@@ -32,40 +34,96 @@ function LessonNumber({ n, active }: { n: number; active?: boolean }) {
   );
 }
 
-// Sales page: every lesson, locked. Shows what the buyer gets without
-// exposing the videos themselves.
-export function LockedLessonList({ videos }: { videos: LibraryVideo[] }) {
+export type VideoOffer = { video: LibraryVideo; product: Product | null };
+
+// Sales page: every published video with its own price and Buy button. The
+// video itself stays locked until it is bought.
+export function VideoOfferList({ offers }: { offers: VideoOffer[] }) {
+  return (
+    <ol className="space-y-4">
+      {offers.map(({ video, product }) => {
+        const variant = product?.variants[0];
+        const onSale = Boolean(product?.availableForSale && variant?.availableForSale);
+        return (
+          <li
+            key={video.slug}
+            id={salesAnchor(video)}
+            className="scroll-mt-36 bg-bg-card border border-white/10 rounded-xl p-5 sm:p-6"
+          >
+            <div className="flex items-start gap-4">
+              <LessonNumber n={videoNumber(video)} />
+              <div className="min-w-0 flex-1">
+                <div className="flex items-start justify-between gap-3">
+                  <h3 className="font-heading text-lg sm:text-xl font-bold uppercase text-white leading-tight">
+                    {video.title}
+                  </h3>
+                  <span className="flex items-center gap-2 flex-shrink-0 text-text-muted pt-1">
+                    {video.duration ? (
+                      <span className="text-xs font-body tabular-nums">{video.duration}</span>
+                    ) : null}
+                    <LockIcon />
+                  </span>
+                </div>
+                {video.description ? (
+                  <p className="text-text-secondary text-sm font-body mt-2 leading-relaxed">
+                    {video.description}
+                  </p>
+                ) : null}
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5 mt-5">
+                  {variant && onSale ? (
+                    <>
+                      <p className="font-heading text-3xl font-bold text-white leading-none">
+                        {formatMoney(variant.price).replace(/\.00$/, "")}
+                      </p>
+                      <BuyButton
+                        variantId={variant.id}
+                        available
+                        label="Buy This Video"
+                        showQuantity={false}
+                      />
+                    </>
+                  ) : (
+                    <p className="font-heading text-xl font-bold uppercase text-text-muted">
+                      Coming Soon
+                    </p>
+                  )}
+                </div>
+              </div>
+            </div>
+          </li>
+        );
+      })}
+    </ol>
+  );
+}
+
+// My Videos: published videos this customer doesn't own yet, linking to
+// where they can buy each one.
+export function MoreVideosList({ videos }: { videos: LibraryVideo[] }) {
   return (
     <ol className="space-y-3">
-      {videos.map((v, i) => (
-        <li
-          key={v.slug}
-          className="flex items-center gap-4 bg-bg-card border border-white/10 rounded-lg px-4 py-3.5 sm:px-5"
-        >
-          <LessonNumber n={i + 1} />
-          <div className="min-w-0 flex-1">
-            <p className="font-heading text-base sm:text-lg font-bold uppercase text-white leading-tight">
+      {videos.map((v) => (
+        <li key={v.slug}>
+          <a
+            href={`${routes.videoLibrary}#${salesAnchor(v)}`}
+            className="flex items-center gap-4 bg-bg-card/60 border border-white/10 rounded-lg px-4 py-3.5 sm:px-5 hover:border-accent-blue/40 transition-colors"
+          >
+            <LessonNumber n={videoNumber(v)} />
+            <span className="min-w-0 flex-1 font-heading text-base sm:text-lg font-bold uppercase text-text-secondary leading-tight">
               {v.title}
-            </p>
-            {v.description ? (
-              <p className="text-text-muted text-xs sm:text-sm font-body mt-1 leading-snug">
-                {v.description}
-              </p>
-            ) : null}
-          </div>
-          <div className="flex items-center gap-3 flex-shrink-0 text-text-muted">
-            {v.duration ? (
-              <span className="text-xs font-body tabular-nums">{v.duration}</span>
-            ) : null}
-            <LockIcon />
-          </div>
+            </span>
+            <span className="flex items-center gap-2 flex-shrink-0 text-accent-blue-light text-xs uppercase tracking-[2px] font-bold font-body">
+              <LockIcon />
+              Get It
+            </span>
+          </a>
         </li>
       ))}
     </ol>
   );
 }
 
-// Watch page sidebar: the lessons this customer owns, current one highlighted.
+// Watch page sidebar: the videos this customer owns, current one highlighted.
 export function WatchLessonList({
   videos,
   currentSlug,
@@ -75,7 +133,7 @@ export function WatchLessonList({
 }) {
   return (
     <ol className="space-y-2">
-      {videos.map((v, i) => {
+      {videos.map((v) => {
         const active = v.slug === currentSlug;
         return (
           <li key={v.slug}>
@@ -88,7 +146,7 @@ export function WatchLessonList({
                   : "bg-bg-card/60 border-white/5 hover:border-accent-blue/40 hover:bg-white/5"
               }`}
             >
-              <LessonNumber n={i + 1} active={active} />
+              <LessonNumber n={videoNumber(v)} active={active} />
               <span className="min-w-0 flex-1">
                 <span
                   className={`block font-body text-sm font-semibold leading-snug ${

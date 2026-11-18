@@ -10,7 +10,7 @@ import LibraryShell, {
 import { signEmbedUrl } from "@/lib/bunny-stream";
 import { routes } from "@/lib/links";
 import { getVideoAccess, loginHref, refreshHref } from "@/lib/video-access";
-import { getVideo, videosUnlockedBy } from "@/lib/video-library";
+import { getVideo, salesAnchor, videoNumber, videosUnlockedBy } from "@/lib/video-library";
 
 // Ownership is re-checked and a fresh, short-lived player link is signed on
 // every request. Nothing here is cached.
@@ -45,24 +45,24 @@ export default async function WatchPage({ params }: { params: Promise<Params> })
   const owned = videosUnlockedBy(access.ownedHandles);
   const index = owned.findIndex((v) => v.slug === video.slug);
 
-  // Signed in, but this lesson isn't part of anything they bought.
+  // Signed in, but they haven't bought this video.
   if (index === -1) {
     return (
       <LibraryShell>
         <Panel>
           <p className="text-accent-blue-light text-xs sm:text-sm uppercase tracking-[5px] font-bold mb-4 font-body">
-            Locked Lesson
+            Locked Video
           </p>
           <h1 className="font-heading text-3xl sm:text-5xl font-bold uppercase leading-[1.02] text-white mb-5">
             {video.title}
           </h1>
           <p className="text-text-secondary text-base leading-relaxed font-body mb-8">
-            This lesson is part of the video library. Get access to unlock it,
-            or sign in with the email you used at checkout.
+            This video isn&apos;t on your account yet. Buy it to unlock it, or
+            sign in with the email you used at checkout.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8">
-            <a href={routes.videoLibrary} className={primaryButton}>
-              Get the Library &rarr;
+            <a href={`${routes.videoLibrary}#${salesAnchor(video)}`} className={primaryButton}>
+              Get This Video &rarr;
             </a>
             <a href={routes.myVideos} className={secondaryButton}>
               My Videos
@@ -116,7 +116,7 @@ export default async function WatchPage({ params }: { params: Promise<Params> })
 
           {/* Details */}
           <p className="text-accent-blue-light text-xs uppercase tracking-[4px] font-bold font-body mt-7 mb-3">
-            Lesson {String(index + 1).padStart(2, "0")}
+            Video {String(videoNumber(video)).padStart(2, "0")}
             {video.duration ? ` / ${video.duration}` : ""}
           </p>
           <h1 className="font-heading text-3xl sm:text-4xl font-bold uppercase leading-[1.02] text-white mb-4">
@@ -137,7 +137,7 @@ export default async function WatchPage({ params }: { params: Promise<Params> })
             ) : null}
             {next ? (
               <a href={`${routes.myVideos}/${next.slug}`} className={primaryButton}>
-                Next Lesson &rarr;
+                Next Video &rarr;
               </a>
             ) : null}
           </div>
@@ -146,7 +146,7 @@ export default async function WatchPage({ params }: { params: Promise<Params> })
         {/* Lessons */}
         <aside className="lg:sticky lg:top-[136px]">
           <p className="text-accent-blue-light text-xs uppercase tracking-[3px] font-bold font-body mb-4">
-            Lessons
+            Your Videos
           </p>
           <WatchLessonList videos={owned} currentSlug={video.slug} />
         </aside>

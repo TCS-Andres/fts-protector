@@ -1,24 +1,28 @@
 // Franck's on-demand video library: what is for sale and which purchase
-// unlocks which lesson.
+// unlocks which video.
 //
-// How access works: each lesson lists the Shopify product handle(s) that
-// unlock it. Selling one bundle? Give every lesson the same handle. Selling
-// lessons one by one, or several courses? Give each its own product handle.
-// A customer can watch a lesson when one of their paid orders contains one of
-// its products.
+// How access works: every video is its own Shopify product, so a customer
+// only gets the videos they paid for. A customer can watch a video when one
+// of their paid orders contains that video's product, or the optional
+// "all videos" bundle product.
 //
-// bunnyVideoId is the Bunny Stream video GUID (Library > video > Video ID).
-// Leave it empty until the upload finishes; the player then shows a
-// "being prepared" message instead of breaking.
+// Only videos with a bunnyVideoId are listed, sold, or playable. Add a new
+// entry with an empty bunnyVideoId while it uploads and it stays hidden until
+// the ID is filled in.
+//
+// Adding a video:
+//   1. Upload it to Bunny Stream (library 812911) and copy its Video ID.
+//   2. In Shopify, create a product like the training courses: product type
+//      "Training", status Unlisted, not a physical product, inventory not
+//      tracked, published to the Headless channel. Give it the handle
+//      "franck-video-library-<slug>" (the Shopify storefront redirect sends
+//      any handle containing "video-library" to the sales page).
+//   3. Add an entry below with the same slug, handle, and Bunny ID.
 
-// TODO: replace with the real Shopify product handle once the product exists.
-// Create it like the training courses: product type "Training", status
-// Unlisted, not a physical product, inventory not tracked.
-export const VIDEO_LIBRARY_PRODUCT_HANDLE = "franck-video-library";
-
-// The product this sales page sells. Add more handles here if the library is
-// later split into several products.
-export const LIBRARY_PRODUCT_HANDLES: readonly string[] = [VIDEO_LIBRARY_PRODUCT_HANDLE];
+// Optional bundle that unlocks every video. It only shows on the sales page
+// when a Shopify product with this handle exists and is available, so leave
+// it uncreated to sell videos one by one only.
+export const VIDEO_BUNDLE_HANDLE = "franck-video-library";
 
 export type LibraryVideo = {
   slug: string;
@@ -26,55 +30,51 @@ export type LibraryVideo = {
   description: string;
   /** Display length, e.g. "12:45". Leave empty to hide it. */
   duration: string;
-  /** Bunny Stream video GUID. Empty until uploaded. */
+  /** Bunny Stream video GUID. Empty hides the video until it is uploaded. */
   bunnyVideoId: string;
-  /** Shopify product handles that unlock this lesson. */
-  productHandles: readonly string[];
+  /** Shopify product handle that sells this one video. */
+  productHandle: string;
 };
 
-// TODO: PLACEHOLDER CATALOG. We don't have the real videos, titles, count or
-// lengths yet. Replace these entries with the real lessons, in the order
-// they should be watched.
-export const PLACEHOLDER_CATALOG = true;
-
+// TODO: real titles, descriptions and lengths, in the order they should be
+// watched. Lesson 1 is the test upload used to check playback end to end.
 export const libraryVideos: LibraryVideo[] = [
   {
     slug: "lesson-1",
-    title: "Lesson 1 (title coming soon)",
-    description: "Placeholder lesson. The real title and summary go here.",
+    title: "Video 1 (title coming soon)",
+    description: "The real title and summary go here.",
     duration: "",
-    // Test upload in Bunny library 812911, used to check playback end to end.
     bunnyVideoId: "b2b87b9f-da3f-435e-a4a8-4c33b0fddab6",
-    productHandles: [VIDEO_LIBRARY_PRODUCT_HANDLE],
-  },
-  {
-    slug: "lesson-2",
-    title: "Lesson 2 (title coming soon)",
-    description: "Placeholder lesson. The real title and summary go here.",
-    duration: "",
-    bunnyVideoId: "",
-    productHandles: [VIDEO_LIBRARY_PRODUCT_HANDLE],
-  },
-  {
-    slug: "lesson-3",
-    title: "Lesson 3 (title coming soon)",
-    description: "Placeholder lesson. The real title and summary go here.",
-    duration: "",
-    bunnyVideoId: "",
-    productHandles: [VIDEO_LIBRARY_PRODUCT_HANDLE],
+    productHandle: "franck-video-library-lesson-1",
   },
 ];
 
+/** Videos that are uploaded and ready: the only ones listed or sold. */
+export function publishedVideos(): LibraryVideo[] {
+  return libraryVideos.filter((v) => v.bunnyVideoId);
+}
+
 export function getVideo(slug: string): LibraryVideo | undefined {
-  return libraryVideos.find((v) => v.slug === slug);
+  return publishedVideos().find((v) => v.slug === slug);
+}
+
+/** 1-based position in the full catalog, so numbering never shifts per buyer. */
+export function videoNumber(video: LibraryVideo): number {
+  return publishedVideos().findIndex((v) => v.slug === video.slug) + 1;
+}
+
+export function ownsVideo(video: LibraryVideo, ownedHandles: ReadonlySet<string>): boolean {
+  return ownedHandles.has(video.productHandle) || ownedHandles.has(VIDEO_BUNDLE_HANDLE);
 }
 
 export function videosUnlockedBy(ownedHandles: ReadonlySet<string>): LibraryVideo[] {
-  return libraryVideos.filter((v) => v.productHandles.some((h) => ownedHandles.has(h)));
+  return publishedVideos().filter((v) => ownsVideo(v, ownedHandles));
 }
 
 export function allProductHandles(): string[] {
-  const handles = new Set<string>(LIBRARY_PRODUCT_HANDLES);
-  for (const v of libraryVideos) v.productHandles.forEach((h) => handles.add(h));
-  return [...handles];
+  return [VIDEO_BUNDLE_HANDLE, ...publishedVideos().map((v) => v.productHandle)];
+}
+
+export function salesAnchor(video: LibraryVideo): string {
+  return `video-${video.slug}`;
 }

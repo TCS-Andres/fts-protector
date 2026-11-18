@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import RedDivider from "@/components/RedDivider";
 import ScrollAnimator from "@/components/ScrollAnimator";
 import BuyButton from "@/components/shop/BuyButton";
-import { LockedLessonList } from "@/components/video-library/LessonList";
+import { VideoOfferList, type VideoOffer } from "@/components/video-library/LessonList";
 import { routes } from "@/lib/links";
 import {
   formatMoney,
@@ -13,10 +13,10 @@ import {
   type Product,
 } from "@/lib/shopify";
 import { loginHref } from "@/lib/video-access";
-import { libraryVideos, VIDEO_LIBRARY_PRODUCT_HANDLE } from "@/lib/video-library";
+import { publishedVideos, VIDEO_BUNDLE_HANDLE } from "@/lib/video-library";
 
-// Price and availability come live from the Shopify product, refreshed every
-// minute like the rest of the shop.
+// Prices and availability come live from the Shopify products, refreshed
+// every minute like the rest of the shop.
 export const revalidate = 60;
 
 const CONTACT_EMAIL = "info@franckthesolution.com";
@@ -24,15 +24,15 @@ const CONTACT_EMAIL = "info@franckthesolution.com";
 export const metadata: Metadata = {
   title: "Video Library - Train With Franck On Demand | FrancktheSolution",
   description:
-    "Franck Pala's on-demand training videos. Stream every lesson on your phone, tablet, or computer and rewatch any technique as often as you need.",
+    "Franck Pala's on-demand training videos. Buy the videos you want, then stream them on your phone, tablet, or computer and rewatch any technique as often as you need.",
   alternates: { canonical: routes.videoLibrary },
 };
 
 const steps = [
   {
     num: "01",
-    title: "Get Access",
-    body: "Check out securely through Shopify. It takes about a minute.",
+    title: "Pick Your Videos",
+    body: "Buy only the videos you want. Checkout is handled securely by Shopify and takes about a minute.",
   },
   {
     num: "02",
@@ -42,17 +42,22 @@ const steps = [
   {
     num: "03",
     title: "Start Training",
-    body: "Open My Videos and stream any lesson on your phone, tablet, or computer.",
+    body: "Open My Videos and stream what you bought on your phone, tablet, or computer.",
   },
 ];
 
-async function loadLibraryProduct(): Promise<Product | null> {
+async function loadProduct(handle: string): Promise<Product | null> {
   if (!isShopifyConfigured()) return null;
   try {
-    return await getProduct(VIDEO_LIBRARY_PRODUCT_HANDLE);
+    return await getProduct(handle);
   } catch {
     return null;
   }
+}
+
+function isOnSale(product: Product | null): boolean {
+  const variant = product?.variants[0];
+  return Boolean(product?.availableForSale && variant?.availableForSale);
 }
 
 const signInHref = loginHref(routes.myVideos);
@@ -63,32 +68,26 @@ function SignInLink({ className = "" }: { className?: string }) {
       href={signInHref}
       className={`inline-block text-accent-blue-light text-sm uppercase tracking-[2px] font-bold hover:text-white transition-colors font-body ${className}`}
     >
-      Already bought it? Sign in to watch &rarr;
+      Already bought a video? Sign in to watch &rarr;
     </a>
   );
 }
 
-function BuyBox({ product }: { product: Product | null }) {
-  const variant = product?.variants[0];
-  const onSale = Boolean(product?.availableForSale && variant?.availableForSale);
+function BrowseButton() {
+  return (
+    <a
+      href="#videos"
+      className="inline-flex items-center justify-center w-full sm:w-auto px-9 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue-dark hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
+    >
+      See the Videos &darr;
+    </a>
+  );
+}
 
-  if (!variant || !onSale) {
-    return (
-      <div className="flex flex-col gap-4">
-        <p className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white leading-none">
-          Coming Soon
-        </p>
-        <p className="text-text-muted text-sm font-body leading-relaxed max-w-md">
-          The library opens shortly. Email{" "}
-          <a href={`mailto:${CONTACT_EMAIL}`} className="text-accent-blue-light hover:underline">
-            {CONTACT_EMAIL}
-          </a>{" "}
-          to hear the moment it goes live.
-        </p>
-      </div>
-    );
-  }
-
+// Optional "all videos" bundle. Only rendered when that Shopify product exists
+// and is for sale.
+function BundleBox({ bundle, count }: { bundle: Product; count: number }) {
+  const variant = bundle.variants[0];
   return (
     <div className="flex flex-col gap-4">
       <div className="flex items-end gap-3">
@@ -96,26 +95,75 @@ function BuyBox({ product }: { product: Product | null }) {
           {formatMoney(variant.price).replace(/\.00$/, "")}
         </p>
         <p className="text-text-muted text-xs uppercase tracking-[1.5px] font-body pb-1.5">
-          Full library
+          All {count} videos
         </p>
       </div>
       <BuyButton
         variantId={variant.id}
         available
-        label="Get Instant Access"
+        label="Get Every Video"
         showQuantity={false}
       />
-      <p className="text-text-muted text-xs font-body leading-relaxed max-w-md">
-        Secure checkout by Shopify. Streaming only, so lessons play on this
-        site and are not downloadable.
+    </div>
+  );
+}
+
+function ComingSoon() {
+  return (
+    <div className="flex flex-col gap-4">
+      <p className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white leading-none">
+        Coming Soon
+      </p>
+      <p className="text-text-muted text-sm font-body leading-relaxed max-w-md">
+        The first videos open shortly. Email{" "}
+        <a href={`mailto:${CONTACT_EMAIL}`} className="text-accent-blue-light hover:underline">
+          {CONTACT_EMAIL}
+        </a>{" "}
+        to hear the moment they go live.
       </p>
     </div>
   );
 }
 
+function PrimaryCta({
+  bundle,
+  count,
+  anyOnSale,
+}: {
+  bundle: Product | null;
+  count: number;
+  anyOnSale: boolean;
+}) {
+  if (bundle && isOnSale(bundle)) {
+    return (
+      <div className="flex flex-col gap-5">
+        <BundleBox bundle={bundle} count={count} />
+        <a
+          href="#videos"
+          className="text-text-secondary text-sm font-body hover:text-white transition-colors"
+        >
+          Or buy videos one at a time &darr;
+        </a>
+      </div>
+    );
+  }
+  if (anyOnSale) return <BrowseButton />;
+  return <ComingSoon />;
+}
+
 export default async function VideoLibraryPage() {
-  const product = await loadLibraryProduct();
-  const lessonCount = libraryVideos.length;
+  const videos = publishedVideos();
+  const [bundle, ...videoProducts] = await Promise.all([
+    loadProduct(VIDEO_BUNDLE_HANDLE),
+    ...videos.map((v) => loadProduct(v.productHandle)),
+  ]);
+  const offers: VideoOffer[] = videos.map((video, i) => ({
+    video,
+    product: videoProducts[i],
+  }));
+  const count = videos.length;
+  const anyOnSale = offers.some((o) => isOnSale(o.product));
+  const countLabel = `${count} ${count === 1 ? "Video" : "Videos"}`;
 
   return (
     <>
@@ -144,12 +192,11 @@ export default async function VideoLibraryPage() {
                 <span className="text-accent-blue-light">On Your Schedule.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-9 max-w-2xl font-body">
-                {lessonCount} lessons from Franck, ready to stream. Watch on
-                your phone, tablet, or computer and rewatch any technique as
-                often as you need.
+                Pick the videos you want and stream them on your phone, tablet,
+                or computer. Rewatch any technique as often as you need.
               </p>
               <div className="hero-animate hero-animate-3 flex flex-col gap-6">
-                <BuyBox product={product} />
+                <PrimaryCta bundle={bundle} count={count} anyOnSale={anyOnSale} />
                 <SignInLink />
               </div>
             </div>
@@ -158,28 +205,35 @@ export default async function VideoLibraryPage() {
 
         <RedDivider />
 
-        {/* What's inside */}
-        <section className="bg-bg-primary py-16 sm:py-20 lg:py-28 relative noise-bg">
-          <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12">
-            <div className="text-center mb-10 sm:mb-14 animate-on-scroll">
-              <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
-                {lessonCount} Lessons
+        {/* The videos */}
+        {count > 0 ? (
+          <section
+            id="videos"
+            className="scroll-mt-24 bg-bg-primary py-16 sm:py-20 lg:py-28 relative noise-bg"
+          >
+            <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12">
+              <div className="text-center mb-10 sm:mb-14 animate-on-scroll">
+                <p className="text-accent-blue-light text-sm uppercase tracking-[4px] font-bold mb-4 font-body">
+                  {countLabel}
+                </p>
+                <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
+                  Pick Your Videos
+                </h2>
+                <p className="text-text-secondary text-base font-body mt-4 max-w-xl mx-auto leading-relaxed">
+                  Each video is sold on its own. You only pay for the ones you
+                  want, and they are yours to rewatch anytime.
+                </p>
+              </div>
+              <div className="animate-on-scroll">
+                <VideoOfferList offers={offers} />
+              </div>
+              <p className="text-text-muted text-xs font-body leading-relaxed text-center mt-8">
+                Secure checkout by Shopify. Streaming only, so videos play on
+                this site and are not downloadable.
               </p>
-              <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                What&apos;s Inside
-              </h2>
             </div>
-            {product?.descriptionHtml ? (
-              <div
-                className="animate-on-scroll shopify-prose text-text-secondary text-base leading-relaxed font-body mb-10 max-w-3xl mx-auto"
-                dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
-              />
-            ) : null}
-            <div className="animate-on-scroll">
-              <LockedLessonList videos={libraryVideos} />
-            </div>
-          </div>
-        </section>
+          </section>
+        ) : null}
 
         <RedDivider />
 
@@ -226,7 +280,7 @@ export default async function VideoLibraryPage() {
               <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-6">
                 Start Training Today
               </h2>
-              <BuyBox product={product} />
+              <PrimaryCta bundle={bundle} count={count} anyOnSale={anyOnSale} />
               <SignInLink className="mt-6" />
             </div>
             <p className="text-text-muted text-xs font-body mt-6 text-center">
