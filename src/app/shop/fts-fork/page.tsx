@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RedDivider from "@/components/RedDivider";
@@ -255,12 +256,12 @@ export default function FtsForkPage() {
                   order and payment are handled on Shopify&apos;s secure checkout.
                 </p>
                 <ProductDisclaimer variant="full" className="mb-6 text-left w-full" />
-                <a
+                <Link
                   href="/shop/products/the-fork-by-franckthesolution"
                   className="inline-flex items-center justify-center px-8 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue-dark hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
                 >
                   View &amp; Buy the Fork &rarr;
-                </a>
+                </Link>
               </div>
             </div>
           </div>

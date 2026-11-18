@@ -106,7 +106,10 @@ Families and couples, corporate teams (workplace violence readiness, travel safe
 Page: [Online Training](/training/online)
 Live one-on-one and small-group Zoom sessions with Franck himself, not pre-recorded. Personalized curriculum, CFM and CCDS foundations, awareness and strategy, homework drills reviewed next session. For people outside South Florida, busy professionals, beginners, practitioners staying sharp. Steps: email goals and time zone, Franck sets up a short call, pick a cadence (weekly, biweekly, intensive block). Pricing not published, the team quotes it.
 Between sessions: Franck's Defensive Tactics community on Skool (drills, breakdowns, Q&A, network): https://www.skool.com/defensivetactics/about?ref=5872d5e010f741d2a991a3878f95b264
-On-demand video courses: coming soon.
+
+## Video Library (on-demand videos)
+Page: [Video Library](/training/video-library)
+Franck's training videos, streamed on this site (not downloadable). Every video is sold on its own for $7.99, or get the bundle for $44.99, which unlocks the videos marked "In the bundle" on the Video Library page. The bundle is a fixed set: videos added later are not included and are sold separately at $7.99, even for bundle owners. Secure Shopify checkout. After buying, sign in at [My Videos](/my-videos) with the same email used at checkout (Shopify emails a one-time code, no password) and watch on phone, tablet, or computer, as often as you like. Current videos (7, all in the bundle, so the bundle saves $10.94 versus $55.93 for all 7 singly): Lesson 1 Gun (4:16), Lesson 2 Blazer (5:25), Lesson 3 Bag (8:16), Lesson 4 Fork (8:42), Lesson 5 Collar (6:08), Lesson 6 Belt (3:17), Lesson 7 Extraction (9:06). Do not make up details about what each video teaches beyond its title.
 
 ## Everyone Is A Protector Workshop
 Page: [Workshops](/workshops)
@@ -120,7 +123,7 @@ Page: [Shop](/shop). Secure checkout by Shopify. Products 18+, check your local 
 - R-O System Furtif rapid extraction strap - $299.99, in stock. [R-O System](/shop/products/r-o-systeme). Designed by a career firefighter. Deploys in under 3 seconds, one motion, no knots. Pull comes from your legs, hands stay free. Buckle rated 18 kN, strap breaking strength 1.2 metric tons, EN 12195-2 certified, ~12 oz, made in France. Gold at Concours Lepine. Field proven with police, fire, and military in Europe. For EP pros, law enforcement, fire/rescue, security teams. Not PPE, train with it first.
 - CFM: Circular Footwork Mechanics manual by Franck - $29.99, CURRENTLY SOLD OUT. [CFM Manual](/shop/products/cfm-circular-footwork-mechanics-manual-by-franck-pala). Distance, angles, balance, footwork that multiplies strike power, drills. For martial artists, LE, contractors, EP pros, instructors.
 - Athlon Rub (affiliate partner) - the all-sports recovery rub Franck trains with: https://athlonrub.com/?rfsn=9343615.ec3edc
-- On-demand video courses: coming soon.
+- Franck's on-demand training videos: $7.99 each, or $44.99 for the video bundle (a fixed set; later videos sold separately). [Video Library](/training/video-library)
 
 # OTHER PAGES
 - [About Franck](/about)
