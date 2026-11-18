@@ -1,4 +1,5 @@
 import BuyButton from "@/components/shop/BuyButton";
+import PreviewPlayer from "@/components/video-library/PreviewPlayer";
 import { routes } from "@/lib/links";
 import { formatMoney, type Product } from "@/lib/shopify";
 import { salesAnchor, videoNumber, type LibraryVideo } from "@/lib/video-library";
@@ -55,50 +56,65 @@ export function VideoOfferList({
           <li
             key={video.slug}
             id={salesAnchor(video)}
-            className="scroll-mt-36 bg-bg-card border border-white/10 rounded-xl p-5 sm:p-6"
+            className="scroll-mt-36 bg-bg-card border border-white/10 rounded-xl p-4 sm:p-5"
           >
-            <div className="flex items-start gap-4">
-              <LessonNumber n={videoNumber(video)} />
-              <div className="min-w-0 flex-1">
-                <div className="flex items-start justify-between gap-3">
-                  <h3 className="font-heading text-lg sm:text-xl font-bold uppercase text-white leading-tight">
-                    {video.title}
-                  </h3>
-                  <span className="flex items-center gap-2 flex-shrink-0 text-text-muted pt-1">
-                    {video.duration ? (
-                      <span className="text-xs font-body tabular-nums">{video.duration}</span>
-                    ) : null}
-                    <LockIcon />
-                  </span>
-                </div>
-                {video.description ? (
-                  <p className="text-text-secondary text-sm font-body mt-2 leading-relaxed">
-                    {video.description}
-                  </p>
-                ) : null}
-                {bundleOnSale && video.inBundle ? (
-                  <p className="inline-block mt-3 px-2.5 py-1 rounded border border-accent-blue/40 bg-accent-blue/10 text-accent-blue-light text-[11px] uppercase tracking-[1.5px] font-bold font-body">
-                    In the bundle
-                  </p>
-                ) : null}
-                <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5 mt-5">
-                  {variant && onSale ? (
-                    <>
-                      <p className="font-heading text-3xl font-bold text-white leading-none">
-                        {formatMoney(variant.price).replace(/\.00$/, "")}
-                      </p>
-                      <BuyButton
-                        variantId={variant.id}
-                        available
-                        label="Buy This Video"
-                        showQuantity={false}
-                      />
-                    </>
-                  ) : (
-                    <p className="font-heading text-xl font-bold uppercase text-text-muted">
-                      Coming Soon
+            <div
+              className={
+                video.preview
+                  ? "grid sm:grid-cols-[240px_minmax(0,1fr)] gap-5 items-start"
+                  : undefined
+              }
+            >
+              {video.preview ? (
+                <PreviewPlayer
+                  src={video.preview.src}
+                  poster={video.preview.poster}
+                  title={video.title}
+                />
+              ) : null}
+              <div className="flex items-start gap-4">
+                <LessonNumber n={videoNumber(video)} />
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-start justify-between gap-3">
+                    <h3 className="font-heading text-lg sm:text-xl font-bold uppercase text-white leading-tight">
+                      {video.title}
+                    </h3>
+                    <span className="flex items-center gap-2 flex-shrink-0 text-text-muted pt-1">
+                      {video.duration ? (
+                        <span className="text-xs font-body tabular-nums">{video.duration}</span>
+                      ) : null}
+                      <LockIcon />
+                    </span>
+                  </div>
+                  {video.description ? (
+                    <p className="text-text-secondary text-sm font-body mt-2 leading-relaxed">
+                      {video.description}
                     </p>
-                  )}
+                  ) : null}
+                  {bundleOnSale && video.inBundle ? (
+                    <p className="inline-block mt-3 px-2.5 py-1 rounded border border-accent-blue/40 bg-accent-blue/10 text-accent-blue-light text-[11px] uppercase tracking-[1.5px] font-bold font-body">
+                      In the bundle
+                    </p>
+                  ) : null}
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5 mt-5">
+                    {variant && onSale ? (
+                      <>
+                        <p className="font-heading text-3xl font-bold text-white leading-none">
+                          {formatMoney(variant.price).replace(/\.00$/, "")}
+                        </p>
+                        <BuyButton
+                          variantId={variant.id}
+                          available
+                          label="Buy This Video"
+                          showQuantity={false}
+                        />
+                      </>
+                    ) : (
+                      <p className="font-heading text-xl font-bold uppercase text-text-muted">
+                        Coming Soon
+                      </p>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>

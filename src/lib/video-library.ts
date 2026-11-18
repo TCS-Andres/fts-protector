@@ -43,10 +43,17 @@ export type LibraryVideo = {
   productHandle: string;
   /** Part of the fixed bundle. Videos added after launch stay false. */
   inBundle: boolean;
+  /**
+   * Free public preview shown on the sales page: a short clip in
+   * public/videos/previews and a poster frame in public/images/previews.
+   * Leave it out to show no preview.
+   */
+  preview?: { src: string; poster: string };
 };
 
 // The launch set (2026-11-18). All 7 are in the bundle. Titles come from the
 // Bunny file names; add a one-line description to any entry to show it.
+// Previews are the first 30 seconds of each video (720p, cut with ffmpeg).
 export const libraryVideos: LibraryVideo[] = [
   {
     slug: "lesson-1",
@@ -56,6 +63,7 @@ export const libraryVideos: LibraryVideo[] = [
     bunnyVideoId: "b2b87b9f-da3f-435e-a4a8-4c33b0fddab6",
     productHandle: "franck-video-library-lesson-1",
     inBundle: true,
+    preview: { src: "/videos/previews/lesson-1.mp4", poster: "/images/previews/lesson-1.jpg" },
   },
   {
     slug: "lesson-2",
@@ -65,6 +73,7 @@ export const libraryVideos: LibraryVideo[] = [
     bunnyVideoId: "83ec1cc1-cfc2-48b5-8cad-8bb05202a970",
     productHandle: "video-library-lesson-2-blazer",
     inBundle: true,
+    preview: { src: "/videos/previews/lesson-2.mp4", poster: "/images/previews/lesson-2.jpg" },
   },
   {
     slug: "lesson-3",
@@ -74,6 +83,7 @@ export const libraryVideos: LibraryVideo[] = [
     bunnyVideoId: "ef66b13f-a7b0-47a6-be5e-07e339c6b4e7",
     productHandle: "video-library-lesson-3-bag",
     inBundle: true,
+    preview: { src: "/videos/previews/lesson-3.mp4", poster: "/images/previews/lesson-3.jpg" },
   },
   {
     slug: "lesson-4",
@@ -83,6 +93,7 @@ export const libraryVideos: LibraryVideo[] = [
     bunnyVideoId: "57a54e80-f8bc-4b6b-815e-95e0dc17a993",
     productHandle: "video-library-lesson-4-fork",
     inBundle: true,
+    preview: { src: "/videos/previews/lesson-4.mp4", poster: "/images/previews/lesson-4.jpg" },
   },
   {
     slug: "lesson-5",
@@ -92,6 +103,7 @@ export const libraryVideos: LibraryVideo[] = [
     bunnyVideoId: "53f70b01-2142-42e4-bb3c-46e53e28ba56",
     productHandle: "video-library-lesson-5-collar",
     inBundle: true,
+    preview: { src: "/videos/previews/lesson-5.mp4", poster: "/images/previews/lesson-5.jpg" },
   },
   {
     slug: "lesson-6",
@@ -101,6 +113,7 @@ export const libraryVideos: LibraryVideo[] = [
     bunnyVideoId: "df8b73d0-68e9-407c-8ba1-db1c9c220388",
     productHandle: "video-library-lesson-6-belt",
     inBundle: true,
+    preview: { src: "/videos/previews/lesson-6.mp4", poster: "/images/previews/lesson-6.jpg" },
   },
   {
     slug: "lesson-7",
@@ -110,6 +123,7 @@ export const libraryVideos: LibraryVideo[] = [
     bunnyVideoId: "00341f07-c837-4f8c-bf7d-f8a884bf8bd7",
     productHandle: "video-library-lesson-7-extraction",
     inBundle: true,
+    preview: { src: "/videos/previews/lesson-7.mp4", poster: "/images/previews/lesson-7.jpg" },
   },
 ];
 
