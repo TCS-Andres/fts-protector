@@ -91,6 +91,14 @@ export function VideoOfferList({
                       {video.description}
                     </p>
                   ) : null}
+                  {video.gear ? (
+                    <a
+                      href={video.gear.href}
+                      className="inline-block mt-2 text-accent-blue-light text-xs uppercase tracking-[1.5px] font-bold font-body hover:text-white transition-colors"
+                    >
+                      {video.gear.label} &rarr;
+                    </a>
+                  ) : null}
                   {bundleOnSale && video.inBundle ? (
                     <p className="inline-block mt-3 px-2.5 py-1 rounded border border-accent-blue/40 bg-accent-blue/10 text-accent-blue-light text-[11px] uppercase tracking-[1.5px] font-bold font-body">
                       In the bundle

@@ -49,6 +49,8 @@ export type LibraryVideo = {
    * Leave it out to show no preview.
    */
   preview?: { src: string; poster: string };
+  /** Optional link to shop gear used in the video. */
+  gear?: { label: string; href: string };
 };
 
 // The launch set (2026-11-18). All 7 are in the bundle. Titles and
@@ -118,6 +120,10 @@ export const libraryVideos: LibraryVideo[] = [
     duration: "3:17",
     bunnyVideoId: "df8b73d0-68e9-407c-8ba1-db1c9c220388",
     productHandle: "video-library-lesson-6-belt",
+    gear: {
+      label: "Shop the R-O System strap from this video",
+      href: "/shop/products/r-o-systeme",
+    },
     inBundle: true,
     preview: { src: "/videos/previews/lesson-6.mp4", poster: "/images/previews/lesson-6.jpg" },
   },
