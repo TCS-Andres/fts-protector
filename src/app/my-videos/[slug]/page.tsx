@@ -127,6 +127,19 @@ export default async function WatchPage({ params }: { params: Promise<Params> })
               {video.description}
             </p>
           ) : null}
+          {video.gear ? (
+            <div className="mt-6 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5 rounded-lg border border-accent-blue/30 bg-accent-blue/5 px-5 py-4 max-w-3xl">
+              <p className="text-accent-blue-light text-xs uppercase tracking-[3px] font-bold font-body">
+                Gear in this video
+              </p>
+              <a
+                href={video.gear.href}
+                className="text-white text-sm font-bold font-body hover:text-accent-blue-light transition-colors"
+              >
+                {video.gear.label} &rarr;
+              </a>
+            </div>
+          ) : null}
 
           {/* Prev / next */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-8">
