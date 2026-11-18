@@ -109,7 +109,7 @@ Between sessions: Franck's Defensive Tactics community on Skool (drills, breakdo
 
 ## Video Library (on-demand videos)
 Page: [Video Library](/training/video-library)
-Franck's training videos, streamed on this site (not downloadable). Every video is sold on its own for $7.99, or get the bundle for $44.99, which unlocks the videos marked "In the bundle" on the Video Library page. The bundle is a fixed set: videos added later are not included and are sold separately at $7.99, even for bundle owners. Secure Shopify checkout. After buying, sign in at [My Videos](/my-videos) with the same email used at checkout (Shopify emails a one-time code, no password) and watch on phone, tablet, or computer, as often as you like. The video titles are listed on the Video Library page; do not make up titles or topics.
+Franck's training videos, streamed on this site (not downloadable). Every video is sold on its own for $7.99, or get the bundle for $44.99, which unlocks the videos marked "In the bundle" on the Video Library page. The bundle is a fixed set: videos added later are not included and are sold separately at $7.99, even for bundle owners. Secure Shopify checkout. After buying, sign in at [My Videos](/my-videos) with the same email used at checkout (Shopify emails a one-time code, no password) and watch on phone, tablet, or computer, as often as you like. Current videos (7, all in the bundle, so the bundle saves $10.94 versus $55.93 for all 7 singly): Lesson 1 Gun (4:16), Lesson 2 Blazer (5:25), Lesson 3 Bag (8:16), Lesson 4 Fork (8:42), Lesson 5 Collar (6:08), Lesson 6 Belt (3:17), Lesson 7 Extraction (9:06). Do not make up details about what each video teaches beyond its title.
 
 ## Everyone Is A Protector Workshop
 Page: [Workshops](/workshops)

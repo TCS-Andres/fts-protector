@@ -19,9 +19,10 @@
 //   1. Upload it to Bunny Stream (library 812911) and copy its Video ID.
 //   2. In Shopify, create a product like the training courses: product type
 //      "Training", status Unlisted, not a physical product, inventory not
-//      tracked, published to the Headless channel. Give it the handle
-//      "franck-video-library-<slug>" (the Shopify storefront redirect sends
-//      any handle containing "video-library" to the sales page).
+//      tracked, published to the Headless channel. Title it "Video Library Lesson N: Topic"
+//      so its handle contains "video-library" (the Shopify storefront
+//      redirect sends any such handle to the sales page). Easiest: duplicate
+//      an existing lesson product as Unlisted and rename it.
 //   3. Add an entry below with the same slug, handle, and Bunny ID, and
 //      inBundle: false unless it belongs to the original bundle.
 
@@ -44,16 +45,70 @@ export type LibraryVideo = {
   inBundle: boolean;
 };
 
-// TODO: real titles, descriptions and lengths, in the order they should be
-// watched. Lesson 1 is the test upload used to check playback end to end.
+// The launch set (2026-11-18). All 7 are in the bundle. Titles come from the
+// Bunny file names; add a one-line description to any entry to show it.
 export const libraryVideos: LibraryVideo[] = [
   {
     slug: "lesson-1",
-    title: "Video 1 (title coming soon)",
-    description: "The real title and summary go here.",
-    duration: "",
+    title: "Lesson 1: Gun",
+    description: "",
+    duration: "4:16",
     bunnyVideoId: "b2b87b9f-da3f-435e-a4a8-4c33b0fddab6",
     productHandle: "franck-video-library-lesson-1",
+    inBundle: true,
+  },
+  {
+    slug: "lesson-2",
+    title: "Lesson 2: Blazer",
+    description: "",
+    duration: "5:25",
+    bunnyVideoId: "83ec1cc1-cfc2-48b5-8cad-8bb05202a970",
+    productHandle: "video-library-lesson-2-blazer",
+    inBundle: true,
+  },
+  {
+    slug: "lesson-3",
+    title: "Lesson 3: Bag",
+    description: "",
+    duration: "8:16",
+    bunnyVideoId: "ef66b13f-a7b0-47a6-be5e-07e339c6b4e7",
+    productHandle: "video-library-lesson-3-bag",
+    inBundle: true,
+  },
+  {
+    slug: "lesson-4",
+    title: "Lesson 4: Fork",
+    description: "",
+    duration: "8:42",
+    bunnyVideoId: "57a54e80-f8bc-4b6b-815e-95e0dc17a993",
+    productHandle: "video-library-lesson-4-fork",
+    inBundle: true,
+  },
+  {
+    slug: "lesson-5",
+    title: "Lesson 5: Collar",
+    description: "",
+    duration: "6:08",
+    bunnyVideoId: "53f70b01-2142-42e4-bb3c-46e53e28ba56",
+    productHandle: "video-library-lesson-5-collar",
+    inBundle: true,
+  },
+  {
+    slug: "lesson-6",
+    title: "Lesson 6: Belt",
+    description: "",
+    duration: "3:17",
+    bunnyVideoId: "df8b73d0-68e9-407c-8ba1-db1c9c220388",
+    productHandle: "video-library-lesson-6-belt",
+    inBundle: true,
+  },
+  {
+    slug: "lesson-7",
+    title: "Lesson 7: Extraction",
+    description: "",
+    duration: "9:06",
+    bunnyVideoId: "00341f07-c837-4f8c-bf7d-f8a884bf8bd7",
+    productHandle: "video-library-lesson-7-extraction",
     inBundle: true,
   },
 ];
