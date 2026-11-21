@@ -68,7 +68,7 @@ export default function BioSection() {
               Who Is Franck
             </p>
             <h2 className="font-heading text-3xl lg:text-5xl font-bold uppercase mb-6 text-white leading-[1.05]">
-              Raising the Standard of Tactical Defense
+              Raising the Standard of Defensive Tactics
             </h2>
 
             <div className="space-y-5 text-text-secondary text-base lg:text-lg leading-relaxed font-body">

@@ -70,11 +70,10 @@ const videoCoursesCard: ShopCard = {
   key: "courses",
   title: "On-Demand Training",
   image: "/images/11_school_safety_presentation.png",
-  href: routes.training,
-  badge: "Video Courses",
-  cta: "Coming Soon",
-  soon: true,
-  body: "Structured video courses covering situational awareness, defensive tactics, and improvised weapons - the full system, step by step, on your schedule.",
+  href: routes.videoLibrary,
+  badge: "Video Library",
+  cta: "Watch the Videos",
+  body: "Franck's training videos: concealed-carry draws, improvised weapons, extraction, and fighting through fear. Buy one or the full set, then stream and rewatch on any device.",
 };
 
 // Fallback cards used only when the Shopify store isn't connected yet.

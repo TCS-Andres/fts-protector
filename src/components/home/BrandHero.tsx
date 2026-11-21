@@ -49,16 +49,11 @@ export default function BrandHero() {
                 &rarr;
               </span>
             </a>
-            <p className="hero-animate hero-animate-1 text-accent-blue-light text-xs sm:text-sm uppercase tracking-[5px] font-bold mb-5 font-body">
-              Franck Pala - FrancktheSolution
-            </p>
-
-            <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl xl:text-8xl font-bold uppercase leading-[0.92] text-white mb-6">
-              Protect.
-              <br />
-              Train.
-              <br />
-              <span className="text-accent-blue-light">Be the Solution.</span>
+            <h1 className="hero-animate hero-animate-2 font-heading text-[clamp(28px,calc((100vw_-_56px)_/_10),72px)] lg:text-[clamp(38px,calc((100vw_-_630px)_/_10),66px)] font-bold uppercase leading-[0.95] text-white mb-6">
+              <span className="block">Executive Protection</span>
+              <span className="block text-accent-blue-light">
+                Services &amp; Training
+              </span>
             </h1>
 
             <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-9 max-w-xl mx-auto lg:mx-0 font-body">
@@ -94,13 +89,12 @@ export default function BrandHero() {
                 alt="Franck Pala - executive protection specialist and instructor"
                 className="w-full h-auto object-contain"
               />
-              <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/70 to-transparent pointer-events-none" />
-              <div className="absolute bottom-4 left-5">
-                <p className="font-heading text-xl font-bold uppercase text-white leading-none">
-                  Franck Pala
-                </p>
-                <p className="text-accent-blue-light text-[11px] uppercase tracking-[3px] font-body mt-1">
-                  TactOps - The Solution
+              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/85 via-black/40 to-transparent pointer-events-none" />
+              <div className="absolute bottom-4 left-5 right-5">
+                <p className="font-heading text-2xl sm:text-3xl font-bold uppercase text-white leading-[1.05]">
+                  Protect. Train.
+                  <br />
+                  <span className="text-accent-blue-light">Be the Solution.</span>
                 </p>
               </div>
             </div>

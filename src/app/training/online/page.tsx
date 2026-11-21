@@ -208,8 +208,15 @@ export default function OnlineTrainingPage() {
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed font-body mb-8">
               Live Zoom sessions are the core - and between them you can drill
-              with Franck&apos;s Defensive Tactics community on Skool, with
-              structured on-demand video courses launching soon.
+              with Franck&apos;s Defensive Tactics community on Skool, or
+              rewatch any technique in the{" "}
+              <a
+                href={routes.videoLibrary}
+                className="text-accent-blue-light underline underline-offset-4 hover:text-white transition-colors"
+              >
+                on-demand video library
+              </a>
+              .
             </p>
             <a
               href={links.skool}
