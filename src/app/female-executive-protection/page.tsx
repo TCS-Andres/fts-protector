@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RedDivider from "@/components/RedDivider";
+import LocationLine from "@/components/LocationLine";
 import ScrollAnimator from "@/components/ScrollAnimator";
 import EPImmersionProgram from "@/components/training/EPImmersionProgram";
 import {
@@ -185,6 +186,10 @@ export default function FemaleExecutiveProtectionPage() {
                   <br />
                   That <span className="text-accent-blue-light">Blends In.</span>
                 </h1>
+                <LocationLine
+                  highlight="Available worldwide"
+                  className="hero-animate hero-animate-2 justify-center lg:justify-start mb-6"
+                />
                 <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-9 max-w-xl mx-auto lg:mx-0 font-body">
                   Certified female executive protection specialists, trained by
                   Franck Pala to the same standard as every agent on a detail.

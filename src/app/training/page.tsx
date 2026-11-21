@@ -8,6 +8,8 @@ import CertificationSection from "@/components/training/CertificationSection";
 import CivilianProtectorCourse from "@/components/training/CivilianProtectorCourse";
 import RatesSection from "@/components/training/RatesSection";
 import EPImmersionProgram from "@/components/training/EPImmersionProgram";
+import WhereWeTrain from "@/components/training/WhereWeTrain";
+import LocationLine from "@/components/LocationLine";
 import { links, routes } from "@/lib/links";
 
 // The course price and availability come from Shopify.
@@ -16,7 +18,7 @@ export const revalidate = 60;
 export const metadata: Metadata = {
   title: "Training & Online Courses | FrancktheSolution",
   description:
-    "Train with Franck Pala: the 5-day Civilian To Protector certification course, online training, one-on-one private training, group training, and Executive Protection Specialist (EPS) training, and the 1-month full immersion Executive Protection Agent Operator certification - plus workshops and the 7-day Protectors Camp.",
+    "Train with Franck Pala, based in Miami, Florida: the 5-day Civilian To Protector certification course, online training, one-on-one private training, group training, and Executive Protection Specialist (EPS) training, and the 1-month full immersion Executive Protection Agent Operator certification - plus workshops and the 2-day, 7-day, and 1-month camps, open year-round. Have a group anywhere in the U.S.? Franck travels to you.",
   alternates: { canonical: "/training" },
 };
 
@@ -184,6 +186,12 @@ export default function TrainingPage() {
                 track - every path to training under a working executive
                 protection specialist, in one place.
               </p>
+              <a href="#where-we-train" className="hero-animate hero-animate-3 inline-block mt-7 hover:opacity-80 transition-opacity">
+                <LocationLine
+                  lead="Based in South Florida"
+                  highlight="We travel to groups across the U.S."
+                />
+              </a>
             </div>
           </div>
         </section>
@@ -200,6 +208,8 @@ export default function TrainingPage() {
         <CurriculumSection />
 
         <RatesSection />
+
+        <WhereWeTrain />
 
         <RedDivider />
 

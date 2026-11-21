@@ -96,10 +96,29 @@ export default function Footer() {
                   FranckTheSolution
                 </span>
               </div>
-              <p className="text-text-secondary text-sm leading-relaxed mb-6 font-body max-w-xs">
+              <p className="text-text-secondary text-sm leading-relaxed mb-4 font-body max-w-xs">
                 Elite executive protection, tactical training, and the tools to
                 protect the people who count on you.
               </p>
+              <div className="mb-6 max-w-xs font-body text-sm leading-relaxed">
+                <p className="flex items-center gap-2 text-white font-bold mb-1">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="shrink-0 text-accent-blue-light">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" fill="currentColor" />
+                  </svg>
+                  Based in Miami, Florida
+                </p>
+                <p className="text-text-secondary">
+                  Protection services worldwide. Training in South Florida,
+                  and we{" "}
+                  <a
+                    href={`${routes.training}#where-we-train`}
+                    className="text-accent-blue-light hover:text-white transition-colors underline underline-offset-2"
+                  >
+                    travel to groups
+                  </a>{" "}
+                  across the U.S.
+                </p>
+              </div>
               <p className="font-heading text-sm uppercase tracking-[1px] text-accent-blue-light italic">
                 &ldquo;Adapting to chaos rather than resisting it.&rdquo;
               </p>

@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollAnimator from "@/components/ScrollAnimator";
 import RedDivider from "@/components/RedDivider";
+import LocationLine from "@/components/LocationLine";
 
 const PAGE_TITLE = "Investigative Services | FrancktheSolution";
 const PAGE_DESCRIPTION =
@@ -146,6 +147,8 @@ export default function InvestigationsPage() {
                 Licensed Private Investigations.
                 <span className="text-accent-blue-light"> Real Answers.</span>
               </p>
+
+              <LocationLine highlight="" className="hero-animate hero-animate-2 -mt-2 mb-6" />
 
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-8 font-body">
                 When the truth matters, guessing isn&apos;t an option. Led by an

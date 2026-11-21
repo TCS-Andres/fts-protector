@@ -12,7 +12,8 @@ export const KNOWLEDGE = `
 - Inventor with 4 patents: TheSelfDefender (3 patents) and the FranckTheSolution Fork (1 patent).
 - Teaches law-enforcement units, federal contractors, private security teams, high-net-worth executives, and everyday civilians. Has trained people aged 16 to 65.
 - Licensed and insured: Florida Class A and B licenses under TactOps USA LLC (License #A1900001, B1900003). Commercial liability and professional indemnity coverage on every contract.
-- Based in Miami, South Florida. Works across the continents.
+- Based in Miami, Florida. Executive protection (and the female EPS team) is available worldwide, across the continents; the home base is Miami.
+- Where training happens: in South Florida (Miami), year-round. The 2-Day Weekend Camp, 7-Day Camp, and 1-Month EP Immersion are open all year, subject to availability. Groups anywhere in the U.S.: Franck travels to them. Workshops outside Miami run in select cities only when a large enough group can be put together, so they are a request, not a schedule: send it through the "Request Training Near You" form on [Training](/training#where-we-train) or [Contact](/contact), with city, group size, and dates.
 - Signature quote: "Adapting to chaos rather than resisting it."
 - Testimonials: Phil Daru (5x Coach of the Year, 7x world title wins): "Franck is a true master of his craft... If you're looking to become elite, do whatever he tells you." Lex Borrero (Billboard Power Player, Grammy-winning producer): Franck's action/reaction teaching is unparalleled. Jake "Brutal" Bostwick (bare-knuckle champ): "Stay brutal."
 - Instagram ~20K followers: @FranckTheSolution. TikTok: @franckthesolution.

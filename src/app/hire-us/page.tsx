@@ -6,11 +6,12 @@ import RedDivider from "@/components/RedDivider";
 import EPStats from "@/components/hire-us/EPStats";
 import EPImageMarquee from "@/components/hire-us/EPImageMarquee";
 import ContactForm from "@/components/ContactForm";
+import LocationLine from "@/components/LocationLine";
 import { routes } from "@/lib/links";
 
 const PAGE_TITLE = "Executive Protection & Armed Driving | EProtection VIP";
 const PAGE_DESCRIPTION =
-  "Discreet, professional protection for executives, athletes, entertainers, and high-net-worth families. Licensed. Insured. Tactical medic trained. Led by Franck Pala, 25+ years of real-world protection.";
+  "Discreet, professional protection for executives, athletes, entertainers, and high-net-worth families. Based in Miami, Florida, available worldwide. Licensed. Insured. Tactical medic trained. Led by Franck Pala, 25+ years of real-world protection.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -165,10 +166,15 @@ export default function HireUsPage() {
                 Where You Go.
               </h1>
 
-              <p className="hero-animate hero-animate-2 text-white/95 text-base sm:text-lg lg:text-xl uppercase tracking-[3px] font-bold mb-6 font-body">
+              <p className="hero-animate hero-animate-2 text-white/95 text-base sm:text-lg lg:text-xl uppercase tracking-[3px] font-bold mb-4 font-body">
                 Elite Executive Protection.
                 <span className="text-accent-blue-light"> Across the Continents.</span>
               </p>
+
+              <LocationLine
+                highlight="Available worldwide"
+                className="hero-animate hero-animate-2 mb-6"
+              />
 
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-8 font-body">
                 Executive protection and armed secure transport for the people

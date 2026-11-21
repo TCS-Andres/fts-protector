@@ -10,7 +10,7 @@ const CONTACT_EMAIL = "info@franckthesolution.com";
 export const metadata: Metadata = {
   title: "Contact | FrancktheSolution",
   description:
-    "Get in touch with Franck Pala and the FrancktheSolution team - executive protection, investigations, training, and product inquiries.",
+    "Get in touch with Franck Pala and the FrancktheSolution team, based in Miami, Florida - executive protection, investigations, training, and product inquiries.",
   alternates: { canonical: "/contact" },
 };
 
@@ -24,6 +24,7 @@ const services = [
   "1-Month EP Immersion ($8,999)",
   "Online Training",
   "Workshop",
+  "Training in my city / group travel",
   "The FranckTheSolution Fork",
   "TheSelfDefender",
   "Media / Other",
@@ -114,6 +115,26 @@ export default function ContactPage() {
                       </span>
                     </span>
                   </a>
+
+                  <div className="flex items-center gap-4 rounded-xl border border-accent-blue/25 bg-bg-steel-card/60 px-5 py-4">
+                    <span className="flex-shrink-0 w-10 h-10 rounded-lg bg-accent-blue/15 border border-accent-blue/40 flex items-center justify-center text-accent-blue-light">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" fill="currentColor" />
+                      </svg>
+                    </span>
+                    <span>
+                      <span className="block text-text-muted text-xs uppercase tracking-[2px] font-body">
+                        Based In
+                      </span>
+                      <span className="block text-white text-sm font-body">
+                        Miami, Florida
+                      </span>
+                      <span className="block text-text-secondary text-xs font-body mt-1">
+                        Protection services worldwide. Training in South
+                        Florida, and we travel to groups across the U.S.
+                      </span>
+                    </span>
+                  </div>
                 </div>
 
                 <p className="text-text-secondary text-sm leading-relaxed font-body mt-8">

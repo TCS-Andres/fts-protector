@@ -1,4 +1,5 @@
 import { routes } from "@/lib/links";
+import LocationLine from "@/components/LocationLine";
 
 const tickerItems = [
   "Elite Executive Protection",
@@ -49,12 +50,20 @@ export default function BrandHero() {
                 &rarr;
               </span>
             </a>
-            <h1 className="hero-animate hero-animate-2 font-heading text-[clamp(28px,calc((100vw_-_56px)_/_10),72px)] lg:text-[clamp(38px,calc((100vw_-_630px)_/_10),66px)] font-bold uppercase leading-[0.95] text-white mb-6">
-              <span className="block">Executive Protection</span>
-              <span className="block text-accent-blue-light">
-                Services &amp; Training
+            {/* Phones and small laptops (narrow text column): 3 lines -
+                Elite Executive / Protection / Services & Training.
+                Tablets and xl desktops: exactly 2 lines, sized to the column.
+                Widest lines: "Elite Executive Protection" 11.96em,
+                "Services & Training" 8.88em. */}
+            <h1 className="hero-animate hero-animate-2 font-heading text-[clamp(28px,calc((100vw_-_56px)_/_9.6),44px)] sm:text-[clamp(28px,calc((100vw_-_56px)_/_12.8),72px)] lg:text-[clamp(36px,calc((100vw_-_630px)_/_9.6),56px)] xl:text-[clamp(36px,calc((100vw_-_630px)_/_12.8),54px)] font-bold uppercase leading-[0.95] text-white mb-5">
+              <span className="block text-accent-red">
+                Elite Executive
+                <br className="sm:hidden lg:inline xl:hidden" /> Protection
               </span>
+              <span className="block">Services &amp; Training</span>
             </h1>
+
+            <LocationLine className="hero-animate hero-animate-2 justify-center lg:justify-start mb-7" />
 
             <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-9 max-w-xl mx-auto lg:mx-0 font-body">
               No theory. No fluff. Only tactics that work when lives depend on

@@ -6,6 +6,7 @@ import ScrollAnimator from "@/components/ScrollAnimator";
 import CertificationSection from "@/components/training/CertificationSection";
 import CivilianProtectorCourse from "@/components/training/CivilianProtectorCourse";
 import RatesSection from "@/components/training/RatesSection";
+import WhereWeTrain from "@/components/training/WhereWeTrain";
 import { routes } from "@/lib/links";
 
 const CONTACT_EMAIL = "info@franckthesolution.com";
@@ -239,6 +240,8 @@ export default function GroupTrainingPage() {
         <RatesSection showPackages={false}
           intro="CCW sessions and the camps run private or semi-private, so a small group can train together. Larger groups are quoted to your headcount and goals."
         />
+
+        <WhereWeTrain defaultRequest="Group training - travel to us" />
 
         {/* CTA */}
         <section className="relative py-16 sm:py-20 overflow-hidden">

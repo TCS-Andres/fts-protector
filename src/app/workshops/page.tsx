@@ -12,6 +12,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import BootCampSection from "@/components/BootCampSection";
 import FAQSection from "@/components/FAQSection";
 import StayTunedSection from "@/components/StayTunedSection";
+import WhereWeTrain from "@/components/training/WhereWeTrain";
 import OnlineTrainingSection from "@/components/OnlineTrainingSection";
 import Footer from "@/components/Footer";
 import ScrollAnimator from "@/components/ScrollAnimator";
@@ -47,6 +48,7 @@ export default function WorkshopsPage() {
         <FAQSection />
         <RedDivider />
         <StayTunedSection />
+        <WhereWeTrain defaultRequest="Bring a workshop to my city" />
         <BootCampSection />
         <OnlineTrainingSection />
       </main>
