@@ -33,7 +33,7 @@ export default function CurriculumSection() {
             The Curriculum
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-5 leading-[1.05]">
-            Everything You Train
+            Everything <span className="text-accent-red">You Train</span>
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
             The complete TACT OPS syllabus. Every program is built from these

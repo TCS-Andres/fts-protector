@@ -49,7 +49,7 @@ export default function VlogPage() {
               <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
                 From the
                 <br />
-                <span className="text-accent-blue-light">Field.</span>
+                <span className="text-accent-red">Field.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-8 max-w-2xl font-body">
                 Breakdowns, training clips, and behind-the-scenes from a
@@ -87,7 +87,7 @@ export default function VlogPage() {
                 Latest Clips
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                Watch &amp; Learn
+                Watch &amp; <span className="text-accent-red">Learn</span>
               </h2>
             </div>
 

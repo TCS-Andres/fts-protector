@@ -98,7 +98,7 @@ export default function PrivateTrainingPage() {
               <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
                 Train Directly
                 <br />
-                <span className="text-accent-blue-light">With Franck.</span>
+                <span className="text-accent-red">With Franck.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-9 max-w-2xl font-body">
                 A fully personalized curriculum built around your body, your
@@ -135,7 +135,7 @@ export default function PrivateTrainingPage() {
                   Why One-on-One
                 </p>
                 <h2 className="font-heading text-3xl lg:text-5xl font-bold uppercase mb-6 text-white leading-[1.05]">
-                  100% of the Attention, 100% of the Time
+                  100% of the Attention, <span className="text-accent-red">100% of the Time</span>
                 </h2>
                 <div className="space-y-5 text-text-secondary text-base lg:text-lg leading-relaxed font-body">
                   <p>
@@ -168,7 +168,7 @@ export default function PrivateTrainingPage() {
                 Built Around You
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                What Your Program Covers
+                What Your Program <span className="text-accent-red">Covers</span>
               </h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
@@ -200,7 +200,7 @@ export default function PrivateTrainingPage() {
                   Who It&apos;s For
                 </p>
                 <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-8 leading-tight">
-                  Private Training Fits You If…
+                  Private Training <span className="text-accent-red">Fits You If…</span>
                 </h2>
                 <ul className="space-y-4">
                   {audience.map((a) => (
@@ -220,7 +220,7 @@ export default function PrivateTrainingPage() {
                   How It Works
                 </p>
                 <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-8 leading-tight">
-                  Three Steps to Start
+                  Three Steps <span className="text-accent-red">to Start</span>
                 </h2>
                 <div className="space-y-6">
                   {steps.map((s) => (
@@ -262,7 +262,7 @@ export default function PrivateTrainingPage() {
           </div>
           <div className="relative z-10 max-w-2xl mx-auto px-6 text-center animate-on-scroll">
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-5">
-              Ready to Train One-on-One?
+              Ready to Train <span className="text-accent-red">One-on-One?</span>
             </h2>
             <p className="text-text-secondary text-base lg:text-lg mb-8 font-body">
               Availability is limited - Franck takes on a small number of

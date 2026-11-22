@@ -41,7 +41,7 @@ export default function Manifesto() {
         <h2 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-bold uppercase text-white leading-[1.05] mb-8">
           Everyone Is a Protector.
           <br />
-          <span className="text-accent-blue-light">
+          <span className="text-accent-red">
             The Only Question Is Whether You&apos;re Ready.
           </span>
         </h2>

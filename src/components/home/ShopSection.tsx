@@ -135,7 +135,7 @@ export default async function ShopSection() {
             The Store
           </p>
           <h2 className="font-heading text-4xl lg:text-6xl font-bold uppercase text-white mb-5 leading-[1.02]">
-            Shop the <span className="text-accent-blue-light">Store.</span>
+            Shop the <span className="text-accent-red">Store.</span>
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body mb-8">
             Carry what Franck carries. Patented tools, rescue gear, and the

@@ -184,7 +184,7 @@ export default function FemaleExecutiveProtectionPage() {
                 <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl xl:text-8xl font-bold uppercase leading-[0.92] text-white mb-6">
                   Protection
                   <br />
-                  That <span className="text-accent-blue-light">Blends In.</span>
+                  That <span className="text-accent-red">Blends In.</span>
                 </h1>
                 <LocationLine
                   highlight="Available worldwide"
@@ -241,7 +241,7 @@ export default function FemaleExecutiveProtectionPage() {
               <h2 className="font-heading text-[40px] sm:text-6xl lg:text-7xl font-bold uppercase text-white leading-[0.95] mb-7">
                 Beauty. Glamour.
                 <br />
-                <span className="text-accent-blue-light">Butcher Hands</span>{" "}
+                <span className="text-accent-red">Butcher Hands</span>{" "}
                 <br className="lg:hidden" />
                 If Needed.
               </h2>
@@ -287,7 +287,7 @@ export default function FemaleExecutiveProtectionPage() {
                 Why a Female EPS
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-4">
-                The Agent No One Sees Coming
+                The Agent No One <span className="text-accent-red">Sees Coming</span>
               </h2>
               <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
                 Some details need a woman on them. Here is where a female
@@ -366,7 +366,7 @@ export default function FemaleExecutiveProtectionPage() {
                   </span>
                 </div>
                 <h2 className="font-heading text-5xl lg:text-6xl font-bold uppercase text-white leading-[0.95] mb-3">
-                  Meet <span className="text-accent-blue-light">Emma.</span>
+                  Meet <span className="text-accent-red">Emma.</span>
                 </h2>
                 <p className="text-white/80 text-xs sm:text-sm uppercase tracking-[3px] font-bold font-body mb-6">
                   Emma Gongora
@@ -496,7 +496,7 @@ export default function FemaleExecutiveProtectionPage() {
                 Two Ways In
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                Hire One. Or Become One.
+                Hire One. <span className="text-accent-red">Or Become One.</span>
               </h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6 stagger-children">
@@ -555,7 +555,7 @@ export default function FemaleExecutiveProtectionPage() {
           </div>
           <div className="relative z-10 max-w-2xl mx-auto px-6 text-center animate-on-scroll">
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-5">
-              Need a Woman on the Detail?
+              Need a Woman <span className="text-accent-red">on the Detail?</span>
             </h2>
             <p className="text-text-secondary text-base lg:text-lg mb-8 font-body">
               Leave your details and Franck&apos;s team will coordinate the

@@ -51,7 +51,7 @@ export default function GallerySection() {
             From the last workshop
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-4">
-            Real Training. Real People. Real Skills.
+            Real Training. Real People. <span className="text-accent-red">Real Skills.</span>
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
             Scenes from the May 2026 seminar at KO Zone, Miami. This is what 2 hours of hands-on protection training looks like.

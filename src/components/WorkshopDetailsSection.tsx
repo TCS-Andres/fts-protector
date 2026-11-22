@@ -35,7 +35,7 @@ export default function WorkshopDetailsSection() {
             Pricing & Details
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase mb-4 text-white">
-            Lock In $147 Before July 5
+            Lock In <span className="text-accent-red">$147</span> Before July 5
           </h2>
           <p className="text-accent-blue-light text-sm uppercase tracking-[3px] font-bold font-body">
             🔒 Only 16 spots available, first come, first served

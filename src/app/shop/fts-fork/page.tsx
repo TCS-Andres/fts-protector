@@ -60,7 +60,7 @@ export default function FtsForkPage() {
                 <h1 className="hero-animate hero-animate-2 font-heading text-[40px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
                   The FranckTheSolution
                   <br />
-                  <span className="text-accent-blue-light">Fork.</span>
+                  <span className="text-accent-red">Fork.</span>
                 </h1>
                 <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-6 max-w-2xl font-body">
                   An everyday fork, engineered into a patented tool. Because
@@ -111,7 +111,7 @@ export default function FtsForkPage() {
                 Why It Works
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                One Tool. Zero Restrictions.
+                One Tool. <span className="text-accent-red">Zero Restrictions.</span>
               </h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
@@ -142,7 +142,7 @@ export default function FtsForkPage() {
                 See It In Action
               </p>
               <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white">
-                The Fork, In Hand
+                The Fork, <span className="text-accent-red">In Hand</span>
               </h2>
             </div>
             <div className="animate-on-scroll mx-auto w-full max-w-xs rounded-xl overflow-hidden border border-accent-blue/30 shadow-[0_20px_60px_rgba(0,0,0,0.5)] bg-black">
@@ -177,7 +177,7 @@ export default function FtsForkPage() {
                   Why a Fork
                 </p>
                 <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-6">
-                  A Tool Is a Tool
+                  A Tool Is <span className="text-accent-red">a Tool</span>
                 </h2>
                 <p className="text-text-secondary text-base lg:text-lg leading-relaxed font-body">
                   At the end of the day, nobody will stop you anywhere in the
@@ -204,7 +204,7 @@ export default function FtsForkPage() {
                 Get Yours
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                Buy the FranckTheSolution Fork Online
+                Buy the FranckTheSolution <span className="text-accent-red">Fork Online</span>
               </h2>
             </div>
 
@@ -275,7 +275,7 @@ export default function FtsForkPage() {
           </div>
           <div className="relative z-10 max-w-2xl mx-auto px-6 text-center animate-on-scroll">
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-5">
-              Complete Your Carry
+              Complete <span className="text-accent-red">Your Carry</span>
             </h2>
             <p className="text-text-secondary text-base lg:text-lg mb-8 font-body">
               Pair the FranckTheSolution Fork with TheSelfDefender - Franck&apos;s patented

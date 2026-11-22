@@ -110,7 +110,7 @@ export default function GroupTrainingPage() {
               <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
                 Groups That Train Together
                 <br />
-                <span className="text-accent-blue-light">Protect Together.</span>
+                <span className="text-accent-red">Protect Together.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-9 max-w-2xl font-body">
                 Hands-on self-defense and awareness training for families,
@@ -137,7 +137,7 @@ export default function GroupTrainingPage() {
                 Every Kind of Group
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                Who We Train
+                Who We <span className="text-accent-red">Train</span>
               </h2>
             </div>
             <div className="grid md:grid-cols-3 gap-6 stagger-children">
@@ -179,7 +179,7 @@ export default function GroupTrainingPage() {
                 What Your Group Gets
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                Built for Real Life
+                Built for <span className="text-accent-red">Real Life</span>
               </h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
@@ -210,7 +210,7 @@ export default function GroupTrainingPage() {
                 How It Works
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                Three Steps to Book
+                Three Steps <span className="text-accent-red">to Book</span>
               </h2>
             </div>
             <div className="grid md:grid-cols-3 gap-8 stagger-children">
@@ -251,7 +251,7 @@ export default function GroupTrainingPage() {
           </div>
           <div className="relative z-10 max-w-2xl mx-auto px-6 text-center animate-on-scroll">
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-5">
-              Bring Franck to Your Group
+              Bring Franck to <span className="text-accent-red">Your Group</span>
             </h2>
             <p className="text-text-secondary text-base lg:text-lg mb-8 font-body">
               Tell us about your family, company, or team - we&apos;ll build

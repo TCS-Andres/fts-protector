@@ -44,7 +44,7 @@ export default function TrainingTypesSection() {
             How to Train With Franck
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-4">
-            Four Ways In
+            Four <span className="text-accent-red">Ways In</span>
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
             Online, one-on-one, with your group, or on the professional track -

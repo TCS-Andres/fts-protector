@@ -78,7 +78,7 @@ export default function FAQSection() {
       <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-12 animate-on-scroll">
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-            Frequently Asked Questions
+            Frequently Asked <span className="text-accent-red">Questions</span>
           </h2>
         </div>
 

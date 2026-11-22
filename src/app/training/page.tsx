@@ -179,7 +179,7 @@ export default function TrainingPage() {
               <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
                 Become the
                 <br />
-                <span className="text-accent-blue-light">Protector.</span>
+                <span className="text-accent-red">Protector.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed max-w-2xl font-body">
                 Online, one-on-one, in a group, or on the professional EPS
@@ -221,7 +221,7 @@ export default function TrainingPage() {
                 Ways to Train
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                Pick Your Path
+                Pick <span className="text-accent-red">Your Path</span>
               </h2>
             </div>
 
@@ -243,7 +243,7 @@ export default function TrainingPage() {
                 Go Further
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                More Ways to Train
+                More Ways <span className="text-accent-red">to Train</span>
               </h2>
             </div>
 

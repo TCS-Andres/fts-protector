@@ -84,7 +84,7 @@ export default function RatesSection({
             Rates &amp; Packages
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-5 leading-[1.05]">
-            Train on Your Terms
+            Train on <span className="text-accent-red">Your Terms</span>
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
             {intro ??

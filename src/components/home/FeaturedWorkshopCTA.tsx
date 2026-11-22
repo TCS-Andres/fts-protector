@@ -15,7 +15,7 @@ export default function FeaturedWorkshopCTA() {
           The Workshop
         </p>
         <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-white mb-5 leading-tight">
-          Everyone Is a Protector
+          Everyone Is <span className="text-accent-red">a Protector</span>
         </h2>
         <p className="text-text-secondary text-base sm:text-lg mb-6 font-body">
           A hands-on self-defense workshop in Miami. No experience needed -

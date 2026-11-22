@@ -30,7 +30,7 @@ export default function AudienceSection() {
             Everyone Is a Protector
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-            Who This Is For
+            Who This Is <span className="text-accent-red">For</span>
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto mt-6 font-body">
             If there is anyone in your life you would step in front of a

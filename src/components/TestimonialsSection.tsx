@@ -21,7 +21,7 @@ export default function TestimonialsSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-10 sm:mb-16 animate-on-scroll">
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-            What People Are Saying
+            What People <span className="text-accent-red">Are Saying</span>
           </h2>
         </div>
 

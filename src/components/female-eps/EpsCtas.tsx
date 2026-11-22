@@ -45,6 +45,7 @@ export function HireFemaleEpsButton({
       status={<BookedStatus />}
       eyebrow="Female Executive Protection"
       title="Emma Is Currently Booked Out"
+      titleAccent="Booked Out"
       intro={
         <p>
           Unfortunately, she is currently booked out. Leave your information
@@ -90,6 +91,7 @@ export function ApplyEpsButton({
       className={className}
       eyebrow="Executive Protection Specialist"
       title="Apply to Become an EPS"
+      titleAccent="an EPS"
       intro={
         <p>
           Every applicant is screened. Tell us about your background and goals,

@@ -138,9 +138,9 @@ export default function InvestigationsPage() {
               <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl xl:text-8xl font-bold uppercase leading-[0.95] mb-4 text-white">
                 Know.
                 <br />
-                Don&apos;t
+                <span className="text-accent-red">Don&apos;t
                 <br />
-                Guess.
+                Guess.</span>
               </h1>
 
               <p className="hero-animate hero-animate-2 text-white/95 text-base sm:text-lg lg:text-xl uppercase tracking-[3px] font-bold mb-6 font-body">
@@ -216,7 +216,7 @@ export default function InvestigationsPage() {
               The Standard
             </p>
             <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-6">
-              Facts You Can Act On - and Defend.
+              Facts You Can Act On - <span className="text-accent-red">and Defend.</span>
             </h2>
             <p className="text-text-secondary text-lg lg:text-xl leading-relaxed font-body">
               Anyone can hand you a hunch. We deliver documented, lawful,
@@ -237,7 +237,7 @@ export default function InvestigationsPage() {
                 Services
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-4">
-                What We Investigate
+                What We <span className="text-accent-red">Investigate</span>
               </h2>
               <p className="text-text-secondary text-base lg:text-lg max-w-2xl mx-auto font-body">
                 Full-spectrum private investigations for attorneys, businesses,
@@ -304,7 +304,7 @@ export default function InvestigationsPage() {
                   Why Franck
                 </p>
                 <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-6 leading-tight">
-                  The Man Who Finds What Others Miss.
+                  The Man Who Finds <span className="text-accent-red">What Others Miss.</span>
                 </h2>
                 <p className="text-text-secondary text-base lg:text-lg leading-relaxed mb-6 font-body">
                   Most investigators read about the work. Franck lives it. As an
@@ -347,7 +347,7 @@ export default function InvestigationsPage() {
                 The Bar
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-4">
-                Discreet. Lawful. Relentless.
+                Discreet. Lawful. <span className="text-accent-red">Relentless.</span>
               </h2>
             </div>
 
@@ -388,7 +388,7 @@ export default function InvestigationsPage() {
                 Who We Serve
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-6">
-                For Anyone Who Needs the Truth.
+                For Anyone Who Needs <span className="text-accent-red">the Truth.</span>
               </h2>
             </div>
 
@@ -415,7 +415,7 @@ export default function InvestigationsPage() {
                 The Process
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                How a Case Works
+                How a Case <span className="text-accent-red">Works</span>
               </h2>
             </div>
 
@@ -470,7 +470,7 @@ export default function InvestigationsPage() {
                 Begin
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-6">
-                Tell Us What You Need to Know
+                Tell Us What You <span className="text-accent-red">Need to Know</span>
               </h2>
               <p className="text-text-secondary text-lg leading-relaxed mb-10 font-body">
                 One message, held in strict confidence. We&apos;ll tell you

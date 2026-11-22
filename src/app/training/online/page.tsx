@@ -92,7 +92,7 @@ export default function OnlineTrainingPage() {
               <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
                 Train With Franck,
                 <br />
-                <span className="text-accent-blue-light">From Anywhere.</span>
+                <span className="text-accent-red">From Anywhere.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-9 max-w-2xl font-body">
                 Live one-on-one and small-group training sessions over Zoom -
@@ -119,7 +119,7 @@ export default function OnlineTrainingPage() {
                 Real Coaching, Through the Screen
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                How Online Training Works
+                How Online Training <span className="text-accent-red">Works</span>
               </h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
@@ -151,7 +151,7 @@ export default function OnlineTrainingPage() {
                   Who It&apos;s For
                 </p>
                 <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-8 leading-tight">
-                  Online Training Fits You If…
+                  Online Training <span className="text-accent-red">Fits You If…</span>
                 </h2>
                 <ul className="space-y-4">
                   {audience.map((a) => (
@@ -171,7 +171,7 @@ export default function OnlineTrainingPage() {
                   Getting Started
                 </p>
                 <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-8 leading-tight">
-                  Three Steps to Your First Session
+                  Three Steps to Your <span className="text-accent-red">First Session</span>
                 </h2>
                 <div className="space-y-6">
                   {steps.map((s) => (
@@ -204,7 +204,7 @@ export default function OnlineTrainingPage() {
               Between Sessions
             </p>
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-6">
-              Keep Training All Week
+              Keep Training <span className="text-accent-red">All Week</span>
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed font-body mb-8">
               Live Zoom sessions are the core - and between them you can drill
@@ -237,7 +237,7 @@ export default function OnlineTrainingPage() {
           </div>
           <div className="relative z-10 max-w-2xl mx-auto px-6 text-center animate-on-scroll">
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-5">
-              Ready to Train Online?
+              Ready to Train <span className="text-accent-red">Online?</span>
             </h2>
             <p className="text-text-secondary text-base lg:text-lg mb-8 font-body">
               Tell us your goals and your time zone - we&apos;ll get your first

@@ -168,7 +168,7 @@ export default async function CivilianProtectorCourse({
                 Level 1 Certification Course
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white leading-[1.0] mb-4">
-                Civilian To <span className="text-accent-blue-light">Protector.</span>
+                Civilian To <span className="text-accent-red">Protector.</span>
               </h2>
               <p className="text-text-secondary text-base leading-relaxed font-body mb-6">
                 Fifteen hours over five days, taught directly by Franck. Learn
@@ -195,7 +195,7 @@ export default async function CivilianProtectorCourse({
                 Level 1 Certification Course
               </p>
               <h2 className="font-heading text-5xl lg:text-7xl font-bold uppercase text-white mb-5 leading-[1.0]">
-                Civilian To <span className="text-accent-blue-light">Protector.</span>
+                Civilian To <span className="text-accent-red">Protector.</span>
               </h2>
               <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
                 Fifteen hours over five days, taught directly by Franck. You

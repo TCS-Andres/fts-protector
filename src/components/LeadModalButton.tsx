@@ -10,6 +10,8 @@ type Props = {
   /** Small kicker above the popup title. */
   eyebrow?: string;
   title: string;
+  /** Ending of `title` to show in brand red (site-wide two-tone headings). */
+  titleAccent?: string;
   /** Lead paragraph under the title. */
   intro?: ReactNode;
   /** Optional status line (e.g. "Currently booked") shown above the title. */
@@ -27,6 +29,7 @@ export default function LeadModalButton({
   className,
   eyebrow,
   title,
+  titleAccent,
   intro,
   status,
   form,
@@ -76,7 +79,14 @@ export default function LeadModalButton({
             </p>
           )}
           <h2 className="font-heading text-2xl sm:text-3xl font-bold uppercase text-white leading-tight mb-3 pr-10">
-            {title}
+            {titleAccent && title.endsWith(titleAccent) ? (
+              <>
+                {title.slice(0, -titleAccent.length)}
+                <span className="text-accent-red">{titleAccent}</span>
+              </>
+            ) : (
+              title
+            )}
           </h2>
           {intro && (
             <div className="text-text-secondary text-sm sm:text-base leading-relaxed font-body mb-6">

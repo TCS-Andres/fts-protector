@@ -38,7 +38,7 @@ export default function BootCampSection() {
               TACTOPS EP Academy
             </p>
             <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-4 leading-tight">
-              Ready for the Next Level?
+              Ready for the <span className="text-accent-red">Next Level?</span>
             </h2>
             <p className="text-cyan-200 text-base uppercase tracking-[3px] font-bold mb-6 font-body">
               7-Day Protectors Training Camp

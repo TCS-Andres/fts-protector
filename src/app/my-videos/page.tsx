@@ -175,7 +175,7 @@ export default async function MyVideosPage({
         <div>
           <Eyebrow>Video Library</Eyebrow>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold uppercase leading-[1.0] text-white">
-            My <span className="text-accent-blue-light">Videos.</span>
+            My <span className="text-accent-red">Videos.</span>
           </h1>
         </div>
         <SignedInBar email={access.email} />
@@ -219,7 +219,7 @@ export default async function MyVideosPage({
             More From Franck
           </p>
           <h2 className="font-heading text-2xl sm:text-3xl font-bold uppercase text-white mb-6">
-            More Videos
+            More <span className="text-accent-red">Videos</span>
           </h2>
           <MoreVideosList videos={notOwned} />
         </div>

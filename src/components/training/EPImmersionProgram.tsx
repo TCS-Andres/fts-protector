@@ -190,7 +190,7 @@ export default function EPImmersionProgram({
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white leading-[1.0] mb-4">
                 Executive Protection{" "}
-                <span className="text-accent-blue-light">Agent Operator.</span>
+                <span className="text-accent-red">Agent Operator.</span>
               </h2>
               <p className="text-text-secondary text-base leading-relaxed font-body mb-6">
                 The complete executive protection curriculum in one month of
@@ -223,7 +223,7 @@ export default function EPImmersionProgram({
               <h2 className="font-heading text-5xl lg:text-7xl font-bold uppercase text-white mb-5 leading-[1.0]">
                 Executive Protection
                 <br />
-                <span className="text-accent-blue-light">Agent Operator.</span>
+                <span className="text-accent-red">Agent Operator.</span>
               </h2>
               <p className="text-text-secondary text-lg max-w-3xl mx-auto font-body">
                 A 1-month intensive, hands-on, high-impact program built to

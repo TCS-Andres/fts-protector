@@ -13,7 +13,7 @@ export default function ProblemSection() {
               />
             </div>
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase mb-6 text-white">
-              Someone Is Counting On You
+              Someone Is <span className="text-accent-red">Counting On You</span>
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed font-body">
               Your wife. Your husband. Your kids. Your mom. Your dad. Whoever
@@ -35,7 +35,7 @@ export default function ProblemSection() {
               />
             </div>
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase mb-6 text-white">
-              The World Changed. Most People Didn&apos;t.
+              The World Changed. <span className="text-accent-red">Most People Didn&apos;t.</span>
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed font-body">
               Threats that used to feel distant are now local, in your

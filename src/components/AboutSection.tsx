@@ -32,7 +32,7 @@ export default function AboutSection() {
               Your Instructor
             </p>
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase mb-6 text-white leading-tight">
-              Franck Pala, 25 Years of Real-World Protection
+              Franck Pala, 25 Years of <span className="text-accent-red">Real-World Protection</span>
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed mb-8 font-body">
               Franck Pala is not a YouTube self-defense instructor. He is a

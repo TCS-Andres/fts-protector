@@ -62,7 +62,7 @@ export default function PillarsSection() {
             Everything Franck Offers
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-[#0A0E14]">
-            One Standard. Four Ways In.
+            One Standard. <span className="text-accent-red">Four Ways In.</span>
           </h2>
         </div>
 

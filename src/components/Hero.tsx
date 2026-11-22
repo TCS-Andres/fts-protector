@@ -30,7 +30,7 @@ export default function Hero() {
 
             <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl xl:text-8xl font-bold uppercase leading-[0.95] mb-3 text-white">
               Everyone Is
-              <br />a Protector
+              <br /><span className="text-accent-red">a Protector</span>
             </h1>
             <p className="hero-animate hero-animate-2 text-white/90 text-base sm:text-lg lg:text-xl uppercase tracking-[3px] font-bold mb-6 font-body">
               Self-Defense Workshops

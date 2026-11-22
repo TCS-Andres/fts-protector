@@ -19,7 +19,7 @@ export default function EPImageMarquee() {
           In the Field
         </p>
         <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white animate-on-scroll">
-          A Day on Detail
+          A Day <span className="text-accent-red">on Detail</span>
         </h2>
       </div>
 

@@ -64,7 +64,7 @@ export default function AboutPage() {
               <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
                 The Standard,
                 <br />
-                <span className="text-accent-blue-light">Not the Story.</span>
+                <span className="text-accent-red">Not the Story.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed max-w-2xl font-body">
                 Most people in this space talk about protection. Franck has
@@ -149,7 +149,7 @@ export default function AboutPage() {
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
             <div className="text-center mb-10 sm:mb-16 animate-on-scroll">
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                The Full Picture
+                The <span className="text-accent-red">Full Picture</span>
               </h2>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
@@ -179,7 +179,7 @@ export default function AboutPage() {
               Coming Soon - The Book
             </p>
             <h2 className="font-heading text-3xl lg:text-5xl font-bold uppercase text-white mb-5">
-              Circular Footwork Mechanics
+              Circular <span className="text-accent-red">Footwork Mechanics</span>
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed mb-8 font-body">
               Franck&apos;s forthcoming book breaks down the footwork and

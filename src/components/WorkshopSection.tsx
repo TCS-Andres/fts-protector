@@ -42,7 +42,7 @@ export default function WorkshopSection() {
             The Workshop
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase mb-4 text-white">
-            2 Hours That Could Change Your Life
+            2 Hours That Could <span className="text-accent-red">Change Your Life</span>
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
             A hands-on, physical training experience, not a lecture, not a

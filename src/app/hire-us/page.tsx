@@ -163,7 +163,7 @@ export default function HireUsPage() {
                 <br />
                 That Goes
                 <br />
-                Where You Go.
+                <span className="text-accent-red">Where You Go.</span>
               </h1>
 
               <p className="hero-animate hero-animate-2 text-white/95 text-base sm:text-lg lg:text-xl uppercase tracking-[3px] font-bold mb-4 font-body">
@@ -227,7 +227,7 @@ export default function HireUsPage() {
                 The Standard
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-6">
-                We Take This Job As Seriously As Your Life Depends On It.
+                We Take This Job As Seriously As <span className="text-accent-red">Your Life Depends On It.</span>
               </h2>
               <p className="text-text-secondary text-lg lg:text-xl leading-relaxed font-body">
                 Because it does. Every agent on an{" "}
@@ -257,7 +257,7 @@ export default function HireUsPage() {
                 Services
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-4">
-                What We Provide
+                What We <span className="text-accent-red">Provide</span>
               </h2>
               <p className="text-text-secondary text-base lg:text-lg max-w-2xl mx-auto font-body">
                 Full-spectrum protective services, scaled to a single principal
@@ -339,7 +339,7 @@ export default function HireUsPage() {
                   The Team
                 </p>
                 <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-6 leading-tight">
-                  Selected. Trained. Tested.
+                  Selected. Trained. <span className="text-accent-red">Tested.</span>
                 </h2>
                 <p className="text-text-secondary text-base lg:text-lg leading-relaxed mb-6 font-body">
                   Franck personally selects every agent on our roster. They are
@@ -398,7 +398,7 @@ export default function HireUsPage() {
                 The Bar
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-4">
-                Positioned to Be the Best in the U.S.
+                Positioned to Be <span className="text-accent-red">the Best in the U.S.</span>
               </h2>
               <p className="text-text-secondary text-base lg:text-lg max-w-2xl mx-auto font-body">
                 Credentials are the floor of this industry, not the ceiling.
@@ -447,7 +447,7 @@ export default function HireUsPage() {
                 Who We Serve
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-6">
-                Built For People Who Cannot Afford a Mistake.
+                Built For People Who <span className="text-accent-red">Cannot Afford a Mistake.</span>
               </h2>
             </div>
 
@@ -488,7 +488,7 @@ export default function HireUsPage() {
                 The Process
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                How Engagements Begin
+                How Engagements <span className="text-accent-red">Begin</span>
               </h2>
             </div>
 
@@ -543,7 +543,7 @@ export default function HireUsPage() {
                 Begin
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-6">
-                Discuss Your Protection Needs
+                Discuss Your <span className="text-accent-red">Protection Needs</span>
               </h2>
               <p className="text-text-secondary text-lg leading-relaxed mb-10 font-body">
                 One message. One conversation. Held in strict confidence.

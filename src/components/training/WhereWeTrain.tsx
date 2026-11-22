@@ -40,7 +40,7 @@ export default function WhereWeTrain({ defaultRequest = "" }: Props) {
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-5 leading-[1.05]">
             Based in South Florida.{" "}
-            <span className="text-accent-blue-light">We Come to You.</span>
+            <span className="text-accent-red">We Come to You.</span>
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
             Our home base is {BASE_LOCATION}. Train with us here, or bring

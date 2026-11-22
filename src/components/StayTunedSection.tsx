@@ -13,7 +13,7 @@ export default function StayTunedSection() {
             Next Workshop
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-6">
-            Stay Tuned for Our Next Workshop
+            Stay Tuned for Our <span className="text-accent-red">Next Workshop</span>
           </h2>
           <p className="text-text-secondary text-lg font-body max-w-xl mx-auto">
             There is no workshop currently scheduled. The next Everyone Is a

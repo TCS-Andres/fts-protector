@@ -156,7 +156,7 @@ export default async function ShopPage() {
               <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
                 Tools &amp; Knowledge
                 <br />
-                <span className="text-accent-blue-light">That Protect.</span>
+                <span className="text-accent-red">That Protect.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed max-w-2xl font-body">
                 The same tools and teaching Franck&apos;s own work is built on -

@@ -70,7 +70,7 @@ export default function CertificationSection({
             Certification
           </p>
           <h2 className="font-heading text-5xl lg:text-7xl font-bold uppercase text-white mb-5 leading-[1.0]">
-            Train to Be <span className="text-accent-blue-light">Certified.</span>
+            Train to Be <span className="text-accent-red">Certified.</span>
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
             Complete the TACT OPS Protector Program and you earn a formal

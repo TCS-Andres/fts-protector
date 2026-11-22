@@ -37,7 +37,7 @@ export default function InventorSection() {
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-5 leading-[1.05]">
             Not Just a Protector -<br className="hidden sm:block" />{" "}
-            <span className="text-accent-blue-light">an Inventor.</span>
+            <span className="text-accent-red">an Inventor.</span>
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
             Two decades in the field didn&apos;t just make Franck a protector -

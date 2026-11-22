@@ -38,7 +38,7 @@ export default function AuthorSection() {
             The Author
           </p>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-5 leading-[1.05]">
-            He Wrote the Book on It.
+            He Wrote <span className="text-accent-red">the Book</span> on It.
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
             <span className="text-white font-semibold">

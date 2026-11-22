@@ -57,7 +57,7 @@ export default function Footer() {
             Everyone Is a Protector
           </p>
           <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold uppercase text-white leading-[0.95] mb-6">
-            Ready to Be <span className="text-accent-blue-light">the Solution?</span>
+            Ready to Be <span className="text-accent-red">the Solution?</span>
           </h2>
           <p className="text-text-secondary text-base sm:text-lg max-w-xl mx-auto mb-9 font-body">
             Train with Franck, hire his team, or get the tools. One standard -

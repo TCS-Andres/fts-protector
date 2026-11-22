@@ -223,7 +223,7 @@ export default async function VideoLibraryPage() {
               <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
                 Train With Franck,
                 <br />
-                <span className="text-accent-blue-light">On Your Schedule.</span>
+                <span className="text-accent-red">On Your Schedule.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-9 max-w-2xl font-body">
                 Pick the videos you want and stream them on your phone, tablet,
@@ -256,7 +256,7 @@ export default async function VideoLibraryPage() {
                   {countLabel}
                 </p>
                 <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                  Pick Your Videos
+                  Pick <span className="text-accent-red">Your Videos</span>
                 </h2>
                 <p className="text-text-secondary text-base font-body mt-4 max-w-xl mx-auto leading-relaxed">
                   Each video is sold on its own. You only pay for the ones you
@@ -284,7 +284,7 @@ export default async function VideoLibraryPage() {
                 Getting Started
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                How It Works
+                How It <span className="text-accent-red">Works</span>
               </h2>
             </div>
             <div className="grid md:grid-cols-3 gap-6 stagger-children">
@@ -317,7 +317,7 @@ export default async function VideoLibraryPage() {
           <div className="relative z-10 max-w-2xl mx-auto px-6 animate-on-scroll">
             <div className="rounded-2xl border border-accent-blue/30 bg-bg-steel-card/60 p-6 sm:p-9 shadow-[0_0_50px_rgba(46,114,184,0.08)]">
               <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-6">
-                Start Training Today
+                Start Training <span className="text-accent-red">Today</span>
               </h2>
               <PrimaryCta
                   bundle={bundle}

@@ -66,7 +66,7 @@ export default function FemaleEpsSpotlight() {
             <h2 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-bold uppercase text-white leading-[0.92] mb-6">
               Meet Emma.
               <br />
-              <span className="text-accent-blue-light">Champion.</span>{" "}
+              <span className="text-accent-red">Champion.</span>{" "}
               Protector.
             </h2>
             <p className="font-heading text-xl sm:text-2xl font-bold uppercase text-accent-gold leading-tight mb-4">

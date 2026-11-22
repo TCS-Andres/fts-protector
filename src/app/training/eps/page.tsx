@@ -102,7 +102,7 @@ export default function EpsTrainingPage() {
               <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
                 Become the One
                 <br />
-                <span className="text-accent-blue-light">They Trust.</span>
+                <span className="text-accent-red">They Trust.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-9 max-w-2xl font-body">
                 The professional track: EPS training built and taught by an
@@ -136,7 +136,7 @@ export default function EpsTrainingPage() {
                 The Curriculum
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                What the EPS Track Covers
+                What the EPS Track <span className="text-accent-red">Covers</span>
               </h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
@@ -168,7 +168,7 @@ export default function EpsTrainingPage() {
                   Taught From the Field
                 </p>
                 <h2 className="font-heading text-3xl lg:text-5xl font-bold uppercase mb-6 text-white leading-[1.05]">
-                  Learn From Someone Still Doing the Job
+                  Learn From Someone Still <span className="text-accent-red">Doing the Job</span>
                 </h2>
                 <div className="space-y-5 text-text-secondary text-base lg:text-lg leading-relaxed font-body mb-8">
                   <p>
@@ -217,7 +217,7 @@ export default function EpsTrainingPage() {
                 The Path
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                From Applicant to Agent
+                From Applicant <span className="text-accent-red">to Agent</span>
               </h2>
             </div>
             <div className="grid md:grid-cols-3 gap-8 stagger-children">
@@ -258,7 +258,7 @@ export default function EpsTrainingPage() {
           </div>
           <div className="relative z-10 max-w-2xl mx-auto px-6 text-center animate-on-scroll">
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-5">
-              Ready for the Professional Track?
+              Ready for the <span className="text-accent-red">Professional Track?</span>
             </h2>
             <p className="text-text-secondary text-base lg:text-lg mb-8 font-body">
               EPS training is selective and class sizes are small. Apply and

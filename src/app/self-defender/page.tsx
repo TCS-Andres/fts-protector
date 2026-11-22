@@ -100,7 +100,7 @@ export default function SelfDefenderPage() {
               <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
                 The All-in-One
                 <br />
-                <span className="text-accent-blue-light">Survival Tool.</span>
+                <span className="text-accent-red">Survival Tool.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed mb-6 max-w-2xl font-body">
                 The most versatile non-lethal survival tool on the market -
@@ -145,7 +145,7 @@ export default function SelfDefenderPage() {
                 Meet the Tool
               </p>
               <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white">
-                One Tool, Every Emergency
+                One Tool, <span className="text-accent-red">Every Emergency</span>
               </h2>
             </div>
             <div className="animate-on-scroll rounded-xl overflow-hidden border border-accent-blue/30 shadow-[0_20px_60px_rgba(0,0,0,0.5)] bg-black">
@@ -171,7 +171,7 @@ export default function SelfDefenderPage() {
                 Six Functions, Zero Bulk
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                Everything It Does
+                Everything <span className="text-accent-red">It Does</span>
               </h2>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
@@ -205,7 +205,7 @@ export default function SelfDefenderPage() {
                   The Hardware
                 </p>
                 <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-8 leading-tight">
-                  Built Like It Matters
+                  Built Like <span className="text-accent-red">It Matters</span>
                 </h2>
                 <div className="rounded-xl border border-accent-blue/25 bg-bg-steel-card/60 overflow-hidden">
                   {specs.map((s) => (
@@ -234,7 +234,7 @@ export default function SelfDefenderPage() {
                   The Inventor
                 </p>
                 <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-6 leading-tight">
-                  Designed by a Working Protector
+                  Designed by a <span className="text-accent-red">Working Protector</span>
                 </h2>
                 <div className="space-y-5 text-text-secondary text-base lg:text-lg leading-relaxed font-body mb-8">
                   <p>
@@ -274,7 +274,7 @@ export default function SelfDefenderPage() {
                 Watch It Work
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white">
-                See TheSelfDefender in Action
+                See TheSelfDefender <span className="text-accent-red">in Action</span>
               </h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6 stagger-children">
@@ -312,7 +312,7 @@ export default function SelfDefenderPage() {
                 The Tool Is Half the Equation
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold uppercase text-white mb-4">
-                Train the Four Skills
+                Train the <span className="text-accent-red">Four Skills</span>
               </h2>
               <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
                 TheSelfDefender comes with a training methodology. Four
@@ -356,7 +356,7 @@ export default function SelfDefenderPage() {
                 See It In Action
               </p>
               <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white">
-                The Tool, In the Real World
+                The Tool, In the <span className="text-accent-red">Real World</span>
               </h2>
             </div>
             <div className="animate-on-scroll rounded-xl overflow-hidden border border-accent-blue/30 shadow-[0_20px_60px_rgba(0,0,0,0.5)] bg-black">
@@ -381,7 +381,7 @@ export default function SelfDefenderPage() {
               Also From Franck&apos;s Lab
             </p>
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-6">
-              Anything Can Be a Tool
+              Anything Can Be <span className="text-accent-red">a Tool</span>
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed font-body mb-8">
               The same inventive mind turned an everyday fork into a patented,
@@ -405,7 +405,7 @@ export default function SelfDefenderPage() {
           </div>
           <div className="relative z-10 max-w-2xl mx-auto px-6 text-center animate-on-scroll">
             <h2 className="font-heading text-3xl lg:text-4xl font-bold uppercase text-white mb-5">
-              Carry the Solution
+              Carry <span className="text-accent-red">the Solution</span>
             </h2>
             <p className="text-text-secondary text-base lg:text-lg mb-8 font-body">
               TheSelfDefender® Keychain 3.0 -{" "}

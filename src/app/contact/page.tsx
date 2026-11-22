@@ -45,7 +45,7 @@ export default function ContactPage() {
                 Get In Touch
               </p>
               <h1 className="hero-animate hero-animate-2 font-heading text-[44px] sm:text-6xl lg:text-7xl font-bold uppercase leading-[0.95] text-white mb-6">
-                Let&apos;s Talk.
+                Let&apos;s <span className="text-accent-red">Talk.</span>
               </h1>
               <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl leading-relaxed max-w-2xl font-body">
                 Protection, investigations, training, or the tools - tell us what
@@ -65,7 +65,7 @@ export default function ContactPage() {
               {/* Form */}
               <div className="animate-on-scroll rounded-2xl border border-accent-blue/20 bg-bg-steel-card/40 p-6 sm:p-8 lg:p-10">
                 <h2 className="font-heading text-2xl lg:text-3xl font-bold uppercase text-white mb-6">
-                  Send a Message
+                  Send a <span className="text-accent-red">Message</span>
                 </h2>
                 <ContactForm
                   subject="New inquiry from franckthesolution.com"
@@ -77,7 +77,7 @@ export default function ContactPage() {
               {/* Details */}
               <div className="animate-on-scroll">
                 <h2 className="font-heading text-2xl lg:text-3xl font-bold uppercase text-white mb-6">
-                  Other Ways to Reach Us
+                  Other Ways to <span className="text-accent-red">Reach Us</span>
                 </h2>
                 <div className="space-y-4">
                   <a
