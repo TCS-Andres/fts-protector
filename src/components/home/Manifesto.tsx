@@ -28,6 +28,13 @@ export default function Manifesto() {
       />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12 text-center animate-on-scroll">
+        {/* The FrancktheSolution / TACT USA badge, shown big */}
+        <img
+          src="/images/fts-badge.webp"
+          alt="FrancktheSolution - TACT USA Tactical Awareness Combative Training: close combat defense tactics and improvised weapons"
+          loading="lazy"
+          className="mx-auto mb-10 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[480px] lg:h-[480px] object-contain"
+        />
         <p className="text-accent-blue-light text-sm uppercase tracking-[5px] font-bold mb-6 font-body">
           The Standard
         </p>

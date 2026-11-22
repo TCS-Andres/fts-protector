@@ -92,6 +92,12 @@ export default function BrandHero() {
           {/* Portrait - framed, full, no zoom */}
           <div className="hero-animate hero-animate-1 order-1 lg:order-2 relative mx-auto w-full max-w-sm lg:max-w-none">
             <div className="absolute -inset-3 bg-gradient-to-br from-accent-blue/30 via-transparent to-accent-blue/10 rounded-2xl blur-xl" />
+            {/* Brand seal on the portrait's top-left corner (dark backdrop, clear of the face) */}
+            <img
+              src="/logo.png"
+              alt="FrancktheSolution - TACT USA badge"
+              className="hidden sm:block absolute z-20 sm:-top-8 sm:-left-8 sm:w-36 sm:h-36 lg:w-40 lg:h-40 xl:w-44 xl:h-44 object-contain drop-shadow-[0_0_24px_rgba(196,30,30,0.45)]"
+            />
             <div className="relative rounded-xl overflow-hidden border border-accent-blue/30 bg-black/40 shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
               <img
                 src="/images/franck_instructor_portrait.jpg"
