@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import BrandHero from "@/components/home/BrandHero";
 import ServicesGrid from "@/components/ServicesGrid";
@@ -16,6 +17,8 @@ import GallerySection from "@/components/GallerySection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import Footer from "@/components/Footer";
 import ScrollAnimator from "@/components/ScrollAnimator";
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 // Live Shopify products power the Shop section, so refresh the page periodically.
 export const revalidate = 60;

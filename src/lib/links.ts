@@ -21,9 +21,13 @@ export const links = {
 export const WEB3FORMS_ACCESS_KEY = "928919bd-0630-41dd-8405-06a306002ada";
 export const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
+// Canonical public origin (the apex domain redirects here).
+export const SITE_URL = "https://www.franckthesolution.com";
+
 // Internal routes
 export const routes = {
   home: "/",
+  services: "/services",
   workshops: "/workshops",
   training: "/training",
   trainingOnline: "/training/online",

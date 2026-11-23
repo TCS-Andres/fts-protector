@@ -1,8 +1,10 @@
 // Every service Franck's team can be hired for. One list drives the homepage
-// services grid, the Hire Us page grid, and the Hire Us booking form options,
+// services grid, the Hire Us page grid, the /services hub, and the booking
+// form options. Each tile links to its SEO page (src/lib/service-pages.ts),
 // so the wording stays identical everywhere. Keep it in step with
 // src/lib/franck-ai/knowledge.ts.
 import { routes } from "@/lib/links";
+import { servicePath } from "@/lib/service-pages";
 
 export type ServiceIcon =
   | "shield"
@@ -32,25 +34,25 @@ export const services: Service[] = [
     name: "Executive Protection",
     blurb: "Close protection for executives, families, and VIPs.",
     icon: "shield",
-    href: hireUsFor("Executive Protection"),
+    href: servicePath("executive-protection"),
   },
   {
     name: "Bodyguard",
     blurb: "A trained professional at your side, wherever you go.",
     icon: "bodyguard",
-    href: hireUsFor("Bodyguard"),
+    href: servicePath("bodyguard-services"),
   },
   {
     name: "Armed & Unarmed Transportation",
     blurb: "Secure drivers and vehicles, armed or unarmed.",
     icon: "car",
-    href: hireUsFor("Armed & Unarmed Transportation"),
+    href: servicePath("armed-unarmed-transportation"),
   },
   {
     name: "Asset Protection",
     blurb: "Protecting property, valuables, and business assets.",
     icon: "vault",
-    href: hireUsFor("Asset Protection"),
+    href: servicePath("asset-protection"),
   },
   {
     name: "Investigations",
@@ -62,13 +64,13 @@ export const services: Service[] = [
     name: "Bail Bonds",
     blurb: "Help getting someone released, handled fast and discreetly.",
     icon: "gavel",
-    href: hireUsFor("Bail Bonds"),
+    href: servicePath("bail-bonds"),
   },
   {
     name: "Fugitive Apprehension",
     blurb: "Locating and recovering wanted individuals. Active Florida agent.",
     icon: "target",
-    href: hireUsFor("Fugitive Apprehension"),
+    href: servicePath("fugitive-apprehension"),
   },
 ];
 

@@ -152,7 +152,7 @@ export default function ServicesGrid({
 
               <span className="shrink-0 sm:mt-5 inline-flex items-center gap-2 text-accent-red text-xs font-bold uppercase tracking-[2px] font-body">
                 <span className="hidden sm:inline">
-                  {s.href.startsWith("/investigations") ? "Learn More" : "Hire Us"}
+                  Learn More
                 </span>
                 <span
                   aria-hidden="true"

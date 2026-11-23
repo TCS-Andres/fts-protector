@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Oswald, Inter } from "next/font/google";
 import "./globals.css";
 import FranckChat from "@/components/franck-ai/FranckChat";
+import { SITE_URL } from "@/lib/links";
+import { jsonLdProps, organizationSchema } from "@/lib/schema";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -22,7 +24,7 @@ const SITE_OG_IMAGE_ALT =
   "Franck Pala - FrancktheSolution: executive protection, training, and self-defense tools";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fts-protector.vercel.app"),
+  metadataBase: new URL(SITE_URL),
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
   keywords: [
@@ -38,6 +40,10 @@ export const metadata: Metadata = {
     "executive protection Miami Florida",
     "South Florida self defense training",
     "fugitive apprehension agent",
+    "bodyguard Miami",
+    "armed transportation Miami",
+    "bail bonds Miami",
+    "asset protection",
   ],
   openGraph: {
     type: "website",
@@ -75,6 +81,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${oswald.variable} ${inter.variable}`}>
       <body>
+        <script {...jsonLdProps(organizationSchema)} />
         {children}
         <FranckChat />
       </body>

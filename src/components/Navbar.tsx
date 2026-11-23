@@ -51,9 +51,19 @@ const navLinks: NavLink[] = [
     href: routes.hireUs,
     children: [
       {
+        label: "All Services",
+        href: routes.services,
+        desc: "Protection, transport, bail bonds & more",
+      },
+      {
         label: "Executive Protection",
-        href: routes.hireUs,
-        desc: "Close protection & secure transport",
+        href: "/services/executive-protection",
+        desc: "Close protection for executives & VIPs",
+      },
+      {
+        label: "Bodyguard Services",
+        href: "/services/bodyguard-services",
+        desc: "Personal protection at your side",
       },
       {
         label: "Female Protection",

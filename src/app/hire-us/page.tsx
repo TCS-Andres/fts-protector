@@ -18,6 +18,7 @@ const PAGE_DESCRIPTION =
 export const metadata: Metadata = {
   title: PAGE_TITLE,
   description: PAGE_DESCRIPTION,
+  alternates: { canonical: routes.hireUs },
   openGraph: {
     type: "website",
     title: PAGE_TITLE,
@@ -222,7 +223,7 @@ export default function HireUsPage() {
           eyebrow="Hire Us For"
           title="Every"
           titleAccent="Service"
-          intro="Choose what you need and the request form opens with it already selected. Strictly confidential."
+          intro="Choose a service to see exactly what is included, or request a consultation below. Strictly confidential."
           ctaLabel="Request a Consultation"
           ctaHref="#book"
           className="bg-bg-secondary"

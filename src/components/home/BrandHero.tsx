@@ -70,9 +70,8 @@ export default function BrandHero() {
               efficiency, and discretion. From executive protection, bodyguard
               details, and armed or unarmed transportation to asset protection,
               investigations, bail bonds, and fugitive apprehension, every
-              assignment is held to one professional standard. With more than
-              two decades in the field, Franck also trains civilians and
-              protectors to handle real threats with clarity and control.
+              assignment is held to one professional standard. With 20+ years in
+              the field, Franck also trains civilians and protectors to handle real threats with clarity and control.
             </p>
 
             <div className="hero-animate hero-animate-3 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
