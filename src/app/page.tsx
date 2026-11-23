@@ -1,5 +1,7 @@
 import Navbar from "@/components/Navbar";
 import BrandHero from "@/components/home/BrandHero";
+import ServicesGrid from "@/components/ServicesGrid";
+import { routes } from "@/lib/links";
 import HomeStats from "@/components/home/HomeStats";
 import FemaleEpsSpotlight from "@/components/home/FemaleEpsSpotlight";
 import BioSection from "@/components/home/BioSection";
@@ -25,6 +27,7 @@ export default function Home() {
       <Navbar />
       <main>
         <BrandHero />
+        <ServicesGrid ctaLabel="See the Hire Us Page" ctaHref={routes.hireUs} />
         <HomeStats />
         <FemaleEpsSpotlight />
         <BioSection />

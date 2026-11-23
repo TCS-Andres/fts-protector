@@ -4,10 +4,18 @@ import { useEffect } from "react";
 
 export default function ScrollAnimator() {
   useEffect(() => {
-    // Always start at top of page on fresh load
-    if (window.location.hash) {
-      history.replaceState(null, "", window.location.pathname);
+    // Links that point at a real section (e.g. /hire-us?service=Bodyguard#book,
+    // /training#where-we-train) land on that section. Anything else, such as
+    // the old #register anchor, opens at the top of the page.
+    const { hash, pathname, search } = window.location;
+    if (hash && hash !== "#register") {
+      const target = document.getElementById(decodeURIComponent(hash.slice(1)));
+      if (target) {
+        requestAnimationFrame(() => target.scrollIntoView());
+        return;
+      }
     }
+    if (hash) history.replaceState(null, "", pathname + search);
     window.scrollTo(0, 0);
   }, []);
 

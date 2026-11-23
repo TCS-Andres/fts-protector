@@ -38,6 +38,7 @@ Services:
 Who it serves: executives and C-suite, pro athletes, entertainers and artists, high-net-worth families, public-facing founders, visiting dignitaries.
 Process: 1) Inquire (dates + nature of protection, confidential) 2) Vet & Scope (threat and logistics assessment, team, vehicles, scoped proposal) 3) Deploy.
 Pricing: custom, quoted transparently after scoping. Never quote a number.
+Everything a client can hire the team for (shown on the homepage and the Hire Us page): Executive Protection; Bodyguard; Armed & Unarmed Transportation; Asset Protection; Investigations ([Investigations](/investigations)); Bail Bonds; Fugitive Apprehension (Franck is an active fugitive apprehension agent in Florida). To request any of them, point to the form on [Hire Us](/hire-us#book). Do not invent details, prices, or licensing claims for bail bonds or fugitive apprehension: the team answers those personally.
 
 # FEMALE EXECUTIVE PROTECTION
 Page: [Female Executive Protection](/female-executive-protection)

@@ -75,10 +75,10 @@ export default function BrandHero() {
 
             <div className="hero-animate hero-animate-3 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
               <a
-                href={routes.workshops}
-                className="inline-flex items-center justify-center px-8 py-4 bg-accent-blue text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue-dark hover:shadow-[0_0_24px_rgba(46,114,184,0.5)] hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
+                href={routes.hireUs}
+                className="inline-flex items-center justify-center px-10 py-4 bg-accent-red text-white text-sm sm:text-base font-bold uppercase tracking-[2px] rounded ring-1 ring-accent-red/40 hover:bg-accent-red-dark hover:shadow-[0_0_24px_rgba(196,30,30,0.55)] hover:scale-[1.03] transition-all duration-300 min-h-[52px]"
               >
-                Train With Franck
+                Hire Us
               </a>
               <a
                 href={routes.shop}

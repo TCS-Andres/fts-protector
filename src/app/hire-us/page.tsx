@@ -6,6 +6,8 @@ import RedDivider from "@/components/RedDivider";
 import EPStats from "@/components/hire-us/EPStats";
 import EPImageMarquee from "@/components/hire-us/EPImageMarquee";
 import ContactForm from "@/components/ContactForm";
+import ServicesGrid from "@/components/ServicesGrid";
+import { hireUsFormOptions } from "@/lib/services";
 import LocationLine from "@/components/LocationLine";
 import { routes } from "@/lib/links";
 
@@ -202,7 +204,7 @@ export default function HireUsPage() {
                   Hire Us for Executive Protection
                 </a>
                 <a
-                  href="#book"
+                  href={routes.investigations}
                   className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-9 py-4 border border-accent-blue-light/60 text-accent-blue-light text-sm sm:text-base font-bold uppercase tracking-[2px] rounded hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-all duration-300 text-center min-h-[52px]"
                 >
                   Hire Us for Investigative Services
@@ -214,6 +216,17 @@ export default function HireUsPage() {
             </div>
           </div>
         </section>
+
+        <ServicesGrid
+          id="all-services"
+          eyebrow="Hire Us For"
+          title="Every"
+          titleAccent="Service"
+          intro="Choose what you need and the request form opens with it already selected. Strictly confidential."
+          ctaLabel="Request a Consultation"
+          ctaHref="#book"
+          className="bg-bg-secondary"
+        />
 
         <EPStats />
 
@@ -555,12 +568,7 @@ export default function HireUsPage() {
             <div className="animate-on-scroll rounded-2xl border border-accent-blue/25 bg-bg-steel-card/50 backdrop-blur p-6 sm:p-8 lg:p-10 text-left">
               <ContactForm
                 subject="EProtection VIP inquiry"
-                serviceOptions={[
-                  "Executive Protection",
-                  "Female Executive Protection Specialist",
-                  "Investigative Services",
-                  "Both",
-                ]}
+                serviceOptions={hireUsFormOptions}
                 messagePlaceholder="Tell us the nature of the protection you need, the dates, and the location. Held in strict confidence."
                 submitLabel="Request a Consultation"
               />

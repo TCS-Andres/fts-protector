@@ -16,8 +16,13 @@ export const metadata: Metadata = {
 
 const services = [
   "Executive Protection",
+  "Bodyguard",
+  "Armed & Unarmed Transportation",
+  "Asset Protection",
   "Female Executive Protection Specialist",
   "Investigative Services",
+  "Bail Bonds",
+  "Fugitive Apprehension",
   "Private Training",
   "Group Training",
   "EPS Training",

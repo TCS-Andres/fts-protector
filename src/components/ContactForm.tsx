@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { WEB3FORMS_ACCESS_KEY, WEB3FORMS_ENDPOINT } from "@/lib/links";
 
 export type ContactFormProps = {
@@ -44,6 +44,16 @@ export default function ContactForm({
   const fid = (name: string) => `cf-${name}-${uid}`;
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
+  const serviceRef = useRef<HTMLSelectElement>(null);
+
+  // A link like /hire-us?service=Bodyguard#book opens the form with that
+  // service already selected.
+  useEffect(() => {
+    const el = serviceRef.current;
+    if (!el || !serviceOptions) return;
+    const wanted = new URLSearchParams(window.location.search).get("service");
+    if (wanted && serviceOptions.includes(wanted)) el.value = wanted;
+  }, [serviceOptions]);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -181,6 +191,7 @@ export default function ContactForm({
             <select
               id={fid("service")}
               name="service"
+              ref={serviceRef}
               className={inputClass}
               defaultValue={defaultService}
             >
