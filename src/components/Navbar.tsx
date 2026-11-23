@@ -148,10 +148,10 @@ export default function Navbar() {
           )}
           <div className="flex items-center gap-3 ml-1">
             <a
-              href={routes.training}
+              href={routes.hireUs}
               className="px-5 py-2.5 bg-accent-red text-white text-[13px] font-bold uppercase tracking-[1.5px] rounded ring-1 ring-accent-red/40 hover:bg-accent-red-dark hover:ring-accent-red hover:shadow-[0_0_22px_rgba(196,30,30,0.55)] transition-all duration-300 hover:scale-[1.03] whitespace-nowrap"
             >
-              Train With Us
+              Hire Us
             </a>
             <a
               href={routes.shop}
@@ -223,11 +223,11 @@ export default function Navbar() {
               Shop the Store
             </a>
             <a
-              href={routes.training}
+              href={routes.hireUs}
               onClick={() => setMobileOpen(false)}
               className="w-full text-center px-10 py-4 bg-accent-red text-white text-lg font-bold uppercase tracking-[2px] rounded hover:bg-accent-red-dark transition-all duration-300"
             >
-              Train With Us
+              Hire Us
             </a>
           </div>
         </div>
