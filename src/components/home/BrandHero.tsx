@@ -66,11 +66,13 @@ export default function BrandHero() {
             <LocationLine className="hero-animate hero-animate-2 justify-center lg:justify-start mb-7" />
 
             <p className="hero-animate hero-animate-2 text-text-secondary text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-9 max-w-xl mx-auto lg:mx-0 font-body">
-              No theory. No fluff. Only tactics that work when lives depend on
-              it. For over two decades, Franck Pala has forged ordinary people
-              into highly capable protectors - through real violence, real
-              pressure, and real solutions. Move smarter, strike faster, and
-              protect the people who count on you with absolute confidence.
+              Franck Pala and his team deliver protection built on confidence,
+              efficiency, and discretion. From executive protection, bodyguard
+              details, and armed or unarmed transportation to asset protection,
+              investigations, bail bonds, and fugitive apprehension, every
+              assignment is held to one professional standard. With more than
+              two decades in the field, Franck also trains civilians and
+              protectors to handle real threats with clarity and control.
             </p>
 
             <div className="hero-animate hero-animate-3 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
