@@ -1,5 +1,5 @@
 import { routes } from "@/lib/links";
-import { getProducts, formatMoney, isShopifyConfigured } from "@/lib/shopify";
+import { getProducts, formatMoney, hasFreeUsShipping, isShopifyConfigured } from "@/lib/shopify";
 import ProductDisclaimer from "@/components/shop/ProductDisclaimer";
 
 // Marketing copy per Shopify product handle. Anything not listed here still
@@ -66,6 +66,7 @@ type Card = {
   price: string | null;
   available: boolean;
   gear: boolean;
+  freeShipping?: boolean;
   spotlight: Spotlight;
 };
 
@@ -107,6 +108,7 @@ async function loadCards(): Promise<Card[]> {
         image: p.featuredImage?.url ?? null,
         price: formatMoney(p.price),
         available: p.availableForSale,
+        freeShipping: hasFreeUsShipping(p.handle),
         gear: !p.handle.startsWith("cfm-"),
         spotlight,
       };
@@ -188,6 +190,11 @@ export default async function ShopSection() {
                   {c.price && (
                     <span className="font-heading text-xl font-bold text-white">
                       {c.price}
+                      {c.freeShipping && (
+                        <span className="block text-accent-blue-light text-[10px] uppercase tracking-[1.5px] font-bold font-body mt-1">
+                          Free U.S. Shipping
+                        </span>
+                      )}
                     </span>
                   )}
                   <span className="text-accent-blue-light text-xs uppercase tracking-[2px] font-bold font-body group-hover:text-white transition-colors">
@@ -276,6 +283,11 @@ export default async function ShopSection() {
                   {c.price && (
                     <span className="font-heading text-2xl font-bold text-white">
                       {c.price}
+                    </span>
+                  )}
+                  {c.freeShipping && (
+                    <span className="text-accent-blue-light text-xs uppercase tracking-[2px] font-bold font-body">
+                      Free U.S. Shipping
                     </span>
                   )}
                   {!c.available && (

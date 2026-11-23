@@ -7,6 +7,7 @@ import { links, routes } from "@/lib/links";
 import {
   getProducts,
   formatMoney,
+  hasFreeUsShipping,
   isShopifyConfigured,
   type ProductListItem,
 } from "@/lib/shopify";
@@ -111,7 +112,7 @@ function toCard(p: ProductListItem): ShopCard {
     imageAlt: p.featuredImage?.altText ?? p.title,
     href: `/shop/products/${p.handle}`,
     price: formatMoney(p.price),
-    badge: "Shop",
+    badge: hasFreeUsShipping(p.handle) ? "Free U.S. Shipping" : "Shop",
     cta: "View Product",
     soldOut: !p.availableForSale,
   };

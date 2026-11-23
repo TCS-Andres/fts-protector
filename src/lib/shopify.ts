@@ -109,6 +109,14 @@ export function isTrainingProduct(p: { productType: string }): boolean {
   return p.productType.trim().toLowerCase() === "training";
 }
 
+// Products that ship free anywhere in the U.S. Keep this in sync with the
+// Fork's own free-shipping profile in Shopify (Settings > Shipping).
+const FREE_US_SHIPPING_HANDLES = new Set(["the-fork-by-franckthesolution"]);
+
+export function hasFreeUsShipping(handle: string): boolean {
+  return FREE_US_SHIPPING_HANDLES.has(handle);
+}
+
 export function formatMoney(m: Money): string {
   try {
     return new Intl.NumberFormat("en-US", {
