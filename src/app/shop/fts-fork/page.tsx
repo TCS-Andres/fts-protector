@@ -232,8 +232,8 @@ export default function FtsForkPage() {
                   ))}
                 </ul>
                 <p className="text-text-muted text-xs font-body">
-                  Ships from the USA. It&apos;s a fork - an everyday-carry tool
-                  you can take just about anywhere.
+                  Free shipping anywhere in the U.S. Ships from the USA. It&apos;s a
+                  fork - an everyday-carry tool you can take just about anywhere.
                 </p>
               </div>
 

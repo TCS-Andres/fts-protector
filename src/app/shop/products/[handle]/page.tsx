@@ -12,6 +12,7 @@ import {
   getProduct,
   getProducts,
   formatMoney,
+  hasFreeUsShipping,
   isShopifyConfigured,
   isTrainingProduct,
   type Product,
@@ -99,7 +100,7 @@ export default async function ProductPage({
                 <h1 className="font-heading text-3xl sm:text-5xl font-bold uppercase leading-[1.02] text-white mb-5">
                   {product.title}
                 </h1>
-                <div className="flex items-center gap-4 mb-7">
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-7">
                   <span className="font-heading text-3xl lg:text-4xl font-bold text-white">
                     {formatMoney(product.price)}
                   </span>
@@ -112,6 +113,11 @@ export default async function ProductPage({
                   >
                     {product.availableForSale ? "In Stock" : "Sold Out"}
                   </span>
+                  {hasFreeUsShipping(product.handle) && (
+                    <span className="inline-flex items-center px-3 py-1.5 rounded-full text-[11px] uppercase tracking-[2px] font-bold font-body bg-accent-blue/15 border border-accent-blue/40 text-accent-blue-light">
+                      Free U.S. Shipping
+                    </span>
+                  )}
                 </div>
 
                 {product.descriptionHtml ? (
